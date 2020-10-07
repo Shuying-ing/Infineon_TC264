@@ -1,0 +1,1633 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\.Ifx_CircularBuffer.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.src ..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_get32',code,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_get32'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_get32
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     1  /**
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     2   * \file Ifx_CircularBuffer.c
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     3   * \brief Circular buffer functions in C language.
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     4   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     5   * \version iLLD_1_0_1_11_0
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     6   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     7   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     8   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	     9   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    10   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    11   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    13   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    15   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    16  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    17  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    18   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    19  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    20   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    21   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    22   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    23   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    24   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    25   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    26  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    27   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    28   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    29   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    30   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    31   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    32   * language processor.
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    33  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    34   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    35   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    36   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    37   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    38   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    39   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    40   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    41  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    42   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    43   */
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    44  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    45  #include "Ifx_CircularBuffer.h"
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    46  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    47  #if (IFX_CFG_CIRCULARBUFFER_C)
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    48  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    49  uint32 Ifx_CircularBuffer_get32(Ifx_CircularBuffer *buffer)
+; Function Ifx_CircularBuffer_get32
+.L20:
+Ifx_CircularBuffer_get32:	.type	func
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    50  {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    51      uint32 data = ((uint32 *)buffer->base)[buffer->index];
+	ld.hu	d15,[a4]4
+.L146:
+	mul	d15,d15,#4
+.L147:
+	ld.a	a15,[a4]
+.L148:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d2,[a15]
+.L111:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    52  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    53      buffer->index += 4;
+	ld.hu	d15,[a4]4
+.L149:
+	add	d15,#4
+	st.h	[a4]4,d15
+.L150:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    54  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    55      if (buffer->index >= buffer->length)
+	ld.hu	d15,[a4]4
+.L151:
+	ld.hu	d0,[a4]6
+.L152:
+	jlt.u	d15,d0,.L2
+.L153:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    56      {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    57          buffer->index = 0;
+	mov	d15,#0
+.L154:
+	st.h	[a4]4,d15
+.L2:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    58      }
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    59  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    60      return data;
+	j	.L3
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    61  }
+.L3:
+	ret
+.L76:
+	
+__Ifx_CircularBuffer_get32_function_end:
+	.size	Ifx_CircularBuffer_get32,__Ifx_CircularBuffer_get32_function_end-Ifx_CircularBuffer_get32
+.L44:
+	; End of function
+	
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_get16',code,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_get16'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_get16
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    62  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    63  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    64  uint16 Ifx_CircularBuffer_get16(Ifx_CircularBuffer *buffer)
+; Function Ifx_CircularBuffer_get16
+.L22:
+Ifx_CircularBuffer_get16:	.type	func
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    65  {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    66      uint16 data = ((uint16 *)buffer->base)[buffer->index];
+	ld.hu	d15,[a4]4
+.L133:
+	mul	d15,d15,#2
+.L134:
+	ld.a	a15,[a4]
+.L135:
+	addsc.a	a15,a15,d15,#0
+	ld.hu	d2,[a15]0
+.L112:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    67  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    68      buffer->index += 2;
+	ld.hu	d15,[a4]4
+.L136:
+	add	d15,#2
+	st.h	[a4]4,d15
+.L137:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    69  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    70      if (buffer->index >= buffer->length)
+	ld.hu	d15,[a4]4
+.L138:
+	ld.hu	d0,[a4]6
+.L139:
+	jlt.u	d15,d0,.L4
+.L140:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    71      {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    72          buffer->index = 0;
+	mov	d15,#0
+.L141:
+	st.h	[a4]4,d15
+.L4:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    73      }
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    74  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    75      return data;
+	j	.L5
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    76  }
+.L5:
+	ret
+.L71:
+	
+__Ifx_CircularBuffer_get16_function_end:
+	.size	Ifx_CircularBuffer_get16,__Ifx_CircularBuffer_get16_function_end-Ifx_CircularBuffer_get16
+.L39:
+	; End of function
+	
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_addDataIncr',code,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_addDataIncr'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_addDataIncr
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    77  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    78  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    79  /** \brief Add a 32 bit value to the circular buffer, and post-increment the circular buffer pointer
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    80   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    81   * \param buffer Specifies circular buffer.
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    82   * \param data Specifies value to be added to the buffer.
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    83   *
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    84   * \return None.
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    85   */
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    86  void Ifx_CircularBuffer_addDataIncr(Ifx_CircularBuffer *buffer, uint32 data)
+; Function Ifx_CircularBuffer_addDataIncr
+.L24:
+Ifx_CircularBuffer_addDataIncr:	.type	func
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    87  {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    88      ((uint32 *)buffer->base)[buffer->index] = data;
+	ld.hu	d15,[a4]4
+.L226:
+	mul	d15,d15,#4
+.L227:
+	ld.a	a15,[a4]
+.L228:
+	addsc.a	a15,a15,d15,#0
+.L229:
+	st.w	[a15],d4
+.L230:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    89      buffer->index                          += 4;
+	ld.hu	d15,[a4]4
+.L231:
+	add	d15,#4
+	st.h	[a4]4,d15
+.L232:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    90  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    91      if (buffer->index >= buffer->length)
+	ld.hu	d15,[a4]4
+.L233:
+	ld.hu	d0,[a4]6
+.L234:
+	jlt.u	d15,d0,.L6
+.L235:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    92      {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    93          buffer->index = 0;
+	mov	d15,#0
+.L236:
+	st.h	[a4]4,d15
+.L6:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    94      }
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    95  }
+	ret
+.L108:
+	
+__Ifx_CircularBuffer_addDataIncr_function_end:
+	.size	Ifx_CircularBuffer_addDataIncr,__Ifx_CircularBuffer_addDataIncr_function_end-Ifx_CircularBuffer_addDataIncr
+.L69:
+	; End of function
+	
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_read8',code,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_read8'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_read8
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    96  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    97  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    98  void *Ifx_CircularBuffer_read8(Ifx_CircularBuffer *buffer, void *data, Ifx_SizeT count)
+; Function Ifx_CircularBuffer_read8
+Ifx_CircularBuffer_read8:	.type	func
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	    99  {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   100      uint8 *Dest = (uint8 *)data;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   101  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   102      do
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   103      {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   104          count--;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   105          *Dest = ((uint8 *)buffer->base)[buffer->index];
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   106          Dest  = &Dest[1];
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   107          buffer->index++;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   108  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   109          if (buffer->index >= buffer->length)
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   110          {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   111              buffer->index = 0;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   112          }
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   113      } while (count > 0);
+.L7:
+	add	d4,#-1
+.L113:
+	extr	d4,d4,#0,#16
+.L114:
+	ld.a	a15,[a4]
+.L159:
+	ld.hu	d15,[a4]4
+.L160:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d15,[a15]
+.L161:
+	st.b	[a5],d15
+.L162:
+	add.a	a5,#1
+.L163:
+	ld.hu	d15,[a4]4
+.L164:
+	add	d15,#1
+	st.h	[a4]4,d15
+.L165:
+	ld.hu	d15,[a4]4
+.L166:
+	ld.hu	d0,[a4]6
+.L167:
+	jlt.u	d15,d0,.L8
+.L168:
+	mov	d15,#0
+.L169:
+	st.h	[a4]4,d15
+.L8:
+	jge	d4,#1,.L7
+.L170:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   114  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   115      return Dest;
+	mov.aa	a2,a5
+.L115:
+	j	.L9
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   116  }
+.L9:
+	ret
+.L80:
+	
+__Ifx_CircularBuffer_read8_function_end:
+	.size	Ifx_CircularBuffer_read8,__Ifx_CircularBuffer_read8_function_end-Ifx_CircularBuffer_read8
+.L49:
+	; End of function
+	
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_read32',code,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_read32'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_read32
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   117  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   118  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   119  void *Ifx_CircularBuffer_read32(Ifx_CircularBuffer *buffer, void *data, Ifx_SizeT count)
+; Function Ifx_CircularBuffer_read32
+.L27:
+Ifx_CircularBuffer_read32:	.type	func
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   120  {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   121      uint32 *Dest = (uint32 *)data;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   122      uint8  *base = buffer->base;
+	ld.a	a15,[a4]
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   123  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   124      do
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   125      {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   126          *Dest         = *((uint32 *)(&base[buffer->index]));
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   127          Dest          = &Dest[1];
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   128          buffer->index = buffer->index + 4;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   129  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   130          if (buffer->index >= buffer->length)
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   131          {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   132              buffer->index = 0;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   133          }
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   134  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   135          count--;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   136      } while (count > 0);
+.L10:
+	ld.hu	d15,[a4]4
+.L175:
+	addsc.a	a2,a15,d15,#0
+.L176:
+	ld.w	d15,[a2]
+.L177:
+	st.w	[a5],d15
+.L178:
+	add.a	a5,#4
+.L179:
+	ld.hu	d15,[a4]4
+.L180:
+	add	d15,#4
+.L181:
+	st.h	[a4]4,d15
+.L182:
+	ld.hu	d15,[a4]4
+.L183:
+	ld.hu	d0,[a4]6
+.L184:
+	jlt.u	d15,d0,.L11
+.L185:
+	mov	d15,#0
+.L186:
+	st.h	[a4]4,d15
+.L11:
+	add	d4,#-1
+.L116:
+	extr	d4,d4,#0,#16
+.L117:
+	jge	d4,#1,.L10
+.L187:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   137  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   138      return Dest;
+	mov.aa	a2,a5
+.L118:
+	j	.L12
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   139  }
+.L12:
+	ret
+.L87:
+	
+__Ifx_CircularBuffer_read32_function_end:
+	.size	Ifx_CircularBuffer_read32,__Ifx_CircularBuffer_read32_function_end-Ifx_CircularBuffer_read32
+.L54:
+	; End of function
+	
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_write8',code,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_write8'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_write8
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   140  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   141  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   142  const void *Ifx_CircularBuffer_write8(Ifx_CircularBuffer *buffer, const void *data, Ifx_SizeT count)
+; Function Ifx_CircularBuffer_write8
+Ifx_CircularBuffer_write8:	.type	func
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   143  {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   144      const uint8 *source = (const uint8 *)data;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   145  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   146      do
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   147      {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   148          count--;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   149          ((uint8 *)buffer->base)[buffer->index] = *source;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   150          source                                 = &source[1];
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   151          buffer->index++;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   152  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   153          if (buffer->index >= buffer->length)
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   154          {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   155              buffer->index = 0;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   156          }
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   157      } while (count > 0);
+.L13:
+	add	d4,#-1
+.L119:
+	extr	d4,d4,#0,#16
+.L120:
+	ld.a	a15,[a4]
+.L192:
+	ld.hu	d15,[a4]4
+.L193:
+	addsc.a	a15,a15,d15,#0
+.L194:
+	ld.bu	d15,[a5]
+.L195:
+	st.b	[a15],d15
+.L196:
+	add.a	a5,#1
+.L197:
+	ld.hu	d15,[a4]4
+.L198:
+	add	d15,#1
+	st.h	[a4]4,d15
+.L199:
+	ld.hu	d15,[a4]4
+.L200:
+	ld.hu	d0,[a4]6
+.L201:
+	jlt.u	d15,d0,.L14
+.L202:
+	mov	d15,#0
+.L203:
+	st.h	[a4]4,d15
+.L14:
+	jge	d4,#1,.L13
+.L204:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   158  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   159      return source;
+	mov.aa	a2,a5
+.L121:
+	j	.L15
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   160  }
+.L15:
+	ret
+.L95:
+	
+__Ifx_CircularBuffer_write8_function_end:
+	.size	Ifx_CircularBuffer_write8,__Ifx_CircularBuffer_write8_function_end-Ifx_CircularBuffer_write8
+.L59:
+	; End of function
+	
+	.sdecl	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_write32',code,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.text.Ifx_CircularBuffer.Ifx_CircularBuffer_write32'
+	.align	2
+	
+	.global	Ifx_CircularBuffer_write32
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   161  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   162  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   163  const void *Ifx_CircularBuffer_write32(Ifx_CircularBuffer *buffer, const void *data, Ifx_SizeT count)
+; Function Ifx_CircularBuffer_write32
+.L30:
+Ifx_CircularBuffer_write32:	.type	func
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   164  {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   165      const uint32 *source = (const uint32 *)data;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   166      uint8        *base   = buffer->base;
+	ld.a	a15,[a4]
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   167  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   168      do
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   169      {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   170          *((uint32 *)(&base[buffer->index])) = *source;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   171          source                              = &source[1];
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   172          buffer->index                       = buffer->index + 4;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   173  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   174          if (buffer->index >= buffer->length)
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   175          {
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   176              buffer->index = 0;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   177          }
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   178  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   179          count--;
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   180      } while (count > 0);
+.L16:
+	ld.hu	d15,[a4]4
+.L209:
+	addsc.a	a2,a15,d15,#0
+.L210:
+	ld.w	d15,[a5]
+.L211:
+	st.w	[a2],d15
+.L212:
+	add.a	a5,#4
+.L213:
+	ld.hu	d15,[a4]4
+.L214:
+	add	d15,#4
+.L215:
+	st.h	[a4]4,d15
+.L216:
+	ld.hu	d15,[a4]4
+.L217:
+	ld.hu	d0,[a4]6
+.L218:
+	jlt.u	d15,d0,.L17
+.L219:
+	mov	d15,#0
+.L220:
+	st.h	[a4]4,d15
+.L17:
+	add	d4,#-1
+.L122:
+	extr	d4,d4,#0,#16
+.L123:
+	jge	d4,#1,.L16
+.L221:
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   181  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   182      return source;
+	mov.aa	a2,a5
+.L124:
+	j	.L18
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   183  }
+.L18:
+	ret
+.L101:
+	
+__Ifx_CircularBuffer_write32_function_end:
+	.size	Ifx_CircularBuffer_write32,__Ifx_CircularBuffer_write32_function_end-Ifx_CircularBuffer_write32
+.L64:
+	; End of function
+	
+	.calls	'Ifx_CircularBuffer_get32','',0
+	.calls	'Ifx_CircularBuffer_get16','',0
+	.calls	'Ifx_CircularBuffer_addDataIncr','',0
+	.calls	'Ifx_CircularBuffer_read8','',0
+	.calls	'Ifx_CircularBuffer_read32','',0
+	.calls	'Ifx_CircularBuffer_write8','',0
+	.calls	'Ifx_CircularBuffer_write32','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L32:
+	.word	1077
+	.half	3
+	.word	.L33
+	.byte	4
+.L31:
+	.byte	1
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L34
+	.byte	2,1,1,3
+	.word	187
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	190
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1,7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	235
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	247
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0
+.L79:
+	.byte	3
+	.word	327
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	301
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	333
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	333
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	301
+	.byte	6,0,7
+	.byte	'int',0,4,5,10
+	.word	419
+	.byte	11
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,12
+	.word	426
+	.byte	0,7
+	.byte	'unsigned int',0,4,7,13
+	.word	468
+	.byte	3
+	.word	468
+	.byte	14
+	.byte	'__cmpswapw',0
+	.word	484
+	.byte	1,1,1,1,15
+	.byte	'p',0
+	.word	489
+	.byte	15
+	.byte	'value',0
+	.word	468
+	.byte	15
+	.byte	'compare',0
+	.word	468
+	.byte	0,16
+	.word	195
+	.byte	17
+	.word	221
+	.byte	6,0,16
+	.word	256
+	.byte	17
+	.word	288
+	.byte	6,0,16
+	.word	338
+	.byte	17
+	.word	357
+	.byte	6,0,16
+	.word	373
+	.byte	17
+	.word	388
+	.byte	17
+	.word	402
+	.byte	6,0
+.L70:
+	.byte	7
+	.byte	'unsigned short int',0,2,7,18,3,96,9,8,19
+	.byte	'base',0
+	.word	333
+	.byte	4,2,35,0,19
+	.byte	'index',0
+	.word	599
+	.byte	2,2,35,4,19
+	.byte	'length',0
+	.word	599
+	.byte	2,2,35,6,0
+.L72:
+	.byte	3
+	.word	621
+.L75:
+	.byte	7
+	.byte	'unsigned long int',0,4,7
+.L83:
+	.byte	7
+	.byte	'short int',0,2,5,7
+	.byte	'unsigned char',0,1,8
+.L85:
+	.byte	3
+	.word	711
+.L91:
+	.byte	3
+	.word	677
+	.byte	10
+	.word	327
+.L94:
+	.byte	3
+	.word	738
+	.byte	10
+	.word	711
+.L99:
+	.byte	3
+	.word	748
+	.byte	10
+	.word	677
+.L105:
+	.byte	3
+	.word	758
+	.byte	20
+	.byte	'__wchar_t',0,4,1,1
+	.word	698
+	.byte	20
+	.byte	'__size_t',0,4,1,1
+	.word	468
+	.byte	20
+	.byte	'__ptrdiff_t',0,4,1,1
+	.word	419
+	.byte	21,1,3
+	.word	823
+	.byte	20
+	.byte	'__codeptr',0,4,1,1
+	.word	825
+	.byte	20
+	.byte	'uint8',0,5,105,29
+	.word	711
+	.byte	20
+	.byte	'uint16',0,5,109,29
+	.word	599
+	.byte	20
+	.byte	'uint32',0,5,113,29
+	.word	677
+	.byte	20
+	.byte	'uint64',0,5,118,29
+	.word	301
+	.byte	20
+	.byte	'sint16',0,5,126,29
+	.word	698
+	.byte	7
+	.byte	'long int',0,4,5,20
+	.byte	'sint32',0,5,131,1,29
+	.word	922
+	.byte	7
+	.byte	'long long int',0,8,5,20
+	.byte	'sint64',0,5,138,1,29
+	.word	950
+	.byte	20
+	.byte	'float32',0,5,167,1,29
+	.word	247
+	.byte	20
+	.byte	'pvoid',0,3,57,28
+	.word	333
+	.byte	20
+	.byte	'Ifx_TickTime',0,3,79,28
+	.word	950
+	.byte	20
+	.byte	'Ifx_SizeT',0,3,92,16
+	.word	698
+	.byte	20
+	.byte	'Ifx_CircularBuffer',0,3,101,3
+	.word	621
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L33:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,38,0,73,19,0,0,11,46
+	.byte	1,3,8,54,15,39,12,63,12,60,12,0,0,12,5,0,73,19,0,0,13,53,0,73,19,0,0,14,46,1,3,8,73,19,54,15,39,12,63
+	.byte	12,60,12,0,0,15,5,0,3,8,73,19,0,0,16,46,1,49,19,0,0,17,5,0,49,19,0,0,18,19,1,58,15,59,15,57,15,11,15,0
+	.byte	0,19,13,0,3,8,73,19,11,15,56,9,0,0,20,22,0,3,8,58,15,59,15,57,15,73,19,0,0,21,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L34:
+	.word	.L126-.L125
+.L125:
+	.half	3
+	.word	.L128-.L127
+.L127:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0,0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L128:
+.L126:
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.debug_info'
+.L35:
+	.word	288
+	.half	3
+	.word	.L36
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L38,.L37
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'Ifx_CircularBuffer_get16',0,1,64,8
+	.word	.L70
+	.byte	1,1,1
+	.word	.L22,.L71,.L21
+	.byte	4
+	.byte	'buffer',0,1,64,53
+	.word	.L72,.L73
+	.byte	5
+	.word	.L22,.L71
+	.byte	6
+	.byte	'data',0,1,66,12
+	.word	.L70,.L74
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.debug_abbrev'
+.L36:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.debug_line'
+.L37:
+	.word	.L130-.L129
+.L129:
+	.half	3
+	.word	.L132-.L131
+.L131:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L132:
+	.byte	5,50,7,0,5,2
+	.word	.L22
+	.byte	3,193,0,1,5,43,9
+	.half	.L133-.L22
+	.byte	1,5,36,9
+	.half	.L134-.L133
+	.byte	1,5,43,9
+	.half	.L135-.L134
+	.byte	1,5,11,9
+	.half	.L112-.L135
+	.byte	3,2,1,5,19,9
+	.half	.L136-.L112
+	.byte	1,5,15,9
+	.half	.L137-.L136
+	.byte	3,2,1,5,32,9
+	.half	.L138-.L137
+	.byte	1,5,5,9
+	.half	.L139-.L138
+	.byte	1,5,25,7,9
+	.half	.L140-.L139
+	.byte	3,2,1,5,23,9
+	.half	.L141-.L140
+	.byte	1,5,5,9
+	.half	.L4-.L141
+	.byte	3,3,1,5,1,9
+	.half	.L5-.L4
+	.byte	3,1,1,7,9
+	.half	.L39-.L5
+	.byte	0,1,1
+.L130:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.debug_ranges'
+.L38:
+	.word	-1,.L22,0,.L39-.L22,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.debug_info'
+.L40:
+	.word	288
+	.half	3
+	.word	.L41
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L43,.L42
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'Ifx_CircularBuffer_get32',0,1,49,8
+	.word	.L75
+	.byte	1,1,1
+	.word	.L20,.L76,.L19
+	.byte	4
+	.byte	'buffer',0,1,49,53
+	.word	.L72,.L77
+	.byte	5
+	.word	.L20,.L76
+	.byte	6
+	.byte	'data',0,1,51,12
+	.word	.L75,.L78
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.debug_abbrev'
+.L41:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.debug_line'
+.L42:
+	.word	.L143-.L142
+.L142:
+	.half	3
+	.word	.L145-.L144
+.L144:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L145:
+	.byte	5,50,7,0,5,2
+	.word	.L20
+	.byte	3,50,1,5,43,9
+	.half	.L146-.L20
+	.byte	1,5,36,9
+	.half	.L147-.L146
+	.byte	1,5,43,9
+	.half	.L148-.L147
+	.byte	1,5,11,9
+	.half	.L111-.L148
+	.byte	3,2,1,5,19,9
+	.half	.L149-.L111
+	.byte	1,5,15,9
+	.half	.L150-.L149
+	.byte	3,2,1,5,32,9
+	.half	.L151-.L150
+	.byte	1,5,5,9
+	.half	.L152-.L151
+	.byte	1,5,25,7,9
+	.half	.L153-.L152
+	.byte	3,2,1,5,23,9
+	.half	.L154-.L153
+	.byte	1,5,5,9
+	.half	.L2-.L154
+	.byte	3,3,1,5,1,9
+	.half	.L3-.L2
+	.byte	3,1,1,7,9
+	.half	.L44-.L3
+	.byte	0,1,1
+.L143:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.debug_ranges'
+.L43:
+	.word	-1,.L20,0,.L44-.L20,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.debug_info'
+.L45:
+	.word	323
+	.half	3
+	.word	.L46
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L48,.L47
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'Ifx_CircularBuffer_read8',0,1,98,7
+	.word	.L79
+	.byte	1,1,1
+	.word	.L7,.L80,.L25
+	.byte	4
+	.byte	'buffer',0,1,98,52
+	.word	.L72,.L81
+	.byte	4
+	.byte	'data',0,1,98,66
+	.word	.L79,.L82
+	.byte	4
+	.byte	'count',0,1,98,82
+	.word	.L83,.L84
+	.byte	5
+	.word	.L7,.L80
+	.byte	6
+	.byte	'Dest',0,1,100,12
+	.word	.L85,.L86
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.debug_abbrev'
+.L46:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.debug_line'
+.L47:
+	.word	.L156-.L155
+.L155:
+	.half	3
+	.word	.L158-.L157
+.L157:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L158:
+	.byte	5,14,7,0,5,2
+	.word	.L7
+	.byte	3,231,0,1,5,33,9
+	.half	.L114-.L7
+	.byte	3,1,1,5,47,9
+	.half	.L159-.L114
+	.byte	1,5,40,9
+	.half	.L160-.L159
+	.byte	1,5,15,9
+	.half	.L161-.L160
+	.byte	1,5,22,9
+	.half	.L162-.L161
+	.byte	3,1,1,5,15,9
+	.half	.L163-.L162
+	.byte	3,1,1,5,22,9
+	.half	.L164-.L163
+	.byte	1,5,19,9
+	.half	.L165-.L164
+	.byte	3,2,1,5,36,9
+	.half	.L166-.L165
+	.byte	1,5,9,9
+	.half	.L167-.L166
+	.byte	1,5,29,7,9
+	.half	.L168-.L167
+	.byte	3,2,1,5,27,9
+	.half	.L169-.L168
+	.byte	1,5,24,9
+	.half	.L8-.L169
+	.byte	3,2,1,5,5,7,9
+	.half	.L170-.L8
+	.byte	3,2,1,5,1,9
+	.half	.L9-.L170
+	.byte	3,1,1,7,9
+	.half	.L49-.L9
+	.byte	0,1,1
+.L156:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.debug_ranges'
+.L48:
+	.word	-1,.L7,0,.L49-.L7,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.debug_info'
+.L50:
+	.word	341
+	.half	3
+	.word	.L51
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L53,.L52
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'Ifx_CircularBuffer_read32',0,1,119,7
+	.word	.L79
+	.byte	1,1,1
+	.word	.L27,.L87,.L26
+	.byte	4
+	.byte	'buffer',0,1,119,53
+	.word	.L72,.L88
+	.byte	4
+	.byte	'data',0,1,119,67
+	.word	.L79,.L89
+	.byte	4
+	.byte	'count',0,1,119,83
+	.word	.L83,.L90
+	.byte	5
+	.word	.L27,.L87
+	.byte	6
+	.byte	'Dest',0,1,121,13
+	.word	.L91,.L92
+	.byte	6
+	.byte	'base',0,1,122,13
+	.word	.L85,.L93
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.debug_abbrev'
+.L51:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.debug_line'
+.L52:
+	.word	.L172-.L171
+.L171:
+	.half	3
+	.word	.L174-.L173
+.L173:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L174:
+	.byte	5,26,7,0,5,2
+	.word	.L27
+	.byte	3,249,0,1,5,50,9
+	.half	.L10-.L27
+	.byte	3,4,1,5,43,9
+	.half	.L175-.L10
+	.byte	1,5,25,9
+	.half	.L176-.L175
+	.byte	1,5,23,9
+	.half	.L177-.L176
+	.byte	1,5,30,9
+	.half	.L178-.L177
+	.byte	3,1,1,5,31,9
+	.half	.L179-.L178
+	.byte	3,1,1,5,39,9
+	.half	.L180-.L179
+	.byte	1,5,23,9
+	.half	.L181-.L180
+	.byte	1,5,19,9
+	.half	.L182-.L181
+	.byte	3,2,1,5,36,9
+	.half	.L183-.L182
+	.byte	1,5,9,9
+	.half	.L184-.L183
+	.byte	1,5,29,7,9
+	.half	.L185-.L184
+	.byte	3,2,1,5,27,9
+	.half	.L186-.L185
+	.byte	1,5,14,9
+	.half	.L11-.L186
+	.byte	3,3,1,5,24,9
+	.half	.L117-.L11
+	.byte	3,1,1,5,5,7,9
+	.half	.L187-.L117
+	.byte	3,2,1,5,1,9
+	.half	.L12-.L187
+	.byte	3,1,1,7,9
+	.half	.L54-.L12
+	.byte	0,1,1
+.L172:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.debug_ranges'
+.L53:
+	.word	-1,.L27,0,.L54-.L27,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.debug_info'
+.L55:
+	.word	331
+	.half	3
+	.word	.L56
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L58,.L57
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'Ifx_CircularBuffer_write8',0,1,142,1,13
+	.word	.L94
+	.byte	1,1,1
+	.word	.L13,.L95,.L28
+	.byte	4
+	.byte	'buffer',0,1,142,1,59
+	.word	.L72,.L96
+	.byte	4
+	.byte	'data',0,1,142,1,79
+	.word	.L94,.L97
+	.byte	4
+	.byte	'count',0,1,142,1,95
+	.word	.L83,.L98
+	.byte	5
+	.word	.L13,.L95
+	.byte	6
+	.byte	'source',0,1,144,1,18
+	.word	.L99,.L100
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.debug_abbrev'
+.L56:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.debug_line'
+.L57:
+	.word	.L189-.L188
+.L188:
+	.half	3
+	.word	.L191-.L190
+.L190:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L191:
+	.byte	5,14,7,0,5,2
+	.word	.L13
+	.byte	3,147,1,1,5,25,9
+	.half	.L120-.L13
+	.byte	3,1,1,5,39,9
+	.half	.L192-.L120
+	.byte	1,5,32,9
+	.half	.L193-.L192
+	.byte	1,5,50,9
+	.half	.L194-.L193
+	.byte	1,5,48,9
+	.half	.L195-.L194
+	.byte	1,5,57,9
+	.half	.L196-.L195
+	.byte	3,1,1,5,15,9
+	.half	.L197-.L196
+	.byte	3,1,1,5,22,9
+	.half	.L198-.L197
+	.byte	1,5,19,9
+	.half	.L199-.L198
+	.byte	3,2,1,5,36,9
+	.half	.L200-.L199
+	.byte	1,5,9,9
+	.half	.L201-.L200
+	.byte	1,5,29,7,9
+	.half	.L202-.L201
+	.byte	3,2,1,5,27,9
+	.half	.L203-.L202
+	.byte	1,5,24,9
+	.half	.L14-.L203
+	.byte	3,2,1,5,5,7,9
+	.half	.L204-.L14
+	.byte	3,2,1,5,1,9
+	.half	.L15-.L204
+	.byte	3,1,1,7,9
+	.half	.L59-.L15
+	.byte	0,1,1
+.L189:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.debug_ranges'
+.L58:
+	.word	-1,.L13,0,.L59-.L13,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.debug_info'
+.L60:
+	.word	350
+	.half	3
+	.word	.L61
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L63,.L62
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'Ifx_CircularBuffer_write32',0,1,163,1,13
+	.word	.L94
+	.byte	1,1,1
+	.word	.L30,.L101,.L29
+	.byte	4
+	.byte	'buffer',0,1,163,1,60
+	.word	.L72,.L102
+	.byte	4
+	.byte	'data',0,1,163,1,80
+	.word	.L94,.L103
+	.byte	4
+	.byte	'count',0,1,163,1,96
+	.word	.L83,.L104
+	.byte	5
+	.word	.L30,.L101
+	.byte	6
+	.byte	'source',0,1,165,1,19
+	.word	.L105,.L106
+	.byte	6
+	.byte	'base',0,1,166,1,19
+	.word	.L85,.L107
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.debug_abbrev'
+.L61:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.debug_line'
+.L62:
+	.word	.L206-.L205
+.L205:
+	.half	3
+	.word	.L208-.L207
+.L207:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L208:
+	.byte	5,34,7,0,5,2
+	.word	.L30
+	.byte	3,165,1,1,9
+	.half	.L16-.L30
+	.byte	3,4,1,5,27,9
+	.half	.L209-.L16
+	.byte	1,5,47,9
+	.half	.L210-.L209
+	.byte	1,5,45,9
+	.half	.L211-.L210
+	.byte	1,5,54,9
+	.half	.L212-.L211
+	.byte	3,1,1,5,53,9
+	.half	.L213-.L212
+	.byte	3,1,1,5,61,9
+	.half	.L214-.L213
+	.byte	1,5,45,9
+	.half	.L215-.L214
+	.byte	1,5,19,9
+	.half	.L216-.L215
+	.byte	3,2,1,5,36,9
+	.half	.L217-.L216
+	.byte	1,5,9,9
+	.half	.L218-.L217
+	.byte	1,5,29,7,9
+	.half	.L219-.L218
+	.byte	3,2,1,5,27,9
+	.half	.L220-.L219
+	.byte	1,5,14,9
+	.half	.L17-.L220
+	.byte	3,3,1,5,24,9
+	.half	.L123-.L17
+	.byte	3,1,1,5,5,7,9
+	.half	.L221-.L123
+	.byte	3,2,1,5,1,9
+	.half	.L18-.L221
+	.byte	3,1,1,7,9
+	.half	.L64-.L18
+	.byte	0,1,1
+.L206:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.debug_ranges'
+.L63:
+	.word	-1,.L30,0,.L64-.L30,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.debug_info'
+.L65:
+	.word	289
+	.half	3
+	.word	.L66
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L68,.L67
+	.byte	2
+	.word	.L31
+	.byte	3
+	.byte	'Ifx_CircularBuffer_addDataIncr',0,1,86,6,1,1,1
+	.word	.L24,.L108,.L23
+	.byte	4
+	.byte	'buffer',0,1,86,57
+	.word	.L72,.L109
+	.byte	4
+	.byte	'data',0,1,86,72
+	.word	.L75,.L110
+	.byte	5
+	.word	.L24,.L108
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.debug_abbrev'
+.L66:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.debug_line'
+.L67:
+	.word	.L223-.L222
+.L222:
+	.half	3
+	.word	.L225-.L224
+.L224:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling\\Ifx_CircularBuffer.c',0,0,0,0,0
+.L225:
+	.byte	5,36,7,0,5,2
+	.word	.L24
+	.byte	3,215,0,1,5,29,9
+	.half	.L226-.L24
+	.byte	1,5,22,9
+	.half	.L227-.L226
+	.byte	1,5,29,9
+	.half	.L228-.L227
+	.byte	1,5,45,9
+	.half	.L229-.L228
+	.byte	1,5,11,9
+	.half	.L230-.L229
+	.byte	3,1,1,5,44,9
+	.half	.L231-.L230
+	.byte	1,5,15,9
+	.half	.L232-.L231
+	.byte	3,2,1,5,32,9
+	.half	.L233-.L232
+	.byte	1,5,5,9
+	.half	.L234-.L233
+	.byte	1,5,25,7,9
+	.half	.L235-.L234
+	.byte	3,2,1,5,23,9
+	.half	.L236-.L235
+	.byte	1,5,1,9
+	.half	.L6-.L236
+	.byte	3,2,1,7,9
+	.half	.L69-.L6
+	.byte	0,1,1
+.L223:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.debug_ranges'
+.L68:
+	.word	-1,.L24,0,.L69-.L24,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.debug_loc'
+.L23:
+	.word	-1,.L24,0,.L108-.L24
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L109:
+	.word	-1,.L24,0,.L108-.L24
+	.half	1
+	.byte	100
+	.word	0,0
+.L110:
+	.word	-1,.L24,0,.L108-.L24
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.debug_loc'
+.L21:
+	.word	-1,.L22,0,.L71-.L22
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L73:
+	.word	-1,.L22,0,.L71-.L22
+	.half	1
+	.byte	100
+	.word	0,0
+.L74:
+	.word	-1,.L22,.L112-.L22,.L71-.L22
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.debug_loc'
+.L19:
+	.word	-1,.L20,0,.L76-.L20
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L77:
+	.word	-1,.L20,0,.L76-.L20
+	.half	1
+	.byte	100
+	.word	0,0
+.L78:
+	.word	-1,.L20,.L111-.L20,.L76-.L20
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.debug_loc'
+.L92:
+	.word	-1,.L27,0,.L87-.L27
+	.half	1
+	.byte	101
+	.word	.L118-.L27,.L87-.L27
+	.half	1
+	.byte	98
+	.word	0,0
+.L26:
+	.word	-1,.L27,0,.L87-.L27
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L93:
+	.word	-1,.L27,.L10-.L27,.L87-.L27
+	.half	1
+	.byte	111
+	.word	0,0
+.L88:
+	.word	-1,.L27,0,.L87-.L27
+	.half	1
+	.byte	100
+	.word	0,0
+.L90:
+	.word	-1,.L27,0,.L116-.L27
+	.half	1
+	.byte	84
+	.word	.L117-.L27,.L87-.L27
+	.half	1
+	.byte	84
+	.word	0,0
+.L89:
+	.word	-1,.L27,0,.L87-.L27
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.debug_loc'
+.L86:
+	.word	-1,.L7,0,.L80-.L7
+	.half	1
+	.byte	101
+	.word	.L115-.L7,.L80-.L7
+	.half	1
+	.byte	98
+	.word	0,0
+.L25:
+	.word	-1,.L7,0,.L80-.L7
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L81:
+	.word	-1,.L7,0,.L80-.L7
+	.half	1
+	.byte	100
+	.word	0,0
+.L84:
+	.word	-1,.L7,0,.L113-.L7
+	.half	1
+	.byte	84
+	.word	.L114-.L7,.L80-.L7
+	.half	1
+	.byte	84
+	.word	0,0
+.L82:
+	.word	-1,.L7,0,.L80-.L7
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.debug_loc'
+.L29:
+	.word	-1,.L30,0,.L101-.L30
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L107:
+	.word	-1,.L30,.L16-.L30,.L101-.L30
+	.half	1
+	.byte	111
+	.word	0,0
+.L102:
+	.word	-1,.L30,0,.L101-.L30
+	.half	1
+	.byte	100
+	.word	0,0
+.L104:
+	.word	-1,.L30,0,.L122-.L30
+	.half	1
+	.byte	84
+	.word	.L123-.L30,.L101-.L30
+	.half	1
+	.byte	84
+	.word	0,0
+.L103:
+	.word	-1,.L30,0,.L101-.L30
+	.half	1
+	.byte	101
+	.word	0,0
+.L106:
+	.word	-1,.L30,0,.L101-.L30
+	.half	1
+	.byte	101
+	.word	.L124-.L30,.L101-.L30
+	.half	1
+	.byte	98
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.debug_loc'
+.L28:
+	.word	-1,.L13,0,.L95-.L13
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L96:
+	.word	-1,.L13,0,.L95-.L13
+	.half	1
+	.byte	100
+	.word	0,0
+.L98:
+	.word	-1,.L13,0,.L119-.L13
+	.half	1
+	.byte	84
+	.word	.L120-.L13,.L95-.L13
+	.half	1
+	.byte	84
+	.word	0,0
+.L97:
+	.word	-1,.L13,0,.L95-.L13
+	.half	1
+	.byte	101
+	.word	0,0
+.L100:
+	.word	-1,.L13,0,.L95-.L13
+	.half	1
+	.byte	101
+	.word	.L121-.L13,.L95-.L13
+	.half	1
+	.byte	98
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L237:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_get32')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L237,.L20,.L76-.L20
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_get16')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L237,.L22,.L71-.L22
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_addDataIncr')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L237,.L24,.L108-.L24
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_read8')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L237,.L7,.L80-.L7
+	.byte	8,19,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_read32')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L237,.L27,.L87-.L27
+	.byte	8,19,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_write8')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L237,.L13,.L95-.L13
+	.byte	8,19,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_CircularBuffer_write32')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L237,.L30,.L101-.L30
+	.byte	8,19,8,22,8,23,0,0
+
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   184  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   185  
+; ..\Libraries\BaseSw\iLLD\TC26B\Tricore\_Lib\DataHandling\Ifx_CircularBuffer.c	   186  #endif
+
+	; Module end

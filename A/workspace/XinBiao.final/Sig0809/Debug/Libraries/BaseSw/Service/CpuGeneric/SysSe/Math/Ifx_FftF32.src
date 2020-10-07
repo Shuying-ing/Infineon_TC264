@@ -1,0 +1,2915 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\.Ifx_FftF32.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.src ..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_FftF32.Ifx_FftF32_generateTwiddleFactor',code,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.text.Ifx_FftF32.Ifx_FftF32_generateTwiddleFactor'
+	.align	2
+	
+	.global	Ifx_FftF32_generateTwiddleFactor
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	     1  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	     2   * \file Ifx_FftF32.c
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	     3   * \brief Floating-point Fast Fourier Transform
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	     4   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	     5   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	     6   * \version disabled
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	     8   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	     9   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    10   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    11   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    12   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    17  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    18  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    20  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    22   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    26   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    27  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    28   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    32   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    33   * language processor.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    34  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    41   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    42  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    43   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    44   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    45  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    46  #include "Ifx_FftF32.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    47  #include <math.h>
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    48  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    49  //#include "Compiler.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    50  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    51  cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, short nX)
+; Function Ifx_FftF32_generateTwiddleFactor
+.L27:
+Ifx_FftF32_generateTwiddleFactor:	.type	func
+	mov.aa	a12,a4
+.L159:
+	mov	d9,d4
+.L160:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    52  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    53      int    i;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    54      double Theta;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    55  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    56      // prepare twiddle coefficients
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    57      for (i = 0; i < nX / 2; i++)
+	mov	d10,#0
+.L161:
+	j	.L2
+.L3:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    58      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    59          Theta      = 2 * IFX_PI * i / nX;
+	itof	d15,d10
+.L222:
+	mov	d0,#4059
+	addih	d0,d0,#16585
+.L223:
+	mul.f	d15,d15,d0
+.L224:
+	itof	d0,d9
+.L225:
+	div.f	d8,d15,d0
+.L162:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    60  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    61          TF[i].real = (float32)(cosf(Theta));
+	mul	d15,d10,#8
+	addsc.a	a15,a12,d15,#0
+.L226:
+	mov	d4,d8
+.L163:
+	call	cosf
+.L164:
+	st.w	[a15],d2
+.L227:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    62          TF[i].imag = (float32)(-sinf(Theta));
+	mul	d15,d10,#8
+	addsc.a	a15,a12,d15,#0
+.L228:
+	mov	d4,d8
+.L165:
+	call	sinf
+.L166:
+	insn.t	d15,d2:31,d2:31
+.L229:
+	st.w	[a15]4,d15
+.L230:
+	add	d10,#1
+.L2:
+	ge	d15,d9,#0
+	caddn	d15,d15,d9,#1
+	sha	d15,#-1
+.L231:
+	jlt	d10,d15,.L3
+.L232:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    63      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    64  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    65      return TF;
+	mov.aa	a2,a12
+.L167:
+	j	.L4
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    66  }
+.L4:
+	ret
+.L66:
+	
+__Ifx_FftF32_generateTwiddleFactor_function_end:
+	.size	Ifx_FftF32_generateTwiddleFactor,__Ifx_FftF32_generateTwiddleFactor_function_end-Ifx_FftF32_generateTwiddleFactor
+.L44:
+	; End of function
+	
+	.sdecl	'.text.Ifx_FftF32.Ifx_FftF32_reverseBits',code,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.text.Ifx_FftF32.Ifx_FftF32_reverseBits'
+	.align	2
+	
+	.global	Ifx_FftF32_reverseBits
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    67  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    68  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    69  /******************************************************************************/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    70  unsigned short Ifx_FftF32_reverseBits(unsigned short n, unsigned bits)
+; Function Ifx_FftF32_reverseBits
+.L29:
+Ifx_FftF32_reverseBits:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    71  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    72      /* This code is from:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    73       * http://graphics.stanford.edu/~seander/bithacks.html
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    74       * */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    75      unsigned long v = n; // 32-bit word to reverse bit order
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    76  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    77      // swap odd and even bits
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    78      v = ((v >> 1) & 0x55555555UL) | ((v & 0x55555555UL) << 1);
+	sh	d15,d4,#-1
+.L271:
+	mov	d0,#21845
+	addih	d0,d0,#21845
+.L272:
+	and	d15,d0
+.L273:
+	mov	d0,#21845
+	addih	d0,d0,#21845
+.L274:
+	and	d4,d0
+.L168:
+	sh	d4,#1
+.L169:
+	or	d15,d4
+.L275:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    79      // swap consecutive pairs
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    80      v = ((v >> 2) & 0x33333333UL) | ((v & 0x33333333UL) << 2);
+	sh	d0,d15,#-2
+.L276:
+	mov	d1,#13107
+	addih	d1,d1,#13107
+.L277:
+	and	d0,d1
+.L278:
+	mov	d1,#13107
+	addih	d1,d1,#13107
+.L279:
+	and	d15,d1
+.L170:
+	sh	d15,#2
+.L171:
+	or	d0,d15
+.L280:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    81      // swap nibbles ...
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    82      v = ((v >> 4) & 0x0F0F0F0FUL) | ((v & 0x0F0F0F0FUL) << 4);
+	sh	d15,d0,#-4
+.L281:
+	mov	d1,#3855
+	addih	d1,d1,#3855
+.L282:
+	and	d15,d1
+.L283:
+	mov	d1,#3855
+	addih	d1,d1,#3855
+.L284:
+	and	d0,d1
+.L172:
+	sh	d0,#4
+.L173:
+	or	d15,d0
+.L285:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    83      // swap bytes
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    84      v = ((v >> 8) & 0x00FF00FFUL) | ((v & 0x00FF00FFUL) << 8);
+	sh	d0,d15,#-8
+.L286:
+	mov	d1,#255
+	addih	d1,d1,#255
+.L287:
+	and	d0,d1
+.L288:
+	mov	d1,#255
+	addih	d1,d1,#255
+.L289:
+	and	d15,d1
+.L174:
+	sh	d15,d15,#8
+.L175:
+	or	d0,d15
+.L290:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    85      // swap 2-byte long pairs
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    86      v = (v >> 16) | (v << 16);
+	sh	d15,d0,#-16
+.L291:
+	sh	d0,d0,#16
+.L176:
+	or	d15,d0
+.L292:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    87  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    88      v = v >> (32 - bits);
+	rsub	d0,d5,#32
+.L293:
+	rsub	d0,#0
+	sh	d15,d15,d0
+.L294:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    89      return (unsigned short)v;
+	extr.u	d2,d15,#0,#16
+.L295:
+	j	.L5
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    90  }
+.L5:
+	ret
+.L103:
+	
+__Ifx_FftF32_reverseBits_function_end:
+	.size	Ifx_FftF32_reverseBits,__Ifx_FftF32_reverseBits_function_end-Ifx_FftF32_reverseBits
+.L59:
+	; End of function
+	
+	.sdecl	'.text.Ifx_FftF32.Ifx_FftF32_radix2DecimationInTime',code,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.text.Ifx_FftF32.Ifx_FftF32_radix2DecimationInTime'
+	.align	2
+	
+	.global	Ifx_FftF32_radix2DecimationInTime
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    91  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    92  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    93  /******************************************************************************/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    94  void Ifx_FftF32_radix2DecimationInTime(cfloat32 *R, unsigned long p)
+; Function Ifx_FftF32_radix2DecimationInTime
+.L31:
+Ifx_FftF32_radix2DecimationInTime:	.type	func
+	sub.a	a10,#16
+.L177:
+	mov	d10,d4
+.L178:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    95  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    96      /* http://www.engineeringproductivitytools.com/stuff/T0001/PT04.HTM#Head317
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    97       * */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    98      /*Perform in place Ifx_FftF32_radix2DecimationInTime of 2^p points (=size of f)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	    99       * N.B. The input array f is in bit reversed order! So all the
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   100       * 'even' input samples are in the 'top' half, all the 'odd'
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   101       * input samples are in the 'bottom' halR..etc (recursively).
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   102       */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   103      /*Ifx_FftF32_radix2DecimationInTime*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   104      unsigned long Bp, Np, Npx, P, b, k, BaseT, BaseB;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   105      cfloat32      top, bot;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   106      /*initialise pass parameters*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   107      Bp = 1 << (p - 1); /*No. of blocks*/
+	mov	d2,#1
+.L300:
+	add	d15,d10,#-1
+.L301:
+	sha	d2,d2,d15
+.L179:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   108      Np = 2;            /*No. of points in each block*/
+	mov	d3,#2
+.L180:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   109  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   110      /*perform p passes*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   111      for (P = 0; P < p; P++)
+	mov	d9,#0
+.L181:
+	j	.L6
+.L7:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   112      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   113          /*pass loop*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   114          Npx   = Np >> 1; /*No. of butterflies*/
+	sh	d4,d3,#-1
+.L182:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   115          BaseT = 0;       /*Reset even base index*/
+	mov	d5,#0
+.L183:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   116  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   117          for (b = 0; b < Bp; b++)
+	mov	d6,#0
+.L184:
+	j	.L8
+.L9:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   118          {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   119              /*block loop*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   120              BaseB = BaseT + Npx; /*calc odd base index*/
+	add	d7,d5,d4
+.L185:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   121  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   122              for (k = 0; k < Npx; k++)
+	mov	d8,#0
+.L186:
+	j	.L10
+.L11:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     1  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     2   * \file Ifx_FftF32.h
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     3   * \brief Floating-point Fast Fourier Transform
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     4   * \ingroup library_srvsw_sysse_math_f32_fft
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     5   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     6   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     7   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     8   * \version disabled
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     9   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    10   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    11   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    12   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    13   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    14   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    15   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    16   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    17   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    18   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    19  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    20  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    21   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    22  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    23   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    24   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    25   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    26   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    27   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    28   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    29  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    30   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    31   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    32   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    33   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    34   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    35   * language processor.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    36  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    37   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    38   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    39   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    40   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    41   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    42   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    43   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    44  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    45   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    46   * \defgroup library_srvsw_sysse_math_f32_fft Floating-point FFT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    47   * This module implements the Fast Fourier Transform in single precision floating-point
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    48   * \ingroup library_srvsw_sysse_math_f32
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    49   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    50   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    51  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    52  #ifndef IFX_FFTF32_H
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    53  #define IFX_FFTF32_H
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    54  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    55  #include "Ifx_Cf32.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    56  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    57  /** \brief Maximum FFT resolution (bits).
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    58   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    59  #define IFX_FFTF32_MAX_RESOLUTION (14)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    60  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    61  /** \brief Maximum FFT length.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    62   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    63  #define IFX_FFTF32_MAX_LENGTH     (1U << IFX_FFTF32_MAX_RESOLUTION)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    64  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    65  /** \brief Bit reversal table */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    66  IFX_EXTERN IFX_CONST uint16   Ifx_g_FftF32_bitReverseTable[IFX_FFTF32_MAX_LENGTH];
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    67  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    68  /** \brief Twiddle factor table */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    69  IFX_EXTERN IFX_CONST cfloat32 Ifx_g_FftF32_twiddleTable[IFX_FFTF32_MAX_LENGTH / 2];
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    70  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    71  //----------------------------------------------------------------------------------------
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    72  /** \addtogroup library_srvsw_sysse_math_f32_fft
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    73   * \{ */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    74  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    75  /** \name Transform functions
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    76   * \{ */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    77  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    78  /** \brief Twiddle factor generator */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    79  IFX_EXTERN cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, sint16 nX);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    80  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    81  /** \brief Radix-2 Fast-Fourier Transform */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    82  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    83  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    84  /** \brief Radix-2 Inverse Fast-Fourier Transform */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    85  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    86  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    87  /** \} */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    88  //----------------------------------------------------------------------------------------
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    89  /** \name Utility functions
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    90   * \{ */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    91  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    92  /** \brief Lookup from \ref Ifx_g_FftF32_bitReverseTable the bit-reversed \<n\> with \<bits\> as number of bits */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    93  IFX_INLINE uint16 Ifx_FftF32_lookUpReversedBits(uint16 n, unsigned bits)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    94  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    95      unsigned shift = IFX_FFTF32_MAX_RESOLUTION - bits;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    96      uint16   index = Ifx_g_FftF32_bitReverseTable[n];
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    97      return index >> shift;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    98  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    99  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	   100  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	   101  /** \brief Lookup from \ref Ifx_g_FftF32_twiddleTable the twiddle factor for N, k */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	   102  IFX_INLINE cfloat32 Ifx_FftF32_lookUpTwiddleFactor(sint32 N, sint32 k)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	   103  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	   104      return Ifx_g_FftF32_twiddleTable[k * IFX_FFTF32_MAX_LENGTH / N];
+	mov	d15,#16384
+.L302:
+	mul	d15,d8
+.L303:
+	div.u	e0,d15,d3
+.L304:
+	mul	d15,d0,#8
+.L305:
+	movh.a	a15,#@his(Ifx_g_FftF32_twiddleTable)
+	lea	a15,[a15]@los(Ifx_g_FftF32_twiddleTable)
+.L306:
+	addsc.a	a15,a15,d15,#0
+	ld.d	e0,[a15]0
+.L307:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	   104      return Ifx_g_FftF32_twiddleTable[k * IFX_FFTF32_MAX_LENGTH / N];      (inlined)
+	j	.L12
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	   105  }      (inlined)
+.L12:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   123  /*calc odd base index*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   124  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   125              for (k = 0; k < Npx; k++)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   126              {
+	st.d	[a10]0,e0
+.L308:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   127                  //printf("P = %d; b = %d; Np = %d; k = %d\n", P, b, Np, k);
+	add	d15,d7,d8
+.L309:
+	mul	d15,d15,#8
+	addsc.a	a15,a4,d15,#0
+.L310:
+	lea	a2,[a10]0
+.L129:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     1  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     2   * \file Ifx_Cf32.h
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     3   * \brief Floating point signal, vector, and matrix library
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     4   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     5   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     6   * \version disabled
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     8   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     9   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    10   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    11   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    12   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    17  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    18  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    20  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    22   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    26   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    27  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    33   * language processor.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    34  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    42  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    43   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    44   * \defgroup library_srvsw_sysse_math_cf32 Floating point signal, vector, and matrix library
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    45   * \ingroup library_srvsw_sysse_math_f32
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    46   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    47  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    48  #ifndef IFX_CF32_H
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    49  #define IFX_CF32_H
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    50  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    51  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    52  #include <math.h>
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    53  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    54  #define _DATAF(val) ((float32)(val))
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    55  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    56  /* Complex Arithmetic --------------------------------------------------------*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    57  IFX_INLINE cfloat32 IFX_Cf32_exp(const cfloat32 *c)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    58  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    59      float32  f = (float32)expf(c->real);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    60      cfloat32 R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    61      R.real = f * (float32)cosf(c->imag);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    62      R.imag = f * (float32)sinf(c->imag);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    63      return R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    64  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    65  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    66  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    67  IFX_INLINE cfloat32 IFX_Cf32_mul(const cfloat32 *a, const cfloat32 *b)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    68  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    69      cfloat32 R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    70      R.real = (a->real * b->real) - (a->imag * b->imag);
+	ld.w	d15,[a15]
+.L311:
+	ld.w	d0,[a2]
+.L312:
+	mul.f	d0,d15,d0
+.L313:
+	ld.w	d1,[a15]4
+.L314:
+	ld.w	d15,[a10]4
+.L315:
+	msub.f	d0,d0,d1,d15
+.L316:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    71      R.imag = (a->imag * b->real) + (a->real * b->imag);
+	ld.w	d11,[a15]4
+.L317:
+	ld.w	d12,[a2]
+.L318:
+	ld.w	d13,[a15]
+.L319:
+	ld.w	d15,[a10]4
+.L320:
+	mul.f	d15,d13,d15
+.L321:
+	madd.f	d15,d15,d11,d12
+.L322:
+	mov	d1,d15
+.L187:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    72      return R;      (inlined)
+	j	.L13
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    73  }      (inlined)
+.L13:
+	st.d	[a10]8,e0
+.L130:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   128   //printf("P = %d; b = %d; Np = %d; k = %d\n", P, b, Np, k);
+	add	d15,d5,d8
+.L323:
+	mul	d15,d15,#8
+	addsc.a	a15,a4,d15,#0
+	ld.da	a2/a3,[a15]0
+.L324:
+	st.da	[a10]0,a2/a3
+.L325:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   129                  /*butterfly loop*/
+	lea	a15,[a10]0
+.L326:
+	lea	a2,[a10]8
+.L138:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     1  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     2   * \file Ifx_Cf32.h
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     3   * \brief Floating point signal, vector, and matrix library
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     4   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     5   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     6   * \version disabled
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     8   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     9   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    10   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    11   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    12   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    17  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    18  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    20  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    22   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    26   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    27  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    33   * language processor.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    34  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    42  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    43   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    44   * \defgroup library_srvsw_sysse_math_cf32 Floating point signal, vector, and matrix library
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    45   * \ingroup library_srvsw_sysse_math_f32
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    46   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    47  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    48  #ifndef IFX_CF32_H
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    49  #define IFX_CF32_H
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    50  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    51  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    52  #include <math.h>
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    53  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    54  #define _DATAF(val) ((float32)(val))
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    55  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    56  /* Complex Arithmetic --------------------------------------------------------*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    57  IFX_INLINE cfloat32 IFX_Cf32_exp(const cfloat32 *c)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    58  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    59      float32  f = (float32)expf(c->real);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    60      cfloat32 R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    61      R.real = f * (float32)cosf(c->imag);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    62      R.imag = f * (float32)sinf(c->imag);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    63      return R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    64  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    65  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    66  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    67  IFX_INLINE cfloat32 IFX_Cf32_mul(const cfloat32 *a, const cfloat32 *b)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    68  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    69      cfloat32 R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    70      R.real = (a->real * b->real) - (a->imag * b->imag);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    71      R.imag = (a->imag * b->real) + (a->real * b->imag);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    72      return R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    73  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    74  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    75  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    76  IFX_INLINE cfloat32 IFX_Cf32_amp(const cfloat32 *a, float32 gain)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    77  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    78      cfloat32 R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    79      R.real = a->real * gain;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    80      R.imag = a->imag * gain;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    81      return R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    82  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    83  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    84  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    85  IFX_INLINE float32 IFX_Cf32_dot(const cfloat32 *b)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    86  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    87      return (b->real * b->real) + (b->imag * b->imag);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    88  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    89  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    90  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    91  IFX_INLINE float32 IFX_Cf32_mag(const cfloat32 *c)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    92  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    93      return (float32)sqrtf(IFX_Cf32_dot(c));
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    94  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    95  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    96  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    97  IFX_INLINE cfloat32 IFX_Cf32_div(const cfloat32 *a, const cfloat32 *b)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    98  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    99      float32  denom = IFX_Cf32_dot(b);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   100      cfloat32 R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   101      R.real = ((a->real * b->real) + (a->imag * b->imag)) / denom;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   102      R.imag = ((a->imag * b->real) - (a->real * b->imag)) / denom;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   103      return R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   104  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   105  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   106  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   107  IFX_INLINE cfloat32 IFX_Cf32_add(const cfloat32 *a, const cfloat32 *b)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   108  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   109      cfloat32 R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   110      R.real = (a->real + b->real);
+	ld.w	d15,[a15]
+.L327:
+	ld.w	d0,[a2]
+.L188:
+	add.f	d0,d15,d0
+.L328:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   111      R.imag = (a->imag + b->imag);
+	ld.w	d11,[a10]4
+.L329:
+	ld.w	d15,[a10]12
+.L330:
+	add.f	d15,d11,d15
+.L331:
+	mov	d1,d15
+.L189:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   112      return R;      (inlined)
+	j	.L14
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   113  }      (inlined)
+.L14:
+	add	d15,d5,d8
+.L332:
+	mul	d15,d15,#8
+	addsc.a	a15,a4,d15,#0
+.L145:
+	st.d	[a15]0,e0
+.L146:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   130  k = %d\n", P, b, Np, k);
+	lea	a15,[a10]0
+.L333:
+	lea	a2,[a10]8
+.L149:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     1  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     2   * \file Ifx_Cf32.h
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     3   * \brief Floating point signal, vector, and matrix library
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     4   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     5   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     6   * \version disabled
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     8   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	     9   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    10   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    11   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    12   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    17  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    18  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    20  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    22   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    26   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    27  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    28   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    32   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    33   * language processor.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    34  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    41   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    42  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    43   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    44   * \defgroup library_srvsw_sysse_math_cf32 Floating point signal, vector, and matrix library
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    45   * \ingroup library_srvsw_sysse_math_f32
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    46   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    47  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    48  #ifndef IFX_CF32_H
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    49  #define IFX_CF32_H
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    50  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    51  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    52  #include <math.h>
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    53  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    54  #define _DATAF(val) ((float32)(val))
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    55  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    56  /* Complex Arithmetic --------------------------------------------------------*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    57  IFX_INLINE cfloat32 IFX_Cf32_exp(const cfloat32 *c)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    58  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    59      float32  f = (float32)expf(c->real);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    60      cfloat32 R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    61      R.real = f * (float32)cosf(c->imag);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    62      R.imag = f * (float32)sinf(c->imag);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    63      return R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    64  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    65  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    66  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    67  IFX_INLINE cfloat32 IFX_Cf32_mul(const cfloat32 *a, const cfloat32 *b)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    68  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    69      cfloat32 R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    70      R.real = (a->real * b->real) - (a->imag * b->imag);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    71      R.imag = (a->imag * b->real) + (a->real * b->imag);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    72      return R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    73  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    74  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    75  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    76  IFX_INLINE cfloat32 IFX_Cf32_amp(const cfloat32 *a, float32 gain)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    77  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    78      cfloat32 R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    79      R.real = a->real * gain;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    80      R.imag = a->imag * gain;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    81      return R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    82  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    83  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    84  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    85  IFX_INLINE float32 IFX_Cf32_dot(const cfloat32 *b)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    86  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    87      return (b->real * b->real) + (b->imag * b->imag);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    88  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    89  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    90  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    91  IFX_INLINE float32 IFX_Cf32_mag(const cfloat32 *c)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    92  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    93      return (float32)sqrtf(IFX_Cf32_dot(c));
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    94  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    95  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    96  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    97  IFX_INLINE cfloat32 IFX_Cf32_div(const cfloat32 *a, const cfloat32 *b)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    98  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	    99      float32  denom = IFX_Cf32_dot(b);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   100      cfloat32 R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   101      R.real = ((a->real * b->real) + (a->imag * b->imag)) / denom;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   102      R.imag = ((a->imag * b->real) - (a->real * b->imag)) / denom;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   103      return R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   104  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   105  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   106  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   107  IFX_INLINE cfloat32 IFX_Cf32_add(const cfloat32 *a, const cfloat32 *b)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   108  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   109      cfloat32 R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   110      R.real = (a->real + b->real);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   111      R.imag = (a->imag + b->imag);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   112      return R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   113  }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   114  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   115  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   116  IFX_INLINE cfloat32 IFX_Cf32_sub(const cfloat32 *a, const cfloat32 *b)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   117  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   118      cfloat32 R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   119      R.real = (a->real - b->real);
+	ld.w	d15,[a15]
+.L334:
+	ld.w	d0,[a2]
+.L190:
+	sub.f	d0,d15,d0
+.L335:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   120      R.imag = (a->imag - b->imag);
+	ld.w	d11,[a10]4
+.L336:
+	ld.w	d15,[a10]12
+.L337:
+	sub.f	d15,d11,d15
+.L338:
+	mov	d1,d15
+.L191:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   121      return R;      (inlined)
+	j	.L15
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_Cf32.h	   122  }      (inlined)
+.L15:
+	add	d15,d7,d8
+.L339:
+	mul	d15,d15,#8
+	addsc.a	a15,a4,d15,#0
+.L156:
+	st.d	[a15]0,e0
+.L157:
+	add	d8,#1
+.L10:
+	jlt.u	d8,d4,.L11
+.L340:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   131   //printf("P = %d; b = %d; Np = %d; k = %d\n", P, b, Np, k);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   132                  /*butterfly loop*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   133                  top          = Ifx_FftF32_lookUpTwiddleFactor(Np, k);
+	add	d5,d3
+.L341:
+	add	d6,#1
+.L8:
+	jlt.u	d6,d2,.L9
+.L342:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   134                  bot          = IFX_Cf32_mul(&R[BaseB + k], &top); /*twiddle the odd n results*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   135                  top          = R[BaseT + k];
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   136                  R[BaseT + k] = IFX_Cf32_add(&top, &bot);          /*top    subset*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   137                  R[BaseB + k] = IFX_Cf32_sub(&top, &bot);          /*bottom subset*/
+	sh	d2,#-1
+.L343:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   138              } /*butterfly loop*/
+	sh	d3,#1
+.L344:
+	add	d9,#1
+.L6:
+	jlt.u	d9,d10,.L7
+.L345:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   139  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   140              BaseT = BaseT + Np;                                   /*start of next block*/
+	ret
+.L108:
+	
+__Ifx_FftF32_radix2DecimationInTime_function_end:
+	.size	Ifx_FftF32_radix2DecimationInTime,__Ifx_FftF32_radix2DecimationInTime_function_end-Ifx_FftF32_radix2DecimationInTime
+.L64:
+	; End of function
+	
+	.sdecl	'.text.Ifx_FftF32.Ifx_FftF32_radix2',code,cluster('Ifx_FftF32_radix2')
+	.sect	'.text.Ifx_FftF32.Ifx_FftF32_radix2'
+	.align	2
+	
+	.global	Ifx_FftF32_radix2
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   141          } /*block loop*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   142  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   143          /*calc parameters for next pass*/
+; Function Ifx_FftF32_radix2
+.L33:
+Ifx_FftF32_radix2:	.type	func
+	mov.aa	a12,a4
+.L194:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   144          Bp = Bp >> 1; /*half as many blocks*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   145          Np = Np << 1; /*twice as many points in each block*/
+	clz	d15,d4
+.L237:
+	rsub	d1,d15,#31
+.L195:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   146      } /*pass loop*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   147  } /*Ifx_FftF32_radix2DecimationInTime*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   148  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   149  
+	mov	d0,#0
+.L196:
+	j	.L16
+.L17:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     1  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     2   * \file Ifx_FftF32.h
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     3   * \brief Floating-point Fast Fourier Transform
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     4   * \ingroup library_srvsw_sysse_math_f32_fft
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     5   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     6   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     7   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     8   * \version disabled
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     9   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    10   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    11   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    12   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    13   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    14   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    15   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    16   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    17   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    18   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    19  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    20  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    21   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    22  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    23   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    24   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    25   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    26   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    27   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    28   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    29  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    30   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    31   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    32   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    33   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    34   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    35   * language processor.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    36  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    37   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    38   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    39   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    40   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    41   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    42   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    43   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    44  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    45   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    46   * \defgroup library_srvsw_sysse_math_f32_fft Floating-point FFT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    47   * This module implements the Fast Fourier Transform in single precision floating-point
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    48   * \ingroup library_srvsw_sysse_math_f32
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    49   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    50   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    51  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    52  #ifndef IFX_FFTF32_H
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    53  #define IFX_FFTF32_H
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    54  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    55  #include "Ifx_Cf32.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    56  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    57  /** \brief Maximum FFT resolution (bits).
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    58   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    59  #define IFX_FFTF32_MAX_RESOLUTION (14)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    60  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    61  /** \brief Maximum FFT length.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    62   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    63  #define IFX_FFTF32_MAX_LENGTH     (1U << IFX_FFTF32_MAX_RESOLUTION)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    64  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    65  /** \brief Bit reversal table */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    66  IFX_EXTERN IFX_CONST uint16   Ifx_g_FftF32_bitReverseTable[IFX_FFTF32_MAX_LENGTH];
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    67  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    68  /** \brief Twiddle factor table */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    69  IFX_EXTERN IFX_CONST cfloat32 Ifx_g_FftF32_twiddleTable[IFX_FFTF32_MAX_LENGTH / 2];
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    70  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    71  //----------------------------------------------------------------------------------------
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    72  /** \addtogroup library_srvsw_sysse_math_f32_fft
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    73   * \{ */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    74  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    75  /** \name Transform functions
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    76   * \{ */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    77  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    78  /** \brief Twiddle factor generator */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    79  IFX_EXTERN cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, sint16 nX);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    80  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    81  /** \brief Radix-2 Fast-Fourier Transform */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    82  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    83  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    84  /** \brief Radix-2 Inverse Fast-Fourier Transform */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    85  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    86  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    87  /** \} */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    88  //----------------------------------------------------------------------------------------
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    89  /** \name Utility functions
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    90   * \{ */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    91  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    92  /** \brief Lookup from \ref Ifx_g_FftF32_bitReverseTable the bit-reversed \<n\> with \<bits\> as number of bits */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    93  IFX_INLINE uint16 Ifx_FftF32_lookUpReversedBits(uint16 n, unsigned bits)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    94  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    95      unsigned shift = IFX_FFTF32_MAX_RESOLUTION - bits;
+	rsub	d2,d1,#14
+.L198:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    96      uint16   index = Ifx_g_FftF32_bitReverseTable[n];
+	mul	d15,d0,#2
+.L238:
+	movh.a	a15,#@his(Ifx_g_FftF32_bitReverseTable)
+	lea	a15,[a15]@los(Ifx_g_FftF32_bitReverseTable)
+.L239:
+	addsc.a	a15,a15,d15,#0
+	ld.hu	d15,[a15]0
+.L199:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    97      return index >> shift;
+	rsub	d2,#0
+	sha	d15,d15,d2
+.L200:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    97      return index >> shift;      (inlined)
+	j	.L18
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    98  }      (inlined)
+.L18:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   150  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   151  } /*Ifx_FftF32_radix2DecimationInTime*/
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   152  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   153  
+	mul	d15,d15,#8
+	addsc.a	a15,a12,d15,#0
+.L240:
+	mul	d15,d0,#8
+	addsc.a	a2,a5,d15,#0
+	ld.da	a2/a3,[a2]0
+.L241:
+	st.da	[a15]0,a2/a3
+.L242:
+	add	d0,#1
+.L197:
+	extr.u	d0,d0,#0,#16
+.L16:
+	jlt.u	d0,d4,.L17
+.L243:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   154  cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, unsigned short nX)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   155  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   156      unsigned int   logN = 31 - __clz(nX);
+	mov.aa	a4,a12
+	mov	d4,d1
+.L193:
+	call	Ifx_FftF32_radix2DecimationInTime
+.L192:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   157      unsigned short n, k;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   158  
+	mov.aa	a2,a12
+.L201:
+	j	.L19
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   159      /* Arrange in bit-reversed index */
+.L19:
+	ret
+.L74:
+	
+__Ifx_FftF32_radix2_function_end:
+	.size	Ifx_FftF32_radix2,__Ifx_FftF32_radix2_function_end-Ifx_FftF32_radix2
+.L49:
+	; End of function
+	
+	.sdecl	'.text.Ifx_FftF32.Ifx_FftF32_radix2I',code,cluster('Ifx_FftF32_radix2I')
+	.sect	'.text.Ifx_FftF32.Ifx_FftF32_radix2I'
+	.align	2
+	
+	.global	Ifx_FftF32_radix2I
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   160      for (n = 0; n < nX; n++)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   161      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   162          //k = Ifx_FftF32_reverseBits(n, logN);
+; Function Ifx_FftF32_radix2I
+.L35:
+Ifx_FftF32_radix2I:	.type	func
+	mov.aa	a12,a4
+.L204:
+	mov	d8,d4
+.L205:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   163          k    = Ifx_FftF32_lookUpReversedBits(n, logN);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   164          R[k] = X[n];
+	clz	d15,d8
+.L248:
+	rsub	d4,d15,#31
+.L203:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   165      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   166  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   167      Ifx_FftF32_radix2DecimationInTime(R, logN);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   168  
+	mov	d0,#0
+.L206:
+	j	.L20
+.L21:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     1  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     2   * \file Ifx_FftF32.h
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     3   * \brief Floating-point Fast Fourier Transform
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     4   * \ingroup library_srvsw_sysse_math_f32_fft
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     5   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     6   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     7   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     8   * \version disabled
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	     9   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    10   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    11   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    12   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    13   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    14   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    15   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    16   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    17   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    18   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    19  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    20  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    21   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    22  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    23   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    24   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    25   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    26   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    27   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    28   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    29  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    30   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    31   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    32   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    33   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    34   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    35   * language processor.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    36  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    37   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    38   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    39   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    40   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    41   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    42   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    43   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    44  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    45   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    46   * \defgroup library_srvsw_sysse_math_f32_fft Floating-point FFT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    47   * This module implements the Fast Fourier Transform in single precision floating-point
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    48   * \ingroup library_srvsw_sysse_math_f32
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    49   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    50   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    51  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    52  #ifndef IFX_FFTF32_H
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    53  #define IFX_FFTF32_H
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    54  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    55  #include "Ifx_Cf32.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    56  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    57  /** \brief Maximum FFT resolution (bits).
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    58   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    59  #define IFX_FFTF32_MAX_RESOLUTION (14)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    60  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    61  /** \brief Maximum FFT length.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    62   * If redefined, then \ref Ifx_g_FftF32_bitReverseTable and \ref Ifx_g_FftF32_twiddleTable shall be regenerated. */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    63  #define IFX_FFTF32_MAX_LENGTH     (1U << IFX_FFTF32_MAX_RESOLUTION)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    64  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    65  /** \brief Bit reversal table */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    66  IFX_EXTERN IFX_CONST uint16   Ifx_g_FftF32_bitReverseTable[IFX_FFTF32_MAX_LENGTH];
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    67  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    68  /** \brief Twiddle factor table */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    69  IFX_EXTERN IFX_CONST cfloat32 Ifx_g_FftF32_twiddleTable[IFX_FFTF32_MAX_LENGTH / 2];
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    70  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    71  //----------------------------------------------------------------------------------------
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    72  /** \addtogroup library_srvsw_sysse_math_f32_fft
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    73   * \{ */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    74  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    75  /** \name Transform functions
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    76   * \{ */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    77  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    78  /** \brief Twiddle factor generator */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    79  IFX_EXTERN cfloat32 *Ifx_FftF32_generateTwiddleFactor(cfloat32 *TF, sint16 nX);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    80  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    81  /** \brief Radix-2 Fast-Fourier Transform */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    82  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    83  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    84  /** \brief Radix-2 Inverse Fast-Fourier Transform */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    85  IFX_EXTERN cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, uint16 nX);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    86  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    87  /** \} */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    88  //----------------------------------------------------------------------------------------
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    89  /** \name Utility functions
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    90   * \{ */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    91  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    92  /** \brief Lookup from \ref Ifx_g_FftF32_bitReverseTable the bit-reversed \<n\> with \<bits\> as number of bits */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    93  IFX_INLINE uint16 Ifx_FftF32_lookUpReversedBits(uint16 n, unsigned bits)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    94  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    95      unsigned shift = IFX_FFTF32_MAX_RESOLUTION - bits;
+	rsub	d2,d4,#14
+.L208:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    96      uint16   index = Ifx_g_FftF32_bitReverseTable[n];
+	mul	d15,d0,#2
+.L249:
+	movh.a	a15,#@his(Ifx_g_FftF32_bitReverseTable)
+	lea	a15,[a15]@los(Ifx_g_FftF32_bitReverseTable)
+.L250:
+	addsc.a	a15,a15,d15,#0
+	ld.hu	d1,[a15]0
+.L209:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    97      return index >> shift;
+	rsub	d2,#0
+	sha	d1,d1,d2
+.L210:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    97      return index >> shift;      (inlined)
+	j	.L22
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.h	    98  }      (inlined)
+.L22:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   169  DecimationInTime(R, logN);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   170  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   171      return R;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   172  }
+	mul	d15,d1,#8
+	addsc.a	a15,a12,d15,#0
+.L251:
+	mul	d15,d0,#8
+	addsc.a	a2,a5,d15,#0
+.L252:
+	ld.w	d15,[a2]
+.L253:
+	st.w	[a15],d15
+.L254:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   173  
+	mul	d15,d1,#8
+	addsc.a	a15,a12,d15,#0
+.L255:
+	mul	d15,d0,#8
+	addsc.a	a2,a5,d15,#0
+.L256:
+	ld.w	d15,[a2]4
+.L257:
+	insn.t	d15,d15:31,d15:31
+.L258:
+	st.w	[a15]4,d15
+.L259:
+	add	d0,#1
+.L207:
+	extr.u	d0,d0,#0,#16
+.L20:
+	jlt.u	d0,d8,.L21
+.L260:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   174  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   175  cfloat32 *Ifx_FftF32_radix2I(cfloat32 *R, const cfloat32 *X, unsigned short nX)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   176  {
+	mov.aa	a4,a12
+	call	Ifx_FftF32_radix2DecimationInTime
+.L202:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   177      unsigned int   logN = 31 - __clz(nX);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   178      unsigned short n, k = 0;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   179  
+	mov	d0,#0
+.L211:
+	j	.L23
+.L24:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   180      /* Arrange in bit-reversed index, and conjugate the input */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   181      for (n = 0; n < nX; n++)
+	mul	d15,d0,#8
+	addsc.a	a15,a12,d15,#0
+.L261:
+	mul	d15,d0,#8
+	addsc.a	a2,a12,d15,#0
+.L262:
+	ld.w	d15,[a2]4
+.L263:
+	insn.t	d15,d15:31,d15:31
+.L264:
+	st.w	[a15]4,d15
+.L265:
+	add	d0,#1
+.L212:
+	extr.u	d0,d0,#0,#16
+.L23:
+	jlt.u	d0,d8,.L24
+.L266:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   182      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   183          //k = Ifx_FftF32_reverseBits(n, logN);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   184          k         = Ifx_FftF32_lookUpReversedBits(n, logN);
+	mov.aa	a2,a12
+.L213:
+	j	.L25
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   185          R[k].real = X[n].real;
+.L25:
+	ret
+.L92:
+	
+__Ifx_FftF32_radix2I_function_end:
+	.size	Ifx_FftF32_radix2I,__Ifx_FftF32_radix2I_function_end-Ifx_FftF32_radix2I
+.L54:
+	; End of function
+	
+	.calls	'Ifx_FftF32_generateTwiddleFactor','cosf'
+	.calls	'Ifx_FftF32_generateTwiddleFactor','sinf'
+	.calls	'Ifx_FftF32_radix2','Ifx_FftF32_radix2DecimationInTime'
+	.calls	'Ifx_FftF32_radix2I','Ifx_FftF32_radix2DecimationInTime'
+	.calls	'Ifx_FftF32_generateTwiddleFactor','',0
+	.calls	'Ifx_FftF32_reverseBits','',0
+	.calls	'Ifx_FftF32_radix2DecimationInTime','',16
+	.calls	'Ifx_FftF32_radix2','',0
+	.extern	sinf
+	.extern	cosf
+	.extern	Ifx_g_FftF32_bitReverseTable
+	.extern	Ifx_g_FftF32_twiddleTable
+	.calls	'Ifx_FftF32_radix2I','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L37:
+	.word	1714
+	.half	3
+	.word	.L38
+	.byte	4
+.L36:
+	.byte	1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L39
+	.byte	2,1,1,3
+	.word	172
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	175
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1
+.L72:
+	.byte	7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	220
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	232
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	312
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	286
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	318
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	318
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	286
+	.byte	6,0
+.L119:
+	.byte	10,4,61,9,8,11
+	.byte	'real',0
+	.word	232
+	.byte	4,2,35,0,11
+	.byte	'imag',0
+	.word	232
+	.byte	4,2,35,4,0,12
+	.word	404
+.L76:
+	.byte	3
+	.word	438
+.L128:
+	.byte	8
+	.byte	'IFX_Cf32_mul',0,3,3,67,21
+	.word	404
+	.byte	1,1
+.L131:
+	.byte	5
+	.byte	'a',0,3,67,50
+	.word	443
+.L133:
+	.byte	5
+	.byte	'b',0,3,67,69
+	.word	443
+.L135:
+	.byte	6,0,8
+	.byte	'IFX_Cf32_dot',0,3,3,85,20
+	.word	232
+	.byte	1,1,5
+	.byte	'b',0,3,85,49
+	.word	443
+	.byte	6,0,8
+	.byte	'IFX_Cf32_mag',0,3,3,91,20
+	.word	232
+	.byte	1,1,5
+	.byte	'c',0,3,91,49
+	.word	443
+	.byte	13,6,0,0
+.L137:
+	.byte	8
+	.byte	'IFX_Cf32_add',0,3,3,107,21
+	.word	404
+	.byte	1,1
+.L139:
+	.byte	5
+	.byte	'a',0,3,107,50
+	.word	443
+.L141:
+	.byte	5
+	.byte	'b',0,3,107,69
+	.word	443
+.L143:
+	.byte	6,0
+.L148:
+	.byte	8
+	.byte	'IFX_Cf32_sub',0,3,3,116,21
+	.word	404
+	.byte	1,1
+.L150:
+	.byte	5
+	.byte	'a',0,3,116,50
+	.word	443
+.L152:
+	.byte	5
+	.byte	'b',0,3,116,69
+	.word	443
+.L154:
+	.byte	6,0
+.L65:
+	.byte	3
+	.word	404
+	.byte	4
+	.byte	'IFX_Cf32_set',0,3,3,125,17,1,1,5
+	.byte	'a',0,3,125,40
+	.word	660
+	.byte	5
+	.byte	're',0,3,125,51
+	.word	232
+	.byte	5
+	.byte	'im',0,3,125,63
+	.word	232
+	.byte	6,0
+.L78:
+	.byte	7
+	.byte	'unsigned short int',0,2,7
+.L80:
+	.byte	7
+	.byte	'unsigned int',0,4,7
+.L84:
+	.byte	8
+	.byte	'Ifx_FftF32_lookUpReversedBits',0,3,5,93,19
+	.word	719
+	.byte	1,1
+.L85:
+	.byte	5
+	.byte	'n',0,5,93,56
+	.word	719
+.L87:
+	.byte	5
+	.byte	'bits',0,5,93,68
+	.word	741
+.L89:
+	.byte	6,0,7
+	.byte	'long int',0,4,5
+.L122:
+	.byte	8
+	.byte	'Ifx_FftF32_lookUpTwiddleFactor',0,3,5,102,21
+	.word	404
+	.byte	1,1
+.L123:
+	.byte	5
+	.byte	'N',0,5,102,59
+	.word	823
+.L125:
+	.byte	5
+	.byte	'k',0,5,102,69
+	.word	823
+.L127:
+	.byte	6,0
+.L70:
+	.byte	7
+	.byte	'int',0,4,5,12
+	.word	899
+	.byte	14
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,15
+	.word	906
+	.byte	0,16
+	.word	741
+	.byte	3
+	.word	741
+	.byte	17
+	.byte	'__cmpswapw',0
+	.word	948
+	.byte	1,1,1,1,18
+	.byte	'p',0
+	.word	953
+	.byte	18
+	.byte	'value',0
+	.word	741
+	.byte	18
+	.byte	'compare',0
+	.word	741
+	.byte	0,17
+	.byte	'__clz',0
+	.word	899
+	.byte	1,1,1,1,15
+	.word	899
+	.byte	0,19
+	.word	180
+	.byte	20
+	.word	206
+	.byte	6,0,19
+	.word	241
+	.byte	20
+	.word	273
+	.byte	6,0,19
+	.word	323
+	.byte	20
+	.word	342
+	.byte	6,0,19
+	.word	358
+	.byte	20
+	.word	373
+	.byte	20
+	.word	387
+	.byte	6,0,21
+	.byte	'sinf',0,6,89,25
+	.word	232
+	.byte	1,1,1,1,22,6,89,43
+	.word	232
+	.byte	0,21
+	.byte	'cosf',0,6,92,25
+	.word	232
+	.byte	1,1,1,1,22,6,92,43
+	.word	232
+	.byte	0,19
+	.word	448
+	.byte	20
+	.word	472
+	.byte	20
+	.word	482
+	.byte	6,0,19
+	.word	494
+	.byte	20
+	.word	518
+	.byte	6,0,19
+	.word	530
+	.byte	20
+	.word	554
+	.byte	13,23
+	.word	494
+	.byte	20
+	.word	518
+	.byte	24
+	.word	528
+	.byte	0,6,0,0,19
+	.word	568
+	.byte	20
+	.word	592
+	.byte	20
+	.word	602
+	.byte	6,0,19
+	.word	614
+	.byte	20
+	.word	638
+	.byte	20
+	.word	648
+	.byte	6,0,19
+	.word	665
+	.byte	20
+	.word	685
+	.byte	20
+	.word	695
+	.byte	20
+	.word	706
+	.byte	6,0
+.L68:
+	.byte	7
+	.byte	'short int',0,2,5,19
+	.word	757
+	.byte	20
+	.word	798
+	.byte	20
+	.word	808
+	.byte	6,0,19
+	.word	835
+	.byte	20
+	.word	877
+	.byte	20
+	.word	887
+	.byte	6,0
+.L106:
+	.byte	7
+	.byte	'unsigned long int',0,4,7,25
+	.byte	'__wchar_t',0,7,1,1
+	.word	1251
+	.byte	25
+	.byte	'__size_t',0,7,1,1
+	.word	741
+	.byte	25
+	.byte	'__ptrdiff_t',0,7,1,1
+	.word	899
+	.byte	26,1,3
+	.word	1374
+	.byte	25
+	.byte	'__codeptr',0,7,1,1
+	.word	1376
+	.byte	7
+	.byte	'unsigned char',0,1,8,25
+	.byte	'uint8',0,8,105,29
+	.word	1399
+	.byte	25
+	.byte	'uint16',0,8,109,29
+	.word	719
+	.byte	25
+	.byte	'uint32',0,8,113,29
+	.word	1298
+	.byte	25
+	.byte	'uint64',0,8,118,29
+	.word	286
+	.byte	25
+	.byte	'sint16',0,8,126,29
+	.word	1251
+	.byte	25
+	.byte	'sint32',0,8,131,1,29
+	.word	823
+	.byte	7
+	.byte	'long long int',0,8,5,25
+	.byte	'sint64',0,8,138,1,29
+	.word	1506
+	.byte	25
+	.byte	'float32',0,8,167,1,29
+	.word	232
+	.byte	25
+	.byte	'pvoid',0,4,57,28
+	.word	318
+	.byte	25
+	.byte	'cfloat32',0,4,65,3
+	.word	404
+	.byte	25
+	.byte	'Ifx_TickTime',0,4,79,28
+	.word	1506
+	.byte	27,128,128,2
+	.word	719
+	.byte	28,255,127,0,12
+	.word	1608
+	.byte	29
+	.byte	'Ifx_g_FftF32_bitReverseTable',0,5,66,31
+	.word	1620
+	.byte	1,1,27,128,128,4
+	.word	404
+	.byte	28,255,63,0,12
+	.word	1664
+	.byte	29
+	.byte	'Ifx_g_FftF32_twiddleTable',0,5,69,31
+	.word	1676
+	.byte	1,1,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L38:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,58,15,59,15,57
+	.byte	15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,38,0,73,19,0,0,13,11,1,0,0,14,46,1,3,8,54,15,39,12,63
+	.byte	12,60,12,0,0,15,5,0,73,19,0,0,16,53,0,73,19,0,0,17,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,18,5,0,3
+	.byte	8,73,19,0,0,19,46,1,49,19,0,0,20,5,0,49,19,0,0,21,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60
+	.byte	12,0,0,22,5,0,58,15,59,15,57,15,73,19,0,0,23,29,1,49,19,0,0,24,11,0,49,19,0,0,25,22,0,3,8,58,15,59,15
+	.byte	57,15,73,19,0,0,26,21,0,54,15,0,0,27,1,1,11,15,73,19,0,0,28,33,0,47,15,0,0,29,52,0,3,8,58,15,59,15,57
+	.byte	15,73,19,63,12,60,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L39:
+	.word	.L215-.L214
+.L214:
+	.half	3
+	.word	.L217-.L216
+.L216:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include\\',0,0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.h',0,0,0,0
+	.byte	'math.h',0,2,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L217:
+.L215:
+	.sdecl	'.debug_info',debug,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.debug_info'
+.L40:
+	.word	307
+	.half	3
+	.word	.L41
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L43,.L42
+	.byte	2
+	.word	.L36
+	.byte	3
+	.byte	'Ifx_FftF32_generateTwiddleFactor',0,1,51,11
+	.word	.L65
+	.byte	1,1,1
+	.word	.L27,.L66,.L26
+	.byte	4
+	.byte	'TF',0,1,51,54
+	.word	.L65,.L67
+	.byte	4
+	.byte	'nX',0,1,51,64
+	.word	.L68,.L69
+	.byte	5
+	.word	.L27,.L66
+	.byte	6
+	.byte	'i',0,1,53,12
+	.word	.L70,.L71
+	.byte	6
+	.byte	'Theta',0,1,54,12
+	.word	.L72,.L73
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.debug_abbrev'
+.L41:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.debug_line'
+.L42:
+	.word	.L219-.L218
+.L218:
+	.half	3
+	.word	.L221-.L220
+.L220:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c',0,0,0,0,0
+.L221:
+	.byte	5,11,7,0,5,2
+	.word	.L27
+	.byte	3,50,1,5,12,9
+	.half	.L160-.L27
+	.byte	3,6,1,5,27,9
+	.half	.L161-.L160
+	.byte	1,5,35,9
+	.half	.L3-.L161
+	.byte	3,2,1,5,24,9
+	.half	.L222-.L3
+	.byte	1,5,35,9
+	.half	.L223-.L222
+	.byte	1,5,39,9
+	.half	.L224-.L223
+	.byte	1,5,37,9
+	.half	.L225-.L224
+	.byte	1,5,11,9
+	.half	.L162-.L225
+	.byte	3,2,1,5,37,9
+	.half	.L226-.L162
+	.byte	1,5,20,9
+	.half	.L164-.L226
+	.byte	1,5,11,9
+	.half	.L227-.L164
+	.byte	3,1,1,5,38,9
+	.half	.L228-.L227
+	.byte	1,5,32,9
+	.half	.L166-.L228
+	.byte	1,5,20,9
+	.half	.L229-.L166
+	.byte	1,5,30,9
+	.half	.L230-.L229
+	.byte	3,123,1,5,24,9
+	.half	.L2-.L230
+	.byte	1,5,27,9
+	.half	.L231-.L2
+	.byte	1,5,5,7,9
+	.half	.L232-.L231
+	.byte	3,8,1,5,1,9
+	.half	.L4-.L232
+	.byte	3,1,1,7,9
+	.half	.L44-.L4
+	.byte	0,1,1
+.L219:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.debug_ranges'
+.L43:
+	.word	-1,.L27,0,.L44-.L27,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_FftF32_radix2')
+	.sect	'.debug_info'
+.L45:
+	.word	407
+	.half	3
+	.word	.L46
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L48,.L47
+	.byte	2
+	.word	.L36
+	.byte	3
+	.byte	'Ifx_FftF32_radix2',0,1,143,1,11
+	.word	.L65
+	.byte	1,1,1
+	.word	.L33,.L74,.L32
+	.byte	4
+	.byte	'R',0,1,143,1,39
+	.word	.L65,.L75
+	.byte	4
+	.byte	'X',0,1,143,1,58
+	.word	.L76,.L77
+	.byte	4
+	.byte	'nX',0,1,143,1,76
+	.word	.L78,.L79
+	.byte	5
+	.word	.L33,.L74
+	.byte	6
+	.byte	'logN',0,1,145,1,20
+	.word	.L80,.L81
+	.byte	6
+	.byte	'n',0,1,146,1,20
+	.word	.L78,.L82
+	.byte	6
+	.byte	'k',0,1,146,1,23
+	.word	.L78,.L83
+	.byte	7
+	.word	.L84,.L17,.L18
+	.byte	8
+	.word	.L85,.L86
+	.byte	8
+	.word	.L87,.L88
+	.byte	9
+	.word	.L89,.L17,.L18
+	.byte	6
+	.byte	'shift',0,2,95,14
+	.word	.L80,.L90
+	.byte	6
+	.byte	'index',0,2,96,14
+	.word	.L78,.L91
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_FftF32_radix2')
+	.sect	'.debug_abbrev'
+.L46:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,1,49,16,17
+	.byte	1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_FftF32_radix2')
+	.sect	'.debug_line'
+.L47:
+	.word	.L234-.L233
+.L233:
+	.half	3
+	.word	.L236-.L235
+.L235:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c',0,0,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.h',0,0,0,0,0
+.L236:
+	.byte	5,11,7,0,5,2
+	.word	.L33
+	.byte	3,142,1,1,5,37,9
+	.half	.L194-.L33
+	.byte	3,2,1,5,30,9
+	.half	.L237-.L194
+	.byte	1,5,12,9
+	.half	.L195-.L237
+	.byte	3,4,1,5,23,9
+	.half	.L196-.L195
+	.byte	1,4,2,5,48,9
+	.half	.L17-.L196
+	.byte	3,74,1,5,50,9
+	.half	.L198-.L17
+	.byte	3,1,1,5,22,9
+	.half	.L238-.L198
+	.byte	1,5,50,9
+	.half	.L239-.L238
+	.byte	1,5,18,9
+	.half	.L199-.L239
+	.byte	3,1,1,5,5,9
+	.half	.L200-.L199
+	.byte	1,4,1,5,10,9
+	.half	.L18-.L200
+	.byte	3,56,1,5,17,9
+	.half	.L240-.L18
+	.byte	1,5,14,9
+	.half	.L241-.L240
+	.byte	1,5,26,9
+	.half	.L242-.L241
+	.byte	3,124,1,5,23,9
+	.half	.L16-.L242
+	.byte	1,5,42,7,9
+	.half	.L243-.L16
+	.byte	3,7,1,5,5,9
+	.half	.L192-.L243
+	.byte	3,2,1,5,1,9
+	.half	.L19-.L192
+	.byte	3,1,1,7,9
+	.half	.L49-.L19
+	.byte	0,1,1
+.L234:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_FftF32_radix2')
+	.sect	'.debug_ranges'
+.L48:
+	.word	-1,.L33,0,.L49-.L33,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_FftF32_radix2I')
+	.sect	'.debug_info'
+.L50:
+	.word	408
+	.half	3
+	.word	.L51
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L53,.L52
+	.byte	2
+	.word	.L36
+	.byte	3
+	.byte	'Ifx_FftF32_radix2I',0,1,162,1,11
+	.word	.L65
+	.byte	1,1,1
+	.word	.L35,.L92,.L34
+	.byte	4
+	.byte	'R',0,1,162,1,40
+	.word	.L65,.L93
+	.byte	4
+	.byte	'X',0,1,162,1,59
+	.word	.L76,.L94
+	.byte	4
+	.byte	'nX',0,1,162,1,77
+	.word	.L78,.L95
+	.byte	5
+	.word	.L35,.L92
+	.byte	6
+	.byte	'logN',0,1,164,1,20
+	.word	.L80,.L96
+	.byte	6
+	.byte	'n',0,1,165,1,20
+	.word	.L78,.L97
+	.byte	6
+	.byte	'k',0,1,165,1,23
+	.word	.L78,.L98
+	.byte	7
+	.word	.L84,.L21,.L22
+	.byte	8
+	.word	.L85,.L99
+	.byte	8
+	.word	.L87,.L100
+	.byte	9
+	.word	.L89,.L21,.L22
+	.byte	6
+	.byte	'shift',0,2,95,14
+	.word	.L80,.L101
+	.byte	6
+	.byte	'index',0,2,96,14
+	.word	.L78,.L102
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_FftF32_radix2I')
+	.sect	'.debug_abbrev'
+.L51:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,1,49,16,17
+	.byte	1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_FftF32_radix2I')
+	.sect	'.debug_line'
+.L52:
+	.word	.L245-.L244
+.L244:
+	.half	3
+	.word	.L247-.L246
+.L246:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c',0,0,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.h',0,0,0,0,0
+.L247:
+	.byte	5,11,7,0,5,2
+	.word	.L35
+	.byte	3,161,1,1,5,37,9
+	.half	.L205-.L35
+	.byte	3,2,1,5,30,9
+	.half	.L248-.L205
+	.byte	1,5,12,9
+	.half	.L203-.L248
+	.byte	3,4,1,5,23,9
+	.half	.L206-.L203
+	.byte	1,4,2,5,48,9
+	.half	.L21-.L206
+	.byte	3,183,127,1,5,50,9
+	.half	.L208-.L21
+	.byte	3,1,1,5,22,9
+	.half	.L249-.L208
+	.byte	1,5,50,9
+	.half	.L250-.L249
+	.byte	1,5,18,9
+	.half	.L209-.L250
+	.byte	3,1,1,5,5,9
+	.half	.L210-.L209
+	.byte	1,4,1,5,10,9
+	.half	.L22-.L210
+	.byte	3,203,0,1,5,22,9
+	.half	.L251-.L22
+	.byte	1,5,25,9
+	.half	.L252-.L251
+	.byte	1,5,19,9
+	.half	.L253-.L252
+	.byte	1,5,10,9
+	.half	.L254-.L253
+	.byte	3,1,1,5,23,9
+	.half	.L255-.L254
+	.byte	1,5,26,9
+	.half	.L256-.L255
+	.byte	1,5,21,9
+	.half	.L257-.L256
+	.byte	1,5,19,9
+	.half	.L258-.L257
+	.byte	1,5,26,9
+	.half	.L259-.L258
+	.byte	3,123,1,5,23,9
+	.half	.L20-.L259
+	.byte	1,5,42,7,9
+	.half	.L260-.L20
+	.byte	3,8,1,5,12,9
+	.half	.L202-.L260
+	.byte	3,3,1,5,23,9
+	.half	.L211-.L202
+	.byte	1,5,10,9
+	.half	.L24-.L211
+	.byte	3,2,1,5,23,9
+	.half	.L261-.L24
+	.byte	1,5,26,9
+	.half	.L262-.L261
+	.byte	1,5,21,9
+	.half	.L263-.L262
+	.byte	1,5,19,9
+	.half	.L264-.L263
+	.byte	1,5,26,9
+	.half	.L265-.L264
+	.byte	3,126,1,5,23,9
+	.half	.L23-.L265
+	.byte	1,5,5,7,9
+	.half	.L266-.L23
+	.byte	3,5,1,5,1,9
+	.half	.L25-.L266
+	.byte	3,1,1,7,9
+	.half	.L54-.L25
+	.byte	0,1,1
+.L245:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_FftF32_radix2I')
+	.sect	'.debug_ranges'
+.L53:
+	.word	-1,.L35,0,.L54-.L35,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.debug_info'
+.L55:
+	.word	280
+	.half	3
+	.word	.L56
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L58,.L57
+	.byte	2
+	.word	.L36
+	.byte	3
+	.byte	'Ifx_FftF32_reverseBits',0,1,70,16
+	.word	.L78
+	.byte	1,1,1
+	.word	.L29,.L103,.L28
+	.byte	4
+	.byte	'n',0,1,70,54
+	.word	.L78,.L104
+	.byte	4
+	.byte	'bits',0,1,70,66
+	.word	.L80,.L105
+	.byte	5
+	.word	.L29,.L103
+	.byte	6
+	.byte	'v',0,1,75,19
+	.word	.L106,.L107
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.debug_abbrev'
+.L56:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.debug_line'
+.L57:
+	.word	.L268-.L267
+.L267:
+	.half	3
+	.word	.L270-.L269
+.L269:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c',0,0,0,0,0
+.L270:
+	.byte	5,13,7,0,5,2
+	.word	.L29
+	.byte	3,205,0,1,5,21,9
+	.half	.L271-.L29
+	.byte	1,5,19,9
+	.half	.L272-.L271
+	.byte	1,5,43,9
+	.half	.L273-.L272
+	.byte	1,5,41,9
+	.half	.L274-.L273
+	.byte	1,5,57,9
+	.half	.L168-.L274
+	.byte	1,5,35,9
+	.half	.L169-.L168
+	.byte	1,5,13,9
+	.half	.L275-.L169
+	.byte	3,2,1,5,21,9
+	.half	.L276-.L275
+	.byte	1,5,19,9
+	.half	.L277-.L276
+	.byte	1,5,43,9
+	.half	.L278-.L277
+	.byte	1,5,41,9
+	.half	.L279-.L278
+	.byte	1,5,57,9
+	.half	.L170-.L279
+	.byte	1,5,35,9
+	.half	.L171-.L170
+	.byte	1,5,13,9
+	.half	.L280-.L171
+	.byte	3,2,1,5,21,9
+	.half	.L281-.L280
+	.byte	1,5,19,9
+	.half	.L282-.L281
+	.byte	1,5,43,9
+	.half	.L283-.L282
+	.byte	1,5,41,9
+	.half	.L284-.L283
+	.byte	1,5,57,9
+	.half	.L172-.L284
+	.byte	1,5,35,9
+	.half	.L173-.L172
+	.byte	1,5,13,9
+	.half	.L285-.L173
+	.byte	3,2,1,5,21,9
+	.half	.L286-.L285
+	.byte	1,5,19,9
+	.half	.L287-.L286
+	.byte	1,5,43,9
+	.half	.L288-.L287
+	.byte	1,5,41,9
+	.half	.L289-.L288
+	.byte	1,5,57,9
+	.half	.L174-.L289
+	.byte	1,5,35,9
+	.half	.L175-.L174
+	.byte	1,5,12,9
+	.half	.L290-.L175
+	.byte	3,2,1,5,24,9
+	.half	.L291-.L290
+	.byte	1,5,19,9
+	.half	.L176-.L291
+	.byte	1,5,18,9
+	.half	.L292-.L176
+	.byte	3,2,1,5,11,9
+	.half	.L293-.L292
+	.byte	1,5,12,9
+	.half	.L294-.L293
+	.byte	3,1,1,5,5,9
+	.half	.L295-.L294
+	.byte	1,5,1,9
+	.half	.L5-.L295
+	.byte	3,1,1,7,9
+	.half	.L59-.L5
+	.byte	0,1,1
+.L268:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.debug_ranges'
+.L58:
+	.word	-1,.L29,0,.L59-.L29,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.debug_info'
+.L60:
+	.word	707
+	.half	3
+	.word	.L61
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L63,.L62
+	.byte	2
+	.word	.L36
+	.byte	3
+	.byte	'Ifx_FftF32_radix2DecimationInTime',0,1,94,6,1,1,1
+	.word	.L31,.L108,.L30
+	.byte	4
+	.byte	'R',0,1,94,50
+	.word	.L65,.L109
+	.byte	4
+	.byte	'p',0,1,94,67
+	.word	.L106,.L110
+	.byte	5
+	.word	.L31,.L108
+	.byte	6
+	.byte	'Bp',0,1,104,19
+	.word	.L106,.L111
+	.byte	6
+	.byte	'Np',0,1,104,23
+	.word	.L106,.L112
+	.byte	6
+	.byte	'Npx',0,1,104,27
+	.word	.L106,.L113
+	.byte	6
+	.byte	'P',0,1,104,32
+	.word	.L106,.L114
+	.byte	6
+	.byte	'b',0,1,104,35
+	.word	.L106,.L115
+	.byte	6
+	.byte	'k',0,1,104,38
+	.word	.L106,.L116
+	.byte	6
+	.byte	'BaseT',0,1,104,41
+	.word	.L106,.L117
+	.byte	6
+	.byte	'BaseB',0,1,104,48
+	.word	.L106,.L118
+	.byte	6
+	.byte	'top',0,1,105,19
+	.word	.L119,.L120
+	.byte	6
+	.byte	'bot',0,1,105,24
+	.word	.L119,.L121
+	.byte	7
+	.word	.L122,.L11,.L12
+	.byte	8
+	.word	.L123,.L124
+	.byte	8
+	.word	.L125,.L126
+	.byte	9
+	.word	.L127,.L11,.L12
+	.byte	0,7
+	.word	.L128,.L129,.L130
+	.byte	8
+	.word	.L131,.L132
+	.byte	8
+	.word	.L133,.L134
+	.byte	10
+	.word	.L135,.L129,.L130
+	.byte	6
+	.byte	'R',0,2,69,14
+	.word	.L119,.L136
+	.byte	0,0,7
+	.word	.L137,.L138,.L14
+	.byte	8
+	.word	.L139,.L140
+	.byte	8
+	.word	.L141,.L142
+	.byte	11
+	.word	.L143,.L144
+	.byte	6
+	.byte	'R',0,2,109,14
+	.word	.L119,.L147
+	.byte	0,0,7
+	.word	.L137,.L145,.L146
+	.byte	8
+	.word	.L139,.L140
+	.byte	8
+	.word	.L141,.L142
+	.byte	0,7
+	.word	.L148,.L149,.L15
+	.byte	8
+	.word	.L150,.L151
+	.byte	8
+	.word	.L152,.L153
+	.byte	11
+	.word	.L154,.L155
+	.byte	6
+	.byte	'R',0,2,118,14
+	.word	.L119,.L158
+	.byte	0,0,7
+	.word	.L148,.L156,.L157
+	.byte	8
+	.word	.L150,.L151
+	.byte	8
+	.word	.L152,.L153
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.debug_abbrev'
+.L61:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17,1,18
+	.byte	1,0,0,10,11,1,49,16,17,1,18,1,0,0,11,11,1,49,16,85,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.debug_line'
+.L62:
+	.word	.L297-.L296
+.L296:
+	.half	3
+	.word	.L299-.L298
+.L298:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.c',0,0,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_FftF32.h',0,0,0,0,0
+.L299:
+	.byte	5,6,7,0,5,2
+	.word	.L31
+	.byte	3,221,0,1,5,10,9
+	.half	.L178-.L31
+	.byte	3,13,1,5,18,9
+	.half	.L300-.L178
+	.byte	1,5,12,9
+	.half	.L301-.L300
+	.byte	1,5,8,9
+	.half	.L179-.L301
+	.byte	3,1,1,5,12,9
+	.half	.L180-.L179
+	.byte	3,3,1,5,22,9
+	.half	.L181-.L180
+	.byte	1,5,20,9
+	.half	.L7-.L181
+	.byte	3,3,1,5,15,9
+	.half	.L182-.L7
+	.byte	3,1,1,5,16,9
+	.half	.L183-.L182
+	.byte	3,2,1,5,27,9
+	.half	.L184-.L183
+	.byte	1,9
+	.half	.L9-.L184
+	.byte	3,3,1,5,20,9
+	.half	.L185-.L9
+	.byte	3,2,1,5,32,9
+	.half	.L186-.L185
+	.byte	1,4,3,5,42,9
+	.half	.L11-.L186
+	.byte	3,110,1,5,40,9
+	.half	.L302-.L11
+	.byte	1,5,64,9
+	.half	.L303-.L302
+	.byte	1,5,37,9
+	.half	.L304-.L303
+	.byte	1,5,12,9
+	.half	.L305-.L304
+	.byte	1,5,37,9
+	.half	.L306-.L305
+	.byte	1,5,5,9
+	.half	.L307-.L306
+	.byte	1,4,1,5,30,9
+	.half	.L12-.L307
+	.byte	3,22,1,5,54,9
+	.half	.L308-.L12
+	.byte	3,1,1,5,47,9
+	.half	.L309-.L308
+	.byte	1,5,61,9
+	.half	.L310-.L309
+	.byte	1,4,2,5,16,9
+	.half	.L129-.L310
+	.byte	3,71,1,5,26,9
+	.half	.L311-.L129
+	.byte	1,5,23,9
+	.half	.L312-.L311
+	.byte	1,5,38,9
+	.half	.L313-.L312
+	.byte	1,5,48,9
+	.half	.L314-.L313
+	.byte	1,5,34,9
+	.half	.L315-.L314
+	.byte	1,5,16,9
+	.half	.L316-.L315
+	.byte	3,1,1,5,26,9
+	.half	.L317-.L316
+	.byte	1,5,38,9
+	.half	.L318-.L317
+	.byte	1,5,48,9
+	.half	.L319-.L318
+	.byte	1,5,45,9
+	.half	.L320-.L319
+	.byte	1,5,34,9
+	.half	.L321-.L320
+	.byte	1,5,12,9
+	.half	.L322-.L321
+	.byte	1,5,5,9
+	.half	.L187-.L322
+	.byte	3,1,1,4,1,5,30,9
+	.half	.L13-.L187
+	.byte	3,55,1,5,40,9
+	.half	.L130-.L13
+	.byte	3,1,1,5,33,9
+	.half	.L323-.L130
+	.byte	1,5,30,9
+	.half	.L324-.L323
+	.byte	1,5,46,9
+	.half	.L325-.L324
+	.byte	3,1,1,5,52,9
+	.half	.L326-.L325
+	.byte	1,4,2,5,16,9
+	.half	.L138-.L326
+	.byte	3,109,1,5,26,9
+	.half	.L327-.L138
+	.byte	1,5,23,9
+	.half	.L188-.L327
+	.byte	1,5,16,9
+	.half	.L328-.L188
+	.byte	3,1,1,5,26,9
+	.half	.L329-.L328
+	.byte	1,5,23,9
+	.half	.L330-.L329
+	.byte	1,5,12,9
+	.half	.L331-.L330
+	.byte	1,5,5,9
+	.half	.L189-.L331
+	.byte	3,1,1,4,1,5,25,9
+	.half	.L14-.L189
+	.byte	3,17,1,5,18,9
+	.half	.L332-.L14
+	.byte	1,5,30,9
+	.half	.L145-.L332
+	.byte	1,5,46,9
+	.half	.L146-.L145
+	.byte	3,1,1,5,52,9
+	.half	.L333-.L146
+	.byte	1,4,2,5,16,9
+	.half	.L149-.L333
+	.byte	3,117,1,5,26,9
+	.half	.L334-.L149
+	.byte	1,5,23,9
+	.half	.L190-.L334
+	.byte	1,5,16,9
+	.half	.L335-.L190
+	.byte	3,1,1,5,26,9
+	.half	.L336-.L335
+	.byte	1,5,23,9
+	.half	.L337-.L336
+	.byte	1,5,12,9
+	.half	.L338-.L337
+	.byte	1,5,5,9
+	.half	.L191-.L338
+	.byte	3,1,1,4,1,5,25,9
+	.half	.L15-.L191
+	.byte	3,9,1,5,18,9
+	.half	.L339-.L15
+	.byte	1,5,30,9
+	.half	.L156-.L339
+	.byte	1,5,35,9
+	.half	.L157-.L156
+	.byte	3,120,1,5,32,9
+	.half	.L10-.L157
+	.byte	1,5,27,7,9
+	.half	.L340-.L10
+	.byte	3,11,1,5,30,9
+	.half	.L341-.L340
+	.byte	3,112,1,5,27,9
+	.half	.L8-.L341
+	.byte	1,5,17,7,9
+	.half	.L342-.L8
+	.byte	3,20,1,9
+	.half	.L343-.L342
+	.byte	3,1,1,5,25,9
+	.half	.L344-.L343
+	.byte	3,101,1,5,22,9
+	.half	.L6-.L344
+	.byte	1,5,1,7,9
+	.half	.L345-.L6
+	.byte	3,29,1,7,9
+	.half	.L64-.L345
+	.byte	0,1,1
+.L297:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.debug_ranges'
+.L63:
+	.word	-1,.L31,0,.L64-.L31,0,0
+.L144:
+	.word	-1,.L31,.L138-.L31,.L14-.L31,.L145-.L31,.L146-.L31,0,0
+.L155:
+	.word	-1,.L31,.L149-.L31,.L15-.L31,.L156-.L31,.L157-.L31,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.debug_loc'
+.L26:
+	.word	-1,.L27,0,.L66-.L27
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L67:
+	.word	-1,.L27,0,.L3-.L27
+	.half	1
+	.byte	100
+	.word	.L159-.L27,.L66-.L27
+	.half	1
+	.byte	108
+	.word	.L167-.L27,.L66-.L27
+	.half	1
+	.byte	98
+	.word	0,0
+.L73:
+	.word	-1,.L27,.L162-.L27,.L2-.L27
+	.half	1
+	.byte	88
+	.word	.L163-.L27,.L164-.L27
+	.half	1
+	.byte	84
+	.word	.L165-.L27,.L166-.L27
+	.half	1
+	.byte	84
+	.word	0,0
+.L71:
+	.word	-1,.L27,.L161-.L27,.L66-.L27
+	.half	1
+	.byte	90
+	.word	0,0
+.L69:
+	.word	-1,.L27,0,.L3-.L27
+	.half	1
+	.byte	84
+	.word	.L160-.L27,.L66-.L27
+	.half	1
+	.byte	89
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_FftF32_radix2')
+	.sect	'.debug_loc'
+.L32:
+	.word	-1,.L33,0,.L74-.L33
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L75:
+	.word	-1,.L33,0,.L192-.L33
+	.half	1
+	.byte	100
+	.word	.L194-.L33,.L74-.L33
+	.half	1
+	.byte	108
+	.word	.L201-.L33,.L74-.L33
+	.half	1
+	.byte	98
+	.word	0,0
+.L77:
+	.word	-1,.L33,0,.L192-.L33
+	.half	1
+	.byte	101
+	.word	0,0
+.L88:
+	.word	0,0
+.L91:
+	.word	-1,.L33,.L199-.L33,.L200-.L33
+	.half	1
+	.byte	95
+	.word	0,0
+.L83:
+	.word	0,0
+.L81:
+	.word	-1,.L33,.L195-.L33,.L192-.L33
+	.half	1
+	.byte	81
+	.word	.L193-.L33,.L192-.L33
+	.half	1
+	.byte	84
+	.word	0,0
+.L86:
+	.word	0,0
+.L82:
+	.word	-1,.L33,.L196-.L33,.L197-.L33
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L16-.L33,.L192-.L33
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L79:
+	.word	-1,.L33,0,.L193-.L33
+	.half	1
+	.byte	84
+	.word	0,0
+.L90:
+	.word	-1,.L33,.L198-.L33,.L16-.L33
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.debug_loc'
+.L118:
+	.word	-1,.L31,.L185-.L31,.L8-.L31
+	.half	1
+	.byte	87
+	.word	0,0
+.L117:
+	.word	-1,.L31,.L183-.L31,.L6-.L31
+	.half	1
+	.byte	85
+	.word	0,0
+.L111:
+	.word	-1,.L31,.L179-.L31,.L108-.L31
+	.half	1
+	.byte	82
+	.word	0,0
+.L30:
+	.word	-1,.L31,0,.L177-.L31
+	.half	2
+	.byte	138,0
+	.word	.L177-.L31,.L108-.L31
+	.half	2
+	.byte	138,16
+	.word	.L108-.L31,.L108-.L31
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L124:
+	.word	0,0
+.L112:
+	.word	-1,.L31,.L180-.L31,.L108-.L31
+	.half	1
+	.byte	83
+	.word	0,0
+.L113:
+	.word	-1,.L31,.L182-.L31,.L6-.L31
+	.half	1
+	.byte	84
+	.word	0,0
+.L114:
+	.word	-1,.L31,.L181-.L31,.L108-.L31
+	.half	1
+	.byte	89
+	.word	0,0
+.L136:
+	.word	-1,.L31,.L187-.L31,.L188-.L31
+	.half	2
+	.byte	144,32
+	.word	0,0
+.L109:
+	.word	-1,.L31,0,.L108-.L31
+	.half	1
+	.byte	100
+	.word	0,0
+.L147:
+	.word	-1,.L31,.L189-.L31,.L190-.L31
+	.half	2
+	.byte	144,32
+	.word	0,0
+.L158:
+	.word	-1,.L31,.L191-.L31,.L10-.L31
+	.half	2
+	.byte	144,32
+	.word	0,0
+.L132:
+	.word	0,0
+.L140:
+	.word	0,0
+.L151:
+	.word	0,0
+.L134:
+	.word	0,0
+.L115:
+	.word	-1,.L31,.L184-.L31,.L6-.L31
+	.half	1
+	.byte	86
+	.word	0,0
+.L142:
+	.word	0,0
+.L153:
+	.word	0,0
+.L121:
+	.word	-1,.L31,0,.L108-.L31
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L126:
+	.word	0,0
+.L116:
+	.word	-1,.L31,.L186-.L31,.L8-.L31
+	.half	1
+	.byte	88
+	.word	0,0
+.L110:
+	.word	-1,.L31,0,.L7-.L31
+	.half	1
+	.byte	84
+	.word	.L178-.L31,.L108-.L31
+	.half	1
+	.byte	90
+	.word	0,0
+.L120:
+	.word	-1,.L31,0,.L108-.L31
+	.half	2
+	.byte	145,112
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_FftF32_radix2I')
+	.sect	'.debug_loc'
+.L34:
+	.word	-1,.L35,0,.L92-.L35
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L93:
+	.word	-1,.L35,0,.L202-.L35
+	.half	1
+	.byte	100
+	.word	.L204-.L35,.L92-.L35
+	.half	1
+	.byte	108
+	.word	.L213-.L35,.L92-.L35
+	.half	1
+	.byte	98
+	.word	0,0
+.L94:
+	.word	-1,.L35,0,.L202-.L35
+	.half	1
+	.byte	101
+	.word	0,0
+.L100:
+	.word	0,0
+.L102:
+	.word	-1,.L35,.L209-.L35,.L210-.L35
+	.half	1
+	.byte	81
+	.word	0,0
+.L98:
+	.word	0,0
+.L96:
+	.word	-1,.L35,.L203-.L35,.L202-.L35
+	.half	1
+	.byte	84
+	.word	0,0
+.L99:
+	.word	0,0
+.L97:
+	.word	-1,.L35,.L206-.L35,.L207-.L35
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L20-.L35,.L202-.L35
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L211-.L35,.L212-.L35
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L23-.L35,.L92-.L35
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L95:
+	.word	-1,.L35,0,.L203-.L35
+	.half	1
+	.byte	84
+	.word	.L205-.L35,.L92-.L35
+	.half	1
+	.byte	88
+	.word	0,0
+.L101:
+	.word	-1,.L35,.L208-.L35,.L20-.L35
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.debug_loc'
+.L28:
+	.word	-1,.L29,0,.L103-.L29
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L105:
+	.word	-1,.L29,0,.L103-.L29
+	.half	1
+	.byte	85
+	.word	0,0
+.L104:
+	.word	-1,.L29,0,.L168-.L29
+	.half	1
+	.byte	84
+	.word	0,0
+.L107:
+	.word	-1,.L29,.L169-.L29,.L170-.L29
+	.half	1
+	.byte	95
+	.word	.L171-.L29,.L172-.L29
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L173-.L29,.L174-.L29
+	.half	1
+	.byte	95
+	.word	.L175-.L29,.L176-.L29
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L176-.L29,.L103-.L29
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L346:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_FftF32_generateTwiddleFactor')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L346,.L27,.L66-.L27
+	.sdecl	'.debug_frame',debug,cluster('Ifx_FftF32_reverseBits')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L346,.L29,.L103-.L29
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Ifx_FftF32_radix2DecimationInTime')
+	.sect	'.debug_frame'
+	.word	40
+	.word	.L346,.L31,.L108-.L31
+	.byte	8,21,8,22,8,23,4
+	.word	(.L177-.L31)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L108-.L177)/2
+	.byte	19,0,8,26
+	.sdecl	'.debug_frame',debug,cluster('Ifx_FftF32_radix2')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L346,.L33,.L74-.L33
+	.sdecl	'.debug_frame',debug,cluster('Ifx_FftF32_radix2I')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L346,.L35,.L92-.L35
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_FftF32.c	   186          R[k].imag = -X[n].imag;
+	; Module end

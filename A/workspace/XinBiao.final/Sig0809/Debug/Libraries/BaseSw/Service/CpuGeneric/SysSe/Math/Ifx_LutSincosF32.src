@@ -1,0 +1,691 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\.Ifx_LutSincosF32.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.src ..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_LutSincosF32.Ifx_LutSincosF32_init',code,cluster('Ifx_LutSincosF32_init')
+	.sect	'.text.Ifx_LutSincosF32.Ifx_LutSincosF32_init'
+	.align	2
+	
+	.global	Ifx_LutSincosF32_init
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     1  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     2   * \file Ifx_LutSincosF32.c
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     3   * \brief Sin/Cos lookup functions with fixed-point angle data type
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     4   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     5   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     6   * \version disabled
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     8   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	     9   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    10   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    11   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    12   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    17  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    18  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    20  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    22   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    26   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    27  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    28   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    32   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    33   * language processor.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    34  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    41   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    42  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    43   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    44   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    45  #include "Ifx_LutSincosF32.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    46  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    47  #include <math.h>
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    48  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    49  void Ifx_LutSincosF32_init(void)
+; Function Ifx_LutSincosF32_init
+.L10:
+Ifx_LutSincosF32_init:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    50  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    51  #if IFX_LUT_TABLE_CONST == 0
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    52      {   /* generate sin and cos table */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    53          sint32 k;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    54  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    55          for (k = 0; k <= (IFX_LUT_ANGLE_PI / 2); k++)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    56          {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    57              Ifx_g_LutSincosF32_table[k] = sinf((IFX_PI * 2 * k) / IFX_LUT_ANGLE_RESOLUTION);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    58          }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    59      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    60  #endif
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    61  }
+	ret
+.L27:
+	
+__Ifx_LutSincosF32_init_function_end:
+	.size	Ifx_LutSincosF32_init,__Ifx_LutSincosF32_init_function_end-Ifx_LutSincosF32_init
+.L21:
+	; End of function
+	
+	.sdecl	'.text.Ifx_LutSincosF32.Ifx_LutSincosF32_sin',code,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.text.Ifx_LutSincosF32.Ifx_LutSincosF32_sin'
+	.align	2
+	
+	.global	Ifx_LutSincosF32_sin
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    62  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    63  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    64  float32 Ifx_LutSincosF32_sin(Ifx_Lut_FxpAngle fxpAngle)
+; Function Ifx_LutSincosF32_sin
+.L12:
+Ifx_LutSincosF32_sin:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    65  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    66      float32 result;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    67      fxpAngle = fxpAngle & (IFX_LUT_ANGLE_RESOLUTION - 1);
+	insert	d15,d4,#0,#12,#20
+.L33:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    68  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    69      if (fxpAngle < (IFX_LUT_ANGLE_PI / 2))
+	mov	d0,#1024
+.L55:
+	jge	d15,d0,.L2
+.L56:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    70      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    71          result = Ifx_g_LutSincosF32_table[fxpAngle];
+	mul	d15,d15,#4
+.L34:
+	movh.a	a15,#@his(Ifx_g_LutSincosF32_table)
+	lea	a15,[a15]@los(Ifx_g_LutSincosF32_table)
+.L57:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d2,[a15]
+.L35:
+	j	.L3
+.L2:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    72      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    73      else if (fxpAngle < IFX_LUT_ANGLE_PI)
+	mov	d0,#2048
+.L58:
+	jge	d15,d0,.L4
+.L59:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    74      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    75          fxpAngle = IFX_LUT_ANGLE_PI - fxpAngle;
+	mov	d0,#2048
+.L37:
+	sub	d0,d15
+.L36:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    76          result   = Ifx_g_LutSincosF32_table[fxpAngle];
+	mul	d15,d0,#4
+.L60:
+	movh.a	a15,#@his(Ifx_g_LutSincosF32_table)
+	lea	a15,[a15]@los(Ifx_g_LutSincosF32_table)
+.L61:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d2,[a15]
+.L38:
+	j	.L5
+.L4:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    77      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    78      else if (fxpAngle < (IFX_LUT_ANGLE_PI / 2 * 3))
+	mov	d0,#3072
+.L62:
+	jge	d15,d0,.L6
+.L63:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    79      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    80          fxpAngle = fxpAngle - IFX_LUT_ANGLE_PI;
+	addi	d15,d15,#-2048
+.L64:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    81          result   = -Ifx_g_LutSincosF32_table[fxpAngle];
+	mul	d15,d15,#4
+.L39:
+	movh.a	a15,#@his(Ifx_g_LutSincosF32_table)
+	lea	a15,[a15]@los(Ifx_g_LutSincosF32_table)
+.L65:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L66:
+	insn.t	d2,d15:31,d15:31
+.L40:
+	j	.L7
+.L6:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    82      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    83      else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    84      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    85          fxpAngle = IFX_LUT_ANGLE_RESOLUTION - fxpAngle;
+	mov	d0,#4096
+.L42:
+	sub	d0,d15
+.L41:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    86          result   = -Ifx_g_LutSincosF32_table[fxpAngle];
+	mul	d15,d0,#4
+.L67:
+	movh.a	a15,#@his(Ifx_g_LutSincosF32_table)
+	lea	a15,[a15]@los(Ifx_g_LutSincosF32_table)
+.L68:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L69:
+	insn.t	d2,d15:31,d15:31
+.L7:
+.L5:
+.L3:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    87      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    88  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    89      return result;
+	j	.L8
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutSincosF32.c	    90  }
+.L8:
+	ret
+.L29:
+	
+__Ifx_LutSincosF32_sin_function_end:
+	.size	Ifx_LutSincosF32_sin,__Ifx_LutSincosF32_sin_function_end-Ifx_LutSincosF32_sin
+.L26:
+	; End of function
+	
+	.calls	'Ifx_LutSincosF32_init','',0
+	.extern	Ifx_g_LutSincosF32_table
+	.calls	'Ifx_LutSincosF32_sin','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L14:
+	.word	1261
+	.half	3
+	.word	.L15
+	.byte	4
+.L13:
+	.byte	1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L16
+	.byte	2,1,1,3
+	.word	178
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	181
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1
+.L28:
+	.byte	7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	226
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	238
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	318
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	292
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	324
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	324
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	292
+	.byte	6,0,10,4,61,9,8,11
+	.byte	'real',0
+	.word	238
+	.byte	4,2,35,0,11
+	.byte	'imag',0
+	.word	238
+	.byte	4,2,35,4,0,12
+	.word	410
+	.byte	3
+	.word	444
+	.byte	8
+	.byte	'IFX_Cf32_dot',0,3,3,85,20
+	.word	238
+	.byte	1,1,5
+	.byte	'b',0,3,85,49
+	.word	449
+	.byte	6,0,8
+	.byte	'IFX_Cf32_mag',0,3,3,91,20
+	.word	238
+	.byte	1,1,5
+	.byte	'c',0,3,91,49
+	.word	449
+	.byte	13,6,0,0,3
+	.word	410
+	.byte	4
+	.byte	'IFX_Cf32_set',0,3,3,125,17,1,1,5
+	.byte	'a',0,3,125,40
+	.word	528
+	.byte	5
+	.byte	're',0,3,125,51
+	.word	238
+	.byte	5
+	.byte	'im',0,3,125,63
+	.word	238
+	.byte	6,0,7
+	.byte	'int',0,4,5,12
+	.word	587
+	.byte	14
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,15
+	.word	594
+	.byte	0,7
+	.byte	'unsigned int',0,4,7,16
+	.word	636
+	.byte	3
+	.word	636
+	.byte	17
+	.byte	'__cmpswapw',0
+	.word	652
+	.byte	1,1,1,1,18
+	.byte	'p',0
+	.word	657
+	.byte	18
+	.byte	'value',0
+	.word	636
+	.byte	18
+	.byte	'compare',0
+	.word	636
+	.byte	0,19
+	.word	186
+	.byte	20
+	.word	212
+	.byte	6,0,19
+	.word	247
+	.byte	20
+	.word	279
+	.byte	6,0,19
+	.word	329
+	.byte	20
+	.word	348
+	.byte	6,0,19
+	.word	364
+	.byte	20
+	.word	379
+	.byte	20
+	.word	393
+	.byte	6,0,19
+	.word	454
+	.byte	20
+	.word	478
+	.byte	6,0,19
+	.word	490
+	.byte	20
+	.word	514
+	.byte	13,21
+	.word	454
+	.byte	20
+	.word	478
+	.byte	22
+	.word	488
+	.byte	0,6,0,0,19
+	.word	533
+	.byte	20
+	.word	553
+	.byte	20
+	.word	563
+	.byte	20
+	.word	574
+	.byte	6,0
+.L30:
+	.byte	7
+	.byte	'long int',0,4,5,7
+	.byte	'short int',0,2,5,23
+	.byte	'__wchar_t',0,5,1,1
+	.word	843
+	.byte	23
+	.byte	'__size_t',0,5,1,1
+	.word	636
+	.byte	23
+	.byte	'__ptrdiff_t',0,5,1,1
+	.word	587
+	.byte	24,1,3
+	.word	911
+	.byte	23
+	.byte	'__codeptr',0,5,1,1
+	.word	913
+	.byte	7
+	.byte	'unsigned char',0,1,8,23
+	.byte	'uint8',0,6,105,29
+	.word	936
+	.byte	7
+	.byte	'unsigned short int',0,2,7,23
+	.byte	'uint16',0,6,109,29
+	.word	967
+	.byte	7
+	.byte	'unsigned long int',0,4,7,23
+	.byte	'uint32',0,6,113,29
+	.word	1004
+	.byte	23
+	.byte	'uint64',0,6,118,29
+	.word	292
+	.byte	23
+	.byte	'sint16',0,6,126,29
+	.word	843
+	.byte	23
+	.byte	'sint32',0,6,131,1,29
+	.word	831
+	.byte	7
+	.byte	'long long int',0,8,5,23
+	.byte	'sint64',0,6,138,1,29
+	.word	1086
+	.byte	23
+	.byte	'float32',0,6,167,1,29
+	.word	238
+	.byte	23
+	.byte	'pvoid',0,4,57,28
+	.word	324
+	.byte	23
+	.byte	'cfloat32',0,4,65,3
+	.word	410
+	.byte	23
+	.byte	'Ifx_TickTime',0,4,79,28
+	.word	1086
+	.byte	23
+	.byte	'Ifx_Lut_FxpAngle',0,7,84,16
+	.word	831
+	.byte	25,132,32
+	.word	238
+	.byte	26,128,8,0,12
+	.word	1213
+	.byte	27
+	.byte	'Ifx_g_LutSincosF32_table',0,8,62,34
+	.word	1224
+	.byte	1,1,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L15:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,58,15,59,15,57
+	.byte	15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,38,0,73,19,0,0,13,11,1,0,0,14,46,1,3,8,54,15,39,12,63
+	.byte	12,60,12,0,0,15,5,0,73,19,0,0,16,53,0,73,19,0,0,17,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,18,5,0,3
+	.byte	8,73,19,0,0,19,46,1,49,19,0,0,20,5,0,49,19,0,0,21,29,1,49,19,0,0,22,11,0,49,19,0,0,23,22,0,3,8,58,15,59
+	.byte	15,57,15,73,19,0,0,24,21,0,54,15,0,0,25,1,1,11,15,73,19,0,0,26,33,0,47,15,0,0,27,52,0,3,8,58,15,59,15
+	.byte	57,15,73,19,63,12,60,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L16:
+	.word	.L44-.L43
+.L43:
+	.half	3
+	.word	.L46-.L45
+.L45:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0,0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Cf32.h',0
+	.byte	0,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Lut.h',0,0,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.h',0,0,0,0,0
+.L46:
+.L44:
+	.sdecl	'.debug_info',debug,cluster('Ifx_LutSincosF32_init')
+	.sect	'.debug_info'
+.L17:
+	.word	235
+	.half	3
+	.word	.L18
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L20,.L19
+	.byte	2
+	.word	.L13
+	.byte	3
+	.byte	'Ifx_LutSincosF32_init',0,1,49,6,1,1,1
+	.word	.L10,.L27,.L9
+	.byte	4
+	.word	.L10,.L27
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_LutSincosF32_init')
+	.sect	'.debug_abbrev'
+.L18:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_LutSincosF32_init')
+	.sect	'.debug_line'
+.L19:
+	.word	.L48-.L47
+.L47:
+	.half	3
+	.word	.L50-.L49
+.L49:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c',0,0,0,0,0
+.L50:
+	.byte	5,1,7,0,5,2
+	.word	.L10
+	.byte	3,60,1,7,9
+	.half	.L21-.L10
+	.byte	0,1,1
+.L48:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_LutSincosF32_init')
+	.sect	'.debug_ranges'
+.L20:
+	.word	-1,.L10,0,.L21-.L10,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.debug_info'
+.L22:
+	.word	279
+	.half	3
+	.word	.L23
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L25,.L24
+	.byte	2
+	.word	.L13
+	.byte	3
+	.byte	'Ifx_LutSincosF32_sin',0,1,64,9
+	.word	.L28
+	.byte	1,1,1
+	.word	.L12,.L29,.L11
+	.byte	4
+	.byte	'fxpAngle',0,1,64,47
+	.word	.L30,.L31
+	.byte	5
+	.word	.L12,.L29
+	.byte	6
+	.byte	'result',0,1,66,13
+	.word	.L28,.L32
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.debug_abbrev'
+.L23:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.debug_line'
+.L24:
+	.word	.L52-.L51
+.L51:
+	.half	3
+	.word	.L54-.L53
+.L53:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutSincosF32.c',0,0,0,0,0
+.L54:
+	.byte	5,25,7,0,5,2
+	.word	.L12
+	.byte	3,194,0,1,5,38,9
+	.half	.L33-.L12
+	.byte	3,2,1,5,5,9
+	.half	.L55-.L33
+	.byte	1,5,42,7,9
+	.half	.L56-.L55
+	.byte	3,2,1,5,18,9
+	.half	.L34-.L56
+	.byte	1,5,42,9
+	.half	.L57-.L34
+	.byte	1,5,52,9
+	.half	.L35-.L57
+	.byte	1,5,25,9
+	.half	.L2-.L35
+	.byte	3,2,1,5,10,9
+	.half	.L58-.L2
+	.byte	1,5,20,7,9
+	.half	.L59-.L58
+	.byte	3,2,1,5,37,9
+	.half	.L37-.L59
+	.byte	1,5,44,9
+	.half	.L36-.L37
+	.byte	3,1,1,5,20,9
+	.half	.L60-.L36
+	.byte	1,5,44,9
+	.half	.L61-.L60
+	.byte	1,5,47,9
+	.half	.L38-.L61
+	.byte	3,127,1,9
+	.half	.L4-.L38
+	.byte	3,3,1,5,10,9
+	.half	.L62-.L4
+	.byte	1,5,29,7,9
+	.half	.L63-.L62
+	.byte	3,2,1,5,45,9
+	.half	.L64-.L63
+	.byte	3,1,1,5,21,9
+	.half	.L39-.L64
+	.byte	1,5,45,9
+	.half	.L65-.L39
+	.byte	1,5,20,9
+	.half	.L66-.L65
+	.byte	1,5,47,9
+	.half	.L40-.L66
+	.byte	3,127,1,5,20,9
+	.half	.L6-.L40
+	.byte	3,5,1,5,45,9
+	.half	.L42-.L6
+	.byte	1,9
+	.half	.L41-.L42
+	.byte	3,1,1,5,21,9
+	.half	.L67-.L41
+	.byte	1,5,45,9
+	.half	.L68-.L67
+	.byte	1,5,20,9
+	.half	.L69-.L68
+	.byte	1,5,5,9
+	.half	.L3-.L69
+	.byte	3,3,1,5,1,9
+	.half	.L8-.L3
+	.byte	3,1,1,7,9
+	.half	.L26-.L8
+	.byte	0,1,1
+.L52:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.debug_ranges'
+.L25:
+	.word	-1,.L12,0,.L26-.L12,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_LutSincosF32_init')
+	.sect	'.debug_loc'
+.L9:
+	.word	-1,.L10,0,.L27-.L10
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.debug_loc'
+.L11:
+	.word	-1,.L12,0,.L29-.L12
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L31:
+	.word	-1,.L12,0,.L33-.L12
+	.half	1
+	.byte	84
+	.word	.L33-.L12,.L34-.L12
+	.half	1
+	.byte	95
+	.word	.L2-.L12,.L36-.L12
+	.half	1
+	.byte	95
+	.word	.L37-.L12,.L4-.L12
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L4-.L12,.L39-.L12
+	.half	1
+	.byte	95
+	.word	.L6-.L12,.L41-.L12
+	.half	1
+	.byte	95
+	.word	.L42-.L12,.L3-.L12
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L32:
+	.word	-1,.L12,.L35-.L12,.L2-.L12
+	.half	1
+	.byte	82
+	.word	.L38-.L12,.L4-.L12
+	.half	1
+	.byte	82
+	.word	.L40-.L12,.L6-.L12
+	.half	1
+	.byte	82
+	.word	.L3-.L12,.L29-.L12
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L70:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_LutSincosF32_init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L70,.L10,.L27-.L10
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Ifx_LutSincosF32_sin')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L70,.L12,.L29-.L12
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+
+	; Module end

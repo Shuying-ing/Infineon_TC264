@@ -1,0 +1,2307 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\.Ifx_Console.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.src ..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.c'
+
+	
+$TC16X
+	.sdecl	'.rodata.Ifx_Console..2.cnt',data,rom
+	.sect	'.rodata.Ifx_Console..2.cnt'
+	.align	4
+.2.cnt:	.type	object
+	.size	.2.cnt,8
+	.word	-1,2147483647
+	
+	.sdecl	'.text.Ifx_Console.Ifx_Console_init',code,cluster('Ifx_Console_init')
+	.sect	'.text.Ifx_Console.Ifx_Console_init'
+	.align	2
+	
+	.global	Ifx_Console_init
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	     1  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	     2   * \file Ifx_Console.c
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	     3   * \brief Main Ifx_Console module implementation file
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	     4   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	     5   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	     6   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	     7   * $Date: 2014-03-13 15:49:47 GMT$
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	     8   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	     9   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    10   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    11   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    13   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    15   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    16  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    17  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    18   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    19  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    20   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    21   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    22   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    23   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    24   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    25   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    26  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    27   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    28   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    29   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    30   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    31   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    32   * language processor.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    33  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    34   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    35   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    36   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    37   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    38   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    39   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    40   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    41  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    42   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    43   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    44  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    45  #include <string.h>
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    46  #include <stdio.h>
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    47  #include <stdarg.h>
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    48  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    49  #include "Ifx_Console.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    50  #include "_Utilities/Ifx_Assert.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    51  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    52  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    53  Ifx_Console Ifx_g_console;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    54  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    55  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    56   * \brief Initialize the \ref Ifx_g_console object.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    57   * \param standardIo Pointer to the IfxStdIf_DPipe object used by the \ref Ifx_g_console.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    58   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    59  void Ifx_Console_init(IfxStdIf_DPipe *standardIo)
+; Function Ifx_Console_init
+.L15:
+Ifx_Console_init:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    60  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    61      Ifx_g_console.standardIo = standardIo;
+	movh.a	a15,#@his(Ifx_g_console)
+	lea	a15,[a15]@los(Ifx_g_console)
+.L102:
+	st.a	[a15],a4
+.L103:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    62      Ifx_g_console.align      = 0;
+	movh.a	a15,#@his(Ifx_g_console)
+	lea	a15,[a15]@los(Ifx_g_console)
+.L104:
+	mov	d15,#0
+.L105:
+	st.h	[a15]4,d15
+.L106:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    63  }
+	ret
+.L41:
+	
+__Ifx_Console_init_function_end:
+	.size	Ifx_Console_init,__Ifx_Console_init_function_end-Ifx_Console_init
+.L28:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Console.Ifx_Console_print',code,cluster('Ifx_Console_print')
+	.sect	'.text.Ifx_Console.Ifx_Console_print'
+	.align	2
+	
+	.global	Ifx_Console_print
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    64  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    65  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    66  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    67   * \brief Print formatted string into \ref Ifx_g_console.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    68   * \param format printf-compatible formatted string.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    69   * \retval TRUE if the string is printed successfully
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    70   * \retval FALSE if the function failed.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    71   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    72  boolean Ifx_Console_print(pchar format, ...)
+; Function Ifx_Console_print
+.L17:
+Ifx_Console_print:	.type	func
+	lea	a10,[a10]-264
+.L83:
+	mov.aa	a5,a4
+.L85:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    73  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    74      if (!Ifx_g_console.standardIo->txDisabled)
+	movh.a	a15,#@his(Ifx_g_console)
+	lea	a15,[a15]@los(Ifx_g_console)
+.L111:
+	ld.a	a15,[a15]
+.L112:
+	ld.bu	d15,[a15]4
+.L113:
+	jne	d15,#0,.L2
+.L48:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    75      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    76          char      message[STDIF_DPIPE_MAX_PRINT_SIZE + 1];
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    77          Ifx_SizeT count;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    78          va_list   args;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    79          va_start(args, format);
+	lea	a6,[a10]264
+.L87:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    80          vsprintf((char *)message, format, args);
+	lea	a4,[a10]0
+.L84:
+	call	vsprintf
+.L86:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    81          va_end(args);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    82          count = (Ifx_SizeT)strlen(message);
+	lea	a4,[a10]0
+	call	strlen
+.L114:
+	st.h	[a10]256,d2
+.L115:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    83          IFX_ASSERT(IFX_VERBOSE_LEVEL_ERROR, count < STDIF_DPIPE_MAX_PRINT_SIZE);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    84  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    85          return IfxStdIf_DPipe_write(Ifx_g_console.standardIo, (void *)message, &count, TIME_INFINITE);
+	movh.a	a15,#@his(Ifx_g_console)
+	lea	a15,[a15]@los(Ifx_g_console)
+.L116:
+	ld.a	a15,[a15]
+.L117:
+	lea	a5,[a10]0
+.L118:
+	lea	a6,[a10]256
+.L119:
+	movh.a	a2,#@his(.2.cnt)
+	lea	a2,[a2]@los(.2.cnt)
+	ld.d	e4,[a2]0
+.L56:
+
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     1  /**
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     2   * \file IfxStdIf_DPipe.h
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     3   * \brief Standard interface: Data Pipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     4   * \ingroup IfxStdIf
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     5   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     6   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     7   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     8   * $Date: 2014-02-27 20:08:24 GMT$
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     9   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    10   *                                 IMPORTANT NOTICE
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    11   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    12   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    14   * the company in which ordinary course of business you are acting and (ii) 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    16   * terms of use are agreed, use of this file is subject to following:
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    17  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    18  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    20  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    21   * Permission is hereby granted, free of charge, to any person or 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    22   * organization obtaining a copy of the software and accompanying 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    26   * Software is furnished to do so, all subject to the following:
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    27  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    28   * The copyright notices in the Software and this entire statement, including
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    32   * solely in the form of machine-executable object code generated by a source
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    33   * language processor.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    34  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    41   * DEALINGS IN THE SOFTWARE.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    42  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    43   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    44   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    45   * \defgroup library_srvsw_stdif_dpipe Standard interface: Data Pipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    46   * \ingroup library_srvsw_stdif
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    47   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    48   * The standard interafce data pipe (DPipe) abstract the hardware used for data transfer. It provide, after proper initialization an hardware independant way to write
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    49   * and read data to/from as communciation channel.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    50   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    51   * \par Porting StandardIo to DPipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    52   * replace all
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    53   *  - StandardIo type with IfxStdIf_DPipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    54   *  - StandardIo_print with IfxStdIf_DPipe_print
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    55   * delete StandardIo.c and StandardIo.h
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    56   * Include "StdIf/IfxStdIf_DPipe.h" instead of "SysSe/Bsp/StandardIo.h"
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    57   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    58   * The following files are already ported: Ifx_Console, Ifx_Shell
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    59   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    60   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    61  #ifndef STDIF_DPIPE_H_
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    62  #define STDIF_DPIPE_H_ 1
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    63  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    64  #include "IfxStdIf.h"
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    65  //----------------------------------------------------------------------------------------
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    66  #ifndef ENDL
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    67  #    define ENDL       "\r\n"
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    68  #endif
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    69  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    70  /** \brief Forward declaration */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    71  typedef struct IfxStdIf_DPipe_ IfxStdIf_DPipe;
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    72  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    73  typedef volatile boolean      *IfxStdIf_DPipe_WriteEvent;
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    74  typedef volatile boolean      *IfxStdIf_DPipe_ReadEvent;
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    75  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    76  /** \brief Size of the buffer allocated on the stack for the print function */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    77  #define STDIF_DPIPE_MAX_PRINT_SIZE (255)
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    78  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    79  /** \brief Write binary data into the \ref IfxStdIf_DPipe.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    80   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    81   * Initially the parameter 'count' specifies count of data to write.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    82   * After execution the data pointed by 'count' specifies the data actually written
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    83   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    84   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    85   * \param data Pointer to the start of data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    86   * \param count Pointer to the count of data (in bytes).
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    87   * \param timeout in system timer ticks
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    88   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    89   * \retval TRUE Returns TRUE if all items could be written
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    90   * \retval FALSE Returns FALSE if not all the items could be written
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    91   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    92  typedef boolean (*IfxStdIf_DPipe_Write)(IfxStdIf_InterfaceDriver stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    93  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    94  /** \brief Read data from the \ref IfxStdIf_DPipe object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    95   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    96   * Initially the parameter 'count' specifies count of data to read.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    97   * After execution the data pointed by 'count' specifies the data actually read.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    98   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    99   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   100   * \param data Pointer to the start of data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   101   * \param count Pointer to the count of data (in bytes).
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   102   * \param timeout in system timer ticks
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   103   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   104   * \retval TRUE Returns TRUE if all items could be read
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   105   * \retval FALSE Returns FALSE if not all the items could be read
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   106   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   107  typedef boolean (*IfxStdIf_DPipe_Read)(IfxStdIf_InterfaceDriver stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   108  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   109  /** \brief Returns the number of bytes in the rx buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   110   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   111   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   112   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   113   * \return Returns the number of bytes in the rx buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   114   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   115  typedef sint32 (*IfxStdIf_DPipe_GetReadCount)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   116  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   117  /** \brief Returns read event object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   118   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   119   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   120   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   121   * \return Returns read event object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   122   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   123  typedef IfxStdIf_DPipe_ReadEvent (*IfxStdIf_DPipe_GetReadEvent)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   124  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   125  /** \brief Returns number of bytes send
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   126   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   127   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   128   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   129   * \return Returns number of bytes send
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   130   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   131  typedef uint32 (*IfxStdIf_DPipe_GetSendCount)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   132  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   133  /** \brief Returns the time stamp of the last transmit data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   134   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   135   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   136   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   137   * \return Returns the time stamp of the last transmit data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   138   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   139  typedef Ifx_TickTime (*IfxStdIf_DPipe_GetTxTimeStamp)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   140  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   141  /** \brief Returns the number of free bytes (free space) in the tx buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   142   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   143   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   144   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   145   * \return Returns the number of free bytes in the tx buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   146   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   147  typedef sint32 (*IfxStdIf_DPipe_GetWriteCount)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   148  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   149  /** \brief Returns write event object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   150   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   151   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   152   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   153   * \return Returns write event object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   154   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   155  typedef IfxStdIf_DPipe_WriteEvent (*IfxStdIf_DPipe_GetWriteEvent)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   156  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   157  /** \brief Indicates if the required number of bytes are available for read in the buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   158   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   159   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   160   * \param count Pointer to the count of data (in bytes).
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   161   * \param timeout in system timer ticks
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   162   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   163   * \return Returns TRUE if at least count bytes are available for read in the rx buffer,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   164   * if not the Event is armed to be set when the buffer count is bigger or equal to the requested count
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   165   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   166  typedef boolean (*IfxStdIf_DPipe_CanReadCount)(IfxStdIf_InterfaceDriver stdIf, Ifx_SizeT count, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   167  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   168  /** \brief  Indicates if there is enough free space to write the data in the buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   169   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   170   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   171   * \param count Pointer to the count of data (in bytes).
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   172   * \param timeout in system timer ticks
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   173   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   174   * \return Returns TRUE if at least count bytes can be written to the tx buffer,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   175   *  if not the Event is armed to be set when the buffer free count is bigger or equal to the requested count
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   176   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   177  typedef boolean (*IfxStdIf_DPipe_CanWriteCount)(IfxStdIf_InterfaceDriver stdIf, Ifx_SizeT count, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   178  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   179  /** \brief Flush the transmit buffer by transmitting all data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   180   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   181   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   182   * \param timeout timeout for the flush operation
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   183   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   184   * \return Returns TRUE if the FIFO is empty
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   185   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   186  typedef boolean (*IfxStdIf_DPipe_FlushTx)(IfxStdIf_InterfaceDriver stdIf, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   187  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   188  /** \brief Clears the RX buffer by removing all data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   189   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   190   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   191   * \return void
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   192   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   193  typedef void (*IfxStdIf_DPipe_ClearRx)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   194  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   195  /** \brief Clears the TX buffer by removing all data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   196   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   197   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   198   * \return void
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   199   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   200  typedef void (*IfxStdIf_DPipe_ClearTx)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   201  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   202  /** \brief handler called on reveive event
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   203   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   204   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   205   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   206   * \return none
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   207   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   208  typedef void (*IfxStdIf_DPipe_OnReceive)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   209  /** \brief handler called on transmit event
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   210   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   211   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   212   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   213   * \return none
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   214   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   215  typedef void (*IfxStdIf_DPipe_OnTransmit)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   216  /** \brief handler called on error event
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   217   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   218   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   219   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   220   * \return none
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   221   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   222  typedef void (*IfxStdIf_DPipe_OnError)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   223  /** \brief Reset the sendCount counter
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   224   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   225   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   226   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   227   * \return none
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   228   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   229  typedef void (*IfxStdIf_DPipe_ResetSendCount)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   230  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   231  /** \brief Standard interface object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   232   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   233  struct IfxStdIf_DPipe_
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   234  {
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   235      IfxStdIf_InterfaceDriver driver;              /**< \brief Pointer to the specific driver object */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   236      boolean                  txDisabled;          /**< \brief If disabled is set to TRUE, the output is disabled, else enabled */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   237  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   238      /* Standard interface APIs */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   239      IfxStdIf_DPipe_Write          write;          /**< \brief \see IfxStdIf_DPipe_Write */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   240      IfxStdIf_DPipe_Read           read;           /**< \brief \see IfxStdIf_DPipe_Read */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   241      IfxStdIf_DPipe_GetReadCount   getReadCount;   /**< \brief \see IfxStdIf_DPipe_GetReadCount */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   242      IfxStdIf_DPipe_GetReadEvent   getReadEvent;   /**< \brief \see IfxStdIf_DPipe_GetReadEvent */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   243      IfxStdIf_DPipe_GetWriteCount  getWriteCount;  /**< \brief \see IfxStdIf_DPipe_GetWriteCount */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   244      IfxStdIf_DPipe_GetWriteEvent  getWriteEvent;  /**< \brief \see IfxStdIf_DPipe_GetWriteEvent */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   245      IfxStdIf_DPipe_CanReadCount   canReadCount;   /**< \brief \see IfxStdIf_DPipe_CanReadCount */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   246      IfxStdIf_DPipe_CanWriteCount  canWriteCount;  /**< \brief \see IfxStdIf_DPipe_CanWriteCount */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   247      IfxStdIf_DPipe_FlushTx        flushTx;        /**< \brief \see IfxStdIf_DPipe_FlushTx */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   248      IfxStdIf_DPipe_ClearTx        clearTx;        /**< \brief \see IfxStdIf_DPipe_ClearTx */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   249      IfxStdIf_DPipe_ClearRx        clearRx;        /**< \brief \see IfxStdIf_DPipe_ClearRx */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   250      IfxStdIf_DPipe_OnReceive      onReceive;      /**< \brief \see IfxStdIf_DPipe_OnReceive  */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   251      IfxStdIf_DPipe_OnTransmit     onTransmit;     /**< \brief \see IfxStdIf_DPipe_OnTransmit */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   252      IfxStdIf_DPipe_OnError        onError;        /**< \brief \see IfxStdIf_DPipe_OnError    */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   253  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   254      IfxStdIf_DPipe_GetSendCount   getSendCount;   /**< \brief \see IfxStdIf_DPipe_GetSendCount    */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   255      IfxStdIf_DPipe_GetTxTimeStamp getTxTimeStamp; /**< \brief \see IfxStdIf_DPipe_GetTxTimeStamp    */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   256      IfxStdIf_DPipe_ResetSendCount resetSendCount; /**< \brief \see IfxStdIf_DPipe_ResetSendCount    */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   257  };
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   258  /** \addtogroup library_srvsw_stdif_dpipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   259   * \{ */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   260  /** \copydoc IfxStdIf_DPipe_Write
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   261   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   262  IFX_INLINE boolean IfxStdIf_DPipe_write(IfxStdIf_DPipe *stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout)
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   263  {
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   264      return stdIf->write(stdIf->driver, data, count, timeout);
+	ld.a	a2,[a15]8
+.L120:
+	ld.a	a4,[a15]
+.L121:
+	calli	a2
+.L122:
+
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   264      return stdIf->write(stdIf->driver, data, count, timeout);      (inlined)
+	j	.L3
+
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   265  }      (inlined)
+.L3:
+	j	.L4
+.L2:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    86  ing into \ref Ifx_g_console.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    87   * Indented with a number of spaces.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    88   * \param format printf-compatible formatted string.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    89   * \retval TRUE if the string is printed successfully
+	mov	d2,#1
+.L123:
+	j	.L5
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    90   * \retval FALSE if the function failed.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    91   */
+.L5:
+.L4:
+	ret
+.L45:
+	
+__Ifx_Console_print_function_end:
+	.size	Ifx_Console_print,__Ifx_Console_print_function_end-Ifx_Console_print
+.L33:
+	; End of function
+	
+	.sdecl	'.text.Ifx_Console.Ifx_Console_printAlign',code,cluster('Ifx_Console_printAlign')
+	.sect	'.text.Ifx_Console.Ifx_Console_printAlign'
+	.align	2
+	
+	.global	Ifx_Console_printAlign
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    92  boolean Ifx_Console_printAlign(pchar format, ...)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    93  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    94      if (!Ifx_g_console.standardIo->txDisabled)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    95      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    96          char      message[STDIF_DPIPE_MAX_PRINT_SIZE + 1];
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    97          Ifx_SizeT align, count;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    98          char      spaces[17] = "                ";
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	    99          va_list   args;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   100          va_start(args, format);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   101          vsprintf((char *)message, format, args);
+; Function Ifx_Console_printAlign
+.L19:
+Ifx_Console_printAlign:	.type	func
+	lea	a10,[a10]-280
+.L88:
+	mov.aa	a5,a4
+.L89:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   102          va_end(args);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   103          count = (Ifx_SizeT)strlen(message);
+	movh.a	a15,#@his(Ifx_g_console)
+	lea	a15,[a15]@los(Ifx_g_console)
+.L128:
+	ld.a	a15,[a15]
+.L129:
+	ld.bu	d15,[a15]4
+.L130:
+	jne	d15,#0,.L6
+.L68:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   104          IFX_ASSERT(IFX_VERBOSE_LEVEL_ERROR, count < STDIF_DPIPE_MAX_PRINT_SIZE);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   105          align = Ifx_g_console.align;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   106  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   107          while (align > 0)
+	movh.a	a15,#@his(.1.ini)
+	lea	a15,[a15]@los(.1.ini)
+	lea	a15,[a15]0
+.L131:
+	lea	a2,[a10]258
+	lea	a4,16
+.L7:
+	ld.bu	d15,[a15+]
+	st.b	[a2+],d15
+	loop	a4,.L7
+.L132:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   108          {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   109              Ifx_SizeT scount;
+	lea	a6,[a10]280
+.L91:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   110              scount = __min(align, 10);
+	lea	a4,[a10]0
+.L133:
+	call	vsprintf
+.L90:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   111              IfxStdIf_DPipe_write(Ifx_g_console.standardIo, (void *)spaces, &scount, TIME_INFINITE);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   112              align  = align - scount;
+	lea	a4,[a10]0
+	call	strlen
+.L134:
+	st.h	[a10]256,d2
+.L135:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   113          }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   114  
+	movh.a	a15,#@his(Ifx_g_console)
+	lea	a15,[a15]@los(Ifx_g_console)
+.L136:
+	ld.h	d15,[a15]4
+.L92:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   115          return IfxStdIf_DPipe_write(Ifx_g_console.standardIo, (void *)message, &count, TIME_INFINITE);
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   116      }
+	j	.L8
+.L9:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   117      else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   118      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   119          return TRUE;
+	min	d0,d15,#10
+.L137:
+	st.h	[a10]276,d0
+.L138:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   120      }
+	movh.a	a15,#@his(Ifx_g_console)
+	lea	a15,[a15]@los(Ifx_g_console)
+.L139:
+	ld.a	a15,[a15]
+.L140:
+	lea	a5,[a10]258
+.L141:
+	lea	a6,[a10]276
+.L142:
+	movh.a	a2,#@his(.2.cnt)
+	lea	a2,[a2]@los(.2.cnt)
+	ld.d	e4,[a2]0
+.L76:
+
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     1  /**
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     2   * \file IfxStdIf_DPipe.h
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     3   * \brief Standard interface: Data Pipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     4   * \ingroup IfxStdIf
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     5   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     6   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     7   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     8   * $Date: 2014-02-27 20:08:24 GMT$
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     9   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    10   *                                 IMPORTANT NOTICE
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    11   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    12   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    14   * the company in which ordinary course of business you are acting and (ii) 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    16   * terms of use are agreed, use of this file is subject to following:
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    17  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    18  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    20  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    21   * Permission is hereby granted, free of charge, to any person or 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    22   * organization obtaining a copy of the software and accompanying 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    26   * Software is furnished to do so, all subject to the following:
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    27  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    28   * The copyright notices in the Software and this entire statement, including
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    32   * solely in the form of machine-executable object code generated by a source
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    33   * language processor.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    34  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    41   * DEALINGS IN THE SOFTWARE.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    42  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    43   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    44   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    45   * \defgroup library_srvsw_stdif_dpipe Standard interface: Data Pipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    46   * \ingroup library_srvsw_stdif
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    47   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    48   * The standard interafce data pipe (DPipe) abstract the hardware used for data transfer. It provide, after proper initialization an hardware independant way to write
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    49   * and read data to/from as communciation channel.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    50   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    51   * \par Porting StandardIo to DPipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    52   * replace all
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    53   *  - StandardIo type with IfxStdIf_DPipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    54   *  - StandardIo_print with IfxStdIf_DPipe_print
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    55   * delete StandardIo.c and StandardIo.h
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    56   * Include "StdIf/IfxStdIf_DPipe.h" instead of "SysSe/Bsp/StandardIo.h"
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    57   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    58   * The following files are already ported: Ifx_Console, Ifx_Shell
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    59   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    60   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    61  #ifndef STDIF_DPIPE_H_
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    62  #define STDIF_DPIPE_H_ 1
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    63  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    64  #include "IfxStdIf.h"
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    65  //----------------------------------------------------------------------------------------
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    66  #ifndef ENDL
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    67  #    define ENDL       "\r\n"
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    68  #endif
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    69  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    70  /** \brief Forward declaration */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    71  typedef struct IfxStdIf_DPipe_ IfxStdIf_DPipe;
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    72  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    73  typedef volatile boolean      *IfxStdIf_DPipe_WriteEvent;
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    74  typedef volatile boolean      *IfxStdIf_DPipe_ReadEvent;
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    75  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    76  /** \brief Size of the buffer allocated on the stack for the print function */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    77  #define STDIF_DPIPE_MAX_PRINT_SIZE (255)
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    78  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    79  /** \brief Write binary data into the \ref IfxStdIf_DPipe.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    80   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    81   * Initially the parameter 'count' specifies count of data to write.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    82   * After execution the data pointed by 'count' specifies the data actually written
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    83   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    84   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    85   * \param data Pointer to the start of data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    86   * \param count Pointer to the count of data (in bytes).
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    87   * \param timeout in system timer ticks
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    88   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    89   * \retval TRUE Returns TRUE if all items could be written
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    90   * \retval FALSE Returns FALSE if not all the items could be written
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    91   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    92  typedef boolean (*IfxStdIf_DPipe_Write)(IfxStdIf_InterfaceDriver stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    93  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    94  /** \brief Read data from the \ref IfxStdIf_DPipe object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    95   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    96   * Initially the parameter 'count' specifies count of data to read.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    97   * After execution the data pointed by 'count' specifies the data actually read.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    98   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    99   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   100   * \param data Pointer to the start of data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   101   * \param count Pointer to the count of data (in bytes).
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   102   * \param timeout in system timer ticks
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   103   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   104   * \retval TRUE Returns TRUE if all items could be read
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   105   * \retval FALSE Returns FALSE if not all the items could be read
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   106   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   107  typedef boolean (*IfxStdIf_DPipe_Read)(IfxStdIf_InterfaceDriver stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   108  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   109  /** \brief Returns the number of bytes in the rx buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   110   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   111   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   112   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   113   * \return Returns the number of bytes in the rx buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   114   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   115  typedef sint32 (*IfxStdIf_DPipe_GetReadCount)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   116  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   117  /** \brief Returns read event object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   118   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   119   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   120   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   121   * \return Returns read event object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   122   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   123  typedef IfxStdIf_DPipe_ReadEvent (*IfxStdIf_DPipe_GetReadEvent)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   124  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   125  /** \brief Returns number of bytes send
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   126   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   127   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   128   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   129   * \return Returns number of bytes send
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   130   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   131  typedef uint32 (*IfxStdIf_DPipe_GetSendCount)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   132  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   133  /** \brief Returns the time stamp of the last transmit data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   134   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   135   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   136   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   137   * \return Returns the time stamp of the last transmit data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   138   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   139  typedef Ifx_TickTime (*IfxStdIf_DPipe_GetTxTimeStamp)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   140  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   141  /** \brief Returns the number of free bytes (free space) in the tx buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   142   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   143   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   144   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   145   * \return Returns the number of free bytes in the tx buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   146   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   147  typedef sint32 (*IfxStdIf_DPipe_GetWriteCount)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   148  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   149  /** \brief Returns write event object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   150   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   151   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   152   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   153   * \return Returns write event object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   154   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   155  typedef IfxStdIf_DPipe_WriteEvent (*IfxStdIf_DPipe_GetWriteEvent)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   156  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   157  /** \brief Indicates if the required number of bytes are available for read in the buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   158   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   159   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   160   * \param count Pointer to the count of data (in bytes).
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   161   * \param timeout in system timer ticks
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   162   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   163   * \return Returns TRUE if at least count bytes are available for read in the rx buffer,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   164   * if not the Event is armed to be set when the buffer count is bigger or equal to the requested count
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   165   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   166  typedef boolean (*IfxStdIf_DPipe_CanReadCount)(IfxStdIf_InterfaceDriver stdIf, Ifx_SizeT count, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   167  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   168  /** \brief  Indicates if there is enough free space to write the data in the buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   169   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   170   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   171   * \param count Pointer to the count of data (in bytes).
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   172   * \param timeout in system timer ticks
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   173   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   174   * \return Returns TRUE if at least count bytes can be written to the tx buffer,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   175   *  if not the Event is armed to be set when the buffer free count is bigger or equal to the requested count
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   176   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   177  typedef boolean (*IfxStdIf_DPipe_CanWriteCount)(IfxStdIf_InterfaceDriver stdIf, Ifx_SizeT count, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   178  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   179  /** \brief Flush the transmit buffer by transmitting all data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   180   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   181   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   182   * \param timeout timeout for the flush operation
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   183   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   184   * \return Returns TRUE if the FIFO is empty
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   185   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   186  typedef boolean (*IfxStdIf_DPipe_FlushTx)(IfxStdIf_InterfaceDriver stdIf, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   187  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   188  /** \brief Clears the RX buffer by removing all data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   189   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   190   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   191   * \return void
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   192   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   193  typedef void (*IfxStdIf_DPipe_ClearRx)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   194  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   195  /** \brief Clears the TX buffer by removing all data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   196   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   197   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   198   * \return void
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   199   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   200  typedef void (*IfxStdIf_DPipe_ClearTx)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   201  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   202  /** \brief handler called on reveive event
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   203   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   204   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   205   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   206   * \return none
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   207   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   208  typedef void (*IfxStdIf_DPipe_OnReceive)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   209  /** \brief handler called on transmit event
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   210   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   211   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   212   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   213   * \return none
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   214   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   215  typedef void (*IfxStdIf_DPipe_OnTransmit)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   216  /** \brief handler called on error event
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   217   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   218   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   219   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   220   * \return none
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   221   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   222  typedef void (*IfxStdIf_DPipe_OnError)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   223  /** \brief Reset the sendCount counter
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   224   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   225   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   226   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   227   * \return none
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   228   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   229  typedef void (*IfxStdIf_DPipe_ResetSendCount)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   230  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   231  /** \brief Standard interface object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   232   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   233  struct IfxStdIf_DPipe_
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   234  {
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   235      IfxStdIf_InterfaceDriver driver;              /**< \brief Pointer to the specific driver object */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   236      boolean                  txDisabled;          /**< \brief If disabled is set to TRUE, the output is disabled, else enabled */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   237  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   238      /* Standard interface APIs */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   239      IfxStdIf_DPipe_Write          write;          /**< \brief \see IfxStdIf_DPipe_Write */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   240      IfxStdIf_DPipe_Read           read;           /**< \brief \see IfxStdIf_DPipe_Read */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   241      IfxStdIf_DPipe_GetReadCount   getReadCount;   /**< \brief \see IfxStdIf_DPipe_GetReadCount */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   242      IfxStdIf_DPipe_GetReadEvent   getReadEvent;   /**< \brief \see IfxStdIf_DPipe_GetReadEvent */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   243      IfxStdIf_DPipe_GetWriteCount  getWriteCount;  /**< \brief \see IfxStdIf_DPipe_GetWriteCount */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   244      IfxStdIf_DPipe_GetWriteEvent  getWriteEvent;  /**< \brief \see IfxStdIf_DPipe_GetWriteEvent */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   245      IfxStdIf_DPipe_CanReadCount   canReadCount;   /**< \brief \see IfxStdIf_DPipe_CanReadCount */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   246      IfxStdIf_DPipe_CanWriteCount  canWriteCount;  /**< \brief \see IfxStdIf_DPipe_CanWriteCount */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   247      IfxStdIf_DPipe_FlushTx        flushTx;        /**< \brief \see IfxStdIf_DPipe_FlushTx */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   248      IfxStdIf_DPipe_ClearTx        clearTx;        /**< \brief \see IfxStdIf_DPipe_ClearTx */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   249      IfxStdIf_DPipe_ClearRx        clearRx;        /**< \brief \see IfxStdIf_DPipe_ClearRx */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   250      IfxStdIf_DPipe_OnReceive      onReceive;      /**< \brief \see IfxStdIf_DPipe_OnReceive  */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   251      IfxStdIf_DPipe_OnTransmit     onTransmit;     /**< \brief \see IfxStdIf_DPipe_OnTransmit */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   252      IfxStdIf_DPipe_OnError        onError;        /**< \brief \see IfxStdIf_DPipe_OnError    */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   253  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   254      IfxStdIf_DPipe_GetSendCount   getSendCount;   /**< \brief \see IfxStdIf_DPipe_GetSendCount    */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   255      IfxStdIf_DPipe_GetTxTimeStamp getTxTimeStamp; /**< \brief \see IfxStdIf_DPipe_GetTxTimeStamp    */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   256      IfxStdIf_DPipe_ResetSendCount resetSendCount; /**< \brief \see IfxStdIf_DPipe_ResetSendCount    */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   257  };
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   258  /** \addtogroup library_srvsw_stdif_dpipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   259   * \{ */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   260  /** \copydoc IfxStdIf_DPipe_Write
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   261   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   262  IFX_INLINE boolean IfxStdIf_DPipe_write(IfxStdIf_DPipe *stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout)
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   263  {
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   264      return stdIf->write(stdIf->driver, data, count, timeout);
+	ld.a	a2,[a15]8
+.L143:
+	ld.a	a4,[a15]
+.L144:
+	calli	a2
+.L145:
+
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   264      return stdIf->write(stdIf->driver, data, count, timeout);      (inlined)
+	j	.L10
+
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   265  }      (inlined)
+.L10:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   121  
+	ld.h	d0,[a10]276
+.L146:
+	sub	d15,d0
+.L93:
+	extr	d15,d15,#0,#16
+.L8:
+	jge	d15,#1,.L9
+.L147:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Comm\Ifx_Console.c	   122  }
+
+	movh.a	a15,#@his(Ifx_g_console)
+
+
+	lea	a15,[a15]@los(Ifx_g_console)
+.L148:
+
+
+	ld.a	a15,[a15]
+.L149:
+
+
+	lea	a5,[a10]0
+.L150:
+
+
+	lea	a6,[a10]256
+.L151:
+
+
+	movh.a	a2,#@his(.2.cnt)
+
+
+	lea	a2,[a2]@los(.2.cnt)
+
+
+	ld.d	e4,[a2]0
+.L81:
+
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     1  /**
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     2   * \file IfxStdIf_DPipe.h
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     3   * \brief Standard interface: Data Pipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     4   * \ingroup IfxStdIf
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     5   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     6   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     7   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     8   * $Date: 2014-02-27 20:08:24 GMT$
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	     9   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    10   *                                 IMPORTANT NOTICE
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    11   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    12   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    14   * the company in which ordinary course of business you are acting and (ii) 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    16   * terms of use are agreed, use of this file is subject to following:
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    17  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    18  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    20  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    21   * Permission is hereby granted, free of charge, to any person or 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    22   * organization obtaining a copy of the software and accompanying 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    26   * Software is furnished to do so, all subject to the following:
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    27  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    28   * The copyright notices in the Software and this entire statement, including
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    29   * the above license grant, this restriction and the following disclaimer, must
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    30   * be included in all copies of the Software, in whole or in part, and all
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    31   * derivative works of the Software, unless such copies or derivative works are
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    32   * solely in the form of machine-executable object code generated by a source
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    33   * language processor.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    34  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    41   * DEALINGS IN THE SOFTWARE.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    42  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    43   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    44   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    45   * \defgroup library_srvsw_stdif_dpipe Standard interface: Data Pipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    46   * \ingroup library_srvsw_stdif
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    47   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    48   * The standard interafce data pipe (DPipe) abstract the hardware used for data transfer. It provide, after proper initialization an hardware independant way to write
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    49   * and read data to/from as communciation channel.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    50   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    51   * \par Porting StandardIo to DPipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    52   * replace all
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    53   *  - StandardIo type with IfxStdIf_DPipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    54   *  - StandardIo_print with IfxStdIf_DPipe_print
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    55   * delete StandardIo.c and StandardIo.h
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    56   * Include "StdIf/IfxStdIf_DPipe.h" instead of "SysSe/Bsp/StandardIo.h"
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    57   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    58   * The following files are already ported: Ifx_Console, Ifx_Shell
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    59   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    60   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    61  #ifndef STDIF_DPIPE_H_
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    62  #define STDIF_DPIPE_H_ 1
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    63  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    64  #include "IfxStdIf.h"
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    65  //----------------------------------------------------------------------------------------
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    66  #ifndef ENDL
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    67  #    define ENDL       "\r\n"
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    68  #endif
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    69  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    70  /** \brief Forward declaration */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    71  typedef struct IfxStdIf_DPipe_ IfxStdIf_DPipe;
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    72  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    73  typedef volatile boolean      *IfxStdIf_DPipe_WriteEvent;
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    74  typedef volatile boolean      *IfxStdIf_DPipe_ReadEvent;
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    75  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    76  /** \brief Size of the buffer allocated on the stack for the print function */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    77  #define STDIF_DPIPE_MAX_PRINT_SIZE (255)
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    78  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    79  /** \brief Write binary data into the \ref IfxStdIf_DPipe.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    80   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    81   * Initially the parameter 'count' specifies count of data to write.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    82   * After execution the data pointed by 'count' specifies the data actually written
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    83   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    84   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    85   * \param data Pointer to the start of data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    86   * \param count Pointer to the count of data (in bytes).
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    87   * \param timeout in system timer ticks
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    88   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    89   * \retval TRUE Returns TRUE if all items could be written
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    90   * \retval FALSE Returns FALSE if not all the items could be written
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    91   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    92  typedef boolean (*IfxStdIf_DPipe_Write)(IfxStdIf_InterfaceDriver stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    93  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    94  /** \brief Read data from the \ref IfxStdIf_DPipe object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    95   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    96   * Initially the parameter 'count' specifies count of data to read.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    97   * After execution the data pointed by 'count' specifies the data actually read.
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    98   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	    99   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   100   * \param data Pointer to the start of data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   101   * \param count Pointer to the count of data (in bytes).
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   102   * \param timeout in system timer ticks
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   103   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   104   * \retval TRUE Returns TRUE if all items could be read
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   105   * \retval FALSE Returns FALSE if not all the items could be read
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   106   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   107  typedef boolean (*IfxStdIf_DPipe_Read)(IfxStdIf_InterfaceDriver stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   108  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   109  /** \brief Returns the number of bytes in the rx buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   110   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   111   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   112   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   113   * \return Returns the number of bytes in the rx buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   114   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   115  typedef sint32 (*IfxStdIf_DPipe_GetReadCount)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   116  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   117  /** \brief Returns read event object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   118   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   119   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   120   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   121   * \return Returns read event object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   122   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   123  typedef IfxStdIf_DPipe_ReadEvent (*IfxStdIf_DPipe_GetReadEvent)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   124  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   125  /** \brief Returns number of bytes send
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   126   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   127   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   128   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   129   * \return Returns number of bytes send
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   130   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   131  typedef uint32 (*IfxStdIf_DPipe_GetSendCount)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   132  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   133  /** \brief Returns the time stamp of the last transmit data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   134   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   135   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   136   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   137   * \return Returns the time stamp of the last transmit data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   138   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   139  typedef Ifx_TickTime (*IfxStdIf_DPipe_GetTxTimeStamp)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   140  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   141  /** \brief Returns the number of free bytes (free space) in the tx buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   142   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   143   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   144   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   145   * \return Returns the number of free bytes in the tx buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   146   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   147  typedef sint32 (*IfxStdIf_DPipe_GetWriteCount)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   148  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   149  /** \brief Returns write event object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   150   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   151   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   152   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   153   * \return Returns write event object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   154   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   155  typedef IfxStdIf_DPipe_WriteEvent (*IfxStdIf_DPipe_GetWriteEvent)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   156  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   157  /** \brief Indicates if the required number of bytes are available for read in the buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   158   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   159   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   160   * \param count Pointer to the count of data (in bytes).
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   161   * \param timeout in system timer ticks
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   162   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   163   * \return Returns TRUE if at least count bytes are available for read in the rx buffer,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   164   * if not the Event is armed to be set when the buffer count is bigger or equal to the requested count
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   165   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   166  typedef boolean (*IfxStdIf_DPipe_CanReadCount)(IfxStdIf_InterfaceDriver stdIf, Ifx_SizeT count, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   167  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   168  /** \brief  Indicates if there is enough free space to write the data in the buffer
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   169   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   170   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   171   * \param count Pointer to the count of data (in bytes).
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   172   * \param timeout in system timer ticks
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   173   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   174   * \return Returns TRUE if at least count bytes can be written to the tx buffer,
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   175   *  if not the Event is armed to be set when the buffer free count is bigger or equal to the requested count
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   176   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   177  typedef boolean (*IfxStdIf_DPipe_CanWriteCount)(IfxStdIf_InterfaceDriver stdIf, Ifx_SizeT count, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   178  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   179  /** \brief Flush the transmit buffer by transmitting all data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   180   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   181   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   182   * \param timeout timeout for the flush operation
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   183   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   184   * \return Returns TRUE if the FIFO is empty
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   185   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   186  typedef boolean (*IfxStdIf_DPipe_FlushTx)(IfxStdIf_InterfaceDriver stdIf, Ifx_TickTime timeout);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   187  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   188  /** \brief Clears the RX buffer by removing all data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   189   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   190   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   191   * \return void
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   192   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   193  typedef void (*IfxStdIf_DPipe_ClearRx)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   194  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   195  /** \brief Clears the TX buffer by removing all data
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   196   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   197   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   198   * \return void
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   199   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   200  typedef void (*IfxStdIf_DPipe_ClearTx)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   201  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   202  /** \brief handler called on reveive event
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   203   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   204   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   205   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   206   * \return none
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   207   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   208  typedef void (*IfxStdIf_DPipe_OnReceive)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   209  /** \brief handler called on transmit event
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   210   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   211   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   212   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   213   * \return none
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   214   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   215  typedef void (*IfxStdIf_DPipe_OnTransmit)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   216  /** \brief handler called on error event
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   217   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   218   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   219   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   220   * \return none
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   221   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   222  typedef void (*IfxStdIf_DPipe_OnError)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   223  /** \brief Reset the sendCount counter
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   224   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   225   * \param stdif Pointer to the interface driver object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   226   *
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   227   * \return none
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   228   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   229  typedef void (*IfxStdIf_DPipe_ResetSendCount)(IfxStdIf_InterfaceDriver stdIf);
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   230  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   231  /** \brief Standard interface object
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   232   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   233  struct IfxStdIf_DPipe_
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   234  {
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   235      IfxStdIf_InterfaceDriver driver;              /**< \brief Pointer to the specific driver object */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   236      boolean                  txDisabled;          /**< \brief If disabled is set to TRUE, the output is disabled, else enabled */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   237  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   238      /* Standard interface APIs */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   239      IfxStdIf_DPipe_Write          write;          /**< \brief \see IfxStdIf_DPipe_Write */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   240      IfxStdIf_DPipe_Read           read;           /**< \brief \see IfxStdIf_DPipe_Read */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   241      IfxStdIf_DPipe_GetReadCount   getReadCount;   /**< \brief \see IfxStdIf_DPipe_GetReadCount */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   242      IfxStdIf_DPipe_GetReadEvent   getReadEvent;   /**< \brief \see IfxStdIf_DPipe_GetReadEvent */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   243      IfxStdIf_DPipe_GetWriteCount  getWriteCount;  /**< \brief \see IfxStdIf_DPipe_GetWriteCount */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   244      IfxStdIf_DPipe_GetWriteEvent  getWriteEvent;  /**< \brief \see IfxStdIf_DPipe_GetWriteEvent */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   245      IfxStdIf_DPipe_CanReadCount   canReadCount;   /**< \brief \see IfxStdIf_DPipe_CanReadCount */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   246      IfxStdIf_DPipe_CanWriteCount  canWriteCount;  /**< \brief \see IfxStdIf_DPipe_CanWriteCount */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   247      IfxStdIf_DPipe_FlushTx        flushTx;        /**< \brief \see IfxStdIf_DPipe_FlushTx */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   248      IfxStdIf_DPipe_ClearTx        clearTx;        /**< \brief \see IfxStdIf_DPipe_ClearTx */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   249      IfxStdIf_DPipe_ClearRx        clearRx;        /**< \brief \see IfxStdIf_DPipe_ClearRx */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   250      IfxStdIf_DPipe_OnReceive      onReceive;      /**< \brief \see IfxStdIf_DPipe_OnReceive  */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   251      IfxStdIf_DPipe_OnTransmit     onTransmit;     /**< \brief \see IfxStdIf_DPipe_OnTransmit */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   252      IfxStdIf_DPipe_OnError        onError;        /**< \brief \see IfxStdIf_DPipe_OnError    */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   253  
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   254      IfxStdIf_DPipe_GetSendCount   getSendCount;   /**< \brief \see IfxStdIf_DPipe_GetSendCount    */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   255      IfxStdIf_DPipe_GetTxTimeStamp getTxTimeStamp; /**< \brief \see IfxStdIf_DPipe_GetTxTimeStamp    */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   256      IfxStdIf_DPipe_ResetSendCount resetSendCount; /**< \brief \see IfxStdIf_DPipe_ResetSendCount    */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   257  };
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   258  /** \addtogroup library_srvsw_stdif_dpipe
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   259   * \{ */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   260  /** \copydoc IfxStdIf_DPipe_Write
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   261   */
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   262  IFX_INLINE boolean IfxStdIf_DPipe_write(IfxStdIf_DPipe *stdIf, void *data, Ifx_SizeT *count, Ifx_TickTime timeout)
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   263  {
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   264      return stdIf->write(stdIf->driver, data, count, timeout);
+	ld.a	a2,[a15]8
+.L152:
+	ld.a	a4,[a15]
+.L153:
+	calli	a2
+.L154:
+
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   264      return stdIf->write(stdIf->driver, data, count, timeout);      (inlined)
+	j	.L11
+
+; G:\Hello_world\TC264\A\workspace\Sig0809\Libraries\BaseSw\Service\CpuGeneric\StdIf\IfxStdIf_DPipe.h	   265  }      (inlined)
+.L11:
+
+
+	j	.L12
+.L6:
+
+
+	mov	d2,#1
+.L155:
+
+
+	j	.L13
+
+
+.L13:
+
+
+.L12:
+
+
+	ret
+.L66:
+	
+__Ifx_Console_printAlign_function_end:
+	.size	Ifx_Console_printAlign,__Ifx_Console_printAlign_function_end-Ifx_Console_printAlign
+.L38:
+	; End of function
+	
+	.sdecl	'.bss.Ifx_Console.Ifx_g_console',data,cluster('Ifx_g_console')
+	.sect	'.bss.Ifx_Console.Ifx_g_console'
+	.global	Ifx_g_console
+	.align	4
+Ifx_g_console:	.type	object
+	.size	Ifx_g_console,8
+	.space	8
+	.sdecl	'.rodata.Ifx_Console..1.ini',data,rom
+	.sect	'.rodata.Ifx_Console..1.ini'
+.1.ini:	.type	object
+	.size	.1.ini,17
+	.byte	32,32,32,32
+	.byte	32,32,32,32
+	.byte	32,32,32,32
+	.byte	32,32,32,32
+	.space	1
+	.calls	'Ifx_Console_print','vsprintf'
+	.calls	'Ifx_Console_print','strlen'
+	.calls	'Ifx_Console_print','__INDIRECT__'
+	.calls	'Ifx_Console_printAlign','vsprintf'
+	.calls	'Ifx_Console_printAlign','strlen'
+	.calls	'Ifx_Console_printAlign','__INDIRECT__'
+	.calls	'Ifx_Console_init','',0
+	.calls	'Ifx_Console_print','',264
+	.extern	strlen
+	.extern	vsprintf
+	.extern	__printf_float
+	.extern	__printf_llong
+	.extern	__INDIRECT__
+	.calls	'Ifx_Console_printAlign','',280
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L21:
+	.word	2835
+	.half	3
+	.word	.L22
+	.byte	4
+.L20:
+	.byte	1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L23
+.L44:
+	.byte	2
+	.byte	'unsigned char',0,1,8,3
+	.byte	'void',0,4
+	.word	190
+	.byte	5
+	.byte	'IfxStdIf_InterfaceDriver',0,2,118,15
+	.word	196
+.L51:
+	.byte	2
+	.byte	'short int',0,2,5,4
+	.word	234
+	.byte	2
+	.byte	'long long int',0,8,5,6
+	.word	173
+	.byte	1,1,7
+	.word	196
+	.byte	7
+	.word	196
+	.byte	7
+	.word	247
+	.byte	7
+	.word	252
+	.byte	0,4
+	.word	269
+	.byte	5
+	.byte	'IfxStdIf_DPipe_Write',0,1,92,19
+	.word	297
+	.byte	5
+	.byte	'IfxStdIf_DPipe_Read',0,1,107,19
+	.word	297
+	.byte	2
+	.byte	'long int',0,4,5,6
+	.word	359
+	.byte	1,1,7
+	.word	196
+	.byte	0,4
+	.word	371
+	.byte	5
+	.byte	'IfxStdIf_DPipe_GetReadCount',0,1,115,18
+	.word	384
+	.byte	8
+	.word	173
+	.byte	4
+	.word	425
+	.byte	6
+	.word	430
+	.byte	1,1,7
+	.word	196
+	.byte	0,4
+	.word	435
+	.byte	5
+	.byte	'IfxStdIf_DPipe_GetReadEvent',0,1,123,36
+	.word	448
+	.byte	5
+	.byte	'IfxStdIf_DPipe_GetWriteCount',0,1,147,1,18
+	.word	384
+	.byte	4
+	.word	435
+	.byte	5
+	.byte	'IfxStdIf_DPipe_GetWriteEvent',0,1,155,1,37
+	.word	527
+	.byte	6
+	.word	173
+	.byte	1,1,7
+	.word	196
+	.byte	7
+	.word	234
+	.byte	7
+	.word	252
+	.byte	0,4
+	.word	570
+	.byte	5
+	.byte	'IfxStdIf_DPipe_CanReadCount',0,1,166,1,19
+	.word	593
+	.byte	5
+	.byte	'IfxStdIf_DPipe_CanWriteCount',0,1,177,1,19
+	.word	593
+	.byte	6
+	.word	173
+	.byte	1,1,7
+	.word	196
+	.byte	7
+	.word	252
+	.byte	0,4
+	.word	673
+	.byte	5
+	.byte	'IfxStdIf_DPipe_FlushTx',0,1,186,1,19
+	.word	691
+	.byte	9,1,1,7
+	.word	196
+	.byte	0,4
+	.word	728
+	.byte	5
+	.byte	'IfxStdIf_DPipe_ClearTx',0,1,200,1,16
+	.word	737
+	.byte	5
+	.byte	'IfxStdIf_DPipe_ClearRx',0,1,193,1,16
+	.word	737
+	.byte	5
+	.byte	'IfxStdIf_DPipe_OnReceive',0,1,208,1,16
+	.word	737
+	.byte	5
+	.byte	'IfxStdIf_DPipe_OnTransmit',0,1,215,1,16
+	.word	737
+	.byte	5
+	.byte	'IfxStdIf_DPipe_OnError',0,1,222,1,16
+	.word	737
+	.byte	2
+	.byte	'unsigned long int',0,4,7,6
+	.word	907
+	.byte	1,1,7
+	.word	196
+	.byte	0,4
+	.word	928
+	.byte	5
+	.byte	'IfxStdIf_DPipe_GetSendCount',0,1,131,1,18
+	.word	941
+	.byte	6
+	.word	252
+	.byte	1,1,7
+	.word	196
+	.byte	0,4
+	.word	983
+	.byte	5
+	.byte	'IfxStdIf_DPipe_GetTxTimeStamp',0,1,139,1,24
+	.word	996
+	.byte	5
+	.byte	'IfxStdIf_DPipe_ResetSendCount',0,1,229,1,16
+	.word	737
+	.byte	10
+	.byte	'IfxStdIf_DPipe_',0,1,233,1,8,76,11
+	.byte	'driver',0
+	.word	201
+	.byte	4,2,35,0,11
+	.byte	'txDisabled',0
+	.word	173
+	.byte	1,2,35,4,11
+	.byte	'write',0
+	.word	302
+	.byte	4,2,35,8,11
+	.byte	'read',0
+	.word	331
+	.byte	4,2,35,12,11
+	.byte	'getReadCount',0
+	.word	389
+	.byte	4,2,35,16,11
+	.byte	'getReadEvent',0
+	.word	453
+	.byte	4,2,35,20,11
+	.byte	'getWriteCount',0
+	.word	489
+	.byte	4,2,35,24,11
+	.byte	'getWriteEvent',0
+	.word	532
+	.byte	4,2,35,28,11
+	.byte	'canReadCount',0
+	.word	598
+	.byte	4,2,35,32,11
+	.byte	'canWriteCount',0
+	.word	635
+	.byte	4,2,35,36,11
+	.byte	'flushTx',0
+	.word	696
+	.byte	4,2,35,40,11
+	.byte	'clearTx',0
+	.word	742
+	.byte	4,2,35,44,11
+	.byte	'clearRx',0
+	.word	774
+	.byte	4,2,35,48,11
+	.byte	'onReceive',0
+	.word	806
+	.byte	4,2,35,52,11
+	.byte	'onTransmit',0
+	.word	840
+	.byte	4,2,35,56,11
+	.byte	'onError',0
+	.word	875
+	.byte	4,2,35,60,11
+	.byte	'getSendCount',0
+	.word	946
+	.byte	4,2,35,64,11
+	.byte	'getTxTimeStamp',0
+	.word	1001
+	.byte	4,2,35,68,11
+	.byte	'resetSendCount',0
+	.word	1040
+	.byte	4,2,35,72,0
+.L42:
+	.byte	4
+	.word	1079
+	.byte	4
+	.word	234
+.L55:
+	.byte	12
+	.byte	'IfxStdIf_DPipe_write',0,3,1,134,2,20
+	.word	173
+	.byte	1,1
+.L57:
+	.byte	13
+	.byte	'stdIf',0,1,134,2,57
+	.word	1479
+.L59:
+	.byte	13
+	.byte	'data',0,1,134,2,70
+	.word	196
+.L61:
+	.byte	13
+	.byte	'count',0,1,134,2,87
+	.word	1484
+.L63:
+	.byte	13
+	.byte	'timeout',0,1,134,2,107
+	.word	252
+.L65:
+	.byte	14,0,4
+	.word	190
+	.byte	4
+	.word	269
+	.byte	4
+	.word	269
+	.byte	4
+	.word	371
+	.byte	4
+	.word	435
+	.byte	4
+	.word	371
+	.byte	4
+	.word	435
+	.byte	4
+	.word	570
+	.byte	4
+	.word	570
+	.byte	4
+	.word	673
+	.byte	4
+	.word	728
+	.byte	4
+	.word	728
+	.byte	4
+	.word	728
+	.byte	4
+	.word	728
+	.byte	4
+	.word	728
+	.byte	4
+	.word	928
+	.byte	4
+	.word	983
+	.byte	4
+	.word	728
+	.byte	15,1,1,4
+	.word	1675
+	.byte	16
+	.byte	'Ifx__jump_and_link',0,3,3,61,17,1,1,13
+	.byte	'fun',0,3,61,43
+	.word	1678
+	.byte	14,0,2
+	.byte	'__fract',0,4,128,1,2
+	.byte	'float',0,4,4,12
+	.byte	'Ifx__float_to_fract',0,3,3,152,2,18
+	.word	1723
+	.byte	1,1,13
+	.byte	'a',0,3,152,2,44
+	.word	1735
+	.byte	14,0,2
+	.byte	'unsigned long long int',0,8,7,12
+	.byte	'__ld64',0,3,4,135,1,19
+	.word	1789
+	.byte	1,1,13
+	.byte	'addr',0,4,135,1,32
+	.word	196
+	.byte	14,0,16
+	.byte	'__st64',0,3,4,143,1,17,1,1,13
+	.byte	'addr',0,4,143,1,30
+	.word	196
+	.byte	13
+	.byte	'value',0,4,143,1,43
+	.word	1789
+	.byte	14,0,2
+	.byte	'int',0,4,5,17
+	.word	1896
+	.byte	18
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,7
+	.word	1903
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,8
+	.word	1945
+	.byte	4
+	.word	1945
+	.byte	19
+	.byte	'__cmpswapw',0
+	.word	1961
+	.byte	1,1,1,1,20
+	.byte	'p',0
+	.word	1966
+	.byte	20
+	.byte	'value',0
+	.word	1945
+	.byte	20
+	.byte	'compare',0
+	.word	1945
+	.byte	0,19
+	.byte	'__min',0
+	.word	1896
+	.byte	1,1,1,1,7
+	.word	1896
+	.byte	7
+	.word	1896
+	.byte	0,21
+	.byte	'__dotdotdot__',0
+	.word	196
+	.byte	1,1,1,1,2
+	.byte	'char',0,1,6,17
+	.word	2072
+	.byte	4
+	.word	2080
+	.byte	22
+	.byte	'strlen',0,5,52,17
+	.word	1945
+	.byte	1,1,1,1,23,5,52,39
+	.word	2085
+	.byte	0,4
+	.word	2072
+	.byte	24
+	.word	2118
+	.byte	24
+	.word	2085
+.L53:
+	.byte	5
+	.byte	'va_list',0,7,24,16
+	.word	2118
+	.byte	22
+	.byte	'vsprintf',0,6,151,1,16
+	.word	1896
+	.byte	1,1,1,1,23,6,151,1,32
+	.word	2123
+	.byte	23,6,151,1,55
+	.word	2128
+	.byte	23,6,151,1,67
+	.word	2133
+	.byte	0,4
+	.word	2072
+	.byte	25
+	.word	1489
+	.byte	26
+	.word	1522
+	.byte	26
+	.word	1537
+	.byte	26
+	.word	1551
+	.byte	26
+	.word	1566
+	.byte	14,0,17
+	.word	2072
+	.byte	4
+	.word	2231
+.L46:
+	.byte	5
+	.byte	'pchar',0,8,56,28
+	.word	2085
+.L49:
+	.byte	27,128,2
+	.word	2072
+	.byte	28,255,1,0
+.L72:
+	.byte	27,17
+	.word	2072
+	.byte	28,16,0,25
+	.word	1683
+	.byte	26
+	.word	1709
+	.byte	14,0,25
+	.word	1744
+	.byte	26
+	.word	1776
+	.byte	14,0,25
+	.word	1815
+	.byte	26
+	.word	1834
+	.byte	14,0,25
+	.word	1850
+	.byte	26
+	.word	1865
+	.byte	26
+	.word	1879
+	.byte	14,0,29
+	.byte	'__INDIRECT__',0,9,1,1,1,1,1,5
+	.byte	'__wchar_t',0,9,1,1
+	.word	234
+	.byte	5
+	.byte	'__size_t',0,9,1,1
+	.word	1945
+	.byte	5
+	.byte	'__ptrdiff_t',0,9,1,1
+	.word	1896
+	.byte	30,1,4
+	.word	2403
+	.byte	5
+	.byte	'__codeptr',0,9,1,1
+	.word	2405
+	.byte	5
+	.byte	'size_t',0,5,29,25
+	.word	1945
+	.byte	2
+	.byte	'unsigned short int',0,2,7,5
+	.byte	'_iob_flag_t',0,6,82,25
+	.word	2443
+	.byte	5
+	.byte	'boolean',0,10,101,29
+	.word	173
+	.byte	5
+	.byte	'uint8',0,10,105,29
+	.word	173
+	.byte	5
+	.byte	'uint16',0,10,109,29
+	.word	2443
+	.byte	5
+	.byte	'uint32',0,10,113,29
+	.word	907
+	.byte	5
+	.byte	'uint64',0,10,118,29
+	.word	1789
+	.byte	5
+	.byte	'sint16',0,10,126,29
+	.word	234
+	.byte	5
+	.byte	'sint32',0,10,131,1,29
+	.word	359
+	.byte	5
+	.byte	'sint64',0,10,138,1,29
+	.word	252
+	.byte	5
+	.byte	'float32',0,10,167,1,29
+	.word	1735
+	.byte	5
+	.byte	'pvoid',0,8,57,28
+	.word	196
+	.byte	5
+	.byte	'Ifx_TickTime',0,8,79,28
+	.word	252
+	.byte	5
+	.byte	'Ifx_SizeT',0,8,92,16
+	.word	234
+	.byte	5
+	.byte	'IfxStdIf_DPipe',0,1,71,32
+	.word	1079
+	.byte	8
+	.word	173
+	.byte	4
+	.word	2700
+	.byte	5
+	.byte	'IfxStdIf_DPipe_WriteEvent',0,1,73,32
+	.word	2705
+	.byte	5
+	.byte	'IfxStdIf_DPipe_ReadEvent',0,1,74,32
+	.word	2705
+.L82:
+	.byte	31,11,58,9,8,11
+	.byte	'standardIo',0
+	.word	1479
+	.byte	4,2,35,0,11
+	.byte	'align',0
+	.word	234
+	.byte	2,2,35,4,0,5
+	.byte	'Ifx_Console',0,11,62,3
+	.word	2777
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L22:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,59,0,3,8,0,0,4,15,0,73,19,0
+	.byte	0,5,22,0,3,8,58,15,59,15,57,15,73,19,0,0,6,21,1,73,19,54,15,39,12,0,0,7,5,0,73,19,0,0,8,53,0,73,19,0,0
+	.byte	9,21,1,54,15,39,12,0,0,10,19,1,3,8,58,15,59,15,57,15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,46
+	.byte	1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,13,5,0,3,8,58,15,59,15,57,15,73,19,0,0,14,11,0,0,0
+	.byte	15,21,0,54,15,39,12,0,0,16,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,17,38,0,73,19,0,0,18,46,1
+	.byte	3,8,54,15,39,12,63,12,60,12,0,0,19,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,20,5,0,3,8,73,19,0,0,21
+	.byte	46,0,3,8,73,19,54,15,39,12,63,12,60,12,0,0,22,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12
+	.byte	0,0,23,5,0,58,15,59,15,57,15,73,19,0,0,24,55,0,73,19,0,0,25,46,1,49,19,0,0,26,5,0,49,19,0,0,27,1,1,11
+	.byte	15,73,19,0,0,28,33,0,47,15,0,0,29,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,30,21,0,54,15,0,0,31
+	.byte	19,1,58,15,59,15,57,15,11,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L23:
+	.word	.L95-.L94
+.L94:
+	.half	3
+	.word	.L97-.L96
+.L96:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	'D:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include\\',0,0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.h',0
+	.byte	0,0,0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf.h',0
+	.byte	0,0,0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'string.h',0,2,0,0
+	.byte	'stdio.h',0,2,0,0
+	.byte	'stdarg.h',0,2,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.h',0,0,0,0,0
+.L97:
+.L95:
+	.sdecl	'.debug_info',debug,cluster('Ifx_Console_init')
+	.sect	'.debug_info'
+.L24:
+	.word	248
+	.half	3
+	.word	.L25
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L27,.L26
+	.byte	2
+	.word	.L20
+	.byte	3
+	.byte	'Ifx_Console_init',0,1,59,6,1,1,1
+	.word	.L15,.L41,.L14
+	.byte	4
+	.byte	'standardIo',0,1,59,39
+	.word	.L42,.L43
+	.byte	5
+	.word	.L15,.L41
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_Console_init')
+	.sect	'.debug_abbrev'
+.L25:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_Console_init')
+	.sect	'.debug_line'
+.L26:
+	.word	.L99-.L98
+.L98:
+	.half	3
+	.word	.L101-.L100
+.L100:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.c',0,0,0,0,0
+.L101:
+	.byte	5,5,7,0,5,2
+	.word	.L15
+	.byte	3,60,1,5,30,9
+	.half	.L102-.L15
+	.byte	1,5,5,9
+	.half	.L103-.L102
+	.byte	3,1,1,5,32,9
+	.half	.L104-.L103
+	.byte	1,5,30,9
+	.half	.L105-.L104
+	.byte	1,5,1,9
+	.half	.L106-.L105
+	.byte	3,1,1,7,9
+	.half	.L28-.L106
+	.byte	0,1,1
+.L99:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_Console_init')
+	.sect	'.debug_ranges'
+.L27:
+	.word	-1,.L15,0,.L28-.L15,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_Console_print')
+	.sect	'.debug_info'
+.L29:
+	.word	382
+	.half	3
+	.word	.L30
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L32,.L31
+	.byte	2
+	.word	.L20
+	.byte	3
+	.byte	'Ifx_Console_print',0,1,72,9
+	.word	.L44
+	.byte	1,1,1
+	.word	.L17,.L45,.L16
+	.byte	4
+	.byte	'format',0,1,72,33
+	.word	.L46,.L47
+	.byte	5,1,72,41,6
+	.word	.L17,.L45
+	.byte	6
+	.word	.L48,.L2
+	.byte	7
+	.byte	'message',0,1,76,19
+	.word	.L49,.L50
+	.byte	7
+	.byte	'count',0,1,77,19
+	.word	.L51,.L52
+	.byte	7
+	.byte	'args',0,1,78,19
+	.word	.L53,.L54
+	.byte	8
+	.word	.L55,.L56,.L3
+	.byte	9
+	.word	.L57,.L58
+	.byte	9
+	.word	.L59,.L60
+	.byte	9
+	.word	.L61,.L62
+	.byte	9
+	.word	.L63,.L64
+	.byte	10
+	.word	.L65,.L56,.L3
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_Console_print')
+	.sect	'.debug_abbrev'
+.L30:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,24,0,58,15,59,15,57,15
+	.byte	0,0,6,11,1,17,1,18,1,0,0,7,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,8,29,1,49,16,17,1,18,1,0,0,9,5,0,49
+	.byte	16,2,6,0,0,10,11,0,49,16,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_Console_print')
+	.sect	'.debug_line'
+.L31:
+	.word	.L108-.L107
+.L107:
+	.half	3
+	.word	.L110-.L109
+.L109:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.c',0,0,0,0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.h',0
+	.byte	0,0,0,0
+.L110:
+	.byte	5,9,7,0,5,2
+	.word	.L17
+	.byte	3,199,0,1,5,10,9
+	.half	.L85-.L17
+	.byte	3,2,1,5,23,9
+	.half	.L111-.L85
+	.byte	1,5,34,9
+	.half	.L112-.L111
+	.byte	1,5,10,9
+	.half	.L113-.L112
+	.byte	1,5,9,7,9
+	.half	.L48-.L113
+	.byte	3,5,1,5,26,9
+	.half	.L87-.L48
+	.byte	3,1,1,5,43,9
+	.half	.L84-.L87
+	.byte	1,5,35,9
+	.half	.L86-.L84
+	.byte	3,2,1,5,15,9
+	.half	.L114-.L86
+	.byte	1,5,37,9
+	.half	.L115-.L114
+	.byte	3,3,1,5,50,9
+	.half	.L116-.L115
+	.byte	1,5,71,9
+	.half	.L117-.L116
+	.byte	1,5,81,9
+	.half	.L118-.L117
+	.byte	1,5,88,9
+	.half	.L119-.L118
+	.byte	1,4,2,5,17,9
+	.half	.L56-.L119
+	.byte	3,179,1,1,5,30,9
+	.half	.L120-.L56
+	.byte	1,5,53,9
+	.half	.L121-.L120
+	.byte	1,5,5,9
+	.half	.L122-.L121
+	.byte	1,4,1,5,9,9
+	.half	.L3-.L122
+	.byte	3,205,126,1,5,16,9
+	.half	.L2-.L3
+	.byte	3,4,1,5,9,9
+	.half	.L123-.L2
+	.byte	1,5,1,9
+	.half	.L4-.L123
+	.byte	3,2,1,7,9
+	.half	.L33-.L4
+	.byte	0,1,1
+.L108:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_Console_print')
+	.sect	'.debug_ranges'
+.L32:
+	.word	-1,.L17,0,.L33-.L17,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_Console_printAlign')
+	.sect	'.debug_info'
+.L34:
+	.word	516
+	.half	3
+	.word	.L35
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L37,.L36
+	.byte	2
+	.word	.L20
+	.byte	3
+	.byte	'Ifx_Console_printAlign',0,1,101,9
+	.word	.L44
+	.byte	1,1,1
+	.word	.L19,.L66,.L18
+	.byte	4
+	.byte	'format',0,1,101,38
+	.word	.L46,.L67
+	.byte	5,1,101,46,6
+	.word	.L19,.L66
+	.byte	6
+	.word	.L68,.L6
+	.byte	7
+	.byte	'message',0,1,105,19
+	.word	.L49,.L69
+	.byte	7
+	.byte	'align',0,1,106,19
+	.word	.L51,.L70
+	.byte	7
+	.byte	'count',0,1,106,26
+	.word	.L51,.L71
+	.byte	7
+	.byte	'spaces',0,1,107,19
+	.word	.L72,.L73
+	.byte	7
+	.byte	'args',0,1,108,19
+	.word	.L53,.L74
+	.byte	6
+	.word	.L9,.L8
+	.byte	7
+	.byte	'scount',0,1,118,23
+	.word	.L51,.L75
+	.byte	8
+	.word	.L55,.L76,.L10
+	.byte	9
+	.word	.L57,.L77
+	.byte	9
+	.word	.L59,.L78
+	.byte	9
+	.word	.L61,.L79
+	.byte	9
+	.word	.L63,.L80
+	.byte	10
+	.word	.L65,.L76,.L10
+	.byte	0,0,8
+	.word	.L55,.L81,.L11
+	.byte	9
+	.word	.L57,.L77
+	.byte	9
+	.word	.L59,.L78
+	.byte	9
+	.word	.L61,.L79
+	.byte	9
+	.word	.L63,.L80
+	.byte	10
+	.word	.L65,.L81,.L11
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_Console_printAlign')
+	.sect	'.debug_abbrev'
+.L35:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,24,0,58,15,59,15,57,15
+	.byte	0,0,6,11,1,17,1,18,1,0,0,7,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,8,29,1,49,16,17,1,18,1,0,0,9,5,0,49
+	.byte	16,2,6,0,0,10,11,0,49,16,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_Console_printAlign')
+	.sect	'.debug_line'
+.L36:
+	.word	.L125-.L124
+.L124:
+	.half	3
+	.word	.L127-.L126
+.L126:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.c',0,0,0,0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.h',0
+	.byte	0,0,0,0
+.L127:
+	.byte	5,9,7,0,5,2
+	.word	.L19
+	.byte	3,228,0,1,5,10,9
+	.half	.L89-.L19
+	.byte	3,2,1,5,23,9
+	.half	.L128-.L89
+	.byte	1,5,34,9
+	.half	.L129-.L128
+	.byte	1,5,10,9
+	.half	.L130-.L129
+	.byte	1,5,32,7,9
+	.half	.L68-.L130
+	.byte	3,4,1,5,30,9
+	.half	.L131-.L68
+	.byte	1,5,9,9
+	.half	.L132-.L131
+	.byte	3,2,1,5,26,9
+	.half	.L91-.L132
+	.byte	3,1,1,5,43,9
+	.half	.L133-.L91
+	.byte	1,5,35,9
+	.half	.L90-.L133
+	.byte	3,2,1,5,15,9
+	.half	.L134-.L90
+	.byte	1,5,17,9
+	.half	.L135-.L134
+	.byte	3,2,1,5,30,9
+	.half	.L136-.L135
+	.byte	1,5,25,9
+	.half	.L92-.L136
+	.byte	3,2,1,5,27,9
+	.half	.L9-.L92
+	.byte	3,3,1,5,20,9
+	.half	.L137-.L9
+	.byte	1,5,34,9
+	.half	.L138-.L137
+	.byte	3,1,1,5,47,9
+	.half	.L139-.L138
+	.byte	1,5,68,9
+	.half	.L140-.L139
+	.byte	1,5,77,9
+	.half	.L141-.L140
+	.byte	1,5,85,9
+	.half	.L142-.L141
+	.byte	1,4,2,5,17,9
+	.half	.L76-.L142
+	.byte	3,144,1,1,5,30,9
+	.half	.L143-.L76
+	.byte	1,5,53,9
+	.half	.L144-.L143
+	.byte	1,5,5,9
+	.half	.L145-.L144
+	.byte	1,4,1,5,30,9
+	.half	.L10-.L145
+	.byte	3,241,126,1,5,28,9
+	.half	.L146-.L10
+	.byte	1,5,25,9
+	.half	.L8-.L146
+	.byte	3,123,1,5,37,7,9
+	.half	.L147-.L8
+	.byte	3,8,1,5,50,9
+	.half	.L148-.L147
+	.byte	1,5,71,9
+	.half	.L149-.L148
+	.byte	1,5,81,9
+	.half	.L150-.L149
+	.byte	1,5,88,9
+	.half	.L151-.L150
+	.byte	1,4,2,5,17,9
+	.half	.L81-.L151
+	.byte	3,140,1,1,5,30,9
+	.half	.L152-.L81
+	.byte	1,5,53,9
+	.half	.L153-.L152
+	.byte	1,5,5,9
+	.half	.L154-.L153
+	.byte	1,4,1,5,9,9
+	.half	.L11-.L154
+	.byte	3,244,126,1,5,16,9
+	.half	.L6-.L11
+	.byte	3,4,1,5,9,9
+	.half	.L155-.L6
+	.byte	1,5,1,9
+	.half	.L12-.L155
+	.byte	3,2,1,7,9
+	.half	.L38-.L12
+	.byte	0,1,1
+.L125:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_Console_printAlign')
+	.sect	'.debug_ranges'
+.L37:
+	.word	-1,.L19,0,.L38-.L19,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_g_console')
+	.sect	'.debug_info'
+.L39:
+	.word	200
+	.half	3
+	.word	.L40
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Comm\\Ifx_Console.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L20
+	.byte	3
+	.byte	'Ifx_g_console',0,9,53,13
+	.word	.L82
+	.byte	1,5,3
+	.word	Ifx_g_console
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_g_console')
+	.sect	'.debug_abbrev'
+.L40:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_Console_init')
+	.sect	'.debug_loc'
+.L14:
+	.word	-1,.L15,0,.L41-.L15
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L43:
+	.word	-1,.L15,0,.L41-.L15
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_Console_print')
+	.sect	'.debug_loc'
+.L16:
+	.word	-1,.L17,0,.L83-.L17
+	.half	2
+	.byte	138,0
+	.word	.L83-.L17,.L45-.L17
+	.half	3
+	.byte	138,136,2
+	.word	.L45-.L17,.L45-.L17
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L54:
+	.word	-1,.L17,.L87-.L17,.L86-.L17
+	.half	1
+	.byte	102
+	.word	0,0
+.L52:
+	.word	-1,.L17,0,.L45-.L17
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L62:
+	.word	0,0
+.L60:
+	.word	0,0
+.L47:
+	.word	-1,.L17,0,.L84-.L17
+	.half	1
+	.byte	100
+	.word	.L85-.L17,.L86-.L17
+	.half	1
+	.byte	101
+	.word	.L2-.L17,.L4-.L17
+	.half	1
+	.byte	100
+	.word	.L2-.L17,.L4-.L17
+	.half	1
+	.byte	101
+	.word	0,0
+.L50:
+	.word	-1,.L17,0,.L45-.L17
+	.half	3
+	.byte	145,248,125
+	.word	0,0
+.L58:
+	.word	0,0
+.L64:
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_Console_printAlign')
+	.sect	'.debug_loc'
+.L18:
+	.word	-1,.L19,0,.L88-.L19
+	.half	2
+	.byte	138,0
+	.word	.L88-.L19,.L66-.L19
+	.half	3
+	.byte	138,152,2
+	.word	.L66-.L19,.L66-.L19
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L70:
+	.word	-1,.L19,.L92-.L19,.L93-.L19
+	.half	1
+	.byte	95
+	.word	.L8-.L19,.L6-.L19
+	.half	1
+	.byte	95
+	.word	0,0
+.L74:
+	.word	-1,.L19,.L91-.L19,.L90-.L19
+	.half	1
+	.byte	102
+	.word	0,0
+.L71:
+	.word	-1,.L19,0,.L66-.L19
+	.half	2
+	.byte	145,104
+	.word	0,0
+.L79:
+	.word	0,0
+.L78:
+	.word	0,0
+.L67:
+	.word	-1,.L19,0,.L7-.L19
+	.half	1
+	.byte	100
+	.word	.L89-.L19,.L90-.L19
+	.half	1
+	.byte	101
+	.word	.L6-.L19,.L12-.L19
+	.half	1
+	.byte	101
+	.word	.L6-.L19,.L12-.L19
+	.half	1
+	.byte	100
+	.word	0,0
+.L69:
+	.word	-1,.L19,0,.L66-.L19
+	.half	3
+	.byte	145,232,125
+	.word	0,0
+.L75:
+	.word	-1,.L19,0,.L66-.L19
+	.half	2
+	.byte	145,124
+	.word	0,0
+.L73:
+	.word	-1,.L19,0,.L66-.L19
+	.half	2
+	.byte	145,106
+	.word	0,0
+.L77:
+	.word	0,0
+.L80:
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L156:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_Console_init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L156,.L15,.L41-.L15
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_Console_print')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L156,.L17,.L45-.L17
+	.byte	4
+	.word	(.L83-.L17)/2
+	.byte	19,136,2,22,26,4,19,138,136,2,4
+	.word	(.L45-.L83)/2
+	.byte	19,0,8,26
+	.sdecl	'.debug_frame',debug,cluster('Ifx_Console_printAlign')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L156,.L19,.L66-.L19
+	.byte	4
+	.word	(.L88-.L19)/2
+	.byte	19,152,2,22,26,4,19,138,152,2,4
+	.word	(.L66-.L88)/2
+	.byte	19,0,8,26
+
+
+	; Module end

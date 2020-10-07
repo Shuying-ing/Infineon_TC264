@@ -1,0 +1,711 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\seekfree_peripheral\\.SEEKFREE_FUN.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\seekfree_peripheral\\SEEKFREE_FUN.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\seekfree_peripheral\\SEEKFREE_FUN.src ..\\Libraries\\seekfree_peripheral\\SEEKFREE_FUN.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FUN.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.SEEKFREE_FUN.myabs',code,cluster('myabs')
+	.sect	'.text.SEEKFREE_FUN.myabs'
+	.align	2
+	
+	.global	myabs
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	     1  /*********************************************************************************************************************
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	     2   * COPYRIGHT NOTICE
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	     3   * Copyright (c) 2020,逐飞科技
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	     4   * All rights reserved.
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	     5   * 技术讨论QQ群：三群：824575535
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	     6   *
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	     7   * 以下所有内容版权均属逐飞科技所有，未经允许不得用于商业用途，
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	     8   * 欢迎各位使用并传播本程序，修改内容时必须保留逐飞科技的版权声明。
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	     9   *
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    10   * @file       		FUN
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    11   * @company	   		成都逐飞科技有限公司
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    12   * @author     		逐飞科技(QQ3184284598)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    13   * @version    		查看doc内version文件 版本说明
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    14   * @Software 		tasking v6.3r1
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    15   * @Target core		TC264D
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    16   * @Taobao   		https://seekfree.taobao.com/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    17   * @date       		2020-3-23
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    18   ********************************************************************************************************************/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    19  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    20  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    21  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    22  #include "SEEKFREE_FUN.h"
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    23  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    24  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    25  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    26  //  @brief      绝对值函数
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    27  //  @param      dat				需要求绝对值的数
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    28  //  @return     int				返回绝对值
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    29  //  Sample usage:				dat = myabs(dat);//将dat变成正数
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    30  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    31  int  myabs(int dat)
+; Function myabs
+.L16:
+myabs:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    32  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    33      if(dat>=0)  return dat;
+	jlt	d4,#0,.L2
+.L77:
+	mov	d2,d4
+.L62:
+	j	.L3
+.L2:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    34      else        return -dat;
+	rsub	d4,#0
+.L78:
+	mov	d2,d4
+	j	.L4
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    35  }
+.L4:
+.L3:
+	ret
+.L48:
+	
+__myabs_function_end:
+	.size	myabs,__myabs_function_end-myabs
+.L31:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_FUN.my_delay',code,cluster('my_delay')
+	.sect	'.text.SEEKFREE_FUN.my_delay'
+	.align	2
+	
+	.global	my_delay
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    36  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    37  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    38  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    39  //  @brief      软件延时
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    40  //  @param      t				延时时间
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    41  //  @return     void			
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    42  //  Sample usage:				
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    43  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    44  void my_delay(long t)
+; Function my_delay
+.L18:
+my_delay:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    45  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    46      while(t--);
+	j	.L5
+.L6:
+.L5:
+	mov	d15,d4
+	add	d4,#-1
+.L83:
+	jne	d15,#0,.L6
+.L84:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    47  }
+	ret
+.L50:
+	
+__my_delay_function_end:
+	.size	my_delay,__my_delay_function_end-my_delay
+.L36:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_FUN.limit',code,cluster('limit')
+	.sect	'.text.SEEKFREE_FUN.limit'
+	.align	2
+	
+	.global	limit
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    48  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    49  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    50  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    51  //  @brief      限幅
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    52  //  @param      x				被限幅的数据
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    53  //  @param      y				限幅范围(数据会被限制在-y至+y之间)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    54  //  @return     float			限幅之后的数据			
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    55  //  Sample usage:				float dat = limit(500,300);//数据被限制在-300至+300之间  因此返回的结果是300
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    56  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    57  float limit(float x, int32 y)
+; Function limit
+.L20:
+limit:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    58  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    59      if(x>y)             return (float)y;
+	itof	d15,d5
+.L89:
+	cmp.f	d15,d4,d15
+	extr.u	d15,d15,#2,#1
+.L90:
+	jeq	d15,#0,.L7
+.L91:
+	itof	d2,d5
+.L92:
+	j	.L8
+.L7:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    60      else if(x<-y)       return (float)(-y);
+	mov	d15,d5
+.L64:
+	rsub	d15,#0
+.L63:
+	itof	d15,d15
+.L65:
+	cmp.f	d15,d4,d15
+	extr.u	d15,d15,#0,#1
+.L93:
+	jeq	d15,#0,.L9
+.L66:
+	rsub	d5,#0
+.L94:
+	itof	d2,d5
+.L95:
+	j	.L10
+.L9:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    61      else                return x;
+	mov	d2,d4
+.L67:
+	j	.L11
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    62  }
+.L11:
+.L10:
+.L8:
+	ret
+.L54:
+	
+__limit_function_end:
+	.size	limit,__limit_function_end-limit
+.L41:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_FUN.limit_ab',code,cluster('limit_ab')
+	.sect	'.text.SEEKFREE_FUN.limit_ab'
+	.align	2
+	
+	.global	limit_ab
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    63  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    64  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    65  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    66  //  @brief      双边限幅
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    67  //  @param      x				被限幅的数据
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    68  //  @param      a				限幅范围左边界
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    69  //  @param      b				限幅范围右边界
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    70  //  @return     float			限幅之后的数据			
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    71  //  Sample usage:				int16 dat = limit_ab(500,-300，400);//数据被限制在-300至+400之间  因此返回的结果是400
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    72  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    73  int16 limit_ab(int16 x, int16 a, int16 b)
+; Function limit_ab
+.L22:
+limit_ab:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    74  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    75      if(x<a) x = a;
+	jge	d4,d5,.L12
+.L100:
+	mov	d4,d5
+.L12:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    76      if(x>b) x = b;
+	jge	d6,d4,.L13
+.L101:
+	mov	d4,d6
+.L13:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    77      return x;
+	mov	d2,d4
+.L68:
+	j	.L14
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    78  }
+.L14:
+	ret
+.L58:
+	
+__limit_ab_function_end:
+	.size	limit_ab,__limit_ab_function_end-limit_ab
+.L46:
+	; End of function
+	
+	.calls	'myabs','',0
+	.calls	'my_delay','',0
+	.calls	'limit','',0
+	.calls	'limit_ab','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L24:
+	.word	582
+	.half	3
+	.word	.L25
+	.byte	4
+.L23:
+	.byte	1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FUN.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L26
+.L47:
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	157
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	164
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	206
+	.byte	7
+	.word	206
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	222
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	227
+	.byte	9
+	.byte	'value',0
+	.word	206
+	.byte	9
+	.byte	'compare',0
+	.word	206
+	.byte	0
+.L51:
+	.byte	2
+	.byte	'long int',0,4,5
+.L53:
+	.byte	2
+	.byte	'float',0,4,4
+.L57:
+	.byte	2
+	.byte	'short int',0,2,5,10
+	.byte	'__size_t',0,1,1,1
+	.word	206
+	.byte	11,1,7
+	.word	335
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	337
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,105,29
+	.word	360
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,109,29
+	.word	391
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,113,29
+	.word	428
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,10
+	.byte	'uint64',0,2,118,29
+	.word	464
+	.byte	2
+	.byte	'char',0,1,6,10
+	.byte	'int8',0,3,33,29
+	.word	505
+	.byte	10
+	.byte	'int16',0,3,34,29
+	.word	305
+	.byte	10
+	.byte	'int32',0,3,35,29
+	.word	284
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'int64',0,3,36,29
+	.word	554
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L25:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L26:
+	.word	.L70-.L69
+.L69:
+	.half	3
+	.word	.L72-.L71
+.L71:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common',0,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FUN.c',0,0,0,0
+	.byte	'PLATFORM_TYPES.H',0,1,0,0
+	.byte	'common.h',0,2,0,0,0
+.L72:
+.L70:
+	.sdecl	'.debug_info',debug,cluster('myabs')
+	.sect	'.debug_info'
+.L27:
+	.word	218
+	.half	3
+	.word	.L28
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FUN.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L30,.L29
+	.byte	2
+	.word	.L23
+	.byte	3
+	.byte	'myabs',0,1,31,6
+	.word	.L47
+	.byte	1,1,1
+	.word	.L16,.L48,.L15
+	.byte	4
+	.byte	'dat',0,1,31,16
+	.word	.L47,.L49
+	.byte	5
+	.word	.L16,.L48
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('myabs')
+	.sect	'.debug_abbrev'
+.L28:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('myabs')
+	.sect	'.debug_line'
+.L29:
+	.word	.L74-.L73
+.L73:
+	.half	3
+	.word	.L76-.L75
+.L75:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FUN.c',0,0,0,0,0
+.L76:
+	.byte	5,5,7,0,5,2
+	.word	.L16
+	.byte	3,32,1,5,17,7,9
+	.half	.L77-.L16
+	.byte	1,5,24,9
+	.half	.L2-.L77
+	.byte	3,1,1,5,17,9
+	.half	.L78-.L2
+	.byte	1,5,1,9
+	.half	.L3-.L78
+	.byte	3,1,1,7,9
+	.half	.L31-.L3
+	.byte	0,1,1
+.L74:
+	.sdecl	'.debug_ranges',debug,cluster('myabs')
+	.sect	'.debug_ranges'
+.L30:
+	.word	-1,.L16,0,.L31-.L16,0,0
+	.sdecl	'.debug_info',debug,cluster('my_delay')
+	.sect	'.debug_info'
+.L32:
+	.word	215
+	.half	3
+	.word	.L33
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FUN.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L35,.L34
+	.byte	2
+	.word	.L23
+	.byte	3
+	.byte	'my_delay',0,1,44,6,1,1,1
+	.word	.L18,.L50,.L17
+	.byte	4
+	.byte	't',0,1,44,20
+	.word	.L51,.L52
+	.byte	5
+	.word	.L18,.L50
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('my_delay')
+	.sect	'.debug_abbrev'
+.L33:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('my_delay')
+	.sect	'.debug_line'
+.L34:
+	.word	.L80-.L79
+.L79:
+	.half	3
+	.word	.L82-.L81
+.L81:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FUN.c',0,0,0,0,0
+.L82:
+	.byte	5,14,7,0,5,2
+	.word	.L18
+	.byte	3,45,1,5,12,9
+	.half	.L5-.L18
+	.byte	1,5,14,9
+	.half	.L83-.L5
+	.byte	1,5,1,7,9
+	.half	.L84-.L83
+	.byte	3,1,1,7,9
+	.half	.L36-.L84
+	.byte	0,1,1
+.L80:
+	.sdecl	'.debug_ranges',debug,cluster('my_delay')
+	.sect	'.debug_ranges'
+.L35:
+	.word	-1,.L18,0,.L36-.L18,0,0
+	.sdecl	'.debug_info',debug,cluster('limit')
+	.sect	'.debug_info'
+.L37:
+	.word	230
+	.half	3
+	.word	.L38
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FUN.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L40,.L39
+	.byte	2
+	.word	.L23
+	.byte	3
+	.byte	'limit',0,1,57,7
+	.word	.L53
+	.byte	1,1,1
+	.word	.L20,.L54,.L19
+	.byte	4
+	.byte	'x',0,1,57,19
+	.word	.L53,.L55
+	.byte	4
+	.byte	'y',0,1,57,28
+	.word	.L51,.L56
+	.byte	5
+	.word	.L20,.L54
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('limit')
+	.sect	'.debug_abbrev'
+.L38:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('limit')
+	.sect	'.debug_line'
+.L39:
+	.word	.L86-.L85
+.L85:
+	.half	3
+	.word	.L88-.L87
+.L87:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FUN.c',0,0,0,0,0
+.L88:
+	.byte	5,10,7,0,5,2
+	.word	.L20
+	.byte	3,58,1,5,9,9
+	.half	.L89-.L20
+	.byte	1,5,5,9
+	.half	.L90-.L89
+	.byte	1,5,32,7,9
+	.half	.L91-.L90
+	.byte	1,5,25,9
+	.half	.L92-.L91
+	.byte	1,5,16,9
+	.half	.L7-.L92
+	.byte	3,1,1,5,15,9
+	.half	.L64-.L7
+	.byte	1,5,14,9
+	.half	.L65-.L64
+	.byte	1,5,10,9
+	.half	.L93-.L65
+	.byte	1,5,40,7,9
+	.half	.L66-.L93
+	.byte	1,5,32,9
+	.half	.L94-.L66
+	.byte	1,5,25,9
+	.half	.L95-.L94
+	.byte	1,9
+	.half	.L9-.L95
+	.byte	3,1,1,5,1,9
+	.half	.L8-.L9
+	.byte	3,1,1,7,9
+	.half	.L41-.L8
+	.byte	0,1,1
+.L86:
+	.sdecl	'.debug_ranges',debug,cluster('limit')
+	.sect	'.debug_ranges'
+.L40:
+	.word	-1,.L20,0,.L41-.L20,0,0
+	.sdecl	'.debug_info',debug,cluster('limit_ab')
+	.sect	'.debug_info'
+.L42:
+	.word	247
+	.half	3
+	.word	.L43
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FUN.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L45,.L44
+	.byte	2
+	.word	.L23
+	.byte	3
+	.byte	'limit_ab',0,1,73,7
+	.word	.L57
+	.byte	1,1,1
+	.word	.L22,.L58,.L21
+	.byte	4
+	.byte	'x',0,1,73,22
+	.word	.L57,.L59
+	.byte	4
+	.byte	'a',0,1,73,31
+	.word	.L57,.L60
+	.byte	4
+	.byte	'b',0,1,73,40
+	.word	.L57,.L61
+	.byte	5
+	.word	.L22,.L58
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('limit_ab')
+	.sect	'.debug_abbrev'
+.L43:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('limit_ab')
+	.sect	'.debug_line'
+.L44:
+	.word	.L97-.L96
+.L96:
+	.half	3
+	.word	.L99-.L98
+.L98:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FUN.c',0,0,0,0,0
+.L99:
+	.byte	5,5,7,0,5,2
+	.word	.L22
+	.byte	3,202,0,1,5,15,7,9
+	.half	.L100-.L22
+	.byte	1,5,5,9
+	.half	.L12-.L100
+	.byte	3,1,1,5,15,7,9
+	.half	.L101-.L12
+	.byte	1,5,5,9
+	.half	.L13-.L101
+	.byte	3,1,1,5,1,9
+	.half	.L14-.L13
+	.byte	3,1,1,7,9
+	.half	.L46-.L14
+	.byte	0,1,1
+.L97:
+	.sdecl	'.debug_ranges',debug,cluster('limit_ab')
+	.sect	'.debug_ranges'
+.L45:
+	.word	-1,.L22,0,.L46-.L22,0,0
+	.sdecl	'.debug_loc',debug,cluster('limit')
+	.sect	'.debug_loc'
+.L19:
+	.word	-1,.L20,0,.L54-.L20
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L55:
+	.word	-1,.L20,0,.L54-.L20
+	.half	1
+	.byte	84
+	.word	.L67-.L20,.L8-.L20
+	.half	1
+	.byte	82
+	.word	0,0
+.L56:
+	.word	-1,.L20,0,.L63-.L20
+	.half	1
+	.byte	85
+	.word	.L64-.L20,.L65-.L20
+	.half	1
+	.byte	95
+	.word	.L66-.L20,.L9-.L20
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('limit_ab')
+	.sect	'.debug_loc'
+.L60:
+	.word	-1,.L22,0,.L58-.L22
+	.half	1
+	.byte	85
+	.word	0,0
+.L61:
+	.word	-1,.L22,0,.L58-.L22
+	.half	1
+	.byte	86
+	.word	0,0
+.L21:
+	.word	-1,.L22,0,.L58-.L22
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L59:
+	.word	-1,.L22,0,.L58-.L22
+	.half	1
+	.byte	84
+	.word	.L68-.L22,.L58-.L22
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('my_delay')
+	.sect	'.debug_loc'
+.L17:
+	.word	-1,.L18,0,.L50-.L18
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L52:
+	.word	-1,.L18,0,.L50-.L18
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('myabs')
+	.sect	'.debug_loc'
+.L49:
+	.word	-1,.L16,0,.L48-.L16
+	.half	1
+	.byte	84
+	.word	.L62-.L16,.L2-.L16
+	.half	1
+	.byte	82
+	.word	0,0
+.L15:
+	.word	-1,.L16,0,.L48-.L16
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L102:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('myabs')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L102,.L16,.L48-.L16
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('my_delay')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L102,.L18,.L50-.L18
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('limit')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L102,.L20,.L54-.L20
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('limit_ab')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L102,.L22,.L58-.L22
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FUN.c	    79  
+
+	; Module end

@@ -1,0 +1,2148 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\BaseSw\\Service\\CpuGeneric\\If\\.SpiIf.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\BaseSw\\Service\\CpuGeneric\\If\\SpiIf.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\BaseSw\\Service\\CpuGeneric\\If\\SpiIf.src ..\\Libraries\\BaseSw\\Service\\CpuGeneric\\If\\SpiIf.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\If\\SpiIf.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.SpiIf.SpiIf_initConfig',code,cluster('SpiIf_initConfig')
+	.sect	'.text.SpiIf.SpiIf_initConfig'
+	.align	2
+	
+	.global	SpiIf_initConfig
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	     1  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	     2   * \file SpiIf.c
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	     3   * \brief SPI interface
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	     4   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	     5   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	     6   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	     7   * $Date: 2014-02-27 20:08:21 GMT$
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	     8   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	     9   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    10   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    11   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    13   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    15   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    16  
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    17  
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    18   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    19  
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    20   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    21   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    22   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    23   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    24   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    25   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    26  
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    27   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    28   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    29   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    30   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    31   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    32   * language processor.
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    33  
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    34   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    35   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    36   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    37   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    38   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    39   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    40   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    41  
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    42   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    43   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    44  
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    45  #include "SpiIf.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    46  
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    47  void SpiIf_initConfig(SpiIf_Config *config)
+; Function SpiIf_initConfig
+.L3:
+SpiIf_initConfig:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    48  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    49      config->mode            = SpiIf_Mode_master;
+	mov	d15,#0
+.L38:
+	st.b	[a4],d15
+.L39:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    50      config->rxPriority      = 0;
+	mov	d15,#0
+.L40:
+	st.h	[a4]2,d15
+.L41:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    51      config->txPriority      = 0;
+	mov	d15,#0
+.L42:
+	st.h	[a4]4,d15
+.L43:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    52      config->erPriority      = 0;
+	mov	d15,#0
+.L44:
+	st.h	[a4]6,d15
+.L45:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    53      config->isrProvider     = IfxSrc_Tos_cpu0;
+	mov	d15,#0
+.L46:
+	st.b	[a4]8,d15
+.L47:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    54      config->bufferSize      = 0;
+	mov	d15,#0
+.L48:
+	st.h	[a4]10,d15
+.L49:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    55      config->buffer          = NULL_PTR;
+	mov.a	a15,#0
+.L50:
+	st.a	[a4]12,a15
+.L51:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    56      config->maximumBaudrate = 0;
+	mov	d15,#0
+.L52:
+	st.w	[a4]16,d15
+.L53:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    57  }
+	ret
+.L20:
+	
+__SpiIf_initConfig_function_end:
+	.size	SpiIf_initConfig,__SpiIf_initConfig_function_end-SpiIf_initConfig
+.L14:
+	; End of function
+	
+	.sdecl	'.text.SpiIf.SpiIf_initChannelConfig',code,cluster('SpiIf_initChannelConfig')
+	.sect	'.text.SpiIf.SpiIf_initChannelConfig'
+	.align	2
+	
+	.global	SpiIf_initChannelConfig
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    58  
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    59  
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    60  void SpiIf_initChannelConfig(SpiIf_ChConfig *config, SpiIf *driver)
+; Function SpiIf_initChannelConfig
+.L5:
+SpiIf_initChannelConfig:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    61  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    62      config->driver               = driver;
+	st.a	[a4],a5
+.L58:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    63      config->baudrate             = 0;
+	mov	d15,#0
+.L59:
+	st.w	[a4]4,d15
+.L60:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    64      config->mode.enabled         = 1;
+	ld.bu	d15,[a4]8
+.L61:
+	or	d15,#1
+	st.b	[a4]8,d15
+.L62:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    65      config->mode.autoCS          = 1;
+	ld.bu	d15,[a4]8
+.L63:
+	or	d15,#2
+	st.b	[a4]8,d15
+.L64:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    66      config->mode.loopback        = 0;
+	ld.bu	d15,[a4]8
+.L65:
+	insert	d15,d15,#0,#2,#1
+	st.b	[a4]8,d15
+.L66:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    67      config->mode.clockPolarity   = SpiIf_ClockPolarity_idleLow;
+	ld.bu	d15,[a4]8
+.L67:
+	insert	d15,d15,#0,#3,#1
+	st.b	[a4]8,d15
+.L68:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    68      config->mode.shiftClock      = SpiIf_ShiftClock_shiftTransmitDataOnLeadingEdge;
+	ld.bu	d15,[a4]8
+.L69:
+	insert	d15,d15,#0,#4,#1
+	st.b	[a4]8,d15
+.L70:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    69      config->mode.dataHeading     = SpiIf_DataHeading_msbFirst;
+	ld.bu	d15,[a4]8
+.L71:
+	or	d15,#32
+	st.b	[a4]8,d15
+.L72:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    70      config->mode.dataWidth       = 8;
+	ld.hu	d0,[a4]8
+.L73:
+	mov	d15,#8
+.L74:
+	insert	d15,d0,d15,#6,#6
+	st.h	[a4]8,d15
+.L75:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    71      config->mode.csActiveLevel   = Ifx_ActiveState_low;
+	ld.bu	d15,[a4]9
+.L76:
+	insert	d15,d15,#0,#4,#1
+	st.b	[a4]9,d15
+.L77:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    72      config->mode.csLeadDelay     = SpiIf_SlsoTiming_0;
+	mov	d15,#0
+.L78:
+	st.w	[a4]14,d15
+.L79:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    73      config->mode.csTrailDelay    = SpiIf_SlsoTiming_0;
+	mov	d15,#0
+.L80:
+	st.w	[a4]18,d15
+.L81:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    74      config->mode.csInactiveDelay = SpiIf_SlsoTiming_0;
+	mov	d15,#0
+.L82:
+	st.w	[a4]10,d15
+.L83:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    75      config->mode.parityCheck     = 0;
+	ld.bu	d15,[a4]9
+.L84:
+	insert	d15,d15,#0,#5,#1
+	st.b	[a4]9,d15
+.L85:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    76      config->mode.parityMode      = Ifx_ParityMode_even;
+	ld.bu	d15,[a4]9
+.L86:
+	insert	d15,d15,#0,#6,#1
+	st.b	[a4]9,d15
+.L87:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    77      config->errorChecks.baudrate = 0;
+	ld.bu	d15,[a4]24
+.L88:
+	insert	d15,d15,#0,#0,#1
+	st.b	[a4]24,d15
+.L89:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    78      config->errorChecks.phase    = 0;
+	ld.bu	d15,[a4]24
+.L90:
+	insert	d15,d15,#0,#1,#1
+	st.b	[a4]24,d15
+.L91:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    79      config->errorChecks.receive  = 0;
+	ld.bu	d15,[a4]24
+.L92:
+	insert	d15,d15,#0,#2,#1
+	st.b	[a4]24,d15
+.L93:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    80      config->errorChecks.transmit = 0;
+	ld.bu	d15,[a4]24
+.L94:
+	insert	d15,d15,#0,#3,#1
+	st.b	[a4]24,d15
+.L95:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\If\SpiIf.c	    81  }
+	ret
+.L23:
+	
+__SpiIf_initChannelConfig_function_end:
+	.size	SpiIf_initChannelConfig,__SpiIf_initChannelConfig_function_end-SpiIf_initChannelConfig
+.L19:
+	; End of function
+	
+	.calls	'SpiIf_initConfig','',0
+	.calls	'SpiIf_initChannelConfig','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L7:
+	.word	9557
+	.half	3
+	.word	.L8
+	.byte	4
+.L6:
+	.byte	1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\If\\SpiIf.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L9
+	.byte	2,1,1,3
+	.word	159
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	162
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1,7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	207
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	219
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	299
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	273
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	305
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	305
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	273
+	.byte	6,0,7
+	.byte	'unsigned int',0,4,7,7
+	.byte	'int',0,4,5,7
+	.byte	'unsigned char',0,1,8,10
+	.byte	'_Ifx_SRC_SRCR_Bits',0,4,45,16,4,11
+	.byte	'SRPN',0,1
+	.word	414
+	.byte	8,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	414
+	.byte	2,6,2,35,1,11
+	.byte	'SRE',0,1
+	.word	414
+	.byte	1,5,2,35,1,11
+	.byte	'TOS',0,1
+	.word	414
+	.byte	2,3,2,35,1,11
+	.byte	'reserved_13',0,1
+	.word	414
+	.byte	3,0,2,35,1,11
+	.byte	'ECC',0,1
+	.word	414
+	.byte	6,2,2,35,2,11
+	.byte	'reserved_22',0,1
+	.word	414
+	.byte	2,0,2,35,2,11
+	.byte	'SRR',0,1
+	.word	414
+	.byte	1,7,2,35,3,11
+	.byte	'CLRR',0,1
+	.word	414
+	.byte	1,6,2,35,3,11
+	.byte	'SETR',0,1
+	.word	414
+	.byte	1,5,2,35,3,11
+	.byte	'IOV',0,1
+	.word	414
+	.byte	1,4,2,35,3,11
+	.byte	'IOVCLR',0,1
+	.word	414
+	.byte	1,3,2,35,3,11
+	.byte	'SWS',0,1
+	.word	414
+	.byte	1,2,2,35,3,11
+	.byte	'SWSCLR',0,1
+	.word	414
+	.byte	1,1,2,35,3,11
+	.byte	'reserved_31',0,1
+	.word	414
+	.byte	1,0,2,35,3,0,12,4,70,9,4,13
+	.byte	'U',0
+	.word	391
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	407
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	431
+	.byte	4,2,35,0,0,14
+	.word	721
+	.byte	3
+	.word	760
+	.byte	4
+	.byte	'IfxSrc_clearRequest',0,3,3,250,1,17,1,1,5
+	.byte	'src',0,3,250,1,60
+	.word	765
+	.byte	6,0,15
+	.word	407
+	.byte	16
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,17
+	.word	813
+	.byte	0,14
+	.word	391
+	.byte	3
+	.word	391
+	.byte	18
+	.byte	'__cmpswapw',0
+	.word	855
+	.byte	1,1,1,1,19
+	.byte	'p',0
+	.word	860
+	.byte	19
+	.byte	'value',0
+	.word	391
+	.byte	19
+	.byte	'compare',0
+	.word	391
+	.byte	0,20
+	.word	167
+	.byte	21
+	.word	193
+	.byte	6,0,20
+	.word	228
+	.byte	21
+	.word	260
+	.byte	6,0,20
+	.word	310
+	.byte	21
+	.word	329
+	.byte	6,0,20
+	.word	345
+	.byte	21
+	.word	360
+	.byte	21
+	.word	374
+	.byte	6,0,20
+	.word	770
+	.byte	21
+	.word	798
+	.byte	6,0,22,5,131,1,9,1,23
+	.byte	'SpiIf_Mode_master',0,0,23
+	.byte	'SpiIf_Mode_slave',0,1,23
+	.byte	'SpiIf_Mode_undefined',0,2,0,7
+	.byte	'unsigned short int',0,2,7,22,6,69,9,1,23
+	.byte	'IfxSrc_Tos_cpu0',0,0,23
+	.byte	'IfxSrc_Tos_cpu1',0,1,23
+	.byte	'IfxSrc_Tos_dma',0,3,0,7
+	.byte	'short int',0,2,5,24,5,163,1,9,20,13
+	.byte	'mode',0
+	.word	982
+	.byte	1,2,35,0,13
+	.byte	'rxPriority',0
+	.word	1051
+	.byte	2,2,35,2,13
+	.byte	'txPriority',0
+	.word	1051
+	.byte	2,2,35,4,13
+	.byte	'erPriority',0
+	.word	1051
+	.byte	2,2,35,6,13
+	.byte	'isrProvider',0
+	.word	1073
+	.byte	1,2,35,8,13
+	.byte	'bufferSize',0
+	.word	1132
+	.byte	2,2,35,10,13
+	.byte	'buffer',0
+	.word	305
+	.byte	4,2,35,12,13
+	.byte	'maximumBaudrate',0
+	.word	219
+	.byte	4,2,35,16,0
+.L21:
+	.byte	3
+	.word	1145
+	.byte	25
+	.byte	'pvoid',0,7,57,28
+	.word	305
+	.byte	7
+	.byte	'unsigned long int',0,4,7,24,5,118,18,1,11
+	.byte	'onTransfer',0,1
+	.word	414
+	.byte	1,7,2,35,0,11
+	.byte	'byteAccess',0,1
+	.word	414
+	.byte	1,6,2,35,0,0,14
+	.word	1348
+	.byte	24,5,179,1,9,4,11
+	.byte	'baudrate',0,1
+	.word	414
+	.byte	1,7,2,35,0,11
+	.byte	'phase',0,1
+	.word	414
+	.byte	1,6,2,35,0,11
+	.byte	'receive',0,1
+	.word	414
+	.byte	1,5,2,35,0,11
+	.byte	'transmit',0,1
+	.word	414
+	.byte	1,4,2,35,0,11
+	.byte	'reserved',0,4
+	.word	1327
+	.byte	28,0,2,35,0,0,7
+	.byte	'long int',0,4,5,24,5,124,9,8,13
+	.byte	'data',0
+	.word	305
+	.byte	4,2,35,0,13
+	.byte	'remaining',0
+	.word	1132
+	.byte	2,2,35,4,0,26,1,1,17
+	.word	305
+	.byte	0,3
+	.word	1557
+	.byte	25
+	.byte	'SpiIf_Cbk',0,5,211,1,16
+	.word	1566
+	.byte	3
+	.word	.L28-.L7
+	.byte	26,1,1,17
+	.word	1590
+	.byte	0,3
+	.word	1595
+	.byte	25
+	.byte	'TxRxHandler',0,5,212,1,16
+	.word	1604
+.L28:
+	.byte	10
+	.byte	'SpiIf_Ch_',0,5,214,1,8,48,13
+	.byte	'driver',0
+	.word	.L26-.L7
+	.byte	4,2,35,0,13
+	.byte	'flags',0
+	.word	1398
+	.byte	1,2,35,4,13
+	.byte	'errorChecks',0
+	.word	1403
+	.byte	4,2,35,6,13
+	.byte	'baudrate',0
+	.word	1506
+	.byte	4,2,35,10,13
+	.byte	'tx',0
+	.word	1518
+	.byte	8,2,35,16,13
+	.byte	'rx',0
+	.word	1518
+	.byte	8,2,35,24,13
+	.byte	'onExchangeEnd',0
+	.word	1571
+	.byte	4,2,35,32,13
+	.byte	'callbackData',0
+	.word	305
+	.byte	4,2,35,36,13
+	.byte	'txHandler',0
+	.word	1609
+	.byte	4,2,35,40,13
+	.byte	'rxHandler',0
+	.word	1609
+	.byte	4,2,35,44,0,3
+	.word	1630
+	.byte	22,5,69,9,1,23
+	.byte	'SpiIf_Status_ok',0,0,23
+	.byte	'SpiIf_Status_busy',0,1,23
+	.byte	'SpiIf_Status_unknown',0,2,0,15
+	.word	299
+	.byte	3
+	.word	1896
+	.byte	27
+	.word	1829
+	.byte	1,1,17
+	.word	1590
+	.byte	17
+	.word	1901
+	.byte	17
+	.word	305
+	.byte	17
+	.word	1132
+	.byte	0,3
+	.word	1906
+	.byte	25
+	.byte	'SpiIf_Exchange',0,5,138,1,24
+	.word	1934
+	.byte	27
+	.word	1829
+	.byte	1,1,17
+	.word	1590
+	.byte	0,3
+	.word	1963
+	.byte	25
+	.byte	'SpiIf_GetStatus',0,5,139,1,24
+	.word	1976
+	.byte	3
+	.word	.L29-.L7
+	.byte	26,1,1,17
+	.word	2006
+	.byte	0,3
+	.word	2011
+	.byte	25
+	.byte	'SpiIf_OnEvent',0,5,140,1,24
+	.word	2020
+	.byte	24,5,144,1,9,20,13
+	.byte	'exchange',0
+	.word	1939
+	.byte	4,2,35,0,13
+	.byte	'getStatus',0
+	.word	1981
+	.byte	4,2,35,4,13
+	.byte	'onTx',0
+	.word	2025
+	.byte	4,2,35,8,13
+	.byte	'onRx',0
+	.word	2025
+	.byte	4,2,35,12,13
+	.byte	'onError',0
+	.word	2025
+	.byte	4,2,35,16,0
+.L29:
+	.byte	10
+	.byte	'SpiIf_',0,5,153,1,8,40,13
+	.byte	'driver',0
+	.word	1313
+	.byte	4,2,35,0,13
+	.byte	'sending',0
+	.word	1327
+	.byte	4,2,35,4,13
+	.byte	'activeChannel',0
+	.word	1824
+	.byte	4,2,35,8,13
+	.byte	'txCount',0
+	.word	1327
+	.byte	4,2,35,12,13
+	.byte	'rxCount',0
+	.word	1327
+	.byte	4,2,35,16,13
+	.byte	'functions',0
+	.word	2048
+	.byte	20,2,35,20,0
+.L26:
+	.byte	3
+	.word	2137
+	.byte	24,5,189,1,9,16,11
+	.byte	'enabled',0,1
+	.word	414
+	.byte	1,7,2,35,0,11
+	.byte	'autoCS',0,1
+	.word	414
+	.byte	1,6,2,35,0,11
+	.byte	'loopback',0,1
+	.word	414
+	.byte	1,5,2,35,0,11
+	.byte	'clockPolarity',0,1
+	.word	414
+	.byte	1,4,2,35,0,11
+	.byte	'shiftClock',0,1
+	.word	414
+	.byte	1,3,2,35,0,11
+	.byte	'dataHeading',0,1
+	.word	414
+	.byte	1,2,2,35,0,11
+	.byte	'dataWidth',0,2
+	.word	1051
+	.byte	6,4,2,35,0,11
+	.byte	'csActiveLevel',0,1
+	.word	414
+	.byte	1,3,2,35,1,11
+	.byte	'parityCheck',0,1
+	.word	414
+	.byte	1,2,2,35,1,11
+	.byte	'parityMode',0,1
+	.word	414
+	.byte	1,1,2,35,1,13
+	.byte	'csInactiveDelay',0
+	.word	1327
+	.byte	4,2,35,2,13
+	.byte	'csLeadDelay',0
+	.word	1327
+	.byte	4,2,35,6,13
+	.byte	'csTrailDelay',0
+	.word	1327
+	.byte	4,2,35,10,0,10
+	.byte	'SpiIf_ChConfig_',0,5,228,1,8,28,13
+	.byte	'driver',0
+	.word	2260
+	.byte	4,2,35,0,13
+	.byte	'baudrate',0
+	.word	219
+	.byte	4,2,35,4,13
+	.byte	'mode',0
+	.word	2265
+	.byte	16,2,35,8,13
+	.byte	'errorChecks',0
+	.word	1403
+	.byte	4,2,35,24,0
+.L24:
+	.byte	3
+	.word	2558
+	.byte	3
+	.word	299
+	.byte	3
+	.word	1557
+	.byte	3
+	.word	1595
+	.byte	3
+	.word	1906
+	.byte	3
+	.word	1963
+	.byte	3
+	.word	2011
+	.byte	25
+	.byte	'__wchar_t',0,8,1,1
+	.word	1132
+	.byte	25
+	.byte	'__size_t',0,8,1,1
+	.word	391
+	.byte	25
+	.byte	'__ptrdiff_t',0,8,1,1
+	.word	407
+	.byte	28,1,3
+	.word	2740
+	.byte	25
+	.byte	'__codeptr',0,8,1,1
+	.word	2742
+	.byte	25
+	.byte	'IfxSrc_Tos',0,6,74,3
+	.word	1073
+	.byte	25
+	.byte	'boolean',0,9,101,29
+	.word	414
+	.byte	25
+	.byte	'uint8',0,9,105,29
+	.word	414
+	.byte	25
+	.byte	'uint16',0,9,109,29
+	.word	1051
+	.byte	25
+	.byte	'uint32',0,9,113,29
+	.word	1327
+	.byte	25
+	.byte	'uint64',0,9,118,29
+	.word	273
+	.byte	25
+	.byte	'sint16',0,9,126,29
+	.word	1132
+	.byte	25
+	.byte	'sint32',0,9,131,1,29
+	.word	1506
+	.byte	7
+	.byte	'long long int',0,8,5,25
+	.byte	'sint64',0,9,138,1,29
+	.word	2890
+	.byte	25
+	.byte	'float32',0,9,167,1,29
+	.word	219
+	.byte	25
+	.byte	'Ifx_TickTime',0,7,79,28
+	.word	2890
+	.byte	25
+	.byte	'Ifx_SizeT',0,7,92,16
+	.word	1132
+	.byte	25
+	.byte	'Ifx_Priority',0,7,103,16
+	.word	1051
+	.byte	25
+	.byte	'Ifx_SRC_SRCR_Bits',0,4,62,3
+	.word	431
+	.byte	25
+	.byte	'Ifx_SRC_SRCR',0,4,75,3
+	.word	721
+	.byte	10
+	.byte	'_Ifx_SRC_AGBT',0,4,86,25,4,13
+	.byte	'SR',0
+	.word	721
+	.byte	4,2,35,0,0,14
+	.word	3047
+	.byte	25
+	.byte	'Ifx_SRC_AGBT',0,4,89,3
+	.word	3079
+	.byte	10
+	.byte	'_Ifx_SRC_ASCLIN',0,4,92,25,12,13
+	.byte	'TX',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'RX',0
+	.word	721
+	.byte	4,2,35,4,13
+	.byte	'ERR',0
+	.word	721
+	.byte	4,2,35,8,0,14
+	.word	3105
+	.byte	25
+	.byte	'Ifx_SRC_ASCLIN',0,4,97,3
+	.word	3164
+	.byte	10
+	.byte	'_Ifx_SRC_BCUSPB',0,4,100,25,4,13
+	.byte	'SBSRC',0
+	.word	721
+	.byte	4,2,35,0,0,14
+	.word	3192
+	.byte	25
+	.byte	'Ifx_SRC_BCUSPB',0,4,103,3
+	.word	3229
+	.byte	29,64
+	.word	721
+	.byte	30,15,0,10
+	.byte	'_Ifx_SRC_CAN',0,4,106,25,64,13
+	.byte	'INT',0
+	.word	3257
+	.byte	64,2,35,0,0,14
+	.word	3266
+	.byte	25
+	.byte	'Ifx_SRC_CAN',0,4,109,3
+	.word	3298
+	.byte	10
+	.byte	'_Ifx_SRC_CCU6',0,4,112,25,16,13
+	.byte	'SR0',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'SR1',0
+	.word	721
+	.byte	4,2,35,4,13
+	.byte	'SR2',0
+	.word	721
+	.byte	4,2,35,8,13
+	.byte	'SR3',0
+	.word	721
+	.byte	4,2,35,12,0,14
+	.word	3323
+	.byte	25
+	.byte	'Ifx_SRC_CCU6',0,4,118,3
+	.word	3395
+	.byte	29,8
+	.word	721
+	.byte	30,1,0,10
+	.byte	'_Ifx_SRC_CERBERUS',0,4,121,25,8,13
+	.byte	'SR',0
+	.word	3421
+	.byte	8,2,35,0,0,14
+	.word	3430
+	.byte	25
+	.byte	'Ifx_SRC_CERBERUS',0,4,124,3
+	.word	3466
+	.byte	10
+	.byte	'_Ifx_SRC_CIF',0,4,127,25,16,13
+	.byte	'MI',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'MIEP',0
+	.word	721
+	.byte	4,2,35,4,13
+	.byte	'ISP',0
+	.word	721
+	.byte	4,2,35,8,13
+	.byte	'MJPEG',0
+	.word	721
+	.byte	4,2,35,12,0,14
+	.word	3496
+	.byte	25
+	.byte	'Ifx_SRC_CIF',0,4,133,1,3
+	.word	3569
+	.byte	10
+	.byte	'_Ifx_SRC_CPU',0,4,136,1,25,4,13
+	.byte	'SBSRC',0
+	.word	721
+	.byte	4,2,35,0,0,14
+	.word	3595
+	.byte	25
+	.byte	'Ifx_SRC_CPU',0,4,139,1,3
+	.word	3630
+	.byte	29,12
+	.word	414
+	.byte	30,11,0,29,192,1
+	.word	721
+	.byte	30,47,0,10
+	.byte	'_Ifx_SRC_DMA',0,4,142,1,25,208,1,13
+	.byte	'ERR',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'reserved_4',0
+	.word	3656
+	.byte	12,2,35,4,13
+	.byte	'CH',0
+	.word	3665
+	.byte	192,1,2,35,16,0,14
+	.word	3675
+	.byte	25
+	.byte	'Ifx_SRC_DMA',0,4,147,1,3
+	.word	3742
+	.byte	10
+	.byte	'_Ifx_SRC_DSADC',0,4,150,1,25,8,13
+	.byte	'SRM',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'SRA',0
+	.word	721
+	.byte	4,2,35,4,0,14
+	.word	3768
+	.byte	25
+	.byte	'Ifx_SRC_DSADC',0,4,154,1,3
+	.word	3816
+	.byte	10
+	.byte	'_Ifx_SRC_EMEM',0,4,157,1,25,4,13
+	.byte	'SR',0
+	.word	721
+	.byte	4,2,35,0,0,14
+	.word	3844
+	.byte	25
+	.byte	'Ifx_SRC_EMEM',0,4,160,1,3
+	.word	3877
+	.byte	29,40
+	.word	414
+	.byte	30,39,0,10
+	.byte	'_Ifx_SRC_ERAY',0,4,163,1,25,80,13
+	.byte	'INT',0
+	.word	3421
+	.byte	8,2,35,0,13
+	.byte	'TINT',0
+	.word	3421
+	.byte	8,2,35,8,13
+	.byte	'NDAT',0
+	.word	3421
+	.byte	8,2,35,16,13
+	.byte	'MBSC',0
+	.word	3421
+	.byte	8,2,35,24,13
+	.byte	'OBUSY',0
+	.word	721
+	.byte	4,2,35,32,13
+	.byte	'IBUSY',0
+	.word	721
+	.byte	4,2,35,36,13
+	.byte	'reserved_28',0
+	.word	3904
+	.byte	40,2,35,40,0,14
+	.word	3913
+	.byte	25
+	.byte	'Ifx_SRC_ERAY',0,4,172,1,3
+	.word	4040
+	.byte	10
+	.byte	'_Ifx_SRC_ETH',0,4,175,1,25,4,13
+	.byte	'SR',0
+	.word	721
+	.byte	4,2,35,0,0,14
+	.word	4067
+	.byte	25
+	.byte	'Ifx_SRC_ETH',0,4,178,1,3
+	.word	4099
+	.byte	10
+	.byte	'_Ifx_SRC_FCE',0,4,181,1,25,4,13
+	.byte	'SR',0
+	.word	721
+	.byte	4,2,35,0,0,14
+	.word	4125
+	.byte	25
+	.byte	'Ifx_SRC_FCE',0,4,184,1,3
+	.word	4157
+	.byte	10
+	.byte	'_Ifx_SRC_FFT',0,4,187,1,25,12,13
+	.byte	'DONE',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'ERR',0
+	.word	721
+	.byte	4,2,35,4,13
+	.byte	'RFS',0
+	.word	721
+	.byte	4,2,35,8,0,14
+	.word	4183
+	.byte	25
+	.byte	'Ifx_SRC_FFT',0,4,192,1,3
+	.word	4243
+	.byte	29,16
+	.word	414
+	.byte	30,15,0,10
+	.byte	'_Ifx_SRC_GPSR',0,4,195,1,25,32,13
+	.byte	'SR0',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'SR1',0
+	.word	721
+	.byte	4,2,35,4,13
+	.byte	'SR2',0
+	.word	721
+	.byte	4,2,35,8,13
+	.byte	'SR3',0
+	.word	721
+	.byte	4,2,35,12,13
+	.byte	'reserved_10',0
+	.word	4269
+	.byte	16,2,35,16,0,14
+	.word	4278
+	.byte	25
+	.byte	'Ifx_SRC_GPSR',0,4,202,1,3
+	.word	4372
+	.byte	29,24
+	.word	414
+	.byte	30,23,0,10
+	.byte	'_Ifx_SRC_GPT12',0,4,205,1,25,48,13
+	.byte	'CIRQ',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'T2',0
+	.word	721
+	.byte	4,2,35,4,13
+	.byte	'T3',0
+	.word	721
+	.byte	4,2,35,8,13
+	.byte	'T4',0
+	.word	721
+	.byte	4,2,35,12,13
+	.byte	'T5',0
+	.word	721
+	.byte	4,2,35,16,13
+	.byte	'T6',0
+	.word	721
+	.byte	4,2,35,20,13
+	.byte	'reserved_18',0
+	.word	4399
+	.byte	24,2,35,24,0,14
+	.word	4408
+	.byte	25
+	.byte	'Ifx_SRC_GPT12',0,4,214,1,3
+	.word	4525
+	.byte	29,12
+	.word	721
+	.byte	30,2,0,29,4
+	.word	414
+	.byte	30,3,0,29,8
+	.word	414
+	.byte	30,7,0,29,32
+	.word	721
+	.byte	30,7,0,29,32
+	.word	4580
+	.byte	30,0,0,29,88
+	.word	414
+	.byte	30,87,0,29,108
+	.word	721
+	.byte	30,26,0,29,96
+	.word	414
+	.byte	30,95,0,29,96
+	.word	4580
+	.byte	30,2,0,29,160,3
+	.word	414
+	.byte	30,159,3,0,29,64
+	.word	4580
+	.byte	30,1,0,29,192,3
+	.word	414
+	.byte	30,191,3,0,29,16
+	.word	721
+	.byte	30,3,0,29,64
+	.word	4665
+	.byte	30,3,0,29,192,2
+	.word	414
+	.byte	30,191,2,0,29,52
+	.word	414
+	.byte	30,51,0,10
+	.byte	'_Ifx_SRC_GTM',0,4,217,1,25,204,18,13
+	.byte	'AEIIRQ',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'ARUIRQ',0
+	.word	4553
+	.byte	12,2,35,4,13
+	.byte	'reserved_10',0
+	.word	4562
+	.byte	4,2,35,16,13
+	.byte	'BRCIRQ',0
+	.word	721
+	.byte	4,2,35,20,13
+	.byte	'CMPIRQ',0
+	.word	721
+	.byte	4,2,35,24,13
+	.byte	'SPEIRQ',0
+	.word	3421
+	.byte	8,2,35,28,13
+	.byte	'reserved_24',0
+	.word	4571
+	.byte	8,2,35,36,13
+	.byte	'PSM',0
+	.word	4589
+	.byte	32,2,35,44,13
+	.byte	'reserved_4C',0
+	.word	4598
+	.byte	88,2,35,76,13
+	.byte	'DPLL',0
+	.word	4607
+	.byte	108,3,35,164,1,13
+	.byte	'reserved_110',0
+	.word	4616
+	.byte	96,3,35,144,2,13
+	.byte	'ERR',0
+	.word	721
+	.byte	4,3,35,240,2,13
+	.byte	'reserved_174',0
+	.word	3656
+	.byte	12,3,35,244,2,13
+	.byte	'TIM',0
+	.word	4625
+	.byte	96,3,35,128,3,13
+	.byte	'reserved_1E0',0
+	.word	4634
+	.byte	160,3,3,35,224,3,13
+	.byte	'MCS',0
+	.word	4625
+	.byte	96,3,35,128,7,13
+	.byte	'reserved_3E0',0
+	.word	4634
+	.byte	160,3,3,35,224,7,13
+	.byte	'TOM',0
+	.word	4645
+	.byte	64,3,35,128,11,13
+	.byte	'reserved_5C0',0
+	.word	4654
+	.byte	192,3,3,35,192,11,13
+	.byte	'ATOM',0
+	.word	4674
+	.byte	64,3,35,128,15,13
+	.byte	'reserved_7C0',0
+	.word	4683
+	.byte	192,2,3,35,192,15,13
+	.byte	'MCSW0',0
+	.word	4553
+	.byte	12,3,35,128,18,13
+	.byte	'reserved_90C',0
+	.word	4694
+	.byte	52,3,35,140,18,13
+	.byte	'MCSW1',0
+	.word	4553
+	.byte	12,3,35,192,18,0,14
+	.word	4703
+	.byte	25
+	.byte	'Ifx_SRC_GTM',0,4,243,1,3
+	.word	5163
+	.byte	10
+	.byte	'_Ifx_SRC_HSCT',0,4,246,1,25,4,13
+	.byte	'SR',0
+	.word	721
+	.byte	4,2,35,0,0,14
+	.word	5189
+	.byte	25
+	.byte	'Ifx_SRC_HSCT',0,4,249,1,3
+	.word	5222
+	.byte	10
+	.byte	'_Ifx_SRC_HSSL',0,4,252,1,25,16,13
+	.byte	'COK',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'RDI',0
+	.word	721
+	.byte	4,2,35,4,13
+	.byte	'ERR',0
+	.word	721
+	.byte	4,2,35,8,13
+	.byte	'TRG',0
+	.word	721
+	.byte	4,2,35,12,0,14
+	.word	5249
+	.byte	25
+	.byte	'Ifx_SRC_HSSL',0,4,130,2,3
+	.word	5322
+	.byte	29,56
+	.word	414
+	.byte	30,55,0,10
+	.byte	'_Ifx_SRC_I2C',0,4,133,2,25,80,13
+	.byte	'BREQ',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'LBREQ',0
+	.word	721
+	.byte	4,2,35,4,13
+	.byte	'SREQ',0
+	.word	721
+	.byte	4,2,35,8,13
+	.byte	'LSREQ',0
+	.word	721
+	.byte	4,2,35,12,13
+	.byte	'ERR',0
+	.word	721
+	.byte	4,2,35,16,13
+	.byte	'P',0
+	.word	721
+	.byte	4,2,35,20,13
+	.byte	'reserved_18',0
+	.word	5349
+	.byte	56,2,35,24,0,14
+	.word	5358
+	.byte	25
+	.byte	'Ifx_SRC_I2C',0,4,142,2,3
+	.word	5481
+	.byte	10
+	.byte	'_Ifx_SRC_LMU',0,4,145,2,25,4,13
+	.byte	'SR',0
+	.word	721
+	.byte	4,2,35,0,0,14
+	.word	5507
+	.byte	25
+	.byte	'Ifx_SRC_LMU',0,4,148,2,3
+	.word	5539
+	.byte	10
+	.byte	'_Ifx_SRC_MSC',0,4,151,2,25,20,13
+	.byte	'SR0',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'SR1',0
+	.word	721
+	.byte	4,2,35,4,13
+	.byte	'SR2',0
+	.word	721
+	.byte	4,2,35,8,13
+	.byte	'SR3',0
+	.word	721
+	.byte	4,2,35,12,13
+	.byte	'SR4',0
+	.word	721
+	.byte	4,2,35,16,0,14
+	.word	5565
+	.byte	25
+	.byte	'Ifx_SRC_MSC',0,4,158,2,3
+	.word	5650
+	.byte	10
+	.byte	'_Ifx_SRC_PMU',0,4,161,2,25,4,13
+	.byte	'SR',0
+	.word	721
+	.byte	4,2,35,0,0,14
+	.word	5676
+	.byte	25
+	.byte	'Ifx_SRC_PMU',0,4,164,2,3
+	.word	5708
+	.byte	10
+	.byte	'_Ifx_SRC_PSI5',0,4,167,2,25,32,13
+	.byte	'SR',0
+	.word	4580
+	.byte	32,2,35,0,0,14
+	.word	5734
+	.byte	25
+	.byte	'Ifx_SRC_PSI5',0,4,170,2,3
+	.word	5767
+	.byte	10
+	.byte	'_Ifx_SRC_PSI5S',0,4,173,2,25,32,13
+	.byte	'SR',0
+	.word	4580
+	.byte	32,2,35,0,0,14
+	.word	5794
+	.byte	25
+	.byte	'Ifx_SRC_PSI5S',0,4,176,2,3
+	.word	5828
+	.byte	10
+	.byte	'_Ifx_SRC_QSPI',0,4,179,2,25,24,13
+	.byte	'TX',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'RX',0
+	.word	721
+	.byte	4,2,35,4,13
+	.byte	'ERR',0
+	.word	721
+	.byte	4,2,35,8,13
+	.byte	'PT',0
+	.word	721
+	.byte	4,2,35,12,13
+	.byte	'HC',0
+	.word	721
+	.byte	4,2,35,16,13
+	.byte	'U',0
+	.word	721
+	.byte	4,2,35,20,0,14
+	.word	5856
+	.byte	25
+	.byte	'Ifx_SRC_QSPI',0,4,187,2,3
+	.word	5949
+	.byte	10
+	.byte	'_Ifx_SRC_SCR',0,4,190,2,25,4,13
+	.byte	'SR',0
+	.word	721
+	.byte	4,2,35,0,0,14
+	.word	5976
+	.byte	25
+	.byte	'Ifx_SRC_SCR',0,4,193,2,3
+	.word	6008
+	.byte	10
+	.byte	'_Ifx_SRC_SCU',0,4,196,2,25,20,13
+	.byte	'DTS',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'ERU',0
+	.word	4665
+	.byte	16,2,35,4,0,14
+	.word	6034
+	.byte	25
+	.byte	'Ifx_SRC_SCU',0,4,200,2,3
+	.word	6080
+	.byte	29,24
+	.word	721
+	.byte	30,5,0,10
+	.byte	'_Ifx_SRC_SENT',0,4,203,2,25,24,13
+	.byte	'SR',0
+	.word	6106
+	.byte	24,2,35,0,0,14
+	.word	6115
+	.byte	25
+	.byte	'Ifx_SRC_SENT',0,4,206,2,3
+	.word	6148
+	.byte	10
+	.byte	'_Ifx_SRC_SMU',0,4,209,2,25,12,13
+	.byte	'SR',0
+	.word	4553
+	.byte	12,2,35,0,0,14
+	.word	6175
+	.byte	25
+	.byte	'Ifx_SRC_SMU',0,4,212,2,3
+	.word	6207
+	.byte	10
+	.byte	'_Ifx_SRC_STM',0,4,215,2,25,8,13
+	.byte	'SR0',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'SR1',0
+	.word	721
+	.byte	4,2,35,4,0,14
+	.word	6233
+	.byte	25
+	.byte	'Ifx_SRC_STM',0,4,219,2,3
+	.word	6279
+	.byte	10
+	.byte	'_Ifx_SRC_VADCCG',0,4,222,2,25,16,13
+	.byte	'SR0',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'SR1',0
+	.word	721
+	.byte	4,2,35,4,13
+	.byte	'SR2',0
+	.word	721
+	.byte	4,2,35,8,13
+	.byte	'SR3',0
+	.word	721
+	.byte	4,2,35,12,0,14
+	.word	6305
+	.byte	25
+	.byte	'Ifx_SRC_VADCCG',0,4,228,2,3
+	.word	6380
+	.byte	10
+	.byte	'_Ifx_SRC_VADCG',0,4,231,2,25,16,13
+	.byte	'SR0',0
+	.word	721
+	.byte	4,2,35,0,13
+	.byte	'SR1',0
+	.word	721
+	.byte	4,2,35,4,13
+	.byte	'SR2',0
+	.word	721
+	.byte	4,2,35,8,13
+	.byte	'SR3',0
+	.word	721
+	.byte	4,2,35,12,0,14
+	.word	6409
+	.byte	25
+	.byte	'Ifx_SRC_VADCG',0,4,237,2,3
+	.word	6483
+	.byte	10
+	.byte	'_Ifx_SRC_XBAR',0,4,240,2,25,4,13
+	.byte	'SRC',0
+	.word	721
+	.byte	4,2,35,0,0,14
+	.word	6511
+	.byte	25
+	.byte	'Ifx_SRC_XBAR',0,4,243,2,3
+	.word	6545
+	.byte	29,4
+	.word	3047
+	.byte	30,0,0,14
+	.word	6572
+	.byte	10
+	.byte	'_Ifx_SRC_GAGBT',0,4,128,3,25,4,13
+	.byte	'AGBT',0
+	.word	6581
+	.byte	4,2,35,0,0,14
+	.word	6586
+	.byte	25
+	.byte	'Ifx_SRC_GAGBT',0,4,131,3,3
+	.word	6622
+	.byte	29,48
+	.word	3105
+	.byte	30,3,0,14
+	.word	6650
+	.byte	10
+	.byte	'_Ifx_SRC_GASCLIN',0,4,134,3,25,48,13
+	.byte	'ASCLIN',0
+	.word	6659
+	.byte	48,2,35,0,0,14
+	.word	6664
+	.byte	25
+	.byte	'Ifx_SRC_GASCLIN',0,4,137,3,3
+	.word	6704
+	.byte	14
+	.word	3192
+	.byte	10
+	.byte	'_Ifx_SRC_GBCU',0,4,140,3,25,4,13
+	.byte	'SPB',0
+	.word	6734
+	.byte	4,2,35,0,0,14
+	.word	6739
+	.byte	25
+	.byte	'Ifx_SRC_GBCU',0,4,143,3,3
+	.word	6773
+	.byte	29,64
+	.word	3266
+	.byte	30,0,0,14
+	.word	6800
+	.byte	10
+	.byte	'_Ifx_SRC_GCAN',0,4,146,3,25,64,13
+	.byte	'CAN',0
+	.word	6809
+	.byte	64,2,35,0,0,14
+	.word	6814
+	.byte	25
+	.byte	'Ifx_SRC_GCAN',0,4,149,3,3
+	.word	6848
+	.byte	29,32
+	.word	3323
+	.byte	30,1,0,14
+	.word	6875
+	.byte	10
+	.byte	'_Ifx_SRC_GCCU6',0,4,152,3,25,32,13
+	.byte	'CCU6',0
+	.word	6884
+	.byte	32,2,35,0,0,14
+	.word	6889
+	.byte	25
+	.byte	'Ifx_SRC_GCCU6',0,4,155,3,3
+	.word	6925
+	.byte	14
+	.word	3430
+	.byte	10
+	.byte	'_Ifx_SRC_GCERBERUS',0,4,158,3,25,8,13
+	.byte	'CERBERUS',0
+	.word	6953
+	.byte	8,2,35,0,0,14
+	.word	6958
+	.byte	25
+	.byte	'Ifx_SRC_GCERBERUS',0,4,161,3,3
+	.word	7002
+	.byte	29,16
+	.word	3496
+	.byte	30,0,0,14
+	.word	7034
+	.byte	10
+	.byte	'_Ifx_SRC_GCIF',0,4,164,3,25,16,13
+	.byte	'CIF',0
+	.word	7043
+	.byte	16,2,35,0,0,14
+	.word	7048
+	.byte	25
+	.byte	'Ifx_SRC_GCIF',0,4,167,3,3
+	.word	7082
+	.byte	29,8
+	.word	3595
+	.byte	30,1,0,14
+	.word	7109
+	.byte	10
+	.byte	'_Ifx_SRC_GCPU',0,4,170,3,25,8,13
+	.byte	'CPU',0
+	.word	7118
+	.byte	8,2,35,0,0,14
+	.word	7123
+	.byte	25
+	.byte	'Ifx_SRC_GCPU',0,4,173,3,3
+	.word	7157
+	.byte	29,208,1
+	.word	3675
+	.byte	30,0,0,14
+	.word	7184
+	.byte	10
+	.byte	'_Ifx_SRC_GDMA',0,4,176,3,25,208,1,13
+	.byte	'DMA',0
+	.word	7194
+	.byte	208,1,2,35,0,0,14
+	.word	7199
+	.byte	25
+	.byte	'Ifx_SRC_GDMA',0,4,179,3,3
+	.word	7235
+	.byte	14
+	.word	3768
+	.byte	14
+	.word	3768
+	.byte	14
+	.word	3768
+	.byte	10
+	.byte	'_Ifx_SRC_GDSADC',0,4,182,3,25,32,13
+	.byte	'DSADC0',0
+	.word	7262
+	.byte	8,2,35,0,13
+	.byte	'reserved_8',0
+	.word	4571
+	.byte	8,2,35,8,13
+	.byte	'DSADC2',0
+	.word	7267
+	.byte	8,2,35,16,13
+	.byte	'DSADC3',0
+	.word	7272
+	.byte	8,2,35,24,0,14
+	.word	7277
+	.byte	25
+	.byte	'Ifx_SRC_GDSADC',0,4,188,3,3
+	.word	7368
+	.byte	29,4
+	.word	3844
+	.byte	30,0,0,14
+	.word	7397
+	.byte	10
+	.byte	'_Ifx_SRC_GEMEM',0,4,191,3,25,4,13
+	.byte	'EMEM',0
+	.word	7406
+	.byte	4,2,35,0,0,14
+	.word	7411
+	.byte	25
+	.byte	'Ifx_SRC_GEMEM',0,4,194,3,3
+	.word	7447
+	.byte	29,80
+	.word	3913
+	.byte	30,0,0,14
+	.word	7475
+	.byte	10
+	.byte	'_Ifx_SRC_GERAY',0,4,197,3,25,80,13
+	.byte	'ERAY',0
+	.word	7484
+	.byte	80,2,35,0,0,14
+	.word	7489
+	.byte	25
+	.byte	'Ifx_SRC_GERAY',0,4,200,3,3
+	.word	7525
+	.byte	29,4
+	.word	4067
+	.byte	30,0,0,14
+	.word	7553
+	.byte	10
+	.byte	'_Ifx_SRC_GETH',0,4,203,3,25,4,13
+	.byte	'ETH',0
+	.word	7562
+	.byte	4,2,35,0,0,14
+	.word	7567
+	.byte	25
+	.byte	'Ifx_SRC_GETH',0,4,206,3,3
+	.word	7601
+	.byte	29,4
+	.word	4125
+	.byte	30,0,0,14
+	.word	7628
+	.byte	10
+	.byte	'_Ifx_SRC_GFCE',0,4,209,3,25,4,13
+	.byte	'FCE',0
+	.word	7637
+	.byte	4,2,35,0,0,14
+	.word	7642
+	.byte	25
+	.byte	'Ifx_SRC_GFCE',0,4,212,3,3
+	.word	7676
+	.byte	29,12
+	.word	4183
+	.byte	30,0,0,14
+	.word	7703
+	.byte	10
+	.byte	'_Ifx_SRC_GFFT',0,4,215,3,25,12,13
+	.byte	'FFT',0
+	.word	7712
+	.byte	12,2,35,0,0,14
+	.word	7717
+	.byte	25
+	.byte	'Ifx_SRC_GFFT',0,4,218,3,3
+	.word	7751
+	.byte	29,64
+	.word	4278
+	.byte	30,1,0,14
+	.word	7778
+	.byte	10
+	.byte	'_Ifx_SRC_GGPSR',0,4,221,3,25,64,13
+	.byte	'GPSR',0
+	.word	7787
+	.byte	64,2,35,0,0,14
+	.word	7792
+	.byte	25
+	.byte	'Ifx_SRC_GGPSR',0,4,224,3,3
+	.word	7828
+	.byte	29,48
+	.word	4408
+	.byte	30,0,0,14
+	.word	7856
+	.byte	10
+	.byte	'_Ifx_SRC_GGPT12',0,4,227,3,25,48,13
+	.byte	'GPT12',0
+	.word	7865
+	.byte	48,2,35,0,0,14
+	.word	7870
+	.byte	25
+	.byte	'Ifx_SRC_GGPT12',0,4,230,3,3
+	.word	7908
+	.byte	29,204,18
+	.word	4703
+	.byte	30,0,0,14
+	.word	7937
+	.byte	10
+	.byte	'_Ifx_SRC_GGTM',0,4,233,3,25,204,18,13
+	.byte	'GTM',0
+	.word	7947
+	.byte	204,18,2,35,0,0,14
+	.word	7952
+	.byte	25
+	.byte	'Ifx_SRC_GGTM',0,4,236,3,3
+	.word	7988
+	.byte	29,4
+	.word	5189
+	.byte	30,0,0,14
+	.word	8015
+	.byte	10
+	.byte	'_Ifx_SRC_GHSCT',0,4,239,3,25,4,13
+	.byte	'HSCT',0
+	.word	8024
+	.byte	4,2,35,0,0,14
+	.word	8029
+	.byte	25
+	.byte	'Ifx_SRC_GHSCT',0,4,242,3,3
+	.word	8065
+	.byte	29,64
+	.word	5249
+	.byte	30,3,0,14
+	.word	8093
+	.byte	10
+	.byte	'_Ifx_SRC_GHSSL',0,4,245,3,25,68,13
+	.byte	'HSSL',0
+	.word	8102
+	.byte	64,2,35,0,13
+	.byte	'EXI',0
+	.word	721
+	.byte	4,2,35,64,0,14
+	.word	8107
+	.byte	25
+	.byte	'Ifx_SRC_GHSSL',0,4,249,3,3
+	.word	8156
+	.byte	29,80
+	.word	5358
+	.byte	30,0,0,14
+	.word	8184
+	.byte	10
+	.byte	'_Ifx_SRC_GI2C',0,4,252,3,25,80,13
+	.byte	'I2C',0
+	.word	8193
+	.byte	80,2,35,0,0,14
+	.word	8198
+	.byte	25
+	.byte	'Ifx_SRC_GI2C',0,4,255,3,3
+	.word	8232
+	.byte	29,4
+	.word	5507
+	.byte	30,0,0,14
+	.word	8259
+	.byte	10
+	.byte	'_Ifx_SRC_GLMU',0,4,130,4,25,4,13
+	.byte	'LMU',0
+	.word	8268
+	.byte	4,2,35,0,0,14
+	.word	8273
+	.byte	25
+	.byte	'Ifx_SRC_GLMU',0,4,133,4,3
+	.word	8307
+	.byte	29,40
+	.word	5565
+	.byte	30,1,0,14
+	.word	8334
+	.byte	10
+	.byte	'_Ifx_SRC_GMSC',0,4,136,4,25,40,13
+	.byte	'MSC',0
+	.word	8343
+	.byte	40,2,35,0,0,14
+	.word	8348
+	.byte	25
+	.byte	'Ifx_SRC_GMSC',0,4,139,4,3
+	.word	8382
+	.byte	29,8
+	.word	5676
+	.byte	30,1,0,14
+	.word	8409
+	.byte	10
+	.byte	'_Ifx_SRC_GPMU',0,4,142,4,25,8,13
+	.byte	'PMU',0
+	.word	8418
+	.byte	8,2,35,0,0,14
+	.word	8423
+	.byte	25
+	.byte	'Ifx_SRC_GPMU',0,4,145,4,3
+	.word	8457
+	.byte	29,32
+	.word	5734
+	.byte	30,0,0,14
+	.word	8484
+	.byte	10
+	.byte	'_Ifx_SRC_GPSI5',0,4,148,4,25,32,13
+	.byte	'PSI5',0
+	.word	8493
+	.byte	32,2,35,0,0,14
+	.word	8498
+	.byte	25
+	.byte	'Ifx_SRC_GPSI5',0,4,151,4,3
+	.word	8534
+	.byte	29,32
+	.word	5794
+	.byte	30,0,0,14
+	.word	8562
+	.byte	10
+	.byte	'_Ifx_SRC_GPSI5S',0,4,154,4,25,32,13
+	.byte	'PSI5S',0
+	.word	8571
+	.byte	32,2,35,0,0,14
+	.word	8576
+	.byte	25
+	.byte	'Ifx_SRC_GPSI5S',0,4,157,4,3
+	.word	8614
+	.byte	29,96
+	.word	5856
+	.byte	30,3,0,14
+	.word	8643
+	.byte	10
+	.byte	'_Ifx_SRC_GQSPI',0,4,160,4,25,96,13
+	.byte	'QSPI',0
+	.word	8652
+	.byte	96,2,35,0,0,14
+	.word	8657
+	.byte	25
+	.byte	'Ifx_SRC_GQSPI',0,4,163,4,3
+	.word	8693
+	.byte	29,4
+	.word	5976
+	.byte	30,0,0,14
+	.word	8721
+	.byte	10
+	.byte	'_Ifx_SRC_GSCR',0,4,166,4,25,4,13
+	.byte	'SCR',0
+	.word	8730
+	.byte	4,2,35,0,0,14
+	.word	8735
+	.byte	25
+	.byte	'Ifx_SRC_GSCR',0,4,169,4,3
+	.word	8769
+	.byte	14
+	.word	6034
+	.byte	10
+	.byte	'_Ifx_SRC_GSCU',0,4,172,4,25,20,13
+	.byte	'SCU',0
+	.word	8796
+	.byte	20,2,35,0,0,14
+	.word	8801
+	.byte	25
+	.byte	'Ifx_SRC_GSCU',0,4,175,4,3
+	.word	8835
+	.byte	29,24
+	.word	6115
+	.byte	30,0,0,14
+	.word	8862
+	.byte	10
+	.byte	'_Ifx_SRC_GSENT',0,4,178,4,25,24,13
+	.byte	'SENT',0
+	.word	8871
+	.byte	24,2,35,0,0,14
+	.word	8876
+	.byte	25
+	.byte	'Ifx_SRC_GSENT',0,4,181,4,3
+	.word	8912
+	.byte	29,12
+	.word	6175
+	.byte	30,0,0,14
+	.word	8940
+	.byte	10
+	.byte	'_Ifx_SRC_GSMU',0,4,184,4,25,12,13
+	.byte	'SMU',0
+	.word	8949
+	.byte	12,2,35,0,0,14
+	.word	8954
+	.byte	25
+	.byte	'Ifx_SRC_GSMU',0,4,187,4,3
+	.word	8988
+	.byte	29,16
+	.word	6233
+	.byte	30,1,0,14
+	.word	9015
+	.byte	10
+	.byte	'_Ifx_SRC_GSTM',0,4,190,4,25,16,13
+	.byte	'STM',0
+	.word	9024
+	.byte	16,2,35,0,0,14
+	.word	9029
+	.byte	25
+	.byte	'Ifx_SRC_GSTM',0,4,193,4,3
+	.word	9063
+	.byte	29,64
+	.word	6409
+	.byte	30,3,0,14
+	.word	9090
+	.byte	29,224,1
+	.word	414
+	.byte	30,223,1,0,29,32
+	.word	6305
+	.byte	30,1,0,14
+	.word	9115
+	.byte	10
+	.byte	'_Ifx_SRC_GVADC',0,4,196,4,25,192,2,13
+	.byte	'G',0
+	.word	9099
+	.byte	64,2,35,0,13
+	.byte	'reserved_40',0
+	.word	9104
+	.byte	224,1,2,35,64,13
+	.byte	'CG',0
+	.word	9124
+	.byte	32,3,35,160,2,0,14
+	.word	9129
+	.byte	25
+	.byte	'Ifx_SRC_GVADC',0,4,201,4,3
+	.word	9198
+	.byte	14
+	.word	6511
+	.byte	10
+	.byte	'_Ifx_SRC_GXBAR',0,4,204,4,25,4,13
+	.byte	'XBAR',0
+	.word	9226
+	.byte	4,2,35,0,0,14
+	.word	9231
+	.byte	25
+	.byte	'Ifx_SRC_GXBAR',0,4,207,4,3
+	.word	9267
+	.byte	25
+	.byte	'SpiIf_Status',0,5,74,3
+	.word	1829
+	.byte	25
+	.byte	'SpiIf_Ch',0,5,114,32
+	.word	1630
+	.byte	25
+	.byte	'SpiIf_ChConfig',0,5,115,32
+	.word	2558
+	.byte	25
+	.byte	'SpiIf',0,5,116,32
+	.word	2137
+	.byte	14
+	.word	1348
+	.byte	25
+	.byte	'SpiIf_Flags',0,5,122,3
+	.word	9370
+	.byte	25
+	.byte	'SpiIf_Job',0,5,128,1,3
+	.word	1518
+	.byte	25
+	.byte	'SpiIf_Mode',0,5,136,1,3
+	.word	982
+	.byte	25
+	.byte	'SpiIf_SlsoTiming_HalfTsclk',0,5,141,1,16
+	.word	1327
+	.byte	25
+	.byte	'SpiIf_funcs',0,5,151,1,3
+	.word	2048
+	.byte	25
+	.byte	'SpiIf_Config',0,5,177,1,3
+	.word	1145
+	.byte	25
+	.byte	'Spi_ErrorChecks',0,5,186,1,3
+	.word	1403
+	.byte	25
+	.byte	'SpiIf_ChMode',0,5,208,1,3
+	.word	2265
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L8:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
+	.byte	57,15,11,15,0,0,11,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,12,23,1,58,15,59,15,57,15,11,15,0,0,13,13
+	.byte	0,3,8,73,19,11,15,56,9,0,0,14,53,0,73,19,0,0,15,38,0,73,19,0,0,16,46,1,3,8,54,15,39,12,63,12,60,12,0,0
+	.byte	17,5,0,73,19,0,0,18,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,19,5,0,3,8,73,19,0,0,20,46,1,49,19,0,0
+	.byte	21,5,0,49,19,0,0,22,4,1,58,15,59,15,57,15,11,15,0,0,23,40,0,3,8,28,13,0,0,24,19,1,58,15,59,15,57,15,11
+	.byte	15,0,0,25,22,0,3,8,58,15,59,15,57,15,73,19,0,0,26,21,1,54,15,39,12,0,0,27,21,1,73,19,54,15,39,12,0,0,28
+	.byte	21,0,54,15,0,0,29,1,1,11,15,73,19,0,0,30,33,0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L9:
+	.word	.L31-.L30
+.L30:
+	.half	3
+	.word	.L33-.L32
+.L32:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl',0,0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'IfxSrc.h',0,2,0,0
+	.byte	'IfxSrc_regdef.h',0,3,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\If\\SpiIf.h',0,0,0,0
+	.byte	'IfxSrc_cfg.h',0,4,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\If\\SpiIf.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L33:
+.L31:
+	.sdecl	'.debug_info',debug,cluster('SpiIf_initConfig')
+	.sect	'.debug_info'
+.L10:
+	.word	230
+	.half	3
+	.word	.L11
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\If\\SpiIf.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L13,.L12
+	.byte	2
+	.word	.L6
+	.byte	3
+	.byte	'SpiIf_initConfig',0,1,47,6,1,1,1
+	.word	.L3,.L20,.L2
+	.byte	4
+	.byte	'config',0,1,47,37
+	.word	.L21,.L22
+	.byte	5
+	.word	.L3,.L20
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('SpiIf_initConfig')
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('SpiIf_initConfig')
+	.sect	'.debug_line'
+.L12:
+	.word	.L35-.L34
+.L34:
+	.half	3
+	.word	.L37-.L36
+.L36:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\If\\SpiIf.c',0,0,0,0,0
+.L37:
+	.byte	5,31,7,0,5,2
+	.word	.L3
+	.byte	3,48,1,5,29,9
+	.half	.L38-.L3
+	.byte	1,5,31,9
+	.half	.L39-.L38
+	.byte	3,1,1,5,29,9
+	.half	.L40-.L39
+	.byte	1,5,31,9
+	.half	.L41-.L40
+	.byte	3,1,1,5,29,9
+	.half	.L42-.L41
+	.byte	1,5,31,9
+	.half	.L43-.L42
+	.byte	3,1,1,5,29,9
+	.half	.L44-.L43
+	.byte	1,5,31,9
+	.half	.L45-.L44
+	.byte	3,1,1,5,29,9
+	.half	.L46-.L45
+	.byte	1,5,31,9
+	.half	.L47-.L46
+	.byte	3,1,1,5,29,9
+	.half	.L48-.L47
+	.byte	1,5,31,9
+	.half	.L49-.L48
+	.byte	3,1,1,5,29,9
+	.half	.L50-.L49
+	.byte	1,5,31,9
+	.half	.L51-.L50
+	.byte	3,1,1,5,29,9
+	.half	.L52-.L51
+	.byte	1,5,1,9
+	.half	.L53-.L52
+	.byte	3,1,1,7,9
+	.half	.L14-.L53
+	.byte	0,1,1
+.L35:
+	.sdecl	'.debug_ranges',debug,cluster('SpiIf_initConfig')
+	.sect	'.debug_ranges'
+.L13:
+	.word	-1,.L3,0,.L14-.L3,0,0
+	.sdecl	'.debug_info',debug,cluster('SpiIf_initChannelConfig')
+	.sect	'.debug_info'
+.L15:
+	.word	256
+	.half	3
+	.word	.L16
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\If\\SpiIf.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L18,.L17
+	.byte	2
+	.word	.L6
+	.byte	3
+	.byte	'SpiIf_initChannelConfig',0,1,60,6,1,1,1
+	.word	.L5,.L23,.L4
+	.byte	4
+	.byte	'config',0,1,60,46
+	.word	.L24,.L25
+	.byte	4
+	.byte	'driver',0,1,60,61
+	.word	.L26,.L27
+	.byte	5
+	.word	.L5,.L23
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('SpiIf_initChannelConfig')
+	.sect	'.debug_abbrev'
+.L16:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('SpiIf_initChannelConfig')
+	.sect	'.debug_line'
+.L17:
+	.word	.L55-.L54
+.L54:
+	.half	3
+	.word	.L57-.L56
+.L56:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\If\\SpiIf.c',0,0,0,0,0
+.L57:
+	.byte	5,34,7,0,5,2
+	.word	.L5
+	.byte	3,61,1,5,36,9
+	.half	.L58-.L5
+	.byte	3,1,1,5,34,9
+	.half	.L59-.L58
+	.byte	1,5,17,9
+	.half	.L60-.L59
+	.byte	3,1,1,5,34,9
+	.half	.L61-.L60
+	.byte	1,5,17,9
+	.half	.L62-.L61
+	.byte	3,1,1,5,34,9
+	.half	.L63-.L62
+	.byte	1,5,17,9
+	.half	.L64-.L63
+	.byte	3,1,1,5,34,9
+	.half	.L65-.L64
+	.byte	1,5,17,9
+	.half	.L66-.L65
+	.byte	3,1,1,5,34,9
+	.half	.L67-.L66
+	.byte	1,5,17,9
+	.half	.L68-.L67
+	.byte	3,1,1,5,34,9
+	.half	.L69-.L68
+	.byte	1,5,17,9
+	.half	.L70-.L69
+	.byte	3,1,1,5,34,9
+	.half	.L71-.L70
+	.byte	1,5,17,9
+	.half	.L72-.L71
+	.byte	3,1,1,5,36,9
+	.half	.L73-.L72
+	.byte	1,5,34,9
+	.half	.L74-.L73
+	.byte	1,5,17,9
+	.half	.L75-.L74
+	.byte	3,1,1,5,34,9
+	.half	.L76-.L75
+	.byte	1,5,36,9
+	.half	.L77-.L76
+	.byte	3,1,1,5,34,9
+	.half	.L78-.L77
+	.byte	1,5,36,9
+	.half	.L79-.L78
+	.byte	3,1,1,5,34,9
+	.half	.L80-.L79
+	.byte	1,5,36,9
+	.half	.L81-.L80
+	.byte	3,1,1,5,34,9
+	.half	.L82-.L81
+	.byte	1,5,17,9
+	.half	.L83-.L82
+	.byte	3,1,1,5,34,9
+	.half	.L84-.L83
+	.byte	1,5,17,9
+	.half	.L85-.L84
+	.byte	3,1,1,5,34,9
+	.half	.L86-.L85
+	.byte	1,5,24,9
+	.half	.L87-.L86
+	.byte	3,1,1,5,34,9
+	.half	.L88-.L87
+	.byte	1,5,24,9
+	.half	.L89-.L88
+	.byte	3,1,1,5,34,9
+	.half	.L90-.L89
+	.byte	1,5,24,9
+	.half	.L91-.L90
+	.byte	3,1,1,5,34,9
+	.half	.L92-.L91
+	.byte	1,5,24,9
+	.half	.L93-.L92
+	.byte	3,1,1,5,34,9
+	.half	.L94-.L93
+	.byte	1,5,1,9
+	.half	.L95-.L94
+	.byte	3,1,1,7,9
+	.half	.L19-.L95
+	.byte	0,1,1
+.L55:
+	.sdecl	'.debug_ranges',debug,cluster('SpiIf_initChannelConfig')
+	.sect	'.debug_ranges'
+.L18:
+	.word	-1,.L5,0,.L19-.L5,0,0
+	.sdecl	'.debug_loc',debug,cluster('SpiIf_initChannelConfig')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L23-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L25:
+	.word	-1,.L5,0,.L23-.L5
+	.half	1
+	.byte	100
+	.word	0,0
+.L27:
+	.word	-1,.L5,0,.L23-.L5
+	.half	1
+	.byte	101
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('SpiIf_initConfig')
+	.sect	'.debug_loc'
+.L2:
+	.word	-1,.L3,0,.L20-.L3
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L22:
+	.word	-1,.L3,0,.L20-.L3
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L96:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('SpiIf_initConfig')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L96,.L3,.L20-.L3
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('SpiIf_initChannelConfig')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L96,.L5,.L23-.L5
+	.byte	8,18,8,19,8,22,8,23
+
+
+	; Module end

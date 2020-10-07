@@ -1,0 +1,2273 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\seekfree_libraries\\common\\.SEEKFREE_PRINTF.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\seekfree_libraries\\common\\SEEKFREE_PRINTF.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\seekfree_libraries\\common\\SEEKFREE_PRINTF.src ..\\Libraries\\seekfree_libraries\\common\\SEEKFREE_PRINTF.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\seekfree_libraries\\common\\SEEKFREE_PRINTF.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.SEEKFREE_PRINTF.number_conversion_ascii',code,cluster('number_conversion_ascii')
+	.sect	'.text.SEEKFREE_PRINTF.number_conversion_ascii'
+	.align	2
+	
+	.global	number_conversion_ascii
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	     1  /*********************************************************************************************************************
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	     2   * COPYRIGHT NOTICE
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	     3   * Copyright (c) 2020,逐飞科技
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	     4   * All rights reserved.
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	     5   * 技术讨论QQ群：三群：824575535
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	     6   *
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	     7   * 以下所有内容版权均属逐飞科技所有，未经允许不得用于商业用途，
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	     8   * 欢迎各位使用并传播本程序，修改内容时必须保留逐飞科技的版权声明。
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	     9   *
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    10   * @file       		printf
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    11   * @company	   		成都逐飞科技有限公司
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    12   * @author     		逐飞科技(QQ3184284598)
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    13   * @version    		查看doc内version文件 版本说明
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    14   * @Software 		tasking v6.3r1
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    15   * @Target core		TC264D
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    16   * @Taobao   		https://seekfree.taobao.com/
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    17   * @date       		2020-3-23
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    18   ********************************************************************************************************************/
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    19  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    20  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    21  #include <stdarg.h>
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    22  #include <string.h>
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    23  #include "SEEKFREE_PRINTF.h"
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    24  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    25  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    26  uint8 number_conversion_ascii(uint32 dat, int8 *p, uint8 neg_type, uint8 radix)
+; Function number_conversion_ascii
+.L57:
+number_conversion_ascii:	.type	func
+	mov	d2,d4
+.L136:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    27  {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    28      int32   neg_dat;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    29      uint32  pos_dat;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    30      uint8   temp_data = 0;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    31      uint8   valid_num = 0;
+	mov	d15,#0
+.L138:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    32      
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    33      if(neg_type)
+	jeq	d5,#0,.L2
+.L325:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    34      {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    35          neg_dat = (int32)dat;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    36          if(neg_dat<0)   neg_dat = -neg_dat;
+	jge	d2,#0,.L3
+.L326:
+	rsub	d2,#0
+.L3:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    37          while(1)
+	j	.L4
+.L5:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    38          {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    39              *p = (char)(neg_dat%radix + '0');
+	div	e0,d2,d6
+.L327:
+	add	d0,d1,#48
+.L328:
+	st.b	[a4],d0
+.L329:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    40              neg_dat = neg_dat/radix;
+	div	e2,d2,d6
+.L330:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    41              valid_num++;
+	add	d15,#1
+.L139:
+	extr.u	d15,d15,#0,#8
+.L140:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    42              
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    43              if(!neg_dat) break;
+	jne	d2,#0,.L6
+.L331:
+	j	.L7
+.L6:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    44              p++;
+	add.a	a4,#1
+.L4:
+	j	.L5
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    45          }
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    46      }
+.L7:
+	j	.L8
+.L2:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    47      else
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    48      {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    49          pos_dat = dat;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    50          while(1)
+	j	.L9
+.L10:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    51          {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    52              temp_data = pos_dat%radix;
+	div.u	e0,d2,d6
+.L142:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    53              if(10 <= temp_data) temp_data += 'A'-10;
+	jlt.u	d1,#10,.L11
+.L332:
+	add	d0,d1,#55
+	extr.u	d0,d0,#0,#8
+.L143:
+	j	.L12
+.L11:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    54              else                temp_data += '0';
+	add	d0,d1,#48
+.L12:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    55              
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    56              *p = temp_data;
+	st.b	[a4],d0
+.L333:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    57              
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    58              pos_dat = pos_dat/radix;
+	div.u	e0,d2,d6
+.L144:
+	mov	d2,d0
+.L334:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    59              valid_num++;
+	add	d15,#1
+.L141:
+	extr.u	d15,d15,#0,#8
+.L145:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    60              
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    61              if(!pos_dat) break;
+	jne	d2,#0,.L13
+.L335:
+	j	.L14
+.L13:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    62              p++;
+	add.a	a4,#1
+.L9:
+	j	.L10
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    63          }
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    64      }
+.L14:
+.L8:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    65      return valid_num;
+	mov	d2,d15
+.L137:
+	j	.L15
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    66  }
+.L15:
+	ret
+.L122:
+	
+__number_conversion_ascii_function_end:
+	.size	number_conversion_ascii,__number_conversion_ascii_function_end-number_conversion_ascii
+.L75:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_PRINTF.printf_reverse_order',code,cluster('printf_reverse_order')
+	.sect	'.text.SEEKFREE_PRINTF.printf_reverse_order'
+	.align	2
+	
+	.global	printf_reverse_order
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    67  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    68  void printf_reverse_order(int8 *d_buff, uint32 len)
+; Function printf_reverse_order
+.L59:
+printf_reverse_order:	.type	func
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    69  {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    70      uint32 i;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    71      int8  temp_data;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    72      for(i=0;i<len/2;i++)
+	mov	d0,#0
+.L146:
+	j	.L16
+.L17:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    73      {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    74          temp_data = d_buff[len-1-i];
+	add	d15,d4,#-1
+.L340:
+	sub	d15,d0
+.L341:
+	addsc.a	a15,a4,d15,#0
+	ld.b	d1,[a15]0
+.L147:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    75          d_buff[len-1-i] = d_buff[i];
+	add	d15,d4,#-1
+.L342:
+	sub	d15,d0
+.L343:
+	addsc.a	a15,a4,d15,#0
+.L344:
+	addsc.a	a2,a4,d0,#0
+	ld.b	d15,[a2]0
+.L345:
+	st.b	[a15],d15
+.L346:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    76          d_buff[i] = temp_data; 
+	addsc.a	a15,a4,d0,#0
+.L347:
+	st.b	[a15],d1
+.L348:
+	add	d0,#1
+.L16:
+	mov	d15,#0
+	addih	d15,d15,#32768
+	mul.u	e2,d4,d15
+.L349:
+	jlt.u	d0,d3,.L17
+.L350:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    77      }
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    78  }
+	ret
+.L131:
+	
+__printf_reverse_order_function_end:
+	.size	printf_reverse_order,__printf_reverse_order_function_end-printf_reverse_order
+.L80:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_PRINTF.zf_sprintf',code,cluster('zf_sprintf')
+	.sect	'.text.SEEKFREE_PRINTF.zf_sprintf'
+	.align	2
+	
+	.global	zf_sprintf
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    79  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    80  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    81  //void printf(const int8 *format, ...)
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    82  //{
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    83  //#if(PRINTF)     //如果宏定义PRINTF为0 则不编译printf函数内容，调用printf没有任何操作
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    84  //    va_list arg;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    85  //	va_start(arg, format);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    86  //    
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    87  //	while (*format)
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    88  //	{
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    89  //		int8 ret = *format;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    90  //		if (ret == '%')
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    91  //		{
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    92  //			switch (*++format)
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    93  //			{
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    94  //                case 'a':// 十六进制p计数法输出浮点数 暂未实现
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    95  //                {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    96  //                    
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    97  //                    
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    98  //                }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	    99  //                
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   100  //                
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   101  //                case 'c':// 一个字符
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   102  //                {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   103  //                    int8 ch = (int8)va_arg(arg, uint32);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   104  //                    uart_putchar(DEBUG_UART, (int8)ch);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   105  //                            
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   106  //                }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   107  //                
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   108  //                
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   109  //                case 'd':
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   110  //                case 'i':// 有符号十进制整数
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   111  //                {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   112  //                    int8 vstr[33];
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   113  //                    int32 ival = (int32)va_arg(arg, int32);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   114  //                    uint8 vlen = number_conversion_ascii((uint32)ival, vstr, 1, 10);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   115  //                    if(ival<0)  uart_putchar(DEBUG_UART, '-');
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   116  //                    printf_reverse_order(vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   117  //                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   118  //                }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   119  //                
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   120  //                case 'f':// 浮点数，输出小数点后六位  不能指定输出精度
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   121  //                case 'F':// 浮点数，输出小数点后六位  不能指定输出精度
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   122  //                {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   123  //                    int8 vstr[33];
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   124  //                    double ival = (double)va_arg(arg, double);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   125  //                    uint8 vlen = number_conversion_ascii((uint32)(int32)ival, vstr, 1, 10);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   126  //                    if(ival<0)  uart_putchar(DEBUG_UART, '-');
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   127  //                    printf_reverse_order(vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   128  //                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   129  //                    uart_putchar(DEBUG_UART, '.');
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   130  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   131  //                    ival = ((double)ival - (int32)ival)*1000000;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   132  //                    vlen = number_conversion_ascii((uint32)(int32)ival, vstr, 1, 10);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   133  //				      while(6>vlen)
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   134  //                    {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   135  //                        vstr[vlen] = '0';
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   136  //                        vlen++;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   137  //                    }
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   138  //                    printf_reverse_order(vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   139  //                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   140  //                    break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   141  //                }
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   142  //                
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   143  //                case 'u':// 无符号十进制整数
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   144  //                {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   145  //                    int8 vstr[33];
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   146  //                    uint32 ival = (uint32)va_arg(arg, uint32);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   147  //                    uint8 vlen = number_conversion_ascii(ival, vstr, 0, 10);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   148  //                    printf_reverse_order(vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   149  //                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   150  //                }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   151  //                
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   152  //                case 'o':// 无符号八进制整数 
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   153  //                {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   154  //                    int8 vstr[33];
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   155  //                    uint32 ival = (uint32)va_arg(arg, uint32);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   156  //                    uint8 vlen = number_conversion_ascii(ival, vstr, 0, 8);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   157  //                    printf_reverse_order(vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   158  //                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   159  //                    
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   160  //                }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   161  //                
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   162  //                case 'x':// 无符号十六进制整数
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   163  //                case 'X':// 无符号十六进制整数
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   164  //                {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   165  //                    int8 vstr[33];
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   166  //                    uint32 ival = (uint32)va_arg(arg, uint32);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   167  //                    uint8 vlen = number_conversion_ascii(ival, vstr, 0, 16);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   168  //                    printf_reverse_order(vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   169  //                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   170  //                }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   171  //                
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   172  //                
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   173  //                case 's':// 字符串
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   174  //                {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   175  //                    int8 *pc = va_arg(arg, int8 *);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   176  //                    while (*pc)
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   177  //                    {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   178  //                        uart_putchar(DEBUG_UART, (int8)(*pc));
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   179  //                        pc++;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   180  //                    }
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   181  //                }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   182  //                
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   183  //                case 'p':// 以16进制形式输出指针
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   184  //                {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   185  //                    int8 vstr[33];
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   186  //                    uint32 ival = (uint32)va_arg(arg, uint32);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   187  //                    uint8 vlen = number_conversion_ascii(ival, vstr, 0, 16);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   188  //                    printf_reverse_order(vstr,8);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   189  //                    uart_putbuff(DEBUG_UART, (uint8 *)vstr,8);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   190  //                            
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   191  //                }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   192  //                
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   193  //                
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   194  //                case '%':// 输出字符% 
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   195  //                {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   196  //                    uart_putchar(DEBUG_UART, '%');
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   197  //                }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   198  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   199  //                default:break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   200  //			}
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   201  //		}
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   202  //		else
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   203  //		{
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   204  //			uart_putchar(DEBUG_UART, (int8)(*format));
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   205  //		}
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   206  //		format++;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   207  //	}
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   208  //	va_end(arg);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   209  //#endif
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   210  //}
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   211  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   212  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   213  uint32 zf_sprintf(int8 *buff, const int8 *format, ...)
+; Function zf_sprintf
+.L61:
+zf_sprintf:	.type	func
+	sub.a	a10,#40
+.L148:
+	mov.aa	a12,a4
+.L149:
+	mov.aa	a13,a5
+.L150:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   214  {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   215      uint32 buff_len=0;
+	mov	d8,#0
+.L151:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   216      va_list arg;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   217  	va_start(arg, format);
+	lea	a14,[a10]40
+.L152:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   218   
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   219  	while (*format)
+	j	.L18
+.L19:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   220  	{
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   221  		int8 ret = *format;
+	ld.b	d0,[a13]0
+.L153:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   222  		if (ret == '%')
+	mov	d15,#37
+.L223:
+	jne	d15,d0,.L20
+.L224:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   223  		{
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   224  			switch (*++format)
+	add.a	a13,#1
+.L225:
+	ld.b	d0,[a13]0
+.L154:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   225  			{
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   226                  case 'a':// 十六进制p计数法输出浮点数 暂未实现
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   227                  {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   228                      
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   229                      
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   230                  }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   231                  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   232                  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   233                  case 'c':// 一个字符
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   234                  {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   235                      int8 ch = (int8)va_arg(arg, uint32);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   236                      *buff = ch;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   237                      buff++;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   238                      buff_len++;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   239                              
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   240                  }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   241                  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   242                  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   243                  case 'd':
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   244                  case 'i':// 有符号十进制整数
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   245                  {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   246                      int8 vstr[33];
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   247                      int32 ival = (int32)va_arg(arg, int32);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   248                      uint8 vlen = number_conversion_ascii((uint32)ival, vstr, 1, 10);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   249                      
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   250                      if(ival<0)  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   251                      {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   252                          vstr[vlen] = '-';
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   253                          vlen++;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   254                      }
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   255                      printf_reverse_order(vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   256                      memcpy(buff,vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   257                      buff += vlen;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   258                      buff_len += vlen;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   259                      
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   260                      
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   261                  }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   262                  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   263                  case 'f':// 浮点数，输出小数点后六位  不能指定输出精度
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   264                  case 'F':// 浮点数，输出小数点后六位  不能指定输出精度
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   265                  {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   266                      int8 vstr[33];
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   267                      double ival = (double)va_arg(arg, double);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   268                      uint8 vlen = number_conversion_ascii((uint32)(int32)ival, vstr, 1, 10);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   269                      
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   270                      if(ival<0)  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   271                      {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   272                          vstr[vlen] = '-';
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   273                          vlen++;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   274                      }
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   275                      printf_reverse_order(vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   276                      memcpy(buff,vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   277                      buff += vlen;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   278                      buff_len += vlen;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   279  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   280                      ival = ((double)ival - (int32)ival)*1000000;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   281                      if(ival)
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   282                      {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   283                          vlen = number_conversion_ascii((uint32)(int32)ival, vstr, 1, 10);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   284                      }
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   285                      else
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   286                      {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   287                          vstr[0] = vstr[1] = vstr[2] = vstr[3] = vstr[4] = vstr[5] = '0';
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   288                          vlen = 6;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   289                      }
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   290  					
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   291                      while(6>vlen)
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   292                      {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   293                          vstr[vlen] = '0';
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   294                          vlen++;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   295                      }
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   296  					
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   297                      vstr[vlen] = '.';
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   298                      vlen++;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   299                      
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   300                      printf_reverse_order(vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   301                      memcpy(buff,vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   302                      buff_len += vlen;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   303  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   304                      break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   305                  }
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   306                  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   307                  case 'u':// 无符号十进制整数
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   308                  {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   309                      int8 vstr[33];
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   310                      uint32 ival = (uint32)va_arg(arg, uint32);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   311                      uint8 vlen = number_conversion_ascii(ival, vstr, 0, 10);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   312                      
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   313                      printf_reverse_order(vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   314                      memcpy(buff,vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   315                      buff += vlen;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   316                      buff_len += vlen;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   317                  }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   318                  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   319                  case 'o':// 无符号八进制整数 
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   320                  {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   321                      int8 vstr[33];
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   322                      uint32 ival = (uint32)va_arg(arg, uint32);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   323                      uint8 vlen = number_conversion_ascii(ival, vstr, 0, 8);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   324                      
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   325                      printf_reverse_order(vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   326                      memcpy(buff,vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   327                      buff += vlen;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   328                      buff_len += vlen;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   329                      
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   330                  }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   331                  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   332                  case 'x':// 无符号十六进制整数
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   333                  case 'X':// 无符号十六进制整数
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   334                  {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   335                      int8 vstr[33];
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   336                      uint32 ival = (uint32)va_arg(arg, uint32);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   337                      uint8 vlen = number_conversion_ascii(ival, vstr, 0, 16);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   338                      
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   339                      printf_reverse_order(vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   340                      memcpy(buff,vstr,vlen);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   341                      buff += vlen;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   342                      buff_len += vlen;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   343                  }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   344                  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   345                  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   346                  case 's':// 字符串
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   347                  {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   348                      int8 *pc = va_arg(arg, int8 *);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   349                      while (*pc)
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   350                      {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   351                          *buff = *pc;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   352                          buff++;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   353                          buff_len++;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   354                          pc++;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   355                      }
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   356                  }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   357                  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   358                  case 'p':// 以16进制形式输出指针
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   359                  {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   360                      int8 vstr[33];
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   361                      uint32 ival = (uint32)va_arg(arg, uint32);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   362                      //uint8 vlen = number_conversion_ascii(ival, vstr, 0, 16);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   363                      number_conversion_ascii(ival, vstr, 0, 16);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   364  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   365                      printf_reverse_order(vstr,8);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   366                      memcpy(buff,vstr,8);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   367                      buff += 8;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   368                      buff_len += 8;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   369                              
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   370                  }break;
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   371                  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   372                  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   373                  case '%':// 输出字符% 
+	mov	d15,#37
+	jeq	d15,d0,.L21
+.L226:
+	mov	d15,#70
+	jeq	d15,d0,.L22
+.L227:
+	mov	d15,#88
+	jeq	d15,d0,.L23
+.L228:
+	mov	d15,#97
+	jeq	d15,d0,.L24
+.L229:
+	mov	d15,#99
+	jeq	d15,d0,.L25
+.L230:
+	mov	d15,#100
+	jeq	d15,d0,.L26
+.L231:
+	mov	d15,#102
+	jeq	d15,d0,.L27
+.L232:
+	mov	d15,#105
+	jeq	d15,d0,.L28
+.L233:
+	mov	d15,#111
+	jeq	d15,d0,.L29
+.L234:
+	mov	d15,#112
+	jeq	d15,d0,.L30
+.L235:
+	mov	d15,#115
+	jeq	d15,d0,.L31
+.L236:
+	mov	d15,#117
+	jeq	d15,d0,.L32
+.L237:
+	mov	d15,#120
+	jeq	d15,d0,.L33
+	j	.L34
+.L24:
+	j	.L35
+.L25:
+	add.a	a14,#4
+	ld.w	d15,[a14]-4
+.L238:
+	extr	d15,d15,#0,#8
+.L155:
+	st.b	[a12],d15
+.L239:
+	add.a	a12,#1
+.L240:
+	add	d8,#1
+.L92:
+	j	.L36
+.L26:
+.L28:
+	add.a	a14,#4
+	ld.w	d9,[a14]-4
+.L156:
+	lea	a4,[a10]0
+.L241:
+	mov	d5,#1
+.L242:
+	mov	d6,#10
+	mov	d4,d9
+.L157:
+	call	number_conversion_ascii
+.L158:
+	mov	d15,d2
+.L159:
+	jge	d9,#0,.L37
+.L243:
+	addsc.a	a15,a10,d15,#0
+.L244:
+	mov	d0,#45
+.L245:
+	st.b	[a15],d0
+.L246:
+	add	d15,#1
+.L160:
+	extr.u	d15,d15,#0,#8
+.L37:
+	lea	a4,[a10]0
+.L247:
+	mov	d4,d15
+.L161:
+	call	printf_reverse_order
+.L162:
+	lea	a5,[a10]0
+.L248:
+	mov.aa	a4,a12
+.L163:
+	mov	d4,d15
+.L165:
+	call	memcpy
+.L164:
+	addsc.a	a12,a12,d15,#0
+.L249:
+	add	d8,d15
+.L94:
+	j	.L38
+.L27:
+.L22:
+	add.a	a14,#4
+	ld.w	d9,[a14]-4
+.L166:
+	ftoiz	d4,d9
+.L250:
+	lea	a4,[a10]0
+.L251:
+	mov	d5,#1
+.L252:
+	mov	d6,#10
+	call	number_conversion_ascii
+.L168:
+	mov	d15,d2
+.L169:
+	mov	d0,#0
+.L253:
+	cmp.f	d0,d9,d0
+	extr.u	d0,d0,#0,#1
+.L254:
+	jeq	d0,#0,.L39
+.L255:
+	addsc.a	a15,a10,d15,#0
+.L256:
+	mov	d0,#45
+.L257:
+	st.b	[a15],d0
+.L258:
+	add	d15,#1
+.L170:
+	extr.u	d15,d15,#0,#8
+.L39:
+	lea	a4,[a10]0
+.L259:
+	mov	d4,d15
+.L172:
+	call	printf_reverse_order
+.L173:
+	lea	a5,[a10]0
+.L260:
+	mov.aa	a4,a12
+.L174:
+	mov	d4,d15
+.L176:
+	call	memcpy
+.L175:
+	addsc.a	a12,a12,d15,#0
+.L261:
+	add	d8,d15
+.L262:
+	ftoiz	d15,d9
+.L171:
+	itof	d15,d15
+.L263:
+	sub.f	d15,d9,d15
+.L264:
+	mov	d0,#9216
+	addih	d0,d0,#18804
+.L265:
+	mul.f	d0,d15,d0
+.L167:
+	extr.u	d15,d0,#23,#8
+	jne	d15,#0,.L40
+.L266:
+	mov	d15,#48
+	st.b	[a10]5,d15
+.L267:
+	st.b	[a10]4,d15
+.L268:
+	st.b	[a10]3,d15
+.L269:
+	st.b	[a10]2,d15
+.L270:
+	st.b	[a10]1,d15
+.L271:
+	st.b	[a10],d15
+.L272:
+	mov	d2,#6
+.L177:
+	j	.L41
+.L40:
+	ftoiz	d4,d0
+.L273:
+	lea	a4,[a10]0
+.L274:
+	mov	d5,#1
+.L275:
+	mov	d6,#10
+	call	number_conversion_ascii
+.L41:
+	j	.L42
+.L43:
+	addsc.a	a15,a10,d2,#0
+.L276:
+	mov	d15,#48
+.L277:
+	st.b	[a15],d15
+.L278:
+	add	d2,#1
+.L42:
+	jlt.u	d2,#6,.L43
+.L279:
+	addsc.a	a15,a10,d2,#0
+.L280:
+	mov	d15,#46
+.L281:
+	st.b	[a15],d15
+.L282:
+	add	d2,#1
+.L178:
+	extr.u	d15,d2,#0,#8
+.L179:
+	lea	a4,[a10]0
+.L283:
+	mov	d4,d15
+.L180:
+	call	printf_reverse_order
+.L181:
+	lea	a5,[a10]0
+.L284:
+	mov.aa	a4,a12
+.L182:
+	mov	d4,d15
+.L184:
+	call	memcpy
+.L183:
+	add	d8,d15
+.L285:
+	j	.L44
+.L32:
+	add.a	a14,#4
+	ld.w	d4,[a14]-4
+.L185:
+	lea	a4,[a10]0
+.L286:
+	mov	d5,#0
+.L287:
+	mov	d6,#10
+	call	number_conversion_ascii
+.L186:
+	mov	d15,d2
+.L188:
+	lea	a4,[a10]0
+.L288:
+	mov	d4,d15
+.L187:
+	call	printf_reverse_order
+.L189:
+	lea	a5,[a10]0
+.L289:
+	mov.aa	a4,a12
+.L190:
+	mov	d4,d15
+.L192:
+	call	memcpy
+.L191:
+	addsc.a	a12,a12,d15,#0
+.L290:
+	add	d8,d15
+.L105:
+	j	.L45
+.L29:
+	add.a	a14,#4
+	ld.w	d4,[a14]-4
+.L193:
+	lea	a4,[a10]0
+.L291:
+	mov	d5,#0
+.L292:
+	mov	d6,#8
+	call	number_conversion_ascii
+.L194:
+	mov	d15,d2
+.L196:
+	lea	a4,[a10]0
+.L293:
+	mov	d4,d15
+.L195:
+	call	printf_reverse_order
+.L197:
+	lea	a5,[a10]0
+.L294:
+	mov.aa	a4,a12
+.L198:
+	mov	d4,d15
+.L200:
+	call	memcpy
+.L199:
+	addsc.a	a12,a12,d15,#0
+.L295:
+	add	d8,d15
+.L109:
+	j	.L46
+.L33:
+.L23:
+	add.a	a14,#4
+	ld.w	d4,[a14]-4
+.L201:
+	lea	a4,[a10]0
+.L296:
+	mov	d5,#0
+.L297:
+	mov	d6,#16
+	call	number_conversion_ascii
+.L202:
+	mov	d15,d2
+.L204:
+	lea	a4,[a10]0
+.L298:
+	mov	d4,d15
+.L203:
+	call	printf_reverse_order
+.L205:
+	lea	a5,[a10]0
+.L299:
+	mov.aa	a4,a12
+.L206:
+	mov	d4,d15
+.L208:
+	call	memcpy
+.L207:
+	addsc.a	a12,a12,d15,#0
+.L300:
+	add	d8,d15
+.L113:
+	j	.L47
+.L31:
+	add.a	a14,#4
+	ld.a	a15,[a14]-4
+.L209:
+	j	.L48
+.L49:
+	ld.b	d15,[a15]0
+.L301:
+	st.b	[a12],d15
+.L302:
+	add.a	a12,#1
+.L303:
+	add	d8,#1
+.L304:
+	add.a	a15,#1
+.L48:
+	ld.b	d15,[a15]0
+.L305:
+	jne	d15,#0,.L49
+.L117:
+	j	.L50
+.L30:
+	add.a	a14,#4
+	ld.w	d4,[a14]-4
+.L210:
+	lea	a4,[a10]0
+.L306:
+	mov	d5,#0
+.L307:
+	mov	d6,#16
+	call	number_conversion_ascii
+.L211:
+	lea	a4,[a10]0
+.L308:
+	mov	d4,#8
+	call	printf_reverse_order
+.L309:
+	lea	a5,[a10]0
+.L310:
+	mov	d4,#8
+	mov.aa	a4,a12
+.L212:
+	call	memcpy
+.L213:
+	lea	a12,[a12]8
+.L311:
+	add	d8,d8,#8
+.L119:
+	j	.L51
+.L21:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   374                  {
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   375                      *buff = '%';
+	mov	d15,#37
+.L312:
+	st.b	[a12],d15
+.L313:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   376                      buff++;
+	add.a	a12,#1
+.L314:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   377                      buff_len++;
+	add	d8,#1
+.L315:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   378                  }break;
+	j	.L52
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   379  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   380                  default:break;
+.L34:
+	j	.L53
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   381  			}
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   382  		}
+.L53:
+.L52:
+.L51:
+.L50:
+.L47:
+.L46:
+.L45:
+.L44:
+.L38:
+.L36:
+.L35:
+	j	.L54
+.L20:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   383  		else
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   384  		{
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   385              *buff = (int8)(*format);
+	ld.b	d15,[a13]0
+.L316:
+	st.b	[a12],d15
+.L317:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   386              buff++;
+	add.a	a12,#1
+.L318:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   387              buff_len++;
+	add	d8,#1
+.L54:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   388  		}
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   389  		format++;
+	add.a	a13,#1
+.L18:
+	ld.b	d15,[a13]0
+.L319:
+	jne	d15,#0,.L19
+.L320:
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   390  	}
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   391  	va_end(arg);
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   392  
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   393      return buff_len;
+	mov	d2,d8
+.L214:
+	j	.L55
+
+; ..\Libraries\seekfree_libraries\common\SEEKFREE_PRINTF.c	   394  }
+.L55:
+	ret
+.L82:
+	
+__zf_sprintf_function_end:
+	.size	zf_sprintf,__zf_sprintf_function_end-zf_sprintf
+.L70:
+	; End of function
+	
+	.calls	'zf_sprintf','number_conversion_ascii'
+	.calls	'zf_sprintf','printf_reverse_order'
+	.calls	'zf_sprintf','memcpy'
+	.calls	'number_conversion_ascii','',0
+	.calls	'printf_reverse_order','',0
+	.extern	memcpy
+	.calls	'zf_sprintf','',40
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L63:
+	.word	754
+	.half	3
+	.word	.L64
+	.byte	4
+.L62:
+	.byte	1
+	.byte	'..\\Libraries\\seekfree_libraries\\common\\SEEKFREE_PRINTF.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L65
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	166
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	173
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	215
+	.byte	7
+	.word	215
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	231
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	236
+	.byte	9
+	.byte	'value',0
+	.word	215
+	.byte	9
+	.byte	'compare',0
+	.word	215
+	.byte	0,10
+	.byte	'void',0,7
+	.word	293
+	.byte	11
+	.byte	'__dotdotdot__',0
+	.word	299
+	.byte	1,1,1,1,12
+	.word	299
+	.byte	3
+	.word	293
+	.byte	7
+	.word	332
+	.byte	12
+	.word	337
+	.byte	13
+	.byte	'memcpy',0,1,53,17
+	.word	299
+	.byte	1,1,1,1,14,1,53,33
+	.word	327
+	.byte	14,1,53,56
+	.word	342
+	.byte	14,1,53,68
+	.word	215
+	.byte	0
+.L81:
+	.byte	2
+	.byte	'unsigned long int',0,4,7
+.L90:
+	.byte	2
+	.byte	'char',0,1,6
+.L83:
+	.byte	7
+	.word	412
+	.byte	3
+	.word	412
+.L85:
+	.byte	7
+	.word	425
+	.byte	7
+	.word	412
+	.byte	7
+	.word	412
+.L88:
+	.byte	15
+	.byte	'va_list',0,2,24,16
+	.word	440
+.L95:
+	.byte	16,33
+	.word	412
+	.byte	17,32,0
+.L97:
+	.byte	2
+	.byte	'long int',0,4,5
+.L99:
+	.byte	2
+	.byte	'unsigned char',0,1,8
+.L102:
+	.byte	2
+	.byte	'float',0,4,4,15
+	.byte	'__size_t',0,3,1,1
+	.word	215
+	.byte	18,1,7
+	.word	525
+	.byte	15
+	.byte	'__codeptr',0,3,1,1
+	.word	527
+	.byte	15
+	.byte	'size_t',0,1,29,25
+	.word	215
+	.byte	15
+	.byte	'uint8',0,4,105,29
+	.word	482
+	.byte	2
+	.byte	'unsigned short int',0,2,7,15
+	.byte	'uint16',0,4,109,29
+	.word	579
+	.byte	15
+	.byte	'uint32',0,4,113,29
+	.word	391
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,15
+	.byte	'uint64',0,4,118,29
+	.word	631
+	.byte	15
+	.byte	'int8',0,5,33,29
+	.word	412
+	.byte	2
+	.byte	'short int',0,2,5,15
+	.byte	'int16',0,5,34,29
+	.word	685
+	.byte	15
+	.byte	'int32',0,5,35,29
+	.word	470
+	.byte	2
+	.byte	'long long int',0,8,5,15
+	.byte	'int64',0,5,36,29
+	.word	726
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L64:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,59,0,3,8,0,0,11,46,0,3,8,73,19,54,15,39,12,63,12,60,12,0,0,12,55
+	.byte	0,73,19,0,0,13,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,14,5,0,58,15,59,15,57,15,73
+	.byte	19,0,0,15,22,0,3,8,58,15,59,15,57,15,73,19,0,0,16,1,1,11,15,73,19,0,0,17,33,0,47,15,0,0,18,21,0,54,15
+	.byte	0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L65:
+	.word	.L216-.L215
+.L215:
+	.half	3
+	.word	.L218-.L217
+.L217:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'D:\\Program Files\\TASKING\\TriCore v6.3r1\\ctc\\include\\',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0,0
+	.byte	'string.h',0,1,0,0
+	.byte	'stdarg.h',0,1,0,0
+	.byte	'..\\Libraries\\seekfree_libraries\\common\\SEEKFREE_PRINTF.c',0,0,0,0
+	.byte	'PLATFORM_TYPES.H',0,2,0,0
+	.byte	'..\\Libraries\\seekfree_libraries\\common\\common.h',0,0,0,0,0
+.L218:
+.L216:
+	.sdecl	'.debug_info',debug,cluster('zf_sprintf')
+	.sect	'.debug_info'
+.L66:
+	.word	745
+	.half	3
+	.word	.L67
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_libraries\\common\\SEEKFREE_PRINTF.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L69,.L68
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'zf_sprintf',0,1,213,1,8
+	.word	.L81
+	.byte	1,1,1
+	.word	.L61,.L82,.L60
+	.byte	4
+	.byte	'buff',0,1,213,1,25
+	.word	.L83,.L84
+	.byte	4
+	.byte	'format',0,1,213,1,43
+	.word	.L85,.L86
+	.byte	5,1,213,1,51,6
+	.word	.L61,.L82
+	.byte	7
+	.byte	'buff_len',0,1,215,1,12
+	.word	.L81,.L87
+	.byte	7
+	.byte	'arg',0,1,216,1,13
+	.word	.L88,.L89
+	.byte	6
+	.word	.L19,.L18
+	.byte	7
+	.byte	'ret',0,1,221,1,8
+	.word	.L90,.L91
+	.byte	6
+	.word	.L25,.L92
+	.byte	7
+	.byte	'ch',0,1,235,1,26
+	.word	.L90,.L93
+	.byte	0,6
+	.word	.L28,.L94
+	.byte	7
+	.byte	'vstr',0,1,246,1,26
+	.word	.L95,.L96
+	.byte	7
+	.byte	'ival',0,1,247,1,27
+	.word	.L97,.L98
+	.byte	7
+	.byte	'vlen',0,1,248,1,27
+	.word	.L99,.L100
+	.byte	0,6
+	.word	.L22,.L32
+	.byte	7
+	.byte	'vstr',0,1,138,2,26
+	.word	.L95,.L101
+	.byte	7
+	.byte	'ival',0,1,139,2,28
+	.word	.L102,.L103
+	.byte	7
+	.byte	'vlen',0,1,140,2,27
+	.word	.L99,.L104
+	.byte	0,6
+	.word	.L32,.L105
+	.byte	7
+	.byte	'vstr',0,1,181,2,26
+	.word	.L95,.L106
+	.byte	7
+	.byte	'ival',0,1,182,2,28
+	.word	.L81,.L107
+	.byte	7
+	.byte	'vlen',0,1,183,2,27
+	.word	.L99,.L108
+	.byte	0,6
+	.word	.L29,.L109
+	.byte	7
+	.byte	'vstr',0,1,193,2,26
+	.word	.L95,.L110
+	.byte	7
+	.byte	'ival',0,1,194,2,28
+	.word	.L81,.L111
+	.byte	7
+	.byte	'vlen',0,1,195,2,27
+	.word	.L99,.L112
+	.byte	0,6
+	.word	.L23,.L113
+	.byte	7
+	.byte	'vstr',0,1,207,2,26
+	.word	.L95,.L114
+	.byte	7
+	.byte	'ival',0,1,208,2,28
+	.word	.L81,.L115
+	.byte	7
+	.byte	'vlen',0,1,209,2,27
+	.word	.L99,.L116
+	.byte	0,6
+	.word	.L31,.L117
+	.byte	7
+	.byte	'pc',0,1,220,2,27
+	.word	.L83,.L118
+	.byte	0,6
+	.word	.L30,.L119
+	.byte	7
+	.byte	'vstr',0,1,232,2,26
+	.word	.L95,.L120
+	.byte	7
+	.byte	'ival',0,1,233,2,28
+	.word	.L81,.L121
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('zf_sprintf')
+	.sect	'.debug_abbrev'
+.L67:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,24,0,58,15,59,15,57,15
+	.byte	0,0,6,11,1,17,1,18,1,0,0,7,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('zf_sprintf')
+	.sect	'.debug_line'
+.L68:
+	.word	.L220-.L219
+.L219:
+	.half	3
+	.word	.L222-.L221
+.L221:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_libraries\\common\\SEEKFREE_PRINTF.c',0,0,0,0,0
+.L222:
+	.byte	5,8,7,0,5,2
+	.word	.L61
+	.byte	3,212,1,1,5,20,9
+	.half	.L150-.L61
+	.byte	3,2,1,5,2,9
+	.half	.L151-.L150
+	.byte	3,2,1,5,16,9
+	.half	.L152-.L151
+	.byte	3,2,1,5,14,9
+	.half	.L19-.L152
+	.byte	3,2,1,9
+	.half	.L153-.L19
+	.byte	3,1,1,5,3,9
+	.half	.L223-.L153
+	.byte	1,5,13,7,9
+	.half	.L224-.L223
+	.byte	3,2,1,5,12,9
+	.half	.L225-.L224
+	.byte	1,5,22,9
+	.half	.L154-.L225
+	.byte	3,149,1,1,9
+	.half	.L226-.L154
+	.byte	3,147,127,1,9
+	.half	.L227-.L226
+	.byte	3,197,0,1,9
+	.half	.L228-.L227
+	.byte	3,149,127,1,9
+	.half	.L229-.L228
+	.byte	3,7,1,9
+	.half	.L230-.L229
+	.byte	3,10,1,9
+	.half	.L231-.L230
+	.byte	3,20,1,9
+	.half	.L232-.L231
+	.byte	3,109,1,9
+	.half	.L233-.L232
+	.byte	3,203,0,1,9
+	.half	.L234-.L233
+	.byte	3,39,1,9
+	.half	.L235-.L234
+	.byte	3,116,1,9
+	.half	.L236-.L235
+	.byte	3,89,1,9
+	.half	.L237-.L236
+	.byte	3,25,1,5,18,9
+	.half	.L24-.L237
+	.byte	3,154,127,1,5,37,9
+	.half	.L25-.L24
+	.byte	3,5,1,5,31,9
+	.half	.L238-.L25
+	.byte	1,5,27,9
+	.half	.L155-.L238
+	.byte	3,1,1,5,25,9
+	.half	.L239-.L155
+	.byte	3,1,1,5,29,9
+	.half	.L240-.L239
+	.byte	3,1,1,5,18,9
+	.half	.L92-.L240
+	.byte	3,2,1,5,41,9
+	.half	.L28-.L92
+	.byte	3,7,1,5,72,9
+	.half	.L156-.L28
+	.byte	3,1,1,5,78,9
+	.half	.L241-.L156
+	.byte	1,5,81,9
+	.half	.L242-.L241
+	.byte	1,5,32,9
+	.half	.L158-.L242
+	.byte	1,5,21,9
+	.half	.L159-.L158
+	.byte	3,2,1,5,29,7,9
+	.half	.L243-.L159
+	.byte	3,2,1,5,38,9
+	.half	.L244-.L243
+	.byte	1,5,36,9
+	.half	.L245-.L244
+	.byte	1,5,29,9
+	.half	.L246-.L245
+	.byte	3,1,1,5,42,9
+	.half	.L37-.L246
+	.byte	3,2,1,5,47,9
+	.half	.L247-.L37
+	.byte	1,5,33,9
+	.half	.L162-.L247
+	.byte	3,1,1,5,38,9
+	.half	.L248-.L162
+	.byte	1,5,26,9
+	.half	.L164-.L248
+	.byte	3,1,1,5,30,9
+	.half	.L249-.L164
+	.byte	3,1,1,5,18,9
+	.half	.L94-.L249
+	.byte	3,3,1,5,43,9
+	.half	.L22-.L94
+	.byte	3,6,1,5,66,9
+	.half	.L166-.L22
+	.byte	3,1,1,5,79,9
+	.half	.L250-.L166
+	.byte	1,5,85,9
+	.half	.L251-.L250
+	.byte	1,5,88,9
+	.half	.L252-.L251
+	.byte	1,5,32,9
+	.half	.L168-.L252
+	.byte	1,5,29,9
+	.half	.L169-.L168
+	.byte	3,2,1,5,28,9
+	.half	.L253-.L169
+	.byte	1,5,21,9
+	.half	.L254-.L253
+	.byte	1,5,29,7,9
+	.half	.L255-.L254
+	.byte	3,2,1,5,38,9
+	.half	.L256-.L255
+	.byte	1,5,36,9
+	.half	.L257-.L256
+	.byte	1,5,29,9
+	.half	.L258-.L257
+	.byte	3,1,1,5,42,9
+	.half	.L39-.L258
+	.byte	3,2,1,5,47,9
+	.half	.L259-.L39
+	.byte	1,5,33,9
+	.half	.L173-.L259
+	.byte	3,1,1,5,38,9
+	.half	.L260-.L173
+	.byte	1,5,26,9
+	.half	.L175-.L260
+	.byte	3,1,1,5,30,9
+	.half	.L261-.L175
+	.byte	3,1,1,5,44,9
+	.half	.L262-.L261
+	.byte	3,2,1,5,42,9
+	.half	.L263-.L262
+	.byte	1,5,57,9
+	.half	.L264-.L263
+	.byte	1,5,56,9
+	.half	.L265-.L264
+	.byte	1,5,21,9
+	.half	.L167-.L265
+	.byte	3,1,1,5,83,9
+	.half	.L266-.L167
+	.byte	3,6,1,5,73,9
+	.half	.L267-.L266
+	.byte	1,5,63,9
+	.half	.L268-.L267
+	.byte	1,5,53,9
+	.half	.L269-.L268
+	.byte	1,5,43,9
+	.half	.L270-.L269
+	.byte	1,5,33,9
+	.half	.L271-.L270
+	.byte	1,5,30,9
+	.half	.L272-.L271
+	.byte	3,1,1,5,89,9
+	.half	.L177-.L272
+	.byte	3,123,1,5,64,9
+	.half	.L40-.L177
+	.byte	1,5,77,9
+	.half	.L273-.L40
+	.byte	1,5,83,9
+	.half	.L274-.L273
+	.byte	1,5,86,9
+	.half	.L275-.L274
+	.byte	1,5,33,9
+	.half	.L41-.L275
+	.byte	3,8,1,5,29,9
+	.half	.L43-.L41
+	.byte	3,2,1,5,38,9
+	.half	.L276-.L43
+	.byte	1,5,36,9
+	.half	.L277-.L276
+	.byte	1,5,29,9
+	.half	.L278-.L277
+	.byte	3,1,1,5,33,9
+	.half	.L42-.L278
+	.byte	3,125,1,5,25,7,9
+	.half	.L279-.L42
+	.byte	3,6,1,5,34,9
+	.half	.L280-.L279
+	.byte	1,5,32,9
+	.half	.L281-.L280
+	.byte	1,5,25,9
+	.half	.L282-.L281
+	.byte	3,1,1,5,42,9
+	.half	.L179-.L282
+	.byte	3,2,1,5,47,9
+	.half	.L283-.L179
+	.byte	1,5,33,9
+	.half	.L181-.L283
+	.byte	3,1,1,5,38,9
+	.half	.L284-.L181
+	.byte	1,5,30,9
+	.half	.L183-.L284
+	.byte	3,1,1,5,21,9
+	.half	.L285-.L183
+	.byte	3,2,1,5,43,9
+	.half	.L32-.L285
+	.byte	3,6,1,5,64,9
+	.half	.L185-.L32
+	.byte	3,1,1,5,70,9
+	.half	.L286-.L185
+	.byte	1,5,73,9
+	.half	.L287-.L286
+	.byte	1,5,32,9
+	.half	.L186-.L287
+	.byte	1,5,42,9
+	.half	.L188-.L186
+	.byte	3,2,1,5,47,9
+	.half	.L288-.L188
+	.byte	1,5,33,9
+	.half	.L189-.L288
+	.byte	3,1,1,5,38,9
+	.half	.L289-.L189
+	.byte	1,5,26,9
+	.half	.L191-.L289
+	.byte	3,1,1,5,30,9
+	.half	.L290-.L191
+	.byte	3,1,1,5,18,9
+	.half	.L105-.L290
+	.byte	3,1,1,5,43,9
+	.half	.L29-.L105
+	.byte	3,5,1,5,64,9
+	.half	.L193-.L29
+	.byte	3,1,1,5,70,9
+	.half	.L291-.L193
+	.byte	1,5,73,9
+	.half	.L292-.L291
+	.byte	1,5,32,9
+	.half	.L194-.L292
+	.byte	1,5,42,9
+	.half	.L196-.L194
+	.byte	3,2,1,5,47,9
+	.half	.L293-.L196
+	.byte	1,5,33,9
+	.half	.L197-.L293
+	.byte	3,1,1,5,38,9
+	.half	.L294-.L197
+	.byte	1,5,26,9
+	.half	.L199-.L294
+	.byte	3,1,1,5,30,9
+	.half	.L295-.L199
+	.byte	3,1,1,5,18,9
+	.half	.L109-.L295
+	.byte	3,2,1,5,43,9
+	.half	.L23-.L109
+	.byte	3,6,1,5,64,9
+	.half	.L201-.L23
+	.byte	3,1,1,5,70,9
+	.half	.L296-.L201
+	.byte	1,5,73,9
+	.half	.L297-.L296
+	.byte	1,5,32,9
+	.half	.L202-.L297
+	.byte	1,5,42,9
+	.half	.L204-.L202
+	.byte	3,2,1,5,47,9
+	.half	.L298-.L204
+	.byte	1,5,33,9
+	.half	.L205-.L298
+	.byte	3,1,1,5,38,9
+	.half	.L299-.L205
+	.byte	1,5,26,9
+	.half	.L207-.L299
+	.byte	3,1,1,5,30,9
+	.half	.L300-.L207
+	.byte	3,1,1,5,18,9
+	.half	.L113-.L300
+	.byte	3,1,1,5,32,9
+	.half	.L31-.L113
+	.byte	3,5,1,5,31,9
+	.half	.L209-.L31
+	.byte	3,1,1,5,33,9
+	.half	.L49-.L209
+	.byte	3,2,1,5,31,9
+	.half	.L301-.L49
+	.byte	1,5,29,9
+	.half	.L302-.L301
+	.byte	3,1,1,5,33,9
+	.half	.L303-.L302
+	.byte	3,1,1,5,27,9
+	.half	.L304-.L303
+	.byte	3,1,1,5,28,9
+	.half	.L48-.L304
+	.byte	3,123,1,5,31,9
+	.half	.L305-.L48
+	.byte	1,5,18,7,9
+	.half	.L117-.L305
+	.byte	3,7,1,5,43,9
+	.half	.L30-.L117
+	.byte	3,5,1,5,51,9
+	.half	.L210-.L30
+	.byte	3,2,1,5,57,9
+	.half	.L306-.L210
+	.byte	1,5,60,9
+	.half	.L307-.L306
+	.byte	1,5,42,9
+	.half	.L211-.L307
+	.byte	3,2,1,5,47,9
+	.half	.L308-.L211
+	.byte	1,5,33,9
+	.half	.L309-.L308
+	.byte	3,1,1,5,38,9
+	.half	.L310-.L309
+	.byte	1,5,26,9
+	.half	.L213-.L310
+	.byte	3,1,1,5,30,9
+	.half	.L311-.L213
+	.byte	3,1,1,5,18,9
+	.half	.L119-.L311
+	.byte	3,2,1,5,29,9
+	.half	.L21-.L119
+	.byte	3,5,1,5,27,9
+	.half	.L312-.L21
+	.byte	1,5,25,9
+	.half	.L313-.L312
+	.byte	3,1,1,5,29,9
+	.half	.L314-.L313
+	.byte	3,1,1,5,18,9
+	.half	.L315-.L314
+	.byte	3,1,1,5,25,9
+	.half	.L34-.L315
+	.byte	3,2,1,5,3,9
+	.half	.L35-.L34
+	.byte	3,2,1,5,28,9
+	.half	.L20-.L35
+	.byte	3,3,1,5,19,9
+	.half	.L316-.L20
+	.byte	1,5,17,9
+	.half	.L317-.L316
+	.byte	3,1,1,5,21,9
+	.half	.L318-.L317
+	.byte	3,1,1,5,9,9
+	.half	.L54-.L318
+	.byte	3,2,1,9
+	.half	.L18-.L54
+	.byte	3,214,126,1,5,16,9
+	.half	.L319-.L18
+	.byte	1,5,5,7,9
+	.half	.L320-.L319
+	.byte	3,174,1,1,5,1,9
+	.half	.L55-.L320
+	.byte	3,1,1,7,9
+	.half	.L70-.L55
+	.byte	0,1,1
+.L220:
+	.sdecl	'.debug_ranges',debug,cluster('zf_sprintf')
+	.sect	'.debug_ranges'
+.L69:
+	.word	-1,.L61,0,.L70-.L61,0,0
+	.sdecl	'.debug_info',debug,cluster('number_conversion_ascii')
+	.sect	'.debug_info'
+.L71:
+	.word	383
+	.half	3
+	.word	.L72
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_libraries\\common\\SEEKFREE_PRINTF.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L74,.L73
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'number_conversion_ascii',0,1,26,7
+	.word	.L99
+	.byte	1,1,1
+	.word	.L57,.L122,.L56
+	.byte	4
+	.byte	'dat',0,1,26,38
+	.word	.L81,.L123
+	.byte	4
+	.byte	'p',0,1,26,49
+	.word	.L83,.L124
+	.byte	4
+	.byte	'neg_type',0,1,26,58
+	.word	.L99,.L125
+	.byte	4
+	.byte	'radix',0,1,26,74
+	.word	.L99,.L126
+	.byte	5
+	.word	.L57,.L122
+	.byte	6
+	.byte	'neg_dat',0,1,28,13
+	.word	.L97,.L127
+	.byte	6
+	.byte	'pos_dat',0,1,29,13
+	.word	.L81,.L128
+	.byte	6
+	.byte	'temp_data',0,1,30,13
+	.word	.L99,.L129
+	.byte	6
+	.byte	'valid_num',0,1,31,13
+	.word	.L99,.L130
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('number_conversion_ascii')
+	.sect	'.debug_abbrev'
+.L72:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('number_conversion_ascii')
+	.sect	'.debug_line'
+.L73:
+	.word	.L322-.L321
+.L321:
+	.half	3
+	.word	.L324-.L323
+.L323:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_libraries\\common\\SEEKFREE_PRINTF.c',0,0,0,0,0
+.L324:
+	.byte	5,7,7,0,5,2
+	.word	.L57
+	.byte	3,25,1,5,23,9
+	.half	.L136-.L57
+	.byte	3,5,1,5,5,9
+	.half	.L138-.L136
+	.byte	3,2,1,5,9,7,9
+	.half	.L325-.L138
+	.byte	3,3,1,5,35,7,9
+	.half	.L326-.L325
+	.byte	1,5,16,9
+	.half	.L3-.L326
+	.byte	3,1,1,5,32,9
+	.half	.L5-.L3
+	.byte	3,2,1,5,39,9
+	.half	.L327-.L5
+	.byte	1,5,16,9
+	.half	.L328-.L327
+	.byte	1,5,30,9
+	.half	.L329-.L328
+	.byte	3,1,1,5,22,9
+	.half	.L330-.L329
+	.byte	3,1,1,5,17,9
+	.half	.L140-.L330
+	.byte	3,2,1,5,26,7,9
+	.half	.L331-.L140
+	.byte	1,5,14,9
+	.half	.L6-.L331
+	.byte	3,1,1,5,16,9
+	.half	.L4-.L6
+	.byte	3,121,1,5,5,9
+	.half	.L7-.L4
+	.byte	3,9,1,5,16,9
+	.half	.L2-.L7
+	.byte	3,4,1,5,32,9
+	.half	.L10-.L2
+	.byte	3,2,1,5,13,9
+	.half	.L142-.L10
+	.byte	3,1,1,5,43,7,9
+	.half	.L332-.L142
+	.byte	1,5,52,9
+	.half	.L143-.L332
+	.byte	1,5,43,9
+	.half	.L11-.L143
+	.byte	3,1,1,5,16,9
+	.half	.L12-.L11
+	.byte	3,2,1,5,30,9
+	.half	.L333-.L12
+	.byte	3,2,1,5,21,9
+	.half	.L144-.L333
+	.byte	1,5,22,9
+	.half	.L334-.L144
+	.byte	3,1,1,5,17,9
+	.half	.L145-.L334
+	.byte	3,2,1,5,26,7,9
+	.half	.L335-.L145
+	.byte	1,5,14,9
+	.half	.L13-.L335
+	.byte	3,1,1,5,16,9
+	.half	.L9-.L13
+	.byte	3,116,1,5,5,9
+	.half	.L8-.L9
+	.byte	3,15,1,5,1,9
+	.half	.L15-.L8
+	.byte	3,1,1,7,9
+	.half	.L75-.L15
+	.byte	0,1,1
+.L322:
+	.sdecl	'.debug_ranges',debug,cluster('number_conversion_ascii')
+	.sect	'.debug_ranges'
+.L74:
+	.word	-1,.L57,0,.L75-.L57,0,0
+	.sdecl	'.debug_info',debug,cluster('printf_reverse_order')
+	.sect	'.debug_info'
+.L76:
+	.word	294
+	.half	3
+	.word	.L77
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_libraries\\common\\SEEKFREE_PRINTF.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L79,.L78
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'printf_reverse_order',0,1,68,6,1,1,1
+	.word	.L59,.L131,.L58
+	.byte	4
+	.byte	'd_buff',0,1,68,33
+	.word	.L83,.L132
+	.byte	4
+	.byte	'len',0,1,68,48
+	.word	.L81,.L133
+	.byte	5
+	.word	.L59,.L131
+	.byte	6
+	.byte	'i',0,1,70,12
+	.word	.L81,.L134
+	.byte	6
+	.byte	'temp_data',0,1,71,11
+	.word	.L90,.L135
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('printf_reverse_order')
+	.sect	'.debug_abbrev'
+.L77:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('printf_reverse_order')
+	.sect	'.debug_line'
+.L78:
+	.word	.L337-.L336
+.L336:
+	.half	3
+	.word	.L339-.L338
+.L338:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_libraries\\common\\SEEKFREE_PRINTF.c',0,0,0,0,0
+.L339:
+	.byte	5,10,7,0,5,2
+	.word	.L59
+	.byte	3,199,0,1,5,20,9
+	.half	.L146-.L59
+	.byte	1,5,31,9
+	.half	.L17-.L146
+	.byte	3,2,1,5,33,9
+	.half	.L340-.L17
+	.byte	1,5,27,9
+	.half	.L341-.L340
+	.byte	1,5,19,9
+	.half	.L147-.L341
+	.byte	3,1,1,5,21,9
+	.half	.L342-.L147
+	.byte	1,5,15,9
+	.half	.L343-.L342
+	.byte	1,5,33,9
+	.half	.L344-.L343
+	.byte	1,5,25,9
+	.half	.L345-.L344
+	.byte	1,5,15,9
+	.half	.L346-.L345
+	.byte	3,1,1,5,19,9
+	.half	.L347-.L346
+	.byte	1,5,22,9
+	.half	.L348-.L347
+	.byte	3,124,1,5,18,9
+	.half	.L16-.L348
+	.byte	1,5,20,9
+	.half	.L349-.L16
+	.byte	1,5,1,7,9
+	.half	.L350-.L349
+	.byte	3,6,1,7,9
+	.half	.L80-.L350
+	.byte	0,1,1
+.L337:
+	.sdecl	'.debug_ranges',debug,cluster('printf_reverse_order')
+	.sect	'.debug_ranges'
+.L79:
+	.word	-1,.L59,0,.L80-.L59,0,0
+	.sdecl	'.debug_loc',debug,cluster('number_conversion_ascii')
+	.sect	'.debug_loc'
+.L123:
+	.word	-1,.L57,0,.L3-.L57
+	.half	1
+	.byte	84
+	.word	.L136-.L57,.L137-.L57
+	.half	1
+	.byte	82
+	.word	.L2-.L57,.L10-.L57
+	.half	1
+	.byte	84
+	.word	0,0
+.L127:
+	.word	0,0
+.L125:
+	.word	-1,.L57,0,.L122-.L57
+	.half	1
+	.byte	85
+	.word	0,0
+.L56:
+	.word	-1,.L57,0,.L122-.L57
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L124:
+	.word	-1,.L57,0,.L122-.L57
+	.half	1
+	.byte	100
+	.word	0,0
+.L128:
+	.word	0,0
+.L126:
+	.word	-1,.L57,0,.L122-.L57
+	.half	1
+	.byte	86
+	.word	0,0
+.L129:
+	.word	-1,.L57,.L142-.L57,.L143-.L57
+	.half	1
+	.byte	81
+	.word	.L143-.L57,.L11-.L57
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L11-.L57,.L12-.L57
+	.half	1
+	.byte	81
+	.word	.L12-.L57,.L144-.L57
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L130:
+	.word	-1,.L57,.L138-.L57,.L139-.L57
+	.half	1
+	.byte	95
+	.word	.L140-.L57,.L141-.L57
+	.half	1
+	.byte	95
+	.word	.L145-.L57,.L122-.L57
+	.half	1
+	.byte	95
+	.word	.L137-.L57,.L122-.L57
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('printf_reverse_order')
+	.sect	'.debug_loc'
+.L132:
+	.word	-1,.L59,0,.L131-.L59
+	.half	1
+	.byte	100
+	.word	0,0
+.L134:
+	.word	-1,.L59,.L146-.L59,.L131-.L59
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L133:
+	.word	-1,.L59,0,.L131-.L59
+	.half	1
+	.byte	84
+	.word	0,0
+.L58:
+	.word	-1,.L59,0,.L131-.L59
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L135:
+	.word	-1,.L59,.L147-.L59,.L16-.L59
+	.half	1
+	.byte	81
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('zf_sprintf')
+	.sect	'.debug_loc'
+.L89:
+	.word	-1,.L61,.L152-.L61,.L82-.L61
+	.half	1
+	.byte	110
+	.word	0,0
+.L84:
+	.word	-1,.L61,0,.L19-.L61
+	.half	1
+	.byte	100
+	.word	.L149-.L61,.L82-.L61
+	.half	1
+	.byte	108
+	.word	.L163-.L61,.L164-.L61
+	.half	1
+	.byte	100
+	.word	.L174-.L61,.L175-.L61
+	.half	1
+	.byte	100
+	.word	.L182-.L61,.L183-.L61
+	.half	1
+	.byte	100
+	.word	.L190-.L61,.L191-.L61
+	.half	1
+	.byte	100
+	.word	.L198-.L61,.L199-.L61
+	.half	1
+	.byte	100
+	.word	.L206-.L61,.L207-.L61
+	.half	1
+	.byte	100
+	.word	.L212-.L61,.L213-.L61
+	.half	1
+	.byte	100
+	.word	0,0
+.L87:
+	.word	-1,.L61,.L151-.L61,.L82-.L61
+	.half	1
+	.byte	88
+	.word	.L214-.L61,.L82-.L61
+	.half	1
+	.byte	82
+	.word	0,0
+.L93:
+	.word	-1,.L61,.L155-.L61,.L28-.L61
+	.half	1
+	.byte	95
+	.word	0,0
+.L86:
+	.word	-1,.L61,0,.L19-.L61
+	.half	1
+	.byte	101
+	.word	.L150-.L61,.L82-.L61
+	.half	1
+	.byte	109
+	.word	0,0
+.L98:
+	.word	-1,.L61,.L156-.L61,.L22-.L61
+	.half	1
+	.byte	89
+	.word	.L157-.L61,.L158-.L61
+	.half	1
+	.byte	84
+	.word	0,0
+.L103:
+	.word	-1,.L61,.L166-.L61,.L167-.L61
+	.half	1
+	.byte	89
+	.word	.L167-.L61,.L41-.L61
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L107:
+	.word	-1,.L61,.L185-.L61,.L186-.L61
+	.half	1
+	.byte	84
+	.word	0,0
+.L111:
+	.word	-1,.L61,.L193-.L61,.L194-.L61
+	.half	1
+	.byte	84
+	.word	0,0
+.L115:
+	.word	-1,.L61,.L201-.L61,.L202-.L61
+	.half	1
+	.byte	84
+	.word	0,0
+.L121:
+	.word	-1,.L61,.L210-.L61,.L211-.L61
+	.half	1
+	.byte	84
+	.word	0,0
+.L118:
+	.word	-1,.L61,.L209-.L61,.L30-.L61
+	.half	1
+	.byte	111
+	.word	0,0
+.L91:
+	.word	-1,.L61,.L153-.L61,.L154-.L61
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L20-.L61,.L54-.L61
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L100:
+	.word	-1,.L61,.L158-.L61,.L37-.L61
+	.half	1
+	.byte	82
+	.word	.L159-.L61,.L160-.L61
+	.half	1
+	.byte	95
+	.word	.L37-.L61,.L22-.L61
+	.half	1
+	.byte	95
+	.word	.L161-.L61,.L162-.L61
+	.half	1
+	.byte	84
+	.word	.L165-.L61,.L164-.L61
+	.half	1
+	.byte	84
+	.word	0,0
+.L104:
+	.word	-1,.L61,.L168-.L61,.L39-.L61
+	.half	1
+	.byte	82
+	.word	.L169-.L61,.L170-.L61
+	.half	1
+	.byte	95
+	.word	.L39-.L61,.L171-.L61
+	.half	1
+	.byte	95
+	.word	.L172-.L61,.L173-.L61
+	.half	1
+	.byte	84
+	.word	.L176-.L61,.L175-.L61
+	.half	1
+	.byte	84
+	.word	.L177-.L61,.L40-.L61
+	.half	1
+	.byte	82
+	.word	.L41-.L61,.L178-.L61
+	.half	1
+	.byte	82
+	.word	.L179-.L61,.L32-.L61
+	.half	1
+	.byte	95
+	.word	.L180-.L61,.L181-.L61
+	.half	1
+	.byte	84
+	.word	.L184-.L61,.L183-.L61
+	.half	1
+	.byte	84
+	.word	0,0
+.L108:
+	.word	-1,.L61,.L186-.L61,.L187-.L61
+	.half	1
+	.byte	82
+	.word	.L188-.L61,.L29-.L61
+	.half	1
+	.byte	95
+	.word	.L187-.L61,.L189-.L61
+	.half	1
+	.byte	84
+	.word	.L192-.L61,.L191-.L61
+	.half	1
+	.byte	84
+	.word	0,0
+.L112:
+	.word	-1,.L61,.L194-.L61,.L195-.L61
+	.half	1
+	.byte	82
+	.word	.L196-.L61,.L23-.L61
+	.half	1
+	.byte	95
+	.word	.L195-.L61,.L197-.L61
+	.half	1
+	.byte	84
+	.word	.L200-.L61,.L199-.L61
+	.half	1
+	.byte	84
+	.word	0,0
+.L116:
+	.word	-1,.L61,.L202-.L61,.L203-.L61
+	.half	1
+	.byte	82
+	.word	.L204-.L61,.L31-.L61
+	.half	1
+	.byte	95
+	.word	.L203-.L61,.L205-.L61
+	.half	1
+	.byte	84
+	.word	.L208-.L61,.L207-.L61
+	.half	1
+	.byte	84
+	.word	0,0
+.L96:
+	.word	-1,.L61,0,.L82-.L61
+	.half	2
+	.byte	145,88
+	.word	0,0
+.L101:
+	.word	-1,.L61,0,.L82-.L61
+	.half	2
+	.byte	145,88
+	.word	0,0
+.L106:
+	.word	-1,.L61,0,.L82-.L61
+	.half	2
+	.byte	145,88
+	.word	0,0
+.L110:
+	.word	-1,.L61,0,.L82-.L61
+	.half	2
+	.byte	145,88
+	.word	0,0
+.L114:
+	.word	-1,.L61,0,.L82-.L61
+	.half	2
+	.byte	145,88
+	.word	0,0
+.L120:
+	.word	-1,.L61,0,.L82-.L61
+	.half	2
+	.byte	145,88
+	.word	0,0
+.L60:
+	.word	-1,.L61,0,.L148-.L61
+	.half	2
+	.byte	138,0
+	.word	.L148-.L61,.L82-.L61
+	.half	2
+	.byte	138,40
+	.word	.L82-.L61,.L82-.L61
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L351:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('number_conversion_ascii')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L351,.L57,.L122-.L57
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('printf_reverse_order')
+	.sect	'.debug_frame'
+	.word	20
+	.word	.L351,.L59,.L131-.L59
+	.byte	8,19,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('zf_sprintf')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L351,.L61,.L82-.L61
+	.byte	4
+	.word	(.L148-.L61)/2
+	.byte	19,40,22,26,3,19,138,40,4
+	.word	(.L82-.L148)/2
+	.byte	19,0,8,26,0,0
+
+
+	; Module end

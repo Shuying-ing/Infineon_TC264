@@ -1,0 +1,876 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\.Ifx_GlobalResources.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.src ..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_get',code,cluster('Ifx_GlobalResources_get')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_get'
+	.align	2
+	
+	.global	Ifx_GlobalResources_get
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     1  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     2   * \file Ifx_GlobalResources.h
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     3   * \brief Handling of global resources
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     4   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     5   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     6   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     7   * $Date: 2014-02-27 20:08:36 GMT$
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     8   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	     9   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    10   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    11   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    12   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    13   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    14   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    15   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    16  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    17  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    18   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    19  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    20   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    21   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    22   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    23   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    24   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    25   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    26  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    27   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    28   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    29   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    30   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    31   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    32   * language processor.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    33  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    34   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    35   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    36   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    37   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    38   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    39   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    40   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    41  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    42   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    43   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    44  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    45  #include "Ifx_GlobalResources.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    46  /** \brief Global resource object */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    47  typedef struct
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    48  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    49      const Ifx_GlobalResources_Item *table;  /**< \brief Pointer to the global resource table */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    50      sint32                          size;   /**< \brief Size of the global resource table */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    51  } Ifx_GlobalResources;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    52  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    53  #if IFX_CFG_GLOBAL_RESOURCES_ENABLED
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    54  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    55  Ifx_GlobalResources ifx_GlobalResource;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    56  #endif
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    57  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    58  void *Ifx_GlobalResources_get(sint32 id)
+; Function Ifx_GlobalResources_get
+.L8:
+Ifx_GlobalResources_get:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    59  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    60      void *result;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    61  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    62  #if IFX_CFG_GLOBAL_RESOURCES_ENABLED
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    63  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    64      if (id < ifx_GlobalResource.size)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    65      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    66          result = ifx_GlobalResource.table[id].resource;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    67      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    68      else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    69      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    70          result = NULL_PTR;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    71      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    72  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    73  #else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    74      result = NULL_PTR;
+	mov.a	a2,#0
+.L68:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    75  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    76  #endif
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    77  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    78      return result;
+	j	.L2
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    79  }
+.L2:
+	ret
+.L47:
+	
+__Ifx_GlobalResources_get_function_end:
+	.size	Ifx_GlobalResources_get,__Ifx_GlobalResources_get_function_end-Ifx_GlobalResources_get
+.L25:
+	; End of function
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getIndex',code,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getIndex'
+	.align	2
+	
+	.global	Ifx_GlobalResources_getIndex
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    80  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    81  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    82  sint32 Ifx_GlobalResources_getIndex(void *resource)
+; Function Ifx_GlobalResources_getIndex
+.L10:
+Ifx_GlobalResources_getIndex:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    83  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    84      sint32 id = -1;
+	mov	d2,#-1
+.L69:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    85  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    86  #if IFX_CFG_GLOBAL_RESOURCES_ENABLED
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    87      int    i;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    88  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    89      for (i = 0; i < ifx_GlobalResource.size; i++)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    90      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    91          if (resource == ifx_GlobalResource.table[i].resource)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    92          {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    93              id = i;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    94          }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    95          else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    96          {}
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    97      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    98  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	    99  #else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   100  #endif
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   101  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   102      return id;
+	j	.L3
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   103  }
+.L3:
+	ret
+.L51:
+	
+__Ifx_GlobalResources_getIndex_function_end:
+	.size	Ifx_GlobalResources_getIndex,__Ifx_GlobalResources_getIndex_function_end-Ifx_GlobalResources_getIndex
+.L30:
+	; End of function
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getItem',code,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getItem'
+	.align	2
+	
+	.global	Ifx_GlobalResources_getItem
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   104  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   105  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   106  const Ifx_GlobalResources_Item *Ifx_GlobalResources_getItem(sint32 id)
+; Function Ifx_GlobalResources_getItem
+.L12:
+Ifx_GlobalResources_getItem:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   107  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   108      const Ifx_GlobalResources_Item *result;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   109  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   110  #if IFX_CFG_GLOBAL_RESOURCES_ENABLED
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   111  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   112      if (id < ifx_GlobalResource.size)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   113      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   114          result = &ifx_GlobalResource.table[id];
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   115      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   116      else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   117      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   118          result = NULL_PTR;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   119      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   120  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   121  #else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   122      result = NULL_PTR;
+	mov.a	a2,#0
+.L70:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   123  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   124  #endif
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   125  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   126      return result;
+	j	.L4
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   127  }
+.L4:
+	ret
+.L55:
+	
+__Ifx_GlobalResources_getItem_function_end:
+	.size	Ifx_GlobalResources_getItem,__Ifx_GlobalResources_getItem_function_end-Ifx_GlobalResources_getItem
+.L35:
+	; End of function
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getName',code,cluster('Ifx_GlobalResources_getName')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getName'
+	.align	2
+	
+	.global	Ifx_GlobalResources_getName
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   128  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   129  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   130  pchar Ifx_GlobalResources_getName(sint32 id)
+; Function Ifx_GlobalResources_getName
+.L14:
+Ifx_GlobalResources_getName:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   131  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   132      pchar name;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   133  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   134  #if IFX_CFG_GLOBAL_RESOURCES_ENABLED
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   135  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   136      if (id < ifx_GlobalResource.size)
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   137      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   138          name = ifx_GlobalResource.table[id].name;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   139      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   140      else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   141      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   142          name = "unknown";
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   143      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   144  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   145  #else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   146      name = "unknown";
+	movh.a	a2,#@his(.1.str)
+.L71:
+	lea	a2,[a2]@los(.1.str)
+.L93:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   147  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   148  #endif
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   149  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   150      return name;
+	j	.L5
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   151  }
+.L5:
+	ret
+.L59:
+	
+__Ifx_GlobalResources_getName_function_end:
+	.size	Ifx_GlobalResources_getName,__Ifx_GlobalResources_getName_function_end-Ifx_GlobalResources_getName
+.L40:
+	; End of function
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_init',code,cluster('Ifx_GlobalResources_init')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_init'
+	.align	2
+	
+	.global	Ifx_GlobalResources_init
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   152  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   153  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   154  boolean Ifx_GlobalResources_init(const Ifx_GlobalResources_Item *table, uint32 size)
+; Function Ifx_GlobalResources_init
+.L16:
+Ifx_GlobalResources_init:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   155  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   156      boolean result;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   157  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   158  #if IFX_CFG_GLOBAL_RESOURCES_ENABLED
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   159      ifx_GlobalResource.table = table;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   160      ifx_GlobalResource.size  = size;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   161      result                   = TRUE;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   162  #else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   163      result                   = FALSE;
+	mov	d2,#0
+.L72:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   164  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   165  #endif
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   166  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   167      return result;
+	j	.L6
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\General\Ifx_GlobalResources.c	   168  }
+.L6:
+	ret
+.L63:
+	
+__Ifx_GlobalResources_init_function_end:
+	.size	Ifx_GlobalResources_init,__Ifx_GlobalResources_init_function_end-Ifx_GlobalResources_init
+.L45:
+	; End of function
+	
+	.sdecl	'.rodata.Ifx_GlobalResources..1.str',data,rom
+	.sect	'.rodata.Ifx_GlobalResources..1.str'
+.1.str:	.type	object
+	.size	.1.str,8
+	.byte	117,110,107,110
+	.byte	111,119,110
+	.space	1
+	.calls	'Ifx_GlobalResources_get','',0
+	.calls	'Ifx_GlobalResources_getIndex','',0
+	.calls	'Ifx_GlobalResources_getItem','',0
+	.calls	'Ifx_GlobalResources_getName','',0
+	.calls	'Ifx_GlobalResources_init','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L18:
+	.word	792
+	.half	3
+	.word	.L19
+	.byte	4
+.L17:
+	.byte	1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L20
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	184
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	191
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	233
+	.byte	7
+	.word	233
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	249
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	254
+	.byte	9
+	.byte	'value',0
+	.word	233
+	.byte	9
+	.byte	'compare',0
+	.word	233
+	.byte	0,10
+	.byte	'void',0
+.L46:
+	.byte	7
+	.word	311
+.L48:
+	.byte	2
+	.byte	'long int',0,4,5,2
+	.byte	'char',0,1,6,3
+	.word	334
+	.byte	7
+	.word	342
+.L58:
+	.byte	11
+	.byte	'pchar',0,2,56,28
+	.word	347
+	.byte	12,1,58,9,8,13
+	.byte	'resource',0
+	.word	317
+	.byte	4,2,35,0,13
+	.byte	'name',0
+	.word	352
+	.byte	4,2,35,4,0,3
+	.word	366
+.L54:
+	.byte	7
+	.word	404
+	.byte	3
+	.word	334
+	.byte	7
+	.word	414
+.L62:
+	.byte	2
+	.byte	'unsigned char',0,1,8
+.L65:
+	.byte	2
+	.byte	'unsigned long int',0,4,7,2
+	.byte	'short int',0,2,5,11
+	.byte	'__wchar_t',0,3,1,1
+	.word	462
+	.byte	11
+	.byte	'__size_t',0,3,1,1
+	.word	233
+	.byte	11
+	.byte	'__ptrdiff_t',0,3,1,1
+	.word	184
+	.byte	14,1,7
+	.word	530
+	.byte	11
+	.byte	'__codeptr',0,3,1,1
+	.word	532
+	.byte	11
+	.byte	'boolean',0,4,101,29
+	.word	424
+	.byte	11
+	.byte	'uint8',0,4,105,29
+	.word	424
+	.byte	2
+	.byte	'unsigned short int',0,2,7,11
+	.byte	'uint16',0,4,109,29
+	.word	585
+	.byte	11
+	.byte	'uint32',0,4,113,29
+	.word	441
+	.byte	11
+	.byte	'sint16',0,4,126,29
+	.word	462
+	.byte	11
+	.byte	'sint32',0,4,131,1,29
+	.word	322
+	.byte	2
+	.byte	'long long int',0,8,5,11
+	.byte	'sint64',0,4,138,1,29
+	.word	668
+	.byte	2
+	.byte	'float',0,4,4,11
+	.byte	'float32',0,4,167,1,29
+	.word	701
+	.byte	11
+	.byte	'pvoid',0,2,57,28
+	.word	317
+	.byte	11
+	.byte	'Ifx_TickTime',0,2,79,28
+	.word	668
+	.byte	11
+	.byte	'Ifx_GlobalResources_Item',0,1,62,3
+	.word	366
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L19:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,59,0,3,8,0,0,11,22,0,3,8,58,15,59,15,57,15,73,19,0,0,12,19,1,58
+	.byte	15,59,15,57,15,11,15,0,0,13,13,0,3,8,73,19,11,15,56,9,0,0,14,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L20:
+	.word	.L74-.L73
+.L73:
+	.half	3
+	.word	.L76-.L75
+.L75:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.h',0,0,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L76:
+.L74:
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_info'
+.L21:
+	.word	282
+	.half	3
+	.word	.L22
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L24,.L23
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_get',0,1,58,7
+	.word	.L46
+	.byte	1,1,1
+	.word	.L8,.L47,.L7
+	.byte	4
+	.byte	'id',0,1,58,38
+	.word	.L48,.L49
+	.byte	5
+	.word	.L8,.L47
+	.byte	6
+	.byte	'result',0,1,60,11
+	.word	.L46,.L50
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_abbrev'
+.L22:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_line'
+.L23:
+	.word	.L78-.L77
+.L77:
+	.half	3
+	.word	.L80-.L79
+.L79:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0,0,0,0,0
+.L80:
+	.byte	5,12,7,0,5,2
+	.word	.L8
+	.byte	3,201,0,1,5,5,9
+	.half	.L68-.L8
+	.byte	3,4,1,5,1,9
+	.half	.L2-.L68
+	.byte	3,1,1,7,9
+	.half	.L25-.L2
+	.byte	0,1,1
+.L78:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_ranges'
+.L24:
+	.word	-1,.L8,0,.L25-.L8,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_info'
+.L26:
+	.word	289
+	.half	3
+	.word	.L27
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L29,.L28
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_getIndex',0,1,82,8
+	.word	.L48
+	.byte	1,1,1
+	.word	.L10,.L51,.L9
+	.byte	4
+	.byte	'resource',0,1,82,43
+	.word	.L46,.L52
+	.byte	5
+	.word	.L10,.L51
+	.byte	6
+	.byte	'id',0,1,84,12
+	.word	.L48,.L53
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_abbrev'
+.L27:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_line'
+.L28:
+	.word	.L82-.L81
+.L81:
+	.half	3
+	.word	.L84-.L83
+.L83:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0,0,0,0,0
+.L84:
+	.byte	5,15,7,0,5,2
+	.word	.L10
+	.byte	3,211,0,1,5,5,9
+	.half	.L69-.L10
+	.byte	3,18,1,5,1,9
+	.half	.L3-.L69
+	.byte	3,1,1,7,9
+	.half	.L30-.L3
+	.byte	0,1,1
+.L82:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_ranges'
+.L29:
+	.word	-1,.L10,0,.L30-.L10,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_info'
+.L31:
+	.word	286
+	.half	3
+	.word	.L32
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L34,.L33
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_getItem',0,1,106,33
+	.word	.L54
+	.byte	1,1,1
+	.word	.L12,.L55,.L11
+	.byte	4
+	.byte	'id',0,1,106,68
+	.word	.L48,.L56
+	.byte	5
+	.word	.L12,.L55
+	.byte	6
+	.byte	'result',0,1,108,37
+	.word	.L54,.L57
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_abbrev'
+.L32:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_line'
+.L33:
+	.word	.L86-.L85
+.L85:
+	.half	3
+	.word	.L88-.L87
+.L87:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0,0,0,0,0
+.L88:
+	.byte	5,12,7,0,5,2
+	.word	.L12
+	.byte	3,249,0,1,5,5,9
+	.half	.L70-.L12
+	.byte	3,4,1,5,1,9
+	.half	.L4-.L70
+	.byte	3,1,1,7,9
+	.half	.L35-.L4
+	.byte	0,1,1
+.L86:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_ranges'
+.L34:
+	.word	-1,.L12,0,.L35-.L12,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_info'
+.L36:
+	.word	287
+	.half	3
+	.word	.L37
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L39,.L38
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_getName',0,1,130,1,7
+	.word	.L58
+	.byte	1,1,1
+	.word	.L14,.L59,.L13
+	.byte	4
+	.byte	'id',0,1,130,1,42
+	.word	.L48,.L60
+	.byte	5
+	.word	.L14,.L59
+	.byte	6
+	.byte	'name',0,1,132,1,11
+	.word	.L58,.L61
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_abbrev'
+.L37:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_line'
+.L38:
+	.word	.L90-.L89
+.L89:
+	.half	3
+	.word	.L92-.L91
+.L91:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0,0,0,0,0
+.L92:
+	.byte	5,12,7,0,5,2
+	.word	.L14
+	.byte	3,145,1,1,5,5,9
+	.half	.L93-.L14
+	.byte	3,4,1,5,1,9
+	.half	.L5-.L93
+	.byte	3,1,1,7,9
+	.half	.L40-.L5
+	.byte	0,1,1
+.L90:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_ranges'
+.L39:
+	.word	-1,.L14,0,.L40-.L14,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_info'
+.L41:
+	.word	307
+	.half	3
+	.word	.L42
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L44,.L43
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_init',0,1,154,1,9
+	.word	.L62
+	.byte	1,1,1
+	.word	.L16,.L63,.L15
+	.byte	4
+	.byte	'table',0,1,154,1,66
+	.word	.L54,.L64
+	.byte	4
+	.byte	'size',0,1,154,1,80
+	.word	.L65,.L66
+	.byte	5
+	.word	.L16,.L63
+	.byte	6
+	.byte	'result',0,1,156,1,13
+	.word	.L62,.L67
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_abbrev'
+.L42:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_line'
+.L43:
+	.word	.L95-.L94
+.L94:
+	.half	3
+	.word	.L97-.L96
+.L96:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.c',0,0,0,0,0
+.L97:
+	.byte	5,30,7,0,5,2
+	.word	.L16
+	.byte	3,162,1,1,5,5,9
+	.half	.L72-.L16
+	.byte	3,4,1,5,1,9
+	.half	.L6-.L72
+	.byte	3,1,1,7,9
+	.half	.L45-.L6
+	.byte	0,1,1
+.L95:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_ranges'
+.L44:
+	.word	-1,.L16,0,.L45-.L16,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_loc'
+.L7:
+	.word	-1,.L8,0,.L47-.L8
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L49:
+	.word	-1,.L8,0,.L47-.L8
+	.half	1
+	.byte	84
+	.word	0,0
+.L50:
+	.word	-1,.L8,.L68-.L8,.L47-.L8
+	.half	1
+	.byte	98
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_loc'
+.L9:
+	.word	-1,.L10,0,.L51-.L10
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L53:
+	.word	-1,.L10,.L69-.L10,.L51-.L10
+	.half	1
+	.byte	82
+	.word	0,0
+.L52:
+	.word	-1,.L10,0,.L51-.L10
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_loc'
+.L11:
+	.word	-1,.L12,0,.L55-.L12
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L56:
+	.word	-1,.L12,0,.L55-.L12
+	.half	1
+	.byte	84
+	.word	0,0
+.L57:
+	.word	-1,.L12,.L70-.L12,.L55-.L12
+	.half	1
+	.byte	98
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_loc'
+.L13:
+	.word	-1,.L14,0,.L59-.L14
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L60:
+	.word	-1,.L14,0,.L59-.L14
+	.half	1
+	.byte	84
+	.word	0,0
+.L61:
+	.word	-1,.L14,.L71-.L14,.L59-.L14
+	.half	1
+	.byte	98
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_loc'
+.L15:
+	.word	-1,.L16,0,.L63-.L16
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L67:
+	.word	-1,.L16,.L72-.L16,.L63-.L16
+	.half	1
+	.byte	82
+	.word	0,0
+.L66:
+	.word	-1,.L16,0,.L63-.L16
+	.half	1
+	.byte	84
+	.word	0,0
+.L64:
+	.word	-1,.L16,0,.L63-.L16
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L98:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L98,.L8,.L47-.L8
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L98,.L10,.L51-.L10
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L98,.L12,.L55-.L12
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L98,.L14,.L59-.L14
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L98,.L16,.L63-.L16
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+
+
+	; Module end

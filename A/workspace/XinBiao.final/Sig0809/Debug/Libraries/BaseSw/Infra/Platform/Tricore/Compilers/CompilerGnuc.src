@@ -1,0 +1,275 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\.CompilerGnuc.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\CompilerGnuc.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\CompilerGnuc.src ..\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\CompilerGnuc.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\CompilerGnuc.c'
+
+	
+$TC16X
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	646
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\CompilerGnuc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	177
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	184
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	226
+	.byte	7
+	.word	226
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	242
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	247
+	.byte	9
+	.byte	'value',0
+	.word	226
+	.byte	9
+	.byte	'compare',0
+	.word	226
+	.byte	0,2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,1,1,1
+	.word	304
+	.byte	10
+	.byte	'__size_t',0,1,1,1
+	.word	226
+	.byte	10
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	177
+	.byte	11,1,7
+	.word	372
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	374
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,105,29
+	.word	397
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,109,29
+	.word	428
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,113,29
+	.word	465
+	.byte	10
+	.byte	'sint16',0,2,126,29
+	.word	304
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'sint32',0,2,131,1,29
+	.word	516
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'sint64',0,2,138,1,29
+	.word	544
+	.byte	2
+	.byte	'float',0,4,4,10
+	.byte	'float32',0,2,167,1,29
+	.word	577
+	.byte	12
+	.byte	'void',0,7
+	.word	603
+	.byte	10
+	.byte	'pvoid',0,3,57,28
+	.word	609
+	.byte	10
+	.byte	'Ifx_TickTime',0,3,79,28
+	.word	544
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,59,0
+	.byte	3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0,0
+	.byte	'..\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers\\CompilerGnuc.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0,0
+.L9:
+.L7:
+
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     1  /**
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     2   * \file CompilerGnuc.c
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     3   *
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     4   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     5   *
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     6   * $Date: 2014-02-27 20:08:40 GMT$
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     7   *
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     8   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	     9   *
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    10   *
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    11   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    12   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    13   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    14   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    15  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    16  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    17   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    18  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    19   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    20   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    21   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    22   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    23   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    24   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    25  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    26   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    27   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    28   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    29   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    30   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    31   * language processor.
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    32  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    33   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    34   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    35   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    36   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    37   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    38   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    39   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    40  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    41   *
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    42   */
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    43  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    44  #include "Cpu/Std/Ifx_Types.h"
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    45  #include "Compilers.h"
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    46  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    47  #if defined(__HIGHTEC__) && !defined(WIN32)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    48  /*!
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    49   * \brief Data s C variables.
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    50   */
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    51  extern uint32 __clear_table[];  /**< clear table entry */
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    52  extern uint32 __copy_table[];   /**< copy table entry */
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    53  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    54  typedef volatile union
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    55  {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    56      uint8              *ucPtr;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    57      uint16             *usPtr;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    58      uint32             *uiPtr;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    59      unsigned long long *ullPtr;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    60  } IfxStart_CTablePtr;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    61  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    62  /*!
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    63   * \brief Initializes C variables.
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    64   *
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    65   * This function is called in the startup. This function initialize the all variables in .data section
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    66   * and clears the .bss section
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    67   *
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    68   * Parameters: Nil
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    69   * Return: Nil
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    70   */
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    71  void Ifx_C_Init(void)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    72  {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    73      IfxStart_CTablePtr pBlockDest, pBlockSrc;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    74      uint32             uiLength, uiCnt;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    75      uint32            *pTable;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    76      /* clear table */
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    77      pTable = (uint32 *)&__clear_table;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    78  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    79      while (pTable)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    80      {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    81          pBlockDest.uiPtr = (uint32 *)*pTable++;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    82          uiLength         = *pTable++;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    83  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    84          /* we are finished when length == -1 */
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    85          if (uiLength == 0xFFFFFFFF)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    86          {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    87              break;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    88          }
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    89  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    90          uiCnt = uiLength / 8;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    91  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    92          while (uiCnt--)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    93          {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    94              *pBlockDest.ullPtr++ = 0;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    95          }
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    96  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    97          if (uiLength & 0x4)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    98          {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	    99              *pBlockDest.uiPtr++ = 0;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   100          }
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   101  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   102          if (uiLength & 0x2)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   103          {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   104              *pBlockDest.usPtr++ = 0;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   105          }
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   106  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   107          if (uiLength & 0x1)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   108          {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   109              *pBlockDest.ucPtr = 0;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   110          }
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   111      }
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   112  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   113      /* copy table */
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   114      pTable = (uint32 *)&__copy_table;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   115  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   116      while (pTable)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   117      {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   118          pBlockSrc.uiPtr  = (uint32 *)*pTable++;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   119          pBlockDest.uiPtr = (uint32 *)*pTable++;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   120          uiLength         = *pTable++;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   121  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   122          /* we are finished when length == -1 */
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   123          if (uiLength == 0xFFFFFFFF)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   124          {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   125              break;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   126          }
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   127  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   128          uiCnt = uiLength / 8;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   129  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   130          while (uiCnt--)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   131          {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   132              *pBlockDest.ullPtr++ = *pBlockSrc.ullPtr++;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   133          }
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   134  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   135          if (uiLength & 0x4)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   136          {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   137              *pBlockDest.uiPtr++ = *pBlockSrc.uiPtr++;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   138          }
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   139  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   140          if (uiLength & 0x2)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   141          {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   142              *pBlockDest.usPtr++ = *pBlockSrc.usPtr++;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   143          }
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   144  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   145          if (uiLength & 0x1)
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   146          {
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   147              *pBlockDest.ucPtr = *pBlockSrc.ucPtr;
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   148          }
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   149      }
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   150  }
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   151  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   152  
+; ..\Libraries\BaseSw\Infra\Platform\Tricore\Compilers\CompilerGnuc.c	   153  #endif
+
+	; Module end

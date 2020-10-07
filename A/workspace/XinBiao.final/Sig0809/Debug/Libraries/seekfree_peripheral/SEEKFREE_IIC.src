@@ -1,0 +1,8081 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\seekfree_peripheral\\.SEEKFREE_IIC.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\seekfree_peripheral\\SEEKFREE_IIC.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\seekfree_peripheral\\SEEKFREE_IIC.src ..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.SEEKFREE_IIC.simiic_delay_set',code,cluster('simiic_delay_set')
+	.sect	'.text.SEEKFREE_IIC.simiic_delay_set'
+	.align	2
+	
+	.global	simiic_delay_set
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	     1  /*********************************************************************************************************************
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	     2   * COPYRIGHT NOTICE
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	     3   * Copyright (c) 2020,逐飞科技
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	     4   * All rights reserved.
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	     5   * 技术讨论QQ群：三群：824575535
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	     6   *
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	     7   * 以下所有内容版权均属逐飞科技所有，未经允许不得用于商业用途，
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	     8   * 欢迎各位使用并传播本程序，修改内容时必须保留逐飞科技的版权声明。
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	     9   *
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    10   * @file       		模拟IIC
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    11   * @company	   		成都逐飞科技有限公司
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    12   * @author     		逐飞科技(QQ3184284598)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    13   * @version    		查看doc内version文件 版本说明
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    14   * @Software 		tasking v6.3r1
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    15   * @Target core		TC264D
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    16   * @Taobao   		https://seekfree.taobao.com/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    17   * @date       		2020-3-23
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    18   * @note		
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    19  					接线定义：
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    20  					------------------------------------ 
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    21  						SCL                 查看SEEKFREE_IIC文件内的SEEKFREE_SCL宏定义
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    22  						SDA                 查看SEEKFREE_IIC文件内的SEEKFREE_SDA宏定义
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    23  					------------------------------------ 
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    24   ********************************************************************************************************************/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    25  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    26  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    27  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    28  #include "zf_gpio.h"
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    29  #include "zf_stm_systick.h"
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    30  #include "SEEKFREE_IIC.h"
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    31  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    32  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    33  #define SDA             gpio_get (SEEKFREE_SDA1)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    34  #define SDA0()          gpio_set (SEEKFREE_SDA1, 0)		//IO口输出低电平
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    35  #define SDA1()          gpio_set (SEEKFREE_SDA1, 1)		//IO口输出高电平
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    36  #define SCL0()          gpio_set (SEEKFREE_SCL1, 0)		//IO口输出低电平
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    37  #define SCL1()          gpio_set (SEEKFREE_SCL1, 1)		//IO口输出高电平
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    38  #define DIR_OUT()       gpio_dir (SEEKFREE_SDA1, GPO, PUSHPULL)   //输出方向
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    39  #define DIR_IN()        gpio_dir (SEEKFREE_SDA1, GPI, NO_PULL)    //输入方向
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    40  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    41  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    42  //内部数据定义
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    43  uint8 IIC_ad_main; //器件从地址	    
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    44  uint8 IIC_ad_sub;  //器件子地址	   
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    45  uint8 *IIC_buf;    //发送|接收数据缓冲区	    
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    46  uint8 IIC_num;     //发送|接收数据个数	     
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    47  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    48  #define ack 1      //主应答
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    49  #define no_ack 0   //从应答	 
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    50  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    51  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    52  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    53  static uint16 simiic_delay_time = SIMIIC_DELAY_TIME;   //ICM等传感器应设置为20
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    54  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    55  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    56  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    57  //  @brief      模拟IIC延时 时间设置
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    58  //  @return     void						
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    59  //  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    60  //  Sample usage:				如果IIC通讯失败可以尝试增加simiic_delay_time的值
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    61  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    62  void simiic_delay_set(uint16 time)
+; Function simiic_delay_set
+.L23:
+simiic_delay_set:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    63  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    64      simiic_delay_time = time;           //ICM等传感器应设置为100
+	movh.a	a15,#@his(simiic_delay_time)
+	lea	a15,[a15]@los(simiic_delay_time)
+.L215:
+	st.h	[a15],d4
+.L216:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    65  }
+	ret
+.L120:
+	
+__simiic_delay_set_function_end:
+	.size	simiic_delay_set,__simiic_delay_set_function_end-simiic_delay_set
+.L54:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_IIC.simiic_delay',code,cluster('simiic_delay')
+	.sect	'.text.SEEKFREE_IIC.simiic_delay'
+	.align	2
+	
+	.global	simiic_delay
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    66  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    67  //  @brief      模拟IIC延时
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    68  //  @return     void						
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    69  //  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    70  //  Sample usage:				如果IIC通讯失败可以尝试增加simiic_delay_time的值
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    71  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    72  void simiic_delay(void)
+; Function simiic_delay
+.L25:
+simiic_delay:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    73  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    74  	uint16 delay_time;
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    75      delay_time = simiic_delay_time;
+	movh.a	a15,#@his(simiic_delay_time)
+	lea	a15,[a15]@los(simiic_delay_time)
+	ld.hu	d0,[a15]0
+.L157:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    76  	while(delay_time--);
+	j	.L2
+.L3:
+.L2:
+	mov	d15,d0
+	add	d0,#-1
+.L158:
+	extr.u	d0,d0,#0,#16
+.L159:
+	jne	d15,#0,.L3
+.L312:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    77  }
+	ret
+.L151:
+	
+__simiic_delay_function_end:
+	.size	simiic_delay,__simiic_delay_function_end-simiic_delay
+.L99:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_IIC.simiic_start',code,cluster('simiic_start')
+	.sect	'.text.SEEKFREE_IIC.simiic_start'
+	.align	2
+	
+	.global	simiic_start
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    78  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    79  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    80  //内部使用，用户无需调用
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    81  void simiic_start(void)
+; Function simiic_start
+.L27:
+simiic_start:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    82  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    83  	SDA1();
+	mov	d4,#654
+	mov	d5,#1
+	call	gpio_set
+.L221:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    84  	SCL1();
+	mov	d4,#651
+	mov	d5,#1
+	call	gpio_set
+.L222:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    85  	simiic_delay();
+	call	simiic_delay
+.L223:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    86  	SDA0();
+	mov	d4,#654
+	mov	d5,#0
+	call	gpio_set
+.L224:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    87  	simiic_delay();
+	call	simiic_delay
+.L225:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    88  	SCL0();
+	mov	d4,#651
+	mov	d5,#0
+	call	gpio_set
+.L226:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    89  }
+	ret
+.L123:
+	
+__simiic_start_function_end:
+	.size	simiic_start,__simiic_start_function_end-simiic_start
+.L59:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_IIC.simiic_stop',code,cluster('simiic_stop')
+	.sect	'.text.SEEKFREE_IIC.simiic_stop'
+	.align	2
+	
+	.global	simiic_stop
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    90  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    91  //内部使用，用户无需调用
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    92  void simiic_stop(void)
+; Function simiic_stop
+.L29:
+simiic_stop:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    93  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    94  	SDA0();
+	mov	d4,#654
+	mov	d5,#0
+	call	gpio_set
+.L231:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    95  	SCL0();
+	mov	d4,#651
+	mov	d5,#0
+	call	gpio_set
+.L232:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    96  	simiic_delay();
+	call	simiic_delay
+.L233:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    97  	SCL1();
+	mov	d4,#651
+	mov	d5,#1
+	call	gpio_set
+.L234:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    98  	simiic_delay();
+	call	simiic_delay
+.L235:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	    99  	SDA1();
+	mov	d4,#654
+	mov	d5,#1
+	call	gpio_set
+.L236:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   100  	simiic_delay();
+	call	simiic_delay
+.L237:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   101  }
+	ret
+.L124:
+	
+__simiic_stop_function_end:
+	.size	simiic_stop,__simiic_stop_function_end-simiic_stop
+.L64:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_IIC.simiic_sendack',code,cluster('simiic_sendack')
+	.sect	'.text.SEEKFREE_IIC.simiic_sendack'
+	.align	2
+	
+	.global	simiic_sendack
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   102  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   103  //主应答(包含ack:SDA=0和no_ack:SDA=0)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   104  //内部使用，用户无需调用
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   105  void simiic_sendack(unsigned char ack_dat)
+; Function simiic_sendack
+.L31:
+simiic_sendack:	.type	func
+	mov	d15,d4
+.L161:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   106  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   107      SCL0();
+	mov	d4,#651
+.L160:
+	mov	d5,#0
+	call	gpio_set
+.L317:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   108  	simiic_delay();
+	call	simiic_delay
+.L318:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   109  	if(ack_dat) SDA0();
+	jeq	d15,#0,.L4
+.L319:
+	mov	d4,#654
+	mov	d5,#0
+	call	gpio_set
+.L320:
+	j	.L5
+.L4:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   110      else    	SDA1();
+	mov	d4,#654
+	mov	d5,#1
+	call	gpio_set
+.L5:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   111  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   112      SCL1();
+	mov	d4,#651
+	mov	d5,#1
+	call	gpio_set
+.L321:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   113      simiic_delay();
+	call	simiic_delay
+.L322:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   114      SCL0();
+	mov	d4,#651
+	mov	d5,#0
+	call	gpio_set
+.L323:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   115      simiic_delay();
+	call	simiic_delay
+.L324:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   116  }
+	ret
+.L153:
+	
+__simiic_sendack_function_end:
+	.size	simiic_sendack,__simiic_sendack_function_end-simiic_sendack
+.L104:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_IIC.sccb_waitack',code,cluster('sccb_waitack')
+	.sect	'.text.SEEKFREE_IIC.sccb_waitack'
+	.align	2
+	
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   117  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   118  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   119  static int sccb_waitack(void)
+; Function sccb_waitack
+.L33:
+sccb_waitack:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   120  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   121      SCL0();
+	mov	d4,#651
+	mov	d5,#0
+	call	gpio_set
+.L329:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   122  	DIR_IN();
+	mov	d4,#654
+	mov	d5,#0
+	mov	d6,#0
+	call	gpio_dir
+.L330:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   123  	simiic_delay();
+	call	simiic_delay
+.L331:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   124  	
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   125  	SCL1();
+	mov	d4,#651
+	mov	d5,#1
+	call	gpio_set
+.L332:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   126      simiic_delay();
+	call	simiic_delay
+.L333:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   127  	
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   128      if(SDA)           //应答为高电平，异常，通信失败
+	mov	d4,#654
+	call	gpio_get
+.L334:
+	jeq	d2,#0,.L6
+.L335:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   129      {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   130          DIR_OUT();
+	mov	d4,#654
+	mov	d5,#1
+	mov	d6,#3
+	call	gpio_dir
+.L336:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   131          SCL0();
+	mov	d4,#651
+	mov	d5,#0
+	call	gpio_set
+.L337:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   132          return 0;
+	mov	d2,#0
+.L338:
+	j	.L7
+.L6:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   133      }
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   134      DIR_OUT();
+	mov	d4,#654
+	mov	d5,#1
+	mov	d6,#3
+	call	gpio_dir
+.L339:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   135      SCL0();
+	mov	d4,#651
+	mov	d5,#0
+	call	gpio_set
+.L340:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   136  	simiic_delay();
+	call	simiic_delay
+.L341:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   137      return 1;
+	mov	d2,#1
+.L342:
+	j	.L8
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   138  }
+.L8:
+.L7:
+	ret
+.L156:
+	
+__sccb_waitack_function_end:
+	.size	sccb_waitack,__sccb_waitack_function_end-sccb_waitack
+.L109:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_IIC.send_ch',code,cluster('send_ch')
+	.sect	'.text.SEEKFREE_IIC.send_ch'
+	.align	2
+	
+	.global	send_ch
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   139  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   140  //字节发送程序
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   141  //发送c(可以是数据也可是地址)，送完后接收从应答
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   142  //不考虑从应答位
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   143  //内部使用，用户无需调用
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   144  void send_ch(uint8 c)
+; Function send_ch
+.L35:
+send_ch:	.type	func
+	mov	d8,d4
+.L162:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   145  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   146  	uint8 i = 8;
+	mov	d15,#8
+.L164:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   147      while(i--)
+	j	.L9
+.L10:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   148      {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   149          if(c & 0x80)	SDA1();//SDA 输出数据
+	jz.t	d8:7,.L11
+.L242:
+	mov	d4,#654
+	mov	d5,#1
+	call	gpio_set
+.L243:
+	j	.L12
+.L11:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   150          else			SDA0();
+	mov	d4,#654
+	mov	d5,#0
+	call	gpio_set
+.L12:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   151          c <<= 1;
+	sha	d8,#1
+.L163:
+	extr.u	d8,d8,#0,#8
+.L166:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   152          simiic_delay();
+	call	simiic_delay
+.L244:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   153          SCL1();                //SCL 拉高，采集信号
+	mov	d4,#651
+	mov	d5,#1
+	call	gpio_set
+.L245:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   154          simiic_delay();
+	call	simiic_delay
+.L246:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   155          SCL0();                //SCL 时钟线拉低
+	mov	d4,#651
+	mov	d5,#0
+	call	gpio_set
+.L9:
+	mov	d0,d15
+	add	d15,#-1
+.L165:
+	extr.u	d15,d15,#0,#8
+.L167:
+	jne	d0,#0,.L10
+.L247:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   156      }
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   157  	sccb_waitack();
+	call	sccb_waitack
+.L248:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   158  }
+	ret
+.L125:
+	
+__send_ch_function_end:
+	.size	send_ch,__send_ch_function_end-send_ch
+.L69:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_IIC.read_ch',code,cluster('read_ch')
+	.sect	'.text.SEEKFREE_IIC.read_ch'
+	.align	2
+	
+	.global	read_ch
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   159  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   160  //字节接收程序
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   161  //接收器件传来的数据，此程序应配合|主应答函数|使用
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   162  //内部使用，用户无需调用
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   163  uint8 read_ch(uint8 ack_x)
+; Function read_ch
+.L37:
+read_ch:	.type	func
+	mov	d8,d4
+.L169:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   164  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   165      uint8 i;
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   166      uint8 c;
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   167      c=0;
+	mov	d15,#0
+.L170:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   168      SCL0();
+	mov	d4,#651
+.L168:
+	mov	d5,#0
+	call	gpio_set
+.L253:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   169      simiic_delay();
+	call	simiic_delay
+.L254:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   170      SDA1();             
+	mov	d4,#654
+	mov	d5,#1
+	call	gpio_set
+.L255:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   171      DIR_IN();           //置数据线为输入方式
+	mov	d4,#654
+	mov	d5,#0
+	mov	d6,#0
+	call	gpio_dir
+.L256:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   172      for(i=0;i<8;i++)
+	mov	d9,#0
+.L172:
+	j	.L13
+.L14:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   173      {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   174          simiic_delay();
+	call	simiic_delay
+.L257:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   175          SCL0();         //置时钟线为低，准备接收数据位
+	mov	d4,#651
+	mov	d5,#0
+	call	gpio_set
+.L258:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   176          simiic_delay();
+	call	simiic_delay
+.L259:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   177          SCL1();         //置时钟线为高，使数据线上数据有效
+	mov	d4,#651
+	mov	d5,#1
+	call	gpio_set
+.L260:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   178          simiic_delay();
+	call	simiic_delay
+.L261:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   179          c<<=1;
+	sha	d15,#1
+.L171:
+	extr.u	d15,d15,#0,#8
+.L173:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   180          if(SDA) 
+	mov	d4,#654
+	call	gpio_get
+.L262:
+	jeq	d2,#0,.L15
+.L263:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   181          {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   182              c+=1;   //读数据位，将接收的数据存c
+	add	d15,#1
+.L174:
+	extr.u	d15,d15,#0,#8
+.L15:
+	add	d9,#1
+.L13:
+	jlt.u	d9,#8,.L14
+.L264:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   183          }
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   184      }
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   185      DIR_OUT();
+	mov	d4,#654
+	mov	d5,#1
+	mov	d6,#3
+	call	gpio_dir
+.L265:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   186  	SCL0();
+	mov	d4,#651
+	mov	d5,#0
+	call	gpio_set
+.L266:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   187  	simiic_delay();
+	call	simiic_delay
+.L267:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   188  	simiic_sendack(ack_x);
+	mov	d4,d8
+.L175:
+	call	simiic_sendack
+.L176:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   189  	
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   190      return c;
+	mov	d2,d15
+.L177:
+	j	.L16
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   191  }
+.L16:
+	ret
+.L129:
+	
+__read_ch_function_end:
+	.size	read_ch,__read_ch_function_end-read_ch
+.L74:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_IIC.simiic_write_reg',code,cluster('simiic_write_reg')
+	.sect	'.text.SEEKFREE_IIC.simiic_write_reg'
+	.align	2
+	
+	.global	simiic_write_reg
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   192  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   193  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   194  //  @brief      模拟IIC写数据到设备寄存器函数
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   195  //  @param      dev_add			设备地址(低七位地址)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   196  //  @param      reg				寄存器地址
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   197  //  @param      dat				写入的数据
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   198  //  @return     void						
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   199  //  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   200  //  Sample usage:				
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   201  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   202  void simiic_write_reg(uint8 dev_add, uint8 reg, uint8 dat)
+; Function simiic_write_reg
+.L39:
+simiic_write_reg:	.type	func
+	mov	d15,d4
+.L179:
+	mov	e8,d6,d5
+.L272:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   203  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   204  	simiic_start();
+	call	simiic_start
+.L178:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   205      send_ch( (dev_add<<1) | 0x00);   //发送器件地址加写位
+	sha	d15,#1
+.L180:
+	extr.u	d4,d15,#0,#8
+	call	send_ch
+.L181:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   206  	send_ch( reg );   				 //发送从机寄存器地址
+	mov	d4,d8
+.L182:
+	call	send_ch
+.L183:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   207  	send_ch( dat );   				 //发送需要写入的数据
+	mov	d4,d9
+.L184:
+	call	send_ch
+.L185:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   208  	simiic_stop();
+	call	simiic_stop
+.L273:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   209  }
+	ret
+.L133:
+	
+__simiic_write_reg_function_end:
+	.size	simiic_write_reg,__simiic_write_reg_function_end-simiic_write_reg
+.L79:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_IIC.simiic_read_reg',code,cluster('simiic_read_reg')
+	.sect	'.text.SEEKFREE_IIC.simiic_read_reg'
+	.align	2
+	
+	.global	simiic_read_reg
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   210  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   211  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   212  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   213  //  @brief      模拟IIC从设备寄存器读取数据
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   214  //  @param      dev_add			设备地址(低七位地址)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   215  //  @param      reg				寄存器地址
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   216  //  @param      type			选择通信方式是IIC  还是 SCCB
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   217  //  @return     uint8			返回寄存器的数据			
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   218  //  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   219  //  Sample usage:				
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   220  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   221  uint8 simiic_read_reg(uint8 dev_add, uint8 reg, IIC_type type)
+; Function simiic_read_reg
+.L41:
+simiic_read_reg:	.type	func
+	mov	e8,d5,d4
+	mov	d15,d6
+.L187:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   222  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   223  	uint8 dat;
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   224  	simiic_start();
+	call	simiic_start
+.L186:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   225      send_ch( (dev_add<<1) | 0x00);  //发送器件地址加写位
+	sha	d0,d8,#1
+.L189:
+	extr.u	d4,d0,#0,#8
+	call	send_ch
+.L190:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   226  	send_ch( reg );   				//发送从机寄存器地址
+	mov	d4,d9
+.L191:
+	call	send_ch
+.L192:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   227  	if(type == SCCB)simiic_stop();
+	jne	d15,#1,.L17
+.L278:
+	call	simiic_stop
+.L17:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   228  	
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   229  	simiic_start();
+	call	simiic_start
+.L279:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   230  	send_ch( (dev_add<<1) | 0x01);  //发送器件地址加读位
+	sha	d8,#1
+.L280:
+	or	d15,d8,#1
+.L188:
+	extr.u	d4,d15,#0,#8
+	call	send_ch
+.L281:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   231  	dat = read_ch(no_ack);   				//读取数据
+	mov	d4,#0
+	call	read_ch
+.L193:
+	mov	d15,d2
+.L195:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   232  	simiic_stop();
+	call	simiic_stop
+.L194:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   233  	
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   234  	return dat;
+	mov	d2,d15
+.L196:
+	j	.L18
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   235  }
+.L18:
+	ret
+.L137:
+	
+__simiic_read_reg_function_end:
+	.size	simiic_read_reg,__simiic_read_reg_function_end-simiic_read_reg
+.L84:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_IIC.simiic_read_regs',code,cluster('simiic_read_regs')
+	.sect	'.text.SEEKFREE_IIC.simiic_read_regs'
+	.align	2
+	
+	.global	simiic_read_regs
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   236  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   237  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   238  //  @brief      模拟IIC读取多字节数据
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   239  //  @param      dev_add			设备地址(低七位地址)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   240  //  @param      reg				寄存器地址
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   241  //  @param      dat_add			数据保存的地址指针
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   242  //  @param      num				读取字节数量
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   243  //  @param      type			选择通信方式是IIC  还是 SCCB
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   244  //  @return     uint8			返回寄存器的数据			
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   245  //  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   246  //  Sample usage:				
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   247  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   248  void simiic_read_regs(uint8 dev_add, uint8 reg, uint8 *dat_add, uint8 num, IIC_type type)
+; Function simiic_read_regs
+.L43:
+simiic_read_regs:	.type	func
+	mov	e8,d5,d4
+	mov.aa	a15,a4
+.L198:
+	mov	d15,d6
+.L199:
+	mov	d10,d7
+.L201:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   249  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   250  	simiic_start();
+	call	simiic_start
+.L197:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   251      send_ch( (dev_add<<1) | 0x00);  //发送器件地址加写位
+	sha	d0,d8,#1
+.L202:
+	extr.u	d4,d0,#0,#8
+	call	send_ch
+.L203:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   252  	send_ch( reg );   				//发送从机寄存器地址
+	mov	d4,d9
+.L204:
+	call	send_ch
+.L205:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   253  	if(type == SCCB)simiic_stop();
+	jne	d10,#1,.L19
+.L286:
+	call	simiic_stop
+.L19:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   254  	
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   255  	simiic_start();
+	call	simiic_start
+.L287:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   256  	send_ch( (dev_add<<1) | 0x01);  //发送器件地址加读位
+	sha	d8,#1
+.L288:
+	or	d0,d8,#1
+	extr.u	d4,d0,#0,#8
+	call	send_ch
+.L289:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   257      while(--num)
+	j	.L20
+.L21:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   258      {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   259          *dat_add = read_ch(ack); //读取数据
+	mov	d4,#1
+	call	read_ch
+.L290:
+	st.b	[a15],d2
+.L291:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   260          dat_add++;
+	add.a	a15,#1
+.L20:
+	add	d15,#-1
+.L200:
+	extr.u	d15,d15,#0,#8
+.L206:
+	jne	d15,#0,.L21
+.L292:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   261      }
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   262      *dat_add = read_ch(no_ack); //读取数据
+	mov	d4,#0
+	call	read_ch
+.L293:
+	st.b	[a15],d2
+.L294:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   263  	simiic_stop();
+	call	simiic_stop
+.L295:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   264  }
+	ret
+.L143:
+	
+__simiic_read_regs_function_end:
+	.size	simiic_read_regs,__simiic_read_regs_function_end-simiic_read_regs
+.L89:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_IIC.simiic_init',code,cluster('simiic_init')
+	.sect	'.text.SEEKFREE_IIC.simiic_init'
+	.align	2
+	
+	.global	simiic_init
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   265  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   266  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   267  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   268  //  @brief      模拟IIC端口初始化
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   269  //  @param      NULL
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   270  //  @return     void	
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   271  //  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   272  //  Sample usage:				
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   273  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   274  void simiic_init(void)
+; Function simiic_init
+.L45:
+simiic_init:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   275  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   276  	gpio_init (SEEKFREE_SCL1, GPO, 1, PUSHPULL);
+	mov	d4,#651
+.L300:
+	mov	d5,#1
+.L301:
+	mov	d6,#1
+.L302:
+	mov	d7,#3
+	call	gpio_init
+.L303:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   277  	gpio_init (SEEKFREE_SDA1, GPO, 1, PUSHPULL);
+	mov	d4,#654
+.L304:
+	mov	d5,#1
+.L305:
+	mov	d6,#1
+.L306:
+	mov	d7,#3
+	call	gpio_init
+.L307:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   278  }
+	ret
+.L150:
+	
+__simiic_init_function_end:
+	.size	simiic_init,__simiic_init_function_end-simiic_init
+.L94:
+	; End of function
+	
+	.sdecl	'.bss.SEEKFREE_IIC.IIC_ad_main',data,cluster('IIC_ad_main')
+	.sect	'.bss.SEEKFREE_IIC.IIC_ad_main'
+	.global	IIC_ad_main
+IIC_ad_main:	.type	object
+	.size	IIC_ad_main,1
+	.space	1
+	.sdecl	'.bss.SEEKFREE_IIC.IIC_ad_sub',data,cluster('IIC_ad_sub')
+	.sect	'.bss.SEEKFREE_IIC.IIC_ad_sub'
+	.global	IIC_ad_sub
+IIC_ad_sub:	.type	object
+	.size	IIC_ad_sub,1
+	.space	1
+	.sdecl	'.bss.SEEKFREE_IIC.IIC_buf',data,cluster('IIC_buf')
+	.sect	'.bss.SEEKFREE_IIC.IIC_buf'
+	.global	IIC_buf
+	.align	4
+IIC_buf:	.type	object
+	.size	IIC_buf,4
+	.space	4
+	.sdecl	'.bss.SEEKFREE_IIC.IIC_num',data,cluster('IIC_num')
+	.sect	'.bss.SEEKFREE_IIC.IIC_num'
+	.global	IIC_num
+IIC_num:	.type	object
+	.size	IIC_num,1
+	.space	1
+	.sdecl	'.data.SEEKFREE_IIC.simiic_delay_time',data,cluster('simiic_delay_time')
+	.sect	'.data.SEEKFREE_IIC.simiic_delay_time'
+	.align	2
+simiic_delay_time:	.type	object
+	.size	simiic_delay_time,2
+	.half	80
+	.calls	'simiic_start','gpio_set'
+	.calls	'simiic_start','simiic_delay'
+	.calls	'simiic_stop','gpio_set'
+	.calls	'simiic_stop','simiic_delay'
+	.calls	'simiic_sendack','gpio_set'
+	.calls	'simiic_sendack','simiic_delay'
+	.calls	'sccb_waitack','gpio_set'
+	.calls	'sccb_waitack','gpio_dir'
+	.calls	'sccb_waitack','simiic_delay'
+	.calls	'sccb_waitack','gpio_get'
+	.calls	'send_ch','gpio_set'
+	.calls	'send_ch','simiic_delay'
+	.calls	'send_ch','sccb_waitack'
+	.calls	'read_ch','gpio_set'
+	.calls	'read_ch','simiic_delay'
+	.calls	'read_ch','gpio_dir'
+	.calls	'read_ch','gpio_get'
+	.calls	'read_ch','simiic_sendack'
+	.calls	'simiic_write_reg','simiic_start'
+	.calls	'simiic_write_reg','send_ch'
+	.calls	'simiic_write_reg','simiic_stop'
+	.calls	'simiic_read_reg','simiic_start'
+	.calls	'simiic_read_reg','send_ch'
+	.calls	'simiic_read_reg','simiic_stop'
+	.calls	'simiic_read_reg','read_ch'
+	.calls	'simiic_read_regs','simiic_start'
+	.calls	'simiic_read_regs','send_ch'
+	.calls	'simiic_read_regs','simiic_stop'
+	.calls	'simiic_read_regs','read_ch'
+	.calls	'simiic_init','gpio_init'
+	.calls	'simiic_delay_set','',0
+	.calls	'simiic_delay','',0
+	.calls	'simiic_start','',0
+	.calls	'simiic_stop','',0
+	.calls	'simiic_sendack','',0
+	.calls	'sccb_waitack','',0
+	.calls	'send_ch','',0
+	.calls	'read_ch','',0
+	.calls	'simiic_write_reg','',0
+	.calls	'simiic_read_reg','',0
+	.calls	'simiic_read_regs','',0
+	.extern	gpio_init
+	.extern	gpio_set
+	.extern	gpio_get
+	.extern	gpio_dir
+	.calls	'simiic_init','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L47:
+	.word	38578
+	.half	3
+	.word	.L48
+	.byte	4
+.L46:
+	.byte	1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L49
+	.byte	2,1,1,3
+	.word	157
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	160
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1,7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	205
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	217
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	297
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	271
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	303
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	303
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	271
+	.byte	6,0,7
+	.byte	'unsigned int',0,4,7
+.L155:
+	.byte	7
+	.byte	'int',0,4,5
+.L126:
+	.byte	7
+	.byte	'unsigned char',0,1,8
+.L121:
+	.byte	7
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'_Ifx_P_OUT_Bits',0,4,143,3,16,4,11
+	.byte	'P0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'P1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'P2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'P3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'P4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'P5',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'P6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'P7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'P8',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'P9',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'P10',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'P11',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'P12',0,1
+	.word	412
+	.byte	1,3,2,35,1,11
+	.byte	'P13',0,1
+	.word	412
+	.byte	1,2,2,35,1,11
+	.byte	'P14',0,1
+	.word	412
+	.byte	1,1,2,35,1,11
+	.byte	'P15',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,12,4,181,5,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	451
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_OMR_Bits',0,4,169,2,16,4,11
+	.byte	'PS0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'PS1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'PS2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'PS3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'PS4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'PS5',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'PS6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'PS7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'PS8',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'PS9',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'PS10',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'PS11',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'PS12',0,1
+	.word	412
+	.byte	1,3,2,35,1,11
+	.byte	'PS13',0,1
+	.word	412
+	.byte	1,2,2,35,1,11
+	.byte	'PS14',0,1
+	.word	412
+	.byte	1,1,2,35,1,11
+	.byte	'PS15',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'PCL0',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'PCL1',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'PCL2',0,1
+	.word	412
+	.byte	1,5,2,35,2,11
+	.byte	'PCL3',0,1
+	.word	412
+	.byte	1,4,2,35,2,11
+	.byte	'PCL4',0,1
+	.word	412
+	.byte	1,3,2,35,2,11
+	.byte	'PCL5',0,1
+	.word	412
+	.byte	1,2,2,35,2,11
+	.byte	'PCL6',0,1
+	.word	412
+	.byte	1,1,2,35,2,11
+	.byte	'PCL7',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'PCL8',0,1
+	.word	412
+	.byte	1,7,2,35,3,11
+	.byte	'PCL9',0,1
+	.word	412
+	.byte	1,6,2,35,3,11
+	.byte	'PCL10',0,1
+	.word	412
+	.byte	1,5,2,35,3,11
+	.byte	'PCL11',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'PCL12',0,1
+	.word	412
+	.byte	1,3,2,35,3,11
+	.byte	'PCL13',0,1
+	.word	412
+	.byte	1,2,2,35,3,11
+	.byte	'PCL14',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'PCL15',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,12,4,133,5,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	767
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_ID_Bits',0,4,110,16,4,11
+	.byte	'MODREV',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'MODTYPE',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'MODNUMBER',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,12,4,148,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	1338
+	.byte	4,2,35,0,0,14,4
+	.word	412
+	.byte	15,3,0,10
+	.byte	'_Ifx_P_IOCR0_Bits',0,4,140,1,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	3,5,2,35,0,11
+	.byte	'PC0',0,1
+	.word	412
+	.byte	5,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	412
+	.byte	3,5,2,35,1,11
+	.byte	'PC1',0,1
+	.word	412
+	.byte	5,0,2,35,1,11
+	.byte	'reserved_16',0,1
+	.word	412
+	.byte	3,5,2,35,2,11
+	.byte	'PC2',0,1
+	.word	412
+	.byte	5,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	3,5,2,35,3,11
+	.byte	'PC3',0,1
+	.word	412
+	.byte	5,0,2,35,3,0,12,4,164,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	1466
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_IOCR4_Bits',0,4,166,1,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	3,5,2,35,0,11
+	.byte	'PC4',0,1
+	.word	412
+	.byte	5,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	412
+	.byte	3,5,2,35,1,11
+	.byte	'PC5',0,1
+	.word	412
+	.byte	5,0,2,35,1,11
+	.byte	'reserved_16',0,1
+	.word	412
+	.byte	3,5,2,35,2,11
+	.byte	'PC6',0,1
+	.word	412
+	.byte	5,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	3,5,2,35,3,11
+	.byte	'PC7',0,1
+	.word	412
+	.byte	5,0,2,35,3,0,12,4,180,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	1681
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_IOCR8_Bits',0,4,179,1,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	3,5,2,35,0,11
+	.byte	'PC8',0,1
+	.word	412
+	.byte	5,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	412
+	.byte	3,5,2,35,1,11
+	.byte	'PC9',0,1
+	.word	412
+	.byte	5,0,2,35,1,11
+	.byte	'reserved_16',0,1
+	.word	412
+	.byte	3,5,2,35,2,11
+	.byte	'PC10',0,1
+	.word	412
+	.byte	5,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	3,5,2,35,3,11
+	.byte	'PC11',0,1
+	.word	412
+	.byte	5,0,2,35,3,0,12,4,188,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	1896
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_IOCR12_Bits',0,4,153,1,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	3,5,2,35,0,11
+	.byte	'PC12',0,1
+	.word	412
+	.byte	5,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	412
+	.byte	3,5,2,35,1,11
+	.byte	'PC13',0,1
+	.word	412
+	.byte	5,0,2,35,1,11
+	.byte	'reserved_16',0,1
+	.word	412
+	.byte	3,5,2,35,2,11
+	.byte	'PC14',0,1
+	.word	412
+	.byte	5,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	3,5,2,35,3,11
+	.byte	'PC15',0,1
+	.word	412
+	.byte	5,0,2,35,3,0,12,4,172,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	2113
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_IN_Bits',0,4,118,16,4,11
+	.byte	'P0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'P1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'P2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'P3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'P4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'P5',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'P6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'P7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'P8',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'P9',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'P10',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'P11',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'P12',0,1
+	.word	412
+	.byte	1,3,2,35,1,11
+	.byte	'P13',0,1
+	.word	412
+	.byte	1,2,2,35,1,11
+	.byte	'P14',0,1
+	.word	412
+	.byte	1,1,2,35,1,11
+	.byte	'P15',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,12,4,156,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	2333
+	.byte	4,2,35,0,0,14,24
+	.word	412
+	.byte	15,23,0,10
+	.byte	'_Ifx_P_PDR0_Bits',0,4,205,3,16,4,11
+	.byte	'PD0',0,1
+	.word	412
+	.byte	3,5,2,35,0,11
+	.byte	'PL0',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'PD1',0,1
+	.word	412
+	.byte	3,1,2,35,0,11
+	.byte	'PL1',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'PD2',0,1
+	.word	412
+	.byte	3,5,2,35,1,11
+	.byte	'PL2',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'PD3',0,1
+	.word	412
+	.byte	3,1,2,35,1,11
+	.byte	'PL3',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'PD4',0,1
+	.word	412
+	.byte	3,5,2,35,2,11
+	.byte	'PL4',0,1
+	.word	412
+	.byte	1,4,2,35,2,11
+	.byte	'PD5',0,1
+	.word	412
+	.byte	3,1,2,35,2,11
+	.byte	'PL5',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'PD6',0,1
+	.word	412
+	.byte	3,5,2,35,3,11
+	.byte	'PL6',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'PD7',0,1
+	.word	412
+	.byte	3,1,2,35,3,11
+	.byte	'PL7',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,12,4,205,5,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	2656
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_PDR1_Bits',0,4,226,3,16,4,11
+	.byte	'PD8',0,1
+	.word	412
+	.byte	3,5,2,35,0,11
+	.byte	'PL8',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'PD9',0,1
+	.word	412
+	.byte	3,1,2,35,0,11
+	.byte	'PL9',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'PD10',0,1
+	.word	412
+	.byte	3,5,2,35,1,11
+	.byte	'PL10',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'PD11',0,1
+	.word	412
+	.byte	3,1,2,35,1,11
+	.byte	'PL11',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'PD12',0,1
+	.word	412
+	.byte	3,5,2,35,2,11
+	.byte	'PL12',0,1
+	.word	412
+	.byte	1,4,2,35,2,11
+	.byte	'PD13',0,1
+	.word	412
+	.byte	3,1,2,35,2,11
+	.byte	'PL13',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'PD14',0,1
+	.word	412
+	.byte	3,5,2,35,3,11
+	.byte	'PL14',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'PD15',0,1
+	.word	412
+	.byte	3,1,2,35,3,11
+	.byte	'PL15',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,12,4,213,5,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	2960
+	.byte	4,2,35,0,0,14,8
+	.word	412
+	.byte	15,7,0,10
+	.byte	'_Ifx_P_ESR_Bits',0,4,88,16,4,11
+	.byte	'EN0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'EN1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'EN2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'EN3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'EN4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'EN5',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'EN6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'EN7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'EN8',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'EN9',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'EN10',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'EN11',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'EN12',0,1
+	.word	412
+	.byte	1,3,2,35,1,11
+	.byte	'EN13',0,1
+	.word	412
+	.byte	1,2,2,35,1,11
+	.byte	'EN14',0,1
+	.word	412
+	.byte	1,1,2,35,1,11
+	.byte	'EN15',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,12,4,140,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	3285
+	.byte	4,2,35,0,0,14,12
+	.word	412
+	.byte	15,11,0,10
+	.byte	'_Ifx_P_PDISC_Bits',0,4,183,3,16,4,11
+	.byte	'PDIS0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'PDIS1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'PDIS2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'PDIS3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'PDIS4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'PDIS5',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'PDIS6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'PDIS7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'PDIS8',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'PDIS9',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'PDIS10',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'PDIS11',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'PDIS12',0,1
+	.word	412
+	.byte	1,3,2,35,1,11
+	.byte	'PDIS13',0,1
+	.word	412
+	.byte	1,2,2,35,1,11
+	.byte	'PDIS14',0,1
+	.word	412
+	.byte	1,1,2,35,1,11
+	.byte	'PDIS15',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,12,4,197,5,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	3625
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_PCSR_Bits',0,4,165,3,16,4,11
+	.byte	'SEL0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'SEL1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'SEL2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'SEL3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'SEL4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'SEL5',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'SEL6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'SEL7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	412
+	.byte	2,6,2,35,1,11
+	.byte	'SEL10',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'SEL11',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'reserved_12',0,4
+	.word	389
+	.byte	19,1,2,35,0,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,12,4,189,5,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	3991
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_OMSR0_Bits',0,4,206,2,16,4,11
+	.byte	'PS0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'PS1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'PS2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'PS3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'reserved_4',0,4
+	.word	389
+	.byte	28,0,2,35,0,0,12,4,149,5,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	4277
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_OMSR4_Bits',0,4,227,2,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	4,4,2,35,0,11
+	.byte	'PS4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'PS5',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'PS6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'PS7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	389
+	.byte	24,0,2,35,0,0,12,4,165,5,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	4424
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_OMSR8_Bits',0,4,238,2,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'PS8',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'PS9',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'PS10',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'PS11',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'reserved_12',0,4
+	.word	389
+	.byte	20,0,2,35,0,0,12,4,173,5,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	4593
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_OMSR12_Bits',0,4,216,2,16,4,11
+	.byte	'reserved_0',0,2
+	.word	429
+	.byte	12,4,2,35,0,11
+	.byte	'PS12',0,1
+	.word	412
+	.byte	1,3,2,35,1,11
+	.byte	'PS13',0,1
+	.word	412
+	.byte	1,2,2,35,1,11
+	.byte	'PS14',0,1
+	.word	412
+	.byte	1,1,2,35,1,11
+	.byte	'PS15',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,12,4,157,5,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	4765
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_OMCR0_Bits',0,4,232,1,16,4,11
+	.byte	'reserved_0',0,2
+	.word	429
+	.byte	16,0,2,35,0,11
+	.byte	'PCL0',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'PCL1',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'PCL2',0,1
+	.word	412
+	.byte	1,5,2,35,2,11
+	.byte	'PCL3',0,1
+	.word	412
+	.byte	1,4,2,35,2,11
+	.byte	'reserved_20',0,2
+	.word	429
+	.byte	12,0,2,35,2,0,12,4,229,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	4940
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_OMCR4_Bits',0,4,253,1,16,4,11
+	.byte	'reserved_0',0,4
+	.word	389
+	.byte	20,12,2,35,0,11
+	.byte	'PCL4',0,1
+	.word	412
+	.byte	1,3,2,35,2,11
+	.byte	'PCL5',0,1
+	.word	412
+	.byte	1,2,2,35,2,11
+	.byte	'PCL6',0,1
+	.word	412
+	.byte	1,1,2,35,2,11
+	.byte	'PCL7',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	8,0,2,35,3,0,12,4,245,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	5114
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_OMCR8_Bits',0,4,136,2,16,4,11
+	.byte	'reserved_0',0,4
+	.word	389
+	.byte	24,8,2,35,0,11
+	.byte	'PCL8',0,1
+	.word	412
+	.byte	1,7,2,35,3,11
+	.byte	'PCL9',0,1
+	.word	412
+	.byte	1,6,2,35,3,11
+	.byte	'PCL10',0,1
+	.word	412
+	.byte	1,5,2,35,3,11
+	.byte	'PCL11',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'reserved_28',0,1
+	.word	412
+	.byte	4,0,2,35,3,0,12,4,253,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	5288
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_OMCR12_Bits',0,4,243,1,16,4,11
+	.byte	'reserved_0',0,4
+	.word	389
+	.byte	28,4,2,35,0,11
+	.byte	'PCL12',0,1
+	.word	412
+	.byte	1,3,2,35,3,11
+	.byte	'PCL13',0,1
+	.word	412
+	.byte	1,2,2,35,3,11
+	.byte	'PCL14',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'PCL15',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,12,4,237,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	5464
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_OMSR_Bits',0,4,249,2,16,4,11
+	.byte	'PS0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'PS1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'PS2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'PS3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'PS4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'PS5',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'PS6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'PS7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'PS8',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'PS9',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'PS10',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'PS11',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'PS12',0,1
+	.word	412
+	.byte	1,3,2,35,1,11
+	.byte	'PS13',0,1
+	.word	412
+	.byte	1,2,2,35,1,11
+	.byte	'PS14',0,1
+	.word	412
+	.byte	1,1,2,35,1,11
+	.byte	'PS15',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,12,4,141,5,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	5620
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_OMCR_Bits',0,4,147,2,16,4,11
+	.byte	'reserved_0',0,2
+	.word	429
+	.byte	16,0,2,35,0,11
+	.byte	'PCL0',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'PCL1',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'PCL2',0,1
+	.word	412
+	.byte	1,5,2,35,2,11
+	.byte	'PCL3',0,1
+	.word	412
+	.byte	1,4,2,35,2,11
+	.byte	'PCL4',0,1
+	.word	412
+	.byte	1,3,2,35,2,11
+	.byte	'PCL5',0,1
+	.word	412
+	.byte	1,2,2,35,2,11
+	.byte	'PCL6',0,1
+	.word	412
+	.byte	1,1,2,35,2,11
+	.byte	'PCL7',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'PCL8',0,1
+	.word	412
+	.byte	1,7,2,35,3,11
+	.byte	'PCL9',0,1
+	.word	412
+	.byte	1,6,2,35,3,11
+	.byte	'PCL10',0,1
+	.word	412
+	.byte	1,5,2,35,3,11
+	.byte	'PCL11',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'PCL12',0,1
+	.word	412
+	.byte	1,3,2,35,3,11
+	.byte	'PCL13',0,1
+	.word	412
+	.byte	1,2,2,35,3,11
+	.byte	'PCL14',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'PCL15',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,12,4,221,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	5953
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_LPCR0_Bits',0,4,192,1,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'PS1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,4
+	.word	389
+	.byte	30,0,2,35,0,0,12,4,196,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	6301
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_LPCR1_Bits',0,4,200,1,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'PS1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,4
+	.word	389
+	.byte	30,0,2,35,0,0,10
+	.byte	'_Ifx_P_LPCR1_P21_Bits',0,4,208,1,16,4,11
+	.byte	'RDIS_CTRL',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'RX_DIS',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'TERM',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'LRXTERM',0,1
+	.word	412
+	.byte	5,0,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	389
+	.byte	24,0,2,35,0,0,12,4,204,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	6425
+	.byte	4,2,35,0,13
+	.byte	'B_P21',0
+	.word	6509
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_LPCR2_Bits',0,4,218,1,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'LVDSR',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'LVDSRL',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'reserved_10',0,1
+	.word	412
+	.byte	2,4,2,35,1,11
+	.byte	'TDIS_CTRL',0,1
+	.word	412
+	.byte	1,3,2,35,1,11
+	.byte	'TX_DIS',0,1
+	.word	412
+	.byte	1,2,2,35,1,11
+	.byte	'TX_PD',0,1
+	.word	412
+	.byte	1,1,2,35,1,11
+	.byte	'TX_PWDPD',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,12,4,213,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	6689
+	.byte	4,2,35,0,0,14,76
+	.word	412
+	.byte	15,75,0,10
+	.byte	'_Ifx_P_ACCEN1_Bits',0,4,82,16,4,11
+	.byte	'reserved_0',0,4
+	.word	389
+	.byte	32,0,2,35,0,0,12,4,132,4,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	6942
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P_ACCEN0_Bits',0,4,45,16,4,11
+	.byte	'EN0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'EN1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'EN2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'EN3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'EN4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'EN5',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'EN6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'EN7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'EN8',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'EN9',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'EN10',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'EN11',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'EN12',0,1
+	.word	412
+	.byte	1,3,2,35,1,11
+	.byte	'EN13',0,1
+	.word	412
+	.byte	1,2,2,35,1,11
+	.byte	'EN14',0,1
+	.word	412
+	.byte	1,1,2,35,1,11
+	.byte	'EN15',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'EN16',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'EN17',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'EN18',0,1
+	.word	412
+	.byte	1,5,2,35,2,11
+	.byte	'EN19',0,1
+	.word	412
+	.byte	1,4,2,35,2,11
+	.byte	'EN20',0,1
+	.word	412
+	.byte	1,3,2,35,2,11
+	.byte	'EN21',0,1
+	.word	412
+	.byte	1,2,2,35,2,11
+	.byte	'EN22',0,1
+	.word	412
+	.byte	1,1,2,35,2,11
+	.byte	'EN23',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'EN24',0,1
+	.word	412
+	.byte	1,7,2,35,3,11
+	.byte	'EN25',0,1
+	.word	412
+	.byte	1,6,2,35,3,11
+	.byte	'EN26',0,1
+	.word	412
+	.byte	1,5,2,35,3,11
+	.byte	'EN27',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'EN28',0,1
+	.word	412
+	.byte	1,3,2,35,3,11
+	.byte	'EN29',0,1
+	.word	412
+	.byte	1,2,2,35,3,11
+	.byte	'EN30',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'EN31',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,12,4,252,3,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	7029
+	.byte	4,2,35,0,0,10
+	.byte	'_Ifx_P',0,4,229,5,25,128,2,13
+	.byte	'OUT',0
+	.word	727
+	.byte	4,2,35,0,13
+	.byte	'OMR',0
+	.word	1298
+	.byte	4,2,35,4,13
+	.byte	'ID',0
+	.word	1417
+	.byte	4,2,35,8,13
+	.byte	'reserved_C',0
+	.word	1457
+	.byte	4,2,35,12,13
+	.byte	'IOCR0',0
+	.word	1641
+	.byte	4,2,35,16,13
+	.byte	'IOCR4',0
+	.word	1856
+	.byte	4,2,35,20,13
+	.byte	'IOCR8',0
+	.word	2073
+	.byte	4,2,35,24,13
+	.byte	'IOCR12',0
+	.word	2293
+	.byte	4,2,35,28,13
+	.byte	'reserved_20',0
+	.word	1457
+	.byte	4,2,35,32,13
+	.byte	'IN',0
+	.word	2607
+	.byte	4,2,35,36,13
+	.byte	'reserved_28',0
+	.word	2647
+	.byte	24,2,35,40,13
+	.byte	'PDR0',0
+	.word	2920
+	.byte	4,2,35,64,13
+	.byte	'PDR1',0
+	.word	3236
+	.byte	4,2,35,68,13
+	.byte	'reserved_48',0
+	.word	3276
+	.byte	8,2,35,72,13
+	.byte	'ESR',0
+	.word	3576
+	.byte	4,2,35,80,13
+	.byte	'reserved_54',0
+	.word	3616
+	.byte	12,2,35,84,13
+	.byte	'PDISC',0
+	.word	3951
+	.byte	4,2,35,96,13
+	.byte	'PCSR',0
+	.word	4237
+	.byte	4,2,35,100,13
+	.byte	'reserved_68',0
+	.word	3276
+	.byte	8,2,35,104,13
+	.byte	'OMSR0',0
+	.word	4384
+	.byte	4,2,35,112,13
+	.byte	'OMSR4',0
+	.word	4553
+	.byte	4,2,35,116,13
+	.byte	'OMSR8',0
+	.word	4725
+	.byte	4,2,35,120,13
+	.byte	'OMSR12',0
+	.word	4900
+	.byte	4,2,35,124,13
+	.byte	'OMCR0',0
+	.word	5074
+	.byte	4,3,35,128,1,13
+	.byte	'OMCR4',0
+	.word	5248
+	.byte	4,3,35,132,1,13
+	.byte	'OMCR8',0
+	.word	5424
+	.byte	4,3,35,136,1,13
+	.byte	'OMCR12',0
+	.word	5580
+	.byte	4,3,35,140,1,13
+	.byte	'OMSR',0
+	.word	5913
+	.byte	4,3,35,144,1,13
+	.byte	'OMCR',0
+	.word	6261
+	.byte	4,3,35,148,1,13
+	.byte	'reserved_98',0
+	.word	3276
+	.byte	8,3,35,152,1,13
+	.byte	'LPCR0',0
+	.word	6385
+	.byte	4,3,35,160,1,13
+	.byte	'LPCR1',0
+	.word	6634
+	.byte	4,3,35,164,1,13
+	.byte	'LPCR2',0
+	.word	6893
+	.byte	4,3,35,168,1,13
+	.byte	'reserved_A4',0
+	.word	6933
+	.byte	76,3,35,172,1,13
+	.byte	'ACCEN1',0
+	.word	6989
+	.byte	4,3,35,248,1,13
+	.byte	'ACCEN0',0
+	.word	7556
+	.byte	4,3,35,252,1,0,16
+	.word	7596
+	.byte	3
+	.word	8199
+	.byte	17,3,172,1,9,4,18
+	.byte	'IfxPort_State_notChanged',0,0,18
+	.byte	'IfxPort_State_high',0,1,18
+	.byte	'IfxPort_State_low',0,128,128,4,18
+	.byte	'IfxPort_State_toggled',0,129,128,4,0,4
+	.byte	'IfxPort_setPinState',0,3,3,208,4,17,1,1,5
+	.byte	'port',0,3,208,4,44
+	.word	8204
+	.byte	5
+	.byte	'pinIndex',0,3,208,4,56
+	.word	412
+	.byte	5
+	.byte	'action',0,3,208,4,80
+	.word	8209
+	.byte	6,0,19
+	.word	405
+	.byte	20
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,21
+	.word	8390
+	.byte	0,16
+	.word	389
+	.byte	3
+	.word	389
+	.byte	22
+	.byte	'__cmpswapw',0
+	.word	8432
+	.byte	1,1,1,1,23
+	.byte	'p',0
+	.word	8437
+	.byte	23
+	.byte	'value',0
+	.word	389
+	.byte	23
+	.byte	'compare',0
+	.word	389
+	.byte	0,24
+	.word	165
+	.byte	25
+	.word	191
+	.byte	6,0,24
+	.word	226
+	.byte	25
+	.word	258
+	.byte	6,0,24
+	.word	308
+	.byte	25
+	.word	327
+	.byte	6,0,24
+	.word	343
+	.byte	25
+	.word	358
+	.byte	25
+	.word	372
+	.byte	6,0,24
+	.word	8312
+	.byte	25
+	.word	8340
+	.byte	25
+	.word	8354
+	.byte	25
+	.word	8372
+	.byte	6,0,17,6,49,9,2,18
+	.byte	'P00_0',0,0,18
+	.byte	'P00_1',0,1,18
+	.byte	'P00_2',0,2,18
+	.byte	'P00_3',0,3,18
+	.byte	'P00_4',0,4,18
+	.byte	'P00_5',0,5,18
+	.byte	'P00_6',0,6,18
+	.byte	'P00_7',0,7,18
+	.byte	'P00_8',0,8,18
+	.byte	'P00_9',0,9,18
+	.byte	'P00_10',0,10,18
+	.byte	'P00_11',0,11,18
+	.byte	'P00_12',0,12,18
+	.byte	'P00_13',0,13,18
+	.byte	'P00_14',0,14,18
+	.byte	'P00_15',0,15,18
+	.byte	'P02_0',0,192,0,18
+	.byte	'P02_1',0,193,0,18
+	.byte	'P02_2',0,194,0,18
+	.byte	'P02_3',0,195,0,18
+	.byte	'P02_4',0,196,0,18
+	.byte	'P02_5',0,197,0,18
+	.byte	'P02_6',0,198,0,18
+	.byte	'P02_7',0,199,0,18
+	.byte	'P02_8',0,200,0,18
+	.byte	'P02_9',0,201,0,18
+	.byte	'P02_10',0,202,0,18
+	.byte	'P02_11',0,203,0,18
+	.byte	'P02_12',0,204,0,18
+	.byte	'P02_13',0,205,0,18
+	.byte	'P02_14',0,206,0,18
+	.byte	'P02_15',0,207,0,18
+	.byte	'P10_0',0,192,2,18
+	.byte	'P10_1',0,193,2,18
+	.byte	'P10_2',0,194,2,18
+	.byte	'P10_3',0,195,2,18
+	.byte	'P10_4',0,196,2,18
+	.byte	'P10_5',0,197,2,18
+	.byte	'P10_6',0,198,2,18
+	.byte	'P10_7',0,199,2,18
+	.byte	'P10_8',0,200,2,18
+	.byte	'P10_9',0,201,2,18
+	.byte	'P10_10',0,202,2,18
+	.byte	'P10_11',0,203,2,18
+	.byte	'P10_12',0,204,2,18
+	.byte	'P10_13',0,205,2,18
+	.byte	'P10_14',0,206,2,18
+	.byte	'P10_15',0,207,2,18
+	.byte	'P11_0',0,224,2,18
+	.byte	'P11_1',0,225,2,18
+	.byte	'P11_2',0,226,2,18
+	.byte	'P11_3',0,227,2,18
+	.byte	'P11_4',0,228,2,18
+	.byte	'P11_5',0,229,2,18
+	.byte	'P11_6',0,230,2,18
+	.byte	'P11_7',0,231,2,18
+	.byte	'P11_8',0,232,2,18
+	.byte	'P11_9',0,233,2,18
+	.byte	'P11_10',0,234,2,18
+	.byte	'P11_11',0,235,2,18
+	.byte	'P11_12',0,236,2,18
+	.byte	'P11_13',0,237,2,18
+	.byte	'P11_14',0,238,2,18
+	.byte	'P11_15',0,239,2,18
+	.byte	'P13_0',0,160,3,18
+	.byte	'P13_1',0,161,3,18
+	.byte	'P13_2',0,162,3,18
+	.byte	'P13_3',0,163,3,18
+	.byte	'P13_4',0,164,3,18
+	.byte	'P13_5',0,165,3,18
+	.byte	'P13_6',0,166,3,18
+	.byte	'P13_7',0,167,3,18
+	.byte	'P13_8',0,168,3,18
+	.byte	'P13_9',0,169,3,18
+	.byte	'P13_10',0,170,3,18
+	.byte	'P13_11',0,171,3,18
+	.byte	'P13_12',0,172,3,18
+	.byte	'P13_13',0,173,3,18
+	.byte	'P13_14',0,174,3,18
+	.byte	'P13_15',0,175,3,18
+	.byte	'P14_0',0,192,3,18
+	.byte	'P14_1',0,193,3,18
+	.byte	'P14_2',0,194,3,18
+	.byte	'P14_3',0,195,3,18
+	.byte	'P14_4',0,196,3,18
+	.byte	'P14_5',0,197,3,18
+	.byte	'P14_6',0,198,3,18
+	.byte	'P14_7',0,199,3,18
+	.byte	'P14_8',0,200,3,18
+	.byte	'P14_9',0,201,3,18
+	.byte	'P14_10',0,202,3,18
+	.byte	'P14_11',0,203,3,18
+	.byte	'P14_12',0,204,3,18
+	.byte	'P14_13',0,205,3,18
+	.byte	'P14_14',0,206,3,18
+	.byte	'P14_15',0,207,3,18
+	.byte	'P15_0',0,224,3,18
+	.byte	'P15_1',0,225,3,18
+	.byte	'P15_2',0,226,3,18
+	.byte	'P15_3',0,227,3,18
+	.byte	'P15_4',0,228,3,18
+	.byte	'P15_5',0,229,3,18
+	.byte	'P15_6',0,230,3,18
+	.byte	'P15_7',0,231,3,18
+	.byte	'P15_8',0,232,3,18
+	.byte	'P15_9',0,233,3,18
+	.byte	'P15_10',0,234,3,18
+	.byte	'P15_11',0,235,3,18
+	.byte	'P15_12',0,236,3,18
+	.byte	'P15_13',0,237,3,18
+	.byte	'P15_14',0,238,3,18
+	.byte	'P15_15',0,239,3,18
+	.byte	'P20_0',0,128,5,18
+	.byte	'P20_1',0,129,5,18
+	.byte	'P20_2',0,130,5,18
+	.byte	'P20_3',0,131,5,18
+	.byte	'P20_4',0,132,5,18
+	.byte	'P20_5',0,133,5,18
+	.byte	'P20_6',0,134,5,18
+	.byte	'P20_7',0,135,5,18
+	.byte	'P20_8',0,136,5,18
+	.byte	'P20_9',0,137,5,18
+	.byte	'P20_10',0,138,5,18
+	.byte	'P20_11',0,139,5,18
+	.byte	'P20_12',0,140,5,18
+	.byte	'P20_13',0,141,5,18
+	.byte	'P20_14',0,142,5,18
+	.byte	'P20_15',0,143,5,18
+	.byte	'P21_0',0,160,5,18
+	.byte	'P21_1',0,161,5,18
+	.byte	'P21_2',0,162,5,18
+	.byte	'P21_3',0,163,5,18
+	.byte	'P21_4',0,164,5,18
+	.byte	'P21_5',0,165,5,18
+	.byte	'P21_6',0,166,5,18
+	.byte	'P21_7',0,167,5,18
+	.byte	'P21_8',0,168,5,18
+	.byte	'P21_9',0,169,5,18
+	.byte	'P21_10',0,170,5,18
+	.byte	'P21_11',0,171,5,18
+	.byte	'P21_12',0,172,5,18
+	.byte	'P21_13',0,173,5,18
+	.byte	'P21_14',0,174,5,18
+	.byte	'P21_15',0,175,5,18
+	.byte	'P22_0',0,192,5,18
+	.byte	'P22_1',0,193,5,18
+	.byte	'P22_2',0,194,5,18
+	.byte	'P22_3',0,195,5,18
+	.byte	'P22_4',0,196,5,18
+	.byte	'P22_5',0,197,5,18
+	.byte	'P22_6',0,198,5,18
+	.byte	'P22_7',0,199,5,18
+	.byte	'P22_8',0,200,5,18
+	.byte	'P22_9',0,201,5,18
+	.byte	'P22_10',0,202,5,18
+	.byte	'P22_11',0,203,5,18
+	.byte	'P22_12',0,204,5,18
+	.byte	'P22_13',0,205,5,18
+	.byte	'P22_14',0,206,5,18
+	.byte	'P22_15',0,207,5,18
+	.byte	'P23_0',0,224,5,18
+	.byte	'P23_1',0,225,5,18
+	.byte	'P23_2',0,226,5,18
+	.byte	'P23_3',0,227,5,18
+	.byte	'P23_4',0,228,5,18
+	.byte	'P23_5',0,229,5,18
+	.byte	'P23_6',0,230,5,18
+	.byte	'P23_7',0,231,5,18
+	.byte	'P23_8',0,232,5,18
+	.byte	'P23_9',0,233,5,18
+	.byte	'P23_10',0,234,5,18
+	.byte	'P23_11',0,235,5,18
+	.byte	'P23_12',0,236,5,18
+	.byte	'P23_13',0,237,5,18
+	.byte	'P23_14',0,238,5,18
+	.byte	'P23_15',0,239,5,18
+	.byte	'P32_0',0,128,8,18
+	.byte	'P32_1',0,129,8,18
+	.byte	'P32_2',0,130,8,18
+	.byte	'P32_3',0,131,8,18
+	.byte	'P32_4',0,132,8,18
+	.byte	'P32_5',0,133,8,18
+	.byte	'P32_6',0,134,8,18
+	.byte	'P32_7',0,135,8,18
+	.byte	'P32_8',0,136,8,18
+	.byte	'P32_9',0,137,8,18
+	.byte	'P32_10',0,138,8,18
+	.byte	'P32_11',0,139,8,18
+	.byte	'P32_12',0,140,8,18
+	.byte	'P32_13',0,141,8,18
+	.byte	'P32_14',0,142,8,18
+	.byte	'P32_15',0,143,8,18
+	.byte	'P33_0',0,160,8,18
+	.byte	'P33_1',0,161,8,18
+	.byte	'P33_2',0,162,8,18
+	.byte	'P33_3',0,163,8,18
+	.byte	'P33_4',0,164,8,18
+	.byte	'P33_5',0,165,8,18
+	.byte	'P33_6',0,166,8,18
+	.byte	'P33_7',0,167,8,18
+	.byte	'P33_8',0,168,8,18
+	.byte	'P33_9',0,169,8,18
+	.byte	'P33_10',0,170,8,18
+	.byte	'P33_11',0,171,8,18
+	.byte	'P33_12',0,172,8,18
+	.byte	'P33_13',0,173,8,18
+	.byte	'P33_14',0,174,8,18
+	.byte	'P33_15',0,175,8,0,17,6,95,9,1,18
+	.byte	'GPI',0,0,18
+	.byte	'GPO',0,1,0,17,5,29,9,1,18
+	.byte	'NO_PULL',0,0,18
+	.byte	'PULLUP',0,1,18
+	.byte	'PULLDOWN',0,2,18
+	.byte	'PUSHPULL',0,3,18
+	.byte	'OPENDRAIN',0,4,0,26
+	.byte	'gpio_init',0,5,52,6,1,1,1,1,5
+	.byte	'pin',0,5,52,25
+	.word	8569
+	.byte	5
+	.byte	'dir',0,5,52,43
+	.word	10509
+	.byte	5
+	.byte	'dat',0,5,52,54
+	.word	412
+	.byte	5
+	.byte	'pinconf',0,5,52,73
+	.word	10527
+	.byte	0,26
+	.byte	'gpio_set',0,5,55,6,1,1,1,1,5
+	.byte	'pin',0,5,55,24
+	.word	8569
+	.byte	5
+	.byte	'dat',0,5,55,35
+	.word	412
+	.byte	0,27
+	.byte	'gpio_get',0,5,56,7
+	.word	412
+	.byte	1,1,1,1,5
+	.byte	'pin',0,5,56,25
+	.word	8569
+	.byte	0,26
+	.byte	'gpio_dir',0,5,57,6,1,1,1,1,5
+	.byte	'pin',0,5,57,24
+	.word	8569
+	.byte	5
+	.byte	'dir',0,5,57,42
+	.word	10509
+	.byte	5
+	.byte	'pinconf',0,5,57,61
+	.word	10527
+	.byte	0
+.L140:
+	.byte	28
+	.byte	'IIC',0,7,47,14,1,18
+	.byte	'SIMIIC',0,0,18
+	.byte	'SCCB',0,1,0
+.L146:
+	.byte	3
+	.word	412
+	.byte	7
+	.byte	'short int',0,2,5,29
+	.byte	'__wchar_t',0,8,1,1
+	.word	10822
+	.byte	29
+	.byte	'__size_t',0,8,1,1
+	.word	389
+	.byte	29
+	.byte	'__ptrdiff_t',0,8,1,1
+	.word	405
+	.byte	30,1,3
+	.word	10890
+	.byte	29
+	.byte	'__codeptr',0,8,1,1
+	.word	10892
+	.byte	29
+	.byte	'boolean',0,9,101,29
+	.word	412
+	.byte	29
+	.byte	'uint8',0,9,105,29
+	.word	412
+	.byte	29
+	.byte	'uint16',0,9,109,29
+	.word	429
+	.byte	7
+	.byte	'unsigned long int',0,4,7,29
+	.byte	'uint32',0,9,113,29
+	.word	10960
+	.byte	29
+	.byte	'uint64',0,9,118,29
+	.word	271
+	.byte	29
+	.byte	'sint16',0,9,126,29
+	.word	10822
+	.byte	7
+	.byte	'long int',0,4,5,29
+	.byte	'sint32',0,9,131,1,29
+	.word	11026
+	.byte	7
+	.byte	'long long int',0,8,5,29
+	.byte	'sint64',0,9,138,1,29
+	.word	11054
+	.byte	29
+	.byte	'float32',0,9,167,1,29
+	.word	217
+	.byte	7
+	.byte	'char',0,1,6,29
+	.byte	'int8',0,6,33,29
+	.word	11104
+	.byte	29
+	.byte	'int16',0,6,34,29
+	.word	10822
+	.byte	29
+	.byte	'int32',0,6,35,29
+	.word	11026
+	.byte	29
+	.byte	'int64',0,6,36,29
+	.word	11054
+	.byte	29
+	.byte	'PIN_enum',0,6,91,2
+	.word	8569
+	.byte	29
+	.byte	'GPIODIR_enum',0,6,99,2
+	.word	10509
+	.byte	29
+	.byte	'pvoid',0,10,57,28
+	.word	303
+	.byte	29
+	.byte	'Ifx_TickTime',0,10,79,28
+	.word	11054
+	.byte	29
+	.byte	'Ifx_P_ACCEN0_Bits',0,4,79,3
+	.word	7029
+	.byte	29
+	.byte	'Ifx_P_ACCEN1_Bits',0,4,85,3
+	.word	6942
+	.byte	29
+	.byte	'Ifx_P_ESR_Bits',0,4,107,3
+	.word	3285
+	.byte	29
+	.byte	'Ifx_P_ID_Bits',0,4,115,3
+	.word	1338
+	.byte	29
+	.byte	'Ifx_P_IN_Bits',0,4,137,1,3
+	.word	2333
+	.byte	29
+	.byte	'Ifx_P_IOCR0_Bits',0,4,150,1,3
+	.word	1466
+	.byte	29
+	.byte	'Ifx_P_IOCR12_Bits',0,4,163,1,3
+	.word	2113
+	.byte	29
+	.byte	'Ifx_P_IOCR4_Bits',0,4,176,1,3
+	.word	1681
+	.byte	29
+	.byte	'Ifx_P_IOCR8_Bits',0,4,189,1,3
+	.word	1896
+	.byte	29
+	.byte	'Ifx_P_LPCR0_Bits',0,4,197,1,3
+	.word	6301
+	.byte	29
+	.byte	'Ifx_P_LPCR1_Bits',0,4,205,1,3
+	.word	6425
+	.byte	29
+	.byte	'Ifx_P_LPCR1_P21_Bits',0,4,215,1,3
+	.word	6509
+	.byte	29
+	.byte	'Ifx_P_LPCR2_Bits',0,4,229,1,3
+	.word	6689
+	.byte	29
+	.byte	'Ifx_P_OMCR0_Bits',0,4,240,1,3
+	.word	4940
+	.byte	29
+	.byte	'Ifx_P_OMCR12_Bits',0,4,250,1,3
+	.word	5464
+	.byte	29
+	.byte	'Ifx_P_OMCR4_Bits',0,4,133,2,3
+	.word	5114
+	.byte	29
+	.byte	'Ifx_P_OMCR8_Bits',0,4,144,2,3
+	.word	5288
+	.byte	29
+	.byte	'Ifx_P_OMCR_Bits',0,4,166,2,3
+	.word	5953
+	.byte	29
+	.byte	'Ifx_P_OMR_Bits',0,4,203,2,3
+	.word	767
+	.byte	29
+	.byte	'Ifx_P_OMSR0_Bits',0,4,213,2,3
+	.word	4277
+	.byte	29
+	.byte	'Ifx_P_OMSR12_Bits',0,4,224,2,3
+	.word	4765
+	.byte	29
+	.byte	'Ifx_P_OMSR4_Bits',0,4,235,2,3
+	.word	4424
+	.byte	29
+	.byte	'Ifx_P_OMSR8_Bits',0,4,246,2,3
+	.word	4593
+	.byte	29
+	.byte	'Ifx_P_OMSR_Bits',0,4,140,3,3
+	.word	5620
+	.byte	29
+	.byte	'Ifx_P_OUT_Bits',0,4,162,3,3
+	.word	451
+	.byte	29
+	.byte	'Ifx_P_PCSR_Bits',0,4,180,3,3
+	.word	3991
+	.byte	29
+	.byte	'Ifx_P_PDISC_Bits',0,4,202,3,3
+	.word	3625
+	.byte	29
+	.byte	'Ifx_P_PDR0_Bits',0,4,223,3,3
+	.word	2656
+	.byte	29
+	.byte	'Ifx_P_PDR1_Bits',0,4,244,3,3
+	.word	2960
+	.byte	29
+	.byte	'Ifx_P_ACCEN0',0,4,129,4,3
+	.word	7556
+	.byte	29
+	.byte	'Ifx_P_ACCEN1',0,4,137,4,3
+	.word	6989
+	.byte	29
+	.byte	'Ifx_P_ESR',0,4,145,4,3
+	.word	3576
+	.byte	29
+	.byte	'Ifx_P_ID',0,4,153,4,3
+	.word	1417
+	.byte	29
+	.byte	'Ifx_P_IN',0,4,161,4,3
+	.word	2607
+	.byte	29
+	.byte	'Ifx_P_IOCR0',0,4,169,4,3
+	.word	1641
+	.byte	29
+	.byte	'Ifx_P_IOCR12',0,4,177,4,3
+	.word	2293
+	.byte	29
+	.byte	'Ifx_P_IOCR4',0,4,185,4,3
+	.word	1856
+	.byte	29
+	.byte	'Ifx_P_IOCR8',0,4,193,4,3
+	.word	2073
+	.byte	29
+	.byte	'Ifx_P_LPCR0',0,4,201,4,3
+	.word	6385
+	.byte	29
+	.byte	'Ifx_P_LPCR1',0,4,210,4,3
+	.word	6634
+	.byte	29
+	.byte	'Ifx_P_LPCR2',0,4,218,4,3
+	.word	6893
+	.byte	29
+	.byte	'Ifx_P_OMCR',0,4,226,4,3
+	.word	6261
+	.byte	29
+	.byte	'Ifx_P_OMCR0',0,4,234,4,3
+	.word	5074
+	.byte	29
+	.byte	'Ifx_P_OMCR12',0,4,242,4,3
+	.word	5580
+	.byte	29
+	.byte	'Ifx_P_OMCR4',0,4,250,4,3
+	.word	5248
+	.byte	29
+	.byte	'Ifx_P_OMCR8',0,4,130,5,3
+	.word	5424
+	.byte	29
+	.byte	'Ifx_P_OMR',0,4,138,5,3
+	.word	1298
+	.byte	29
+	.byte	'Ifx_P_OMSR',0,4,146,5,3
+	.word	5913
+	.byte	29
+	.byte	'Ifx_P_OMSR0',0,4,154,5,3
+	.word	4384
+	.byte	29
+	.byte	'Ifx_P_OMSR12',0,4,162,5,3
+	.word	4900
+	.byte	29
+	.byte	'Ifx_P_OMSR4',0,4,170,5,3
+	.word	4553
+	.byte	29
+	.byte	'Ifx_P_OMSR8',0,4,178,5,3
+	.word	4725
+	.byte	29
+	.byte	'Ifx_P_OUT',0,4,186,5,3
+	.word	727
+	.byte	29
+	.byte	'Ifx_P_PCSR',0,4,194,5,3
+	.word	4237
+	.byte	29
+	.byte	'Ifx_P_PDISC',0,4,202,5,3
+	.word	3951
+	.byte	29
+	.byte	'Ifx_P_PDR0',0,4,210,5,3
+	.word	2920
+	.byte	29
+	.byte	'Ifx_P_PDR1',0,4,218,5,3
+	.word	3236
+	.byte	16
+	.word	7596
+	.byte	29
+	.byte	'Ifx_P',0,4,139,6,3
+	.word	12558
+	.byte	17,11,254,10,9,1,18
+	.byte	'IfxScu_WDTCON1_IR_divBy16384',0,0,18
+	.byte	'IfxScu_WDTCON1_IR_divBy256',0,1,18
+	.byte	'IfxScu_WDTCON1_IR_divBy64',0,2,0,29
+	.byte	'IfxScu_WDTCON1_IR',0,11,131,11,3
+	.word	12578
+	.byte	10
+	.byte	'_Ifx_SCU_ACCEN0_Bits',0,12,45,16,4,11
+	.byte	'EN0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'EN1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'EN2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'EN3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'EN4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'EN5',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'EN6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'EN7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'EN8',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'EN9',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'EN10',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'EN11',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'EN12',0,1
+	.word	412
+	.byte	1,3,2,35,1,11
+	.byte	'EN13',0,1
+	.word	412
+	.byte	1,2,2,35,1,11
+	.byte	'EN14',0,1
+	.word	412
+	.byte	1,1,2,35,1,11
+	.byte	'EN15',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'EN16',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'EN17',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'EN18',0,1
+	.word	412
+	.byte	1,5,2,35,2,11
+	.byte	'EN19',0,1
+	.word	412
+	.byte	1,4,2,35,2,11
+	.byte	'EN20',0,1
+	.word	412
+	.byte	1,3,2,35,2,11
+	.byte	'EN21',0,1
+	.word	412
+	.byte	1,2,2,35,2,11
+	.byte	'EN22',0,1
+	.word	412
+	.byte	1,1,2,35,2,11
+	.byte	'EN23',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'EN24',0,1
+	.word	412
+	.byte	1,7,2,35,3,11
+	.byte	'EN25',0,1
+	.word	412
+	.byte	1,6,2,35,3,11
+	.byte	'EN26',0,1
+	.word	412
+	.byte	1,5,2,35,3,11
+	.byte	'EN27',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'EN28',0,1
+	.word	412
+	.byte	1,3,2,35,3,11
+	.byte	'EN29',0,1
+	.word	412
+	.byte	1,2,2,35,3,11
+	.byte	'EN30',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'EN31',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_ACCEN0_Bits',0,12,79,3
+	.word	12700
+	.byte	10
+	.byte	'_Ifx_SCU_ACCEN1_Bits',0,12,82,16,4,11
+	.byte	'reserved_0',0,4
+	.word	389
+	.byte	32,0,2,35,0,0,29
+	.byte	'Ifx_SCU_ACCEN1_Bits',0,12,85,3
+	.word	13257
+	.byte	10
+	.byte	'_Ifx_SCU_ARSTDIS_Bits',0,12,88,16,4,11
+	.byte	'STM0DIS',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'STM1DIS',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'STM2DIS',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'reserved_3',0,4
+	.word	389
+	.byte	29,0,2,35,0,0,29
+	.byte	'Ifx_SCU_ARSTDIS_Bits',0,12,94,3
+	.word	13334
+	.byte	10
+	.byte	'_Ifx_SCU_CCUCON0_Bits',0,12,97,16,4,11
+	.byte	'BAUD1DIV',0,1
+	.word	412
+	.byte	4,4,2,35,0,11
+	.byte	'BAUD2DIV',0,1
+	.word	412
+	.byte	4,0,2,35,0,11
+	.byte	'SRIDIV',0,1
+	.word	412
+	.byte	4,4,2,35,1,11
+	.byte	'LPDIV',0,1
+	.word	412
+	.byte	4,0,2,35,1,11
+	.byte	'SPBDIV',0,1
+	.word	412
+	.byte	4,4,2,35,2,11
+	.byte	'FSI2DIV',0,1
+	.word	412
+	.byte	2,2,2,35,2,11
+	.byte	'reserved_22',0,1
+	.word	412
+	.byte	2,0,2,35,2,11
+	.byte	'FSIDIV',0,1
+	.word	412
+	.byte	2,6,2,35,3,11
+	.byte	'reserved_26',0,1
+	.word	412
+	.byte	2,4,2,35,3,11
+	.byte	'CLKSEL',0,1
+	.word	412
+	.byte	2,2,2,35,3,11
+	.byte	'UP',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_CCUCON0_Bits',0,12,111,3
+	.word	13470
+	.byte	10
+	.byte	'_Ifx_SCU_CCUCON1_Bits',0,12,114,16,4,11
+	.byte	'CANDIV',0,1
+	.word	412
+	.byte	4,4,2,35,0,11
+	.byte	'ERAYDIV',0,1
+	.word	412
+	.byte	4,0,2,35,0,11
+	.byte	'STMDIV',0,1
+	.word	412
+	.byte	4,4,2,35,1,11
+	.byte	'GTMDIV',0,1
+	.word	412
+	.byte	4,0,2,35,1,11
+	.byte	'ETHDIV',0,1
+	.word	412
+	.byte	4,4,2,35,2,11
+	.byte	'ASCLINFDIV',0,1
+	.word	412
+	.byte	4,0,2,35,2,11
+	.byte	'ASCLINSDIV',0,1
+	.word	412
+	.byte	4,4,2,35,3,11
+	.byte	'INSEL',0,1
+	.word	412
+	.byte	2,2,2,35,3,11
+	.byte	'UP',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_CCUCON1_Bits',0,12,126,3
+	.word	13750
+	.byte	10
+	.byte	'_Ifx_SCU_CCUCON2_Bits',0,12,129,1,16,4,11
+	.byte	'BBBDIV',0,1
+	.word	412
+	.byte	4,4,2,35,0,11
+	.byte	'reserved_4',0,4
+	.word	389
+	.byte	26,2,2,35,0,11
+	.byte	'UP',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_CCUCON2_Bits',0,12,135,1,3
+	.word	13988
+	.byte	10
+	.byte	'_Ifx_SCU_CCUCON3_Bits',0,12,138,1,16,4,11
+	.byte	'PLLDIV',0,1
+	.word	412
+	.byte	6,2,2,35,0,11
+	.byte	'PLLSEL',0,1
+	.word	412
+	.byte	2,0,2,35,0,11
+	.byte	'PLLERAYDIV',0,1
+	.word	412
+	.byte	6,2,2,35,1,11
+	.byte	'PLLERAYSEL',0,1
+	.word	412
+	.byte	2,0,2,35,1,11
+	.byte	'SRIDIV',0,1
+	.word	412
+	.byte	6,2,2,35,2,11
+	.byte	'SRISEL',0,1
+	.word	412
+	.byte	2,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	5,3,2,35,3,11
+	.byte	'SLCK',0,1
+	.word	412
+	.byte	1,2,2,35,3,11
+	.byte	'UP',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_CCUCON3_Bits',0,12,150,1,3
+	.word	14116
+	.byte	10
+	.byte	'_Ifx_SCU_CCUCON4_Bits',0,12,153,1,16,4,11
+	.byte	'SPBDIV',0,1
+	.word	412
+	.byte	6,2,2,35,0,11
+	.byte	'SPBSEL',0,1
+	.word	412
+	.byte	2,0,2,35,0,11
+	.byte	'GTMDIV',0,1
+	.word	412
+	.byte	6,2,2,35,1,11
+	.byte	'GTMSEL',0,1
+	.word	412
+	.byte	2,0,2,35,1,11
+	.byte	'STMDIV',0,1
+	.word	412
+	.byte	6,2,2,35,2,11
+	.byte	'STMSEL',0,1
+	.word	412
+	.byte	2,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	5,3,2,35,3,11
+	.byte	'SLCK',0,1
+	.word	412
+	.byte	1,2,2,35,3,11
+	.byte	'UP',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_CCUCON4_Bits',0,12,165,1,3
+	.word	14359
+	.byte	10
+	.byte	'_Ifx_SCU_CCUCON5_Bits',0,12,168,1,16,4,11
+	.byte	'MAXDIV',0,1
+	.word	412
+	.byte	4,4,2,35,0,11
+	.byte	'reserved_4',0,4
+	.word	389
+	.byte	26,2,2,35,0,11
+	.byte	'UP',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_CCUCON5_Bits',0,12,174,1,3
+	.word	14594
+	.byte	10
+	.byte	'_Ifx_SCU_CCUCON6_Bits',0,12,177,1,16,4,11
+	.byte	'CPU0DIV',0,1
+	.word	412
+	.byte	6,2,2,35,0,11
+	.byte	'reserved_6',0,4
+	.word	389
+	.byte	26,0,2,35,0,0,29
+	.byte	'Ifx_SCU_CCUCON6_Bits',0,12,181,1,3
+	.word	14722
+	.byte	10
+	.byte	'_Ifx_SCU_CCUCON7_Bits',0,12,184,1,16,4,11
+	.byte	'CPU1DIV',0,1
+	.word	412
+	.byte	6,2,2,35,0,11
+	.byte	'reserved_6',0,4
+	.word	389
+	.byte	26,0,2,35,0,0,29
+	.byte	'Ifx_SCU_CCUCON7_Bits',0,12,188,1,3
+	.word	14822
+	.byte	10
+	.byte	'_Ifx_SCU_CHIPID_Bits',0,12,191,1,16,4,11
+	.byte	'CHREV',0,1
+	.word	412
+	.byte	6,2,2,35,0,11
+	.byte	'CHTEC',0,1
+	.word	412
+	.byte	2,0,2,35,0,11
+	.byte	'CHID',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'EEA',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'UCODE',0,1
+	.word	412
+	.byte	7,0,2,35,2,11
+	.byte	'FSIZE',0,1
+	.word	412
+	.byte	4,4,2,35,3,11
+	.byte	'SP',0,1
+	.word	412
+	.byte	2,2,2,35,3,11
+	.byte	'SEC',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'reserved_31',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_CHIPID_Bits',0,12,202,1,3
+	.word	14922
+	.byte	10
+	.byte	'_Ifx_SCU_DTSCON_Bits',0,12,205,1,16,4,11
+	.byte	'PWD',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'START',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,1
+	.word	412
+	.byte	2,4,2,35,0,11
+	.byte	'CAL',0,4
+	.word	389
+	.byte	20,8,2,35,0,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	7,1,2,35,3,11
+	.byte	'SLCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_DTSCON_Bits',0,12,213,1,3
+	.word	15130
+	.byte	10
+	.byte	'_Ifx_SCU_DTSLIM_Bits',0,12,216,1,16,4,11
+	.byte	'LOWER',0,2
+	.word	429
+	.byte	10,6,2,35,0,11
+	.byte	'reserved_10',0,1
+	.word	412
+	.byte	5,1,2,35,1,11
+	.byte	'LLU',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'UPPER',0,2
+	.word	429
+	.byte	10,6,2,35,2,11
+	.byte	'reserved_26',0,1
+	.word	412
+	.byte	4,2,2,35,3,11
+	.byte	'SLCK',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'UOF',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_DTSLIM_Bits',0,12,225,1,3
+	.word	15295
+	.byte	10
+	.byte	'_Ifx_SCU_DTSSTAT_Bits',0,12,228,1,16,4,11
+	.byte	'RESULT',0,2
+	.word	429
+	.byte	10,6,2,35,0,11
+	.byte	'reserved_10',0,1
+	.word	412
+	.byte	4,2,2,35,1,11
+	.byte	'RDY',0,1
+	.word	412
+	.byte	1,1,2,35,1,11
+	.byte	'BUSY',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_SCU_DTSSTAT_Bits',0,12,235,1,3
+	.word	15478
+	.byte	10
+	.byte	'_Ifx_SCU_EICR_Bits',0,12,238,1,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	4,4,2,35,0,11
+	.byte	'EXIS0',0,1
+	.word	412
+	.byte	3,1,2,35,0,11
+	.byte	'reserved_7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'FEN0',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'REN0',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'LDEN0',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'EIEN0',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'INP0',0,1
+	.word	412
+	.byte	3,1,2,35,1,11
+	.byte	'reserved_15',0,4
+	.word	389
+	.byte	5,12,2,35,0,11
+	.byte	'EXIS1',0,1
+	.word	412
+	.byte	3,1,2,35,2,11
+	.byte	'reserved_23',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'FEN1',0,1
+	.word	412
+	.byte	1,7,2,35,3,11
+	.byte	'REN1',0,1
+	.word	412
+	.byte	1,6,2,35,3,11
+	.byte	'LDEN1',0,1
+	.word	412
+	.byte	1,5,2,35,3,11
+	.byte	'EIEN1',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'INP1',0,1
+	.word	412
+	.byte	3,1,2,35,3,11
+	.byte	'reserved_31',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EICR_Bits',0,12,129,2,3
+	.word	15632
+	.byte	10
+	.byte	'_Ifx_SCU_EIFR_Bits',0,12,132,2,16,4,11
+	.byte	'INTF0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'INTF1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'INTF2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'INTF3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'INTF4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'INTF5',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'INTF6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'INTF7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	389
+	.byte	24,0,2,35,0,0,29
+	.byte	'Ifx_SCU_EIFR_Bits',0,12,143,2,3
+	.word	15996
+	.byte	10
+	.byte	'_Ifx_SCU_EMSR_Bits',0,12,146,2,16,4,11
+	.byte	'POL',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'MODE',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'ENON',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'PSEL',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'reserved_4',0,2
+	.word	429
+	.byte	12,0,2,35,0,11
+	.byte	'EMSF',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'SEMSF',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'reserved_18',0,1
+	.word	412
+	.byte	6,0,2,35,2,11
+	.byte	'EMSFM',0,1
+	.word	412
+	.byte	2,6,2,35,3,11
+	.byte	'SEMSFM',0,1
+	.word	412
+	.byte	2,4,2,35,3,11
+	.byte	'reserved_28',0,1
+	.word	412
+	.byte	4,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EMSR_Bits',0,12,159,2,3
+	.word	16207
+	.byte	10
+	.byte	'_Ifx_SCU_ESRCFG_Bits',0,12,162,2,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	7,1,2,35,0,11
+	.byte	'EDCON',0,2
+	.word	429
+	.byte	2,7,2,35,0,11
+	.byte	'reserved_9',0,4
+	.word	389
+	.byte	23,0,2,35,0,0,29
+	.byte	'Ifx_SCU_ESRCFG_Bits',0,12,167,2,3
+	.word	16459
+	.byte	10
+	.byte	'_Ifx_SCU_ESROCFG_Bits',0,12,170,2,16,4,11
+	.byte	'ARI',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'ARC',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,4
+	.word	389
+	.byte	30,0,2,35,0,0,29
+	.byte	'Ifx_SCU_ESROCFG_Bits',0,12,175,2,3
+	.word	16577
+	.byte	10
+	.byte	'_Ifx_SCU_EVR13CON_Bits',0,12,178,2,16,4,11
+	.byte	'reserved_0',0,4
+	.word	389
+	.byte	28,4,2,35,0,11
+	.byte	'EVR13OFF',0,1
+	.word	412
+	.byte	1,3,2,35,3,11
+	.byte	'BPEVR13OFF',0,1
+	.word	412
+	.byte	1,2,2,35,3,11
+	.byte	'reserved_30',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVR13CON_Bits',0,12,185,2,3
+	.word	16688
+	.byte	10
+	.byte	'_Ifx_SCU_EVR33CON_Bits',0,12,188,2,16,4,11
+	.byte	'reserved_0',0,4
+	.word	389
+	.byte	28,4,2,35,0,11
+	.byte	'EVR33OFF',0,1
+	.word	412
+	.byte	1,3,2,35,3,11
+	.byte	'BPEVR33OFF',0,1
+	.word	412
+	.byte	1,2,2,35,3,11
+	.byte	'reserved_30',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVR33CON_Bits',0,12,195,2,3
+	.word	16851
+	.byte	10
+	.byte	'_Ifx_SCU_EVRADCSTAT_Bits',0,12,198,2,16,4,11
+	.byte	'ADC13V',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'ADC33V',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'ADCSWDV',0,1
+	.word	412
+	.byte	8,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	7,1,2,35,3,11
+	.byte	'VAL',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRADCSTAT_Bits',0,12,205,2,3
+	.word	17014
+	.byte	10
+	.byte	'_Ifx_SCU_EVRDVSTAT_Bits',0,12,208,2,16,4,11
+	.byte	'DVS13TRIM',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'DVS33TRIM',0,1
+	.word	412
+	.byte	8,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	7,1,2,35,3,11
+	.byte	'VAL',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRDVSTAT_Bits',0,12,215,2,3
+	.word	17172
+	.byte	10
+	.byte	'_Ifx_SCU_EVRMONCTRL_Bits',0,12,218,2,16,4,11
+	.byte	'EVR13OVMOD',0,1
+	.word	412
+	.byte	2,6,2,35,0,11
+	.byte	'reserved_2',0,1
+	.word	412
+	.byte	2,4,2,35,0,11
+	.byte	'EVR13UVMOD',0,1
+	.word	412
+	.byte	2,2,2,35,0,11
+	.byte	'reserved_6',0,1
+	.word	412
+	.byte	2,0,2,35,0,11
+	.byte	'EVR33OVMOD',0,1
+	.word	412
+	.byte	2,6,2,35,1,11
+	.byte	'reserved_10',0,1
+	.word	412
+	.byte	2,4,2,35,1,11
+	.byte	'EVR33UVMOD',0,1
+	.word	412
+	.byte	2,2,2,35,1,11
+	.byte	'reserved_14',0,1
+	.word	412
+	.byte	2,0,2,35,1,11
+	.byte	'SWDOVMOD',0,1
+	.word	412
+	.byte	2,6,2,35,2,11
+	.byte	'reserved_18',0,1
+	.word	412
+	.byte	2,4,2,35,2,11
+	.byte	'SWDUVMOD',0,1
+	.word	412
+	.byte	2,2,2,35,2,11
+	.byte	'reserved_22',0,2
+	.word	429
+	.byte	10,0,2,35,2,0,29
+	.byte	'Ifx_SCU_EVRMONCTRL_Bits',0,12,232,2,3
+	.word	17337
+	.byte	10
+	.byte	'_Ifx_SCU_EVROSCCTRL_Bits',0,12,235,2,16,4,11
+	.byte	'OSCTRIM',0,2
+	.word	429
+	.byte	10,6,2,35,0,11
+	.byte	'OSCPTAT',0,1
+	.word	412
+	.byte	6,0,2,35,1,11
+	.byte	'OSCANASEL',0,1
+	.word	412
+	.byte	4,4,2,35,2,11
+	.byte	'HPBGTRIM',0,2
+	.word	429
+	.byte	7,5,2,35,2,11
+	.byte	'HPBGCLKEN',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'OSC3V3',0,1
+	.word	412
+	.byte	1,3,2,35,3,11
+	.byte	'reserved_29',0,1
+	.word	412
+	.byte	2,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVROSCCTRL_Bits',0,12,245,2,3
+	.word	17666
+	.byte	10
+	.byte	'_Ifx_SCU_EVROVMON_Bits',0,12,248,2,16,4,11
+	.byte	'EVR13OVVAL',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'EVR33OVVAL',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'SWDOVVAL',0,1
+	.word	412
+	.byte	8,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	7,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVROVMON_Bits',0,12,255,2,3
+	.word	17887
+	.byte	10
+	.byte	'_Ifx_SCU_EVRRSTCON_Bits',0,12,130,3,16,4,11
+	.byte	'RST13TRIM',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	389
+	.byte	16,8,2,35,0,11
+	.byte	'RST13OFF',0,1
+	.word	412
+	.byte	1,7,2,35,3,11
+	.byte	'BPRST13OFF',0,1
+	.word	412
+	.byte	1,6,2,35,3,11
+	.byte	'RST33OFF',0,1
+	.word	412
+	.byte	1,5,2,35,3,11
+	.byte	'BPRST33OFF',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'RSTSWDOFF',0,1
+	.word	412
+	.byte	1,3,2,35,3,11
+	.byte	'BPRSTSWDOFF',0,1
+	.word	412
+	.byte	1,2,2,35,3,11
+	.byte	'reserved_30',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRRSTCON_Bits',0,12,142,3,3
+	.word	18050
+	.byte	10
+	.byte	'_Ifx_SCU_EVRSDCOEFF1_Bits',0,12,145,3,16,4,11
+	.byte	'SD5P',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'SD5I',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'SD5D',0,1
+	.word	412
+	.byte	8,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	7,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRSDCOEFF1_Bits',0,12,152,3,3
+	.word	18322
+	.byte	10
+	.byte	'_Ifx_SCU_EVRSDCOEFF2_Bits',0,12,155,3,16,4,11
+	.byte	'SD33P',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'SD33I',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'SD33D',0,1
+	.word	412
+	.byte	8,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	7,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRSDCOEFF2_Bits',0,12,162,3,3
+	.word	18475
+	.byte	10
+	.byte	'_Ifx_SCU_EVRSDCOEFF3_Bits',0,12,165,3,16,4,11
+	.byte	'CT5REG0',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'CT5REG1',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'CT5REG2',0,1
+	.word	412
+	.byte	8,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	7,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRSDCOEFF3_Bits',0,12,172,3,3
+	.word	18631
+	.byte	10
+	.byte	'_Ifx_SCU_EVRSDCOEFF4_Bits',0,12,175,3,16,4,11
+	.byte	'CT5REG3',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'CT5REG4',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	15,1,2,35,2,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRSDCOEFF4_Bits',0,12,181,3,3
+	.word	18793
+	.byte	10
+	.byte	'_Ifx_SCU_EVRSDCOEFF5_Bits',0,12,184,3,16,4,11
+	.byte	'CT33REG0',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'CT33REG1',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'CT33REG2',0,1
+	.word	412
+	.byte	8,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	7,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRSDCOEFF5_Bits',0,12,191,3,3
+	.word	18936
+	.byte	10
+	.byte	'_Ifx_SCU_EVRSDCOEFF6_Bits',0,12,194,3,16,4,11
+	.byte	'CT33REG3',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'CT33REG4',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	15,1,2,35,2,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRSDCOEFF6_Bits',0,12,200,3,3
+	.word	19101
+	.byte	10
+	.byte	'_Ifx_SCU_EVRSDCTRL1_Bits',0,12,203,3,16,4,11
+	.byte	'SDFREQSPRD',0,2
+	.word	429
+	.byte	16,0,2,35,0,11
+	.byte	'SDFREQ',0,1
+	.word	412
+	.byte	8,0,2,35,2,11
+	.byte	'SDSTEP',0,1
+	.word	412
+	.byte	4,4,2,35,3,11
+	.byte	'reserved_28',0,1
+	.word	412
+	.byte	2,2,2,35,3,11
+	.byte	'SDSAMPLE',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRSDCTRL1_Bits',0,12,211,3,3
+	.word	19246
+	.byte	10
+	.byte	'_Ifx_SCU_EVRSDCTRL2_Bits',0,12,214,3,16,4,11
+	.byte	'DRVP',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'SDMINMAXDC',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'DRVN',0,1
+	.word	412
+	.byte	8,0,2,35,2,11
+	.byte	'SDLUT',0,1
+	.word	412
+	.byte	6,2,2,35,3,11
+	.byte	'reserved_30',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRSDCTRL2_Bits',0,12,222,3,3
+	.word	19427
+	.byte	10
+	.byte	'_Ifx_SCU_EVRSDCTRL3_Bits',0,12,225,3,16,4,11
+	.byte	'SDPWMPRE',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'SDPID',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'SDVOKLVL',0,1
+	.word	412
+	.byte	8,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	7,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRSDCTRL3_Bits',0,12,232,3,3
+	.word	19601
+	.byte	10
+	.byte	'_Ifx_SCU_EVRSDCTRL4_Bits',0,12,235,3,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'SYNCDIV',0,1
+	.word	412
+	.byte	3,5,2,35,1,11
+	.byte	'reserved_11',0,4
+	.word	389
+	.byte	20,1,2,35,0,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRSDCTRL4_Bits',0,12,241,3,3
+	.word	19761
+	.byte	10
+	.byte	'_Ifx_SCU_EVRSTAT_Bits',0,12,244,3,16,4,11
+	.byte	'EVR13',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'OV13',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'EVR33',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'OV33',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'OVSWD',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'UV13',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'UV33',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'UVSWD',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'EXTPASS13',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'EXTPASS33',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'BGPROK',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'reserved_11',0,4
+	.word	389
+	.byte	21,0,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRSTAT_Bits',0,12,130,4,3
+	.word	19905
+	.byte	10
+	.byte	'_Ifx_SCU_EVRTRIM_Bits',0,12,133,4,16,4,11
+	.byte	'EVR13TRIM',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'SDVOUTSEL',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	15,1,2,35,2,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRTRIM_Bits',0,12,139,4,3
+	.word	20179
+	.byte	10
+	.byte	'_Ifx_SCU_EVRUVMON_Bits',0,12,142,4,16,4,11
+	.byte	'EVR13UVVAL',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'EVR33UVVAL',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'SWDUVVAL',0,1
+	.word	412
+	.byte	8,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	7,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EVRUVMON_Bits',0,12,149,4,3
+	.word	20318
+	.byte	10
+	.byte	'_Ifx_SCU_EXTCON_Bits',0,12,152,4,16,4,11
+	.byte	'EN0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'reserved_1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'SEL0',0,1
+	.word	412
+	.byte	4,2,2,35,0,11
+	.byte	'reserved_6',0,2
+	.word	429
+	.byte	10,0,2,35,0,11
+	.byte	'EN1',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'NSEL',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'SEL1',0,1
+	.word	412
+	.byte	4,2,2,35,2,11
+	.byte	'reserved_22',0,1
+	.word	412
+	.byte	2,0,2,35,2,11
+	.byte	'DIV1',0,1
+	.word	412
+	.byte	8,0,2,35,3,0,29
+	.byte	'Ifx_SCU_EXTCON_Bits',0,12,163,4,3
+	.word	20481
+	.byte	10
+	.byte	'_Ifx_SCU_FDR_Bits',0,12,166,4,16,4,11
+	.byte	'STEP',0,2
+	.word	429
+	.byte	10,6,2,35,0,11
+	.byte	'reserved_10',0,1
+	.word	412
+	.byte	4,2,2,35,1,11
+	.byte	'DM',0,1
+	.word	412
+	.byte	2,0,2,35,1,11
+	.byte	'RESULT',0,2
+	.word	429
+	.byte	10,6,2,35,2,11
+	.byte	'reserved_26',0,1
+	.word	412
+	.byte	5,1,2,35,3,11
+	.byte	'DISCLK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_FDR_Bits',0,12,174,4,3
+	.word	20699
+	.byte	10
+	.byte	'_Ifx_SCU_FMR_Bits',0,12,177,4,16,4,11
+	.byte	'FS0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'FS1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'FS2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'FS3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'FS4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'FS5',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'FS6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'FS7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'FC0',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'FC1',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'FC2',0,1
+	.word	412
+	.byte	1,5,2,35,2,11
+	.byte	'FC3',0,1
+	.word	412
+	.byte	1,4,2,35,2,11
+	.byte	'FC4',0,1
+	.word	412
+	.byte	1,3,2,35,2,11
+	.byte	'FC5',0,1
+	.word	412
+	.byte	1,2,2,35,2,11
+	.byte	'FC6',0,1
+	.word	412
+	.byte	1,1,2,35,2,11
+	.byte	'FC7',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	8,0,2,35,3,0,29
+	.byte	'Ifx_SCU_FMR_Bits',0,12,197,4,3
+	.word	20862
+	.byte	10
+	.byte	'_Ifx_SCU_ID_Bits',0,12,200,4,16,4,11
+	.byte	'MODREV',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'MODTYPE',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'MODNUMBER',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_SCU_ID_Bits',0,12,205,4,3
+	.word	21198
+	.byte	10
+	.byte	'_Ifx_SCU_IGCR_Bits',0,12,208,4,16,4,11
+	.byte	'IPEN00',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'IPEN01',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'IPEN02',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'IPEN03',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'IPEN04',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'IPEN05',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'IPEN06',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'IPEN07',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	412
+	.byte	5,3,2,35,1,11
+	.byte	'GEEN0',0,1
+	.word	412
+	.byte	1,2,2,35,1,11
+	.byte	'IGP0',0,1
+	.word	412
+	.byte	2,0,2,35,1,11
+	.byte	'IPEN10',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'IPEN11',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'IPEN12',0,1
+	.word	412
+	.byte	1,5,2,35,2,11
+	.byte	'IPEN13',0,1
+	.word	412
+	.byte	1,4,2,35,2,11
+	.byte	'IPEN14',0,1
+	.word	412
+	.byte	1,3,2,35,2,11
+	.byte	'IPEN15',0,1
+	.word	412
+	.byte	1,2,2,35,2,11
+	.byte	'IPEN16',0,1
+	.word	412
+	.byte	1,1,2,35,2,11
+	.byte	'IPEN17',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	5,3,2,35,3,11
+	.byte	'GEEN1',0,1
+	.word	412
+	.byte	1,2,2,35,3,11
+	.byte	'IGP1',0,1
+	.word	412
+	.byte	2,0,2,35,3,0,29
+	.byte	'Ifx_SCU_IGCR_Bits',0,12,232,4,3
+	.word	21305
+	.byte	10
+	.byte	'_Ifx_SCU_IN_Bits',0,12,235,4,16,4,11
+	.byte	'P0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'P1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,4
+	.word	389
+	.byte	30,0,2,35,0,0,29
+	.byte	'Ifx_SCU_IN_Bits',0,12,240,4,3
+	.word	21757
+	.byte	10
+	.byte	'_Ifx_SCU_IOCR_Bits',0,12,243,4,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	4,4,2,35,0,11
+	.byte	'PC0',0,1
+	.word	412
+	.byte	4,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	412
+	.byte	4,4,2,35,1,11
+	.byte	'PC1',0,1
+	.word	412
+	.byte	4,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_SCU_IOCR_Bits',0,12,250,4,3
+	.word	21856
+	.byte	10
+	.byte	'_Ifx_SCU_LBISTCTRL0_Bits',0,12,253,4,16,4,11
+	.byte	'LBISTREQ',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'LBISTREQP',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'PATTERNS',0,2
+	.word	429
+	.byte	14,0,2,35,0,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_SCU_LBISTCTRL0_Bits',0,12,131,5,3
+	.word	22006
+	.byte	10
+	.byte	'_Ifx_SCU_LBISTCTRL1_Bits',0,12,134,5,16,4,11
+	.byte	'SEED',0,4
+	.word	389
+	.byte	23,9,2,35,0,11
+	.byte	'reserved_23',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'SPLITSH',0,1
+	.word	412
+	.byte	3,5,2,35,3,11
+	.byte	'BODY',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'LBISTFREQU',0,1
+	.word	412
+	.byte	4,0,2,35,3,0,29
+	.byte	'Ifx_SCU_LBISTCTRL1_Bits',0,12,141,5,3
+	.word	22155
+	.byte	10
+	.byte	'_Ifx_SCU_LBISTCTRL2_Bits',0,12,144,5,16,4,11
+	.byte	'SIGNATURE',0,4
+	.word	389
+	.byte	24,8,2,35,0,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	7,1,2,35,3,11
+	.byte	'LBISTDONE',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_LBISTCTRL2_Bits',0,12,149,5,3
+	.word	22316
+	.byte	10
+	.byte	'_Ifx_SCU_LCLCON_Bits',0,12,152,5,16,4,11
+	.byte	'reserved_0',0,2
+	.word	429
+	.byte	16,0,2,35,0,11
+	.byte	'LS',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'reserved_17',0,2
+	.word	429
+	.byte	14,1,2,35,2,11
+	.byte	'LSEN',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_LCLCON_Bits',0,12,158,5,3
+	.word	22446
+	.byte	10
+	.byte	'_Ifx_SCU_LCLTEST_Bits',0,12,161,5,16,4,11
+	.byte	'LCLT0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'LCLT1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,4
+	.word	389
+	.byte	30,0,2,35,0,0,29
+	.byte	'Ifx_SCU_LCLTEST_Bits',0,12,166,5,3
+	.word	22578
+	.byte	10
+	.byte	'_Ifx_SCU_MANID_Bits',0,12,169,5,16,4,11
+	.byte	'DEPT',0,1
+	.word	412
+	.byte	5,3,2,35,0,11
+	.byte	'MANUF',0,2
+	.word	429
+	.byte	11,0,2,35,0,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_SCU_MANID_Bits',0,12,174,5,3
+	.word	22693
+	.byte	10
+	.byte	'_Ifx_SCU_OMR_Bits',0,12,177,5,16,4,11
+	.byte	'PS0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'PS1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,2
+	.word	429
+	.byte	14,0,2,35,0,11
+	.byte	'PCL0',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'PCL1',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'reserved_18',0,2
+	.word	429
+	.byte	14,0,2,35,2,0,29
+	.byte	'Ifx_SCU_OMR_Bits',0,12,185,5,3
+	.word	22804
+	.byte	10
+	.byte	'_Ifx_SCU_OSCCON_Bits',0,12,188,5,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'PLLLV',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'OSCRES',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'GAINSEL',0,1
+	.word	412
+	.byte	2,3,2,35,0,11
+	.byte	'MODE',0,1
+	.word	412
+	.byte	2,1,2,35,0,11
+	.byte	'SHBY',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'PLLHV',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'reserved_9',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'X1D',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'X1DEN',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'reserved_12',0,1
+	.word	412
+	.byte	4,0,2,35,1,11
+	.byte	'OSCVAL',0,1
+	.word	412
+	.byte	5,3,2,35,2,11
+	.byte	'reserved_21',0,1
+	.word	412
+	.byte	2,1,2,35,2,11
+	.byte	'APREN',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'CAP0EN',0,1
+	.word	412
+	.byte	1,7,2,35,3,11
+	.byte	'CAP1EN',0,1
+	.word	412
+	.byte	1,6,2,35,3,11
+	.byte	'CAP2EN',0,1
+	.word	412
+	.byte	1,5,2,35,3,11
+	.byte	'CAP3EN',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'reserved_28',0,1
+	.word	412
+	.byte	4,0,2,35,3,0,29
+	.byte	'Ifx_SCU_OSCCON_Bits',0,12,209,5,3
+	.word	22962
+	.byte	10
+	.byte	'_Ifx_SCU_OUT_Bits',0,12,212,5,16,4,11
+	.byte	'P0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'P1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,4
+	.word	389
+	.byte	30,0,2,35,0,0,29
+	.byte	'Ifx_SCU_OUT_Bits',0,12,217,5,3
+	.word	23374
+	.byte	10
+	.byte	'_Ifx_SCU_OVCCON_Bits',0,12,220,5,16,4,11
+	.byte	'CSEL0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'CSEL1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'CSEL2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'reserved_3',0,2
+	.word	429
+	.byte	13,0,2,35,0,11
+	.byte	'OVSTRT',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'OVSTP',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'DCINVAL',0,1
+	.word	412
+	.byte	1,5,2,35,2,11
+	.byte	'reserved_19',0,1
+	.word	412
+	.byte	5,0,2,35,2,11
+	.byte	'OVCONF',0,1
+	.word	412
+	.byte	1,7,2,35,3,11
+	.byte	'POVCONF',0,1
+	.word	412
+	.byte	1,6,2,35,3,11
+	.byte	'reserved_26',0,1
+	.word	412
+	.byte	6,0,2,35,3,0,29
+	.byte	'Ifx_SCU_OVCCON_Bits',0,12,233,5,3
+	.word	23475
+	.byte	10
+	.byte	'_Ifx_SCU_OVCENABLE_Bits',0,12,236,5,16,4,11
+	.byte	'OVEN0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'OVEN1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'OVEN2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'reserved_3',0,4
+	.word	389
+	.byte	29,0,2,35,0,0,29
+	.byte	'Ifx_SCU_OVCENABLE_Bits',0,12,242,5,3
+	.word	23742
+	.byte	10
+	.byte	'_Ifx_SCU_PDISC_Bits',0,12,245,5,16,4,11
+	.byte	'PDIS0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'PDIS1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,4
+	.word	389
+	.byte	30,0,2,35,0,0,29
+	.byte	'Ifx_SCU_PDISC_Bits',0,12,250,5,3
+	.word	23878
+	.byte	10
+	.byte	'_Ifx_SCU_PDR_Bits',0,12,253,5,16,4,11
+	.byte	'PD0',0,1
+	.word	412
+	.byte	3,5,2,35,0,11
+	.byte	'PL0',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'PD1',0,1
+	.word	412
+	.byte	3,1,2,35,0,11
+	.byte	'PL1',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	389
+	.byte	24,0,2,35,0,0,29
+	.byte	'Ifx_SCU_PDR_Bits',0,12,132,6,3
+	.word	23989
+	.byte	10
+	.byte	'_Ifx_SCU_PDRR_Bits',0,12,135,6,16,4,11
+	.byte	'PDR0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'PDR1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'PDR2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'PDR3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'PDR4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'PDR5',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'PDR6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'PDR7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	389
+	.byte	24,0,2,35,0,0,29
+	.byte	'Ifx_SCU_PDRR_Bits',0,12,146,6,3
+	.word	24122
+	.byte	10
+	.byte	'_Ifx_SCU_PLLCON0_Bits',0,12,149,6,16,4,11
+	.byte	'VCOBYP',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'VCOPWD',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'MODEN',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'reserved_3',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'SETFINDIS',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'CLRFINDIS',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'OSCDISCDIS',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'reserved_7',0,2
+	.word	429
+	.byte	2,7,2,35,0,11
+	.byte	'NDIV',0,1
+	.word	412
+	.byte	7,0,2,35,1,11
+	.byte	'PLLPWD',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'reserved_17',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'RESLD',0,1
+	.word	412
+	.byte	1,5,2,35,2,11
+	.byte	'reserved_19',0,1
+	.word	412
+	.byte	5,0,2,35,2,11
+	.byte	'PDIV',0,1
+	.word	412
+	.byte	4,4,2,35,3,11
+	.byte	'reserved_28',0,1
+	.word	412
+	.byte	4,0,2,35,3,0,29
+	.byte	'Ifx_SCU_PLLCON0_Bits',0,12,166,6,3
+	.word	24325
+	.byte	10
+	.byte	'_Ifx_SCU_PLLCON1_Bits',0,12,169,6,16,4,11
+	.byte	'K2DIV',0,1
+	.word	412
+	.byte	7,1,2,35,0,11
+	.byte	'reserved_7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'K3DIV',0,1
+	.word	412
+	.byte	7,1,2,35,1,11
+	.byte	'reserved_15',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'K1DIV',0,1
+	.word	412
+	.byte	7,1,2,35,2,11
+	.byte	'reserved_23',0,2
+	.word	429
+	.byte	9,0,2,35,2,0,29
+	.byte	'Ifx_SCU_PLLCON1_Bits',0,12,177,6,3
+	.word	24681
+	.byte	10
+	.byte	'_Ifx_SCU_PLLCON2_Bits',0,12,180,6,16,4,11
+	.byte	'MODCFG',0,2
+	.word	429
+	.byte	16,0,2,35,0,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_SCU_PLLCON2_Bits',0,12,184,6,3
+	.word	24859
+	.byte	10
+	.byte	'_Ifx_SCU_PLLERAYCON0_Bits',0,12,187,6,16,4,11
+	.byte	'VCOBYP',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'VCOPWD',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,1
+	.word	412
+	.byte	2,4,2,35,0,11
+	.byte	'SETFINDIS',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'CLRFINDIS',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'OSCDISCDIS',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'reserved_7',0,2
+	.word	429
+	.byte	2,7,2,35,0,11
+	.byte	'NDIV',0,1
+	.word	412
+	.byte	5,2,2,35,1,11
+	.byte	'reserved_14',0,1
+	.word	412
+	.byte	2,0,2,35,1,11
+	.byte	'PLLPWD',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'reserved_17',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'RESLD',0,1
+	.word	412
+	.byte	1,5,2,35,2,11
+	.byte	'reserved_19',0,1
+	.word	412
+	.byte	5,0,2,35,2,11
+	.byte	'PDIV',0,1
+	.word	412
+	.byte	4,4,2,35,3,11
+	.byte	'reserved_28',0,1
+	.word	412
+	.byte	4,0,2,35,3,0,29
+	.byte	'Ifx_SCU_PLLERAYCON0_Bits',0,12,204,6,3
+	.word	24959
+	.byte	10
+	.byte	'_Ifx_SCU_PLLERAYCON1_Bits',0,12,207,6,16,4,11
+	.byte	'K2DIV',0,1
+	.word	412
+	.byte	7,1,2,35,0,11
+	.byte	'reserved_7',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'K3DIV',0,1
+	.word	412
+	.byte	4,4,2,35,1,11
+	.byte	'reserved_12',0,1
+	.word	412
+	.byte	4,0,2,35,1,11
+	.byte	'K1DIV',0,1
+	.word	412
+	.byte	7,1,2,35,2,11
+	.byte	'reserved_23',0,2
+	.word	429
+	.byte	9,0,2,35,2,0,29
+	.byte	'Ifx_SCU_PLLERAYCON1_Bits',0,12,215,6,3
+	.word	25329
+	.byte	10
+	.byte	'_Ifx_SCU_PLLERAYSTAT_Bits',0,12,218,6,16,4,11
+	.byte	'VCOBYST',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'PWDSTAT',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'VCOLOCK',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'FINDIS',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'K1RDY',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'K2RDY',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'reserved_6',0,4
+	.word	389
+	.byte	26,0,2,35,0,0,29
+	.byte	'Ifx_SCU_PLLERAYSTAT_Bits',0,12,227,6,3
+	.word	25515
+	.byte	10
+	.byte	'_Ifx_SCU_PLLSTAT_Bits',0,12,230,6,16,4,11
+	.byte	'VCOBYST',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'reserved_1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'VCOLOCK',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'FINDIS',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'K1RDY',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'K2RDY',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'reserved_6',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'MODRUN',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	389
+	.byte	24,0,2,35,0,0,29
+	.byte	'Ifx_SCU_PLLSTAT_Bits',0,12,241,6,3
+	.word	25713
+	.byte	10
+	.byte	'_Ifx_SCU_PMCSR_Bits',0,12,244,6,16,4,11
+	.byte	'REQSLP',0,1
+	.word	412
+	.byte	2,6,2,35,0,11
+	.byte	'SMUSLP',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'reserved_3',0,1
+	.word	412
+	.byte	5,0,2,35,0,11
+	.byte	'PMST',0,1
+	.word	412
+	.byte	3,5,2,35,1,11
+	.byte	'reserved_11',0,4
+	.word	389
+	.byte	21,0,2,35,0,0,29
+	.byte	'Ifx_SCU_PMCSR_Bits',0,12,251,6,3
+	.word	25946
+	.byte	10
+	.byte	'_Ifx_SCU_PMSWCR0_Bits',0,12,254,6,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'ESR1WKEN',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'PINAWKEN',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'PINBWKEN',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'ESR0DFEN',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'ESR0EDCON',0,1
+	.word	412
+	.byte	2,1,2,35,0,11
+	.byte	'ESR1DFEN',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'ESR1EDCON',0,1
+	.word	412
+	.byte	2,6,2,35,1,11
+	.byte	'PINADFEN',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'PINAEDCON',0,1
+	.word	412
+	.byte	2,3,2,35,1,11
+	.byte	'PINBDFEN',0,1
+	.word	412
+	.byte	1,2,2,35,1,11
+	.byte	'PINBEDCON',0,1
+	.word	412
+	.byte	2,0,2,35,1,11
+	.byte	'SCREN',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'STBYRAMSEL',0,1
+	.word	412
+	.byte	2,5,2,35,2,11
+	.byte	'SCRCLKSEL',0,1
+	.word	412
+	.byte	1,4,2,35,2,11
+	.byte	'SCRWKEN',0,1
+	.word	412
+	.byte	1,3,2,35,2,11
+	.byte	'TRISTEN',0,1
+	.word	412
+	.byte	1,2,2,35,2,11
+	.byte	'TRISTREQ',0,1
+	.word	412
+	.byte	1,1,2,35,2,11
+	.byte	'PORSTDF',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'reserved_24',0,1
+	.word	412
+	.byte	1,7,2,35,3,11
+	.byte	'DCDCSYNC',0,1
+	.word	412
+	.byte	1,6,2,35,3,11
+	.byte	'reserved_26',0,1
+	.word	412
+	.byte	3,3,2,35,3,11
+	.byte	'ESR0TRIST',0,1
+	.word	412
+	.byte	1,2,2,35,3,11
+	.byte	'reserved_30',0,1
+	.word	412
+	.byte	1,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_PMSWCR0_Bits',0,12,153,7,3
+	.word	26098
+	.byte	10
+	.byte	'_Ifx_SCU_PMSWCR1_Bits',0,12,156,7,16,4,11
+	.byte	'SCRSTEN',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'SCRSTREQ',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,1
+	.word	412
+	.byte	6,0,2,35,0,11
+	.byte	'CPUIDLSEL',0,1
+	.word	412
+	.byte	3,5,2,35,1,11
+	.byte	'reserved_11',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'IRADIS',0,1
+	.word	412
+	.byte	1,3,2,35,1,11
+	.byte	'reserved_13',0,1
+	.word	412
+	.byte	3,0,2,35,1,11
+	.byte	'SCRCFG',0,1
+	.word	412
+	.byte	8,0,2,35,2,11
+	.byte	'CPUSEL',0,1
+	.word	412
+	.byte	3,5,2,35,3,11
+	.byte	'STBYEVEN',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'STBYEV',0,1
+	.word	412
+	.byte	3,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_PMSWCR1_Bits',0,12,170,7,3
+	.word	26665
+	.byte	10
+	.byte	'_Ifx_SCU_PMSWCR2_Bits',0,12,173,7,16,4,11
+	.byte	'SCRINT',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'BUSY',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'SCRECC',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'SCRWDT',0,1
+	.word	412
+	.byte	1,5,2,35,1,11
+	.byte	'SCRRST',0,1
+	.word	412
+	.byte	1,4,2,35,1,11
+	.byte	'reserved_12',0,1
+	.word	412
+	.byte	4,0,2,35,1,11
+	.byte	'TCINT',0,1
+	.word	412
+	.byte	8,0,2,35,2,11
+	.byte	'TCINTREQ',0,1
+	.word	412
+	.byte	1,7,2,35,3,11
+	.byte	'SMURST',0,1
+	.word	412
+	.byte	1,6,2,35,3,11
+	.byte	'RST',0,1
+	.word	412
+	.byte	1,5,2,35,3,11
+	.byte	'reserved_27',0,1
+	.word	412
+	.byte	4,1,2,35,3,11
+	.byte	'LCK',0,1
+	.word	412
+	.byte	1,0,2,35,3,0,29
+	.byte	'Ifx_SCU_PMSWCR2_Bits',0,12,187,7,3
+	.word	26959
+	.byte	10
+	.byte	'_Ifx_SCU_PMSWSTAT_Bits',0,12,190,7,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	2,6,2,35,0,11
+	.byte	'ESR1WKP',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'ESR1OVRUN',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'PINAWKP',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'PINAOVRUN',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'PINBWKP',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'PINBOVRUN',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'PORSTDF',0,1
+	.word	412
+	.byte	1,6,2,35,1,11
+	.byte	'HWCFGEVR',0,1
+	.word	412
+	.byte	3,3,2,35,1,11
+	.byte	'STBYRAM',0,1
+	.word	412
+	.byte	2,1,2,35,1,11
+	.byte	'TRIST',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'SCRST',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'SCRWKP',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'SCR',0,1
+	.word	412
+	.byte	1,5,2,35,2,11
+	.byte	'SCRWKEN',0,1
+	.word	412
+	.byte	1,4,2,35,2,11
+	.byte	'ESR1WKEN',0,1
+	.word	412
+	.byte	1,3,2,35,2,11
+	.byte	'PINAWKEN',0,1
+	.word	412
+	.byte	1,2,2,35,2,11
+	.byte	'PINBWKEN',0,1
+	.word	412
+	.byte	1,1,2,35,2,11
+	.byte	'reserved_23',0,2
+	.word	429
+	.byte	4,5,2,35,2,11
+	.byte	'ESR0TRIST',0,1
+	.word	412
+	.byte	1,4,2,35,3,11
+	.byte	'reserved_28',0,1
+	.word	412
+	.byte	4,0,2,35,3,0,29
+	.byte	'Ifx_SCU_PMSWSTAT_Bits',0,12,214,7,3
+	.word	27237
+	.byte	10
+	.byte	'_Ifx_SCU_PMSWSTATCLR_Bits',0,12,217,7,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	2,6,2,35,0,11
+	.byte	'ESR1WKPCLR',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'ESR1OVRUNCLR',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'PINAWKPCLR',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'PINAOVRUNCLR',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'PINBWKPCLR',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'PINBOVRUNCLR',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'SCRSTCLR',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'SCRWKPCLR',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'reserved_18',0,2
+	.word	429
+	.byte	14,0,2,35,2,0,29
+	.byte	'Ifx_SCU_PMSWSTATCLR_Bits',0,12,230,7,3
+	.word	27733
+	.byte	10
+	.byte	'_Ifx_SCU_RSTCON2_Bits',0,12,233,7,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'CLRC',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,2
+	.word	429
+	.byte	10,4,2,35,0,11
+	.byte	'CSS0',0,1
+	.word	412
+	.byte	1,3,2,35,1,11
+	.byte	'CSS1',0,1
+	.word	412
+	.byte	1,2,2,35,1,11
+	.byte	'CSS2',0,1
+	.word	412
+	.byte	1,1,2,35,1,11
+	.byte	'reserved_15',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'USRINFO',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_SCU_RSTCON2_Bits',0,12,243,7,3
+	.word	28046
+	.byte	10
+	.byte	'_Ifx_SCU_RSTCON_Bits',0,12,246,7,16,4,11
+	.byte	'ESR0',0,1
+	.word	412
+	.byte	2,6,2,35,0,11
+	.byte	'ESR1',0,1
+	.word	412
+	.byte	2,4,2,35,0,11
+	.byte	'reserved_4',0,1
+	.word	412
+	.byte	2,2,2,35,0,11
+	.byte	'SMU',0,1
+	.word	412
+	.byte	2,0,2,35,0,11
+	.byte	'SW',0,1
+	.word	412
+	.byte	2,6,2,35,1,11
+	.byte	'STM0',0,1
+	.word	412
+	.byte	2,4,2,35,1,11
+	.byte	'STM1',0,1
+	.word	412
+	.byte	2,2,2,35,1,11
+	.byte	'STM2',0,1
+	.word	412
+	.byte	2,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_SCU_RSTCON_Bits',0,12,129,8,3
+	.word	28255
+	.byte	10
+	.byte	'_Ifx_SCU_RSTSTAT_Bits',0,12,132,8,16,4,11
+	.byte	'ESR0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'ESR1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'SMU',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'SW',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'STM0',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'STM1',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'STM2',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'reserved_8',0,1
+	.word	412
+	.byte	8,0,2,35,1,11
+	.byte	'PORST',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'reserved_17',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'CB0',0,1
+	.word	412
+	.byte	1,5,2,35,2,11
+	.byte	'CB1',0,1
+	.word	412
+	.byte	1,4,2,35,2,11
+	.byte	'CB3',0,1
+	.word	412
+	.byte	1,3,2,35,2,11
+	.byte	'reserved_21',0,1
+	.word	412
+	.byte	2,1,2,35,2,11
+	.byte	'EVR13',0,1
+	.word	412
+	.byte	1,0,2,35,2,11
+	.byte	'EVR33',0,1
+	.word	412
+	.byte	1,7,2,35,3,11
+	.byte	'SWD',0,1
+	.word	412
+	.byte	1,6,2,35,3,11
+	.byte	'reserved_26',0,1
+	.word	412
+	.byte	2,4,2,35,3,11
+	.byte	'STBYR',0,1
+	.word	412
+	.byte	1,3,2,35,3,11
+	.byte	'reserved_29',0,1
+	.word	412
+	.byte	3,0,2,35,3,0,29
+	.byte	'Ifx_SCU_RSTSTAT_Bits',0,12,155,8,3
+	.word	28466
+	.byte	10
+	.byte	'_Ifx_SCU_SAFECON_Bits',0,12,158,8,16,4,11
+	.byte	'HBT',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'reserved_1',0,4
+	.word	389
+	.byte	31,0,2,35,0,0,29
+	.byte	'Ifx_SCU_SAFECON_Bits',0,12,162,8,3
+	.word	28898
+	.byte	10
+	.byte	'_Ifx_SCU_STSTAT_Bits',0,12,165,8,16,4,11
+	.byte	'HWCFG',0,1
+	.word	412
+	.byte	8,0,2,35,0,11
+	.byte	'FTM',0,1
+	.word	412
+	.byte	7,1,2,35,1,11
+	.byte	'MODE',0,1
+	.word	412
+	.byte	1,0,2,35,1,11
+	.byte	'FCBAE',0,1
+	.word	412
+	.byte	1,7,2,35,2,11
+	.byte	'LUDIS',0,1
+	.word	412
+	.byte	1,6,2,35,2,11
+	.byte	'reserved_18',0,1
+	.word	412
+	.byte	1,5,2,35,2,11
+	.byte	'TRSTL',0,1
+	.word	412
+	.byte	1,4,2,35,2,11
+	.byte	'SPDEN',0,1
+	.word	412
+	.byte	1,3,2,35,2,11
+	.byte	'reserved_21',0,1
+	.word	412
+	.byte	3,0,2,35,2,11
+	.byte	'RAMINT',0,1
+	.word	412
+	.byte	1,7,2,35,3,11
+	.byte	'reserved_25',0,1
+	.word	412
+	.byte	7,0,2,35,3,0,29
+	.byte	'Ifx_SCU_STSTAT_Bits',0,12,178,8,3
+	.word	28994
+	.byte	10
+	.byte	'_Ifx_SCU_SWRSTCON_Bits',0,12,181,8,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'SWRSTREQ',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,4
+	.word	389
+	.byte	30,0,2,35,0,0,29
+	.byte	'Ifx_SCU_SWRSTCON_Bits',0,12,186,8,3
+	.word	29254
+	.byte	10
+	.byte	'_Ifx_SCU_SYSCON_Bits',0,12,189,8,16,4,11
+	.byte	'CCTRIG0',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'reserved_1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'RAMINTM',0,1
+	.word	412
+	.byte	2,4,2,35,0,11
+	.byte	'SETLUDIS',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'reserved_5',0,1
+	.word	412
+	.byte	3,0,2,35,0,11
+	.byte	'DATM',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'reserved_9',0,4
+	.word	389
+	.byte	23,0,2,35,0,0,29
+	.byte	'Ifx_SCU_SYSCON_Bits',0,12,198,8,3
+	.word	29379
+	.byte	10
+	.byte	'_Ifx_SCU_TRAPCLR_Bits',0,12,201,8,16,4,11
+	.byte	'ESR0T',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'ESR1T',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'SMUT',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'reserved_4',0,4
+	.word	389
+	.byte	28,0,2,35,0,0,29
+	.byte	'Ifx_SCU_TRAPCLR_Bits',0,12,208,8,3
+	.word	29576
+	.byte	10
+	.byte	'_Ifx_SCU_TRAPDIS_Bits',0,12,211,8,16,4,11
+	.byte	'ESR0T',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'ESR1T',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'SMUT',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'reserved_4',0,4
+	.word	389
+	.byte	28,0,2,35,0,0,29
+	.byte	'Ifx_SCU_TRAPDIS_Bits',0,12,218,8,3
+	.word	29729
+	.byte	10
+	.byte	'_Ifx_SCU_TRAPSET_Bits',0,12,221,8,16,4,11
+	.byte	'ESR0T',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'ESR1T',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'SMUT',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'reserved_4',0,4
+	.word	389
+	.byte	28,0,2,35,0,0,29
+	.byte	'Ifx_SCU_TRAPSET_Bits',0,12,228,8,3
+	.word	29882
+	.byte	10
+	.byte	'_Ifx_SCU_TRAPSTAT_Bits',0,12,231,8,16,4,11
+	.byte	'ESR0T',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'ESR1T',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'reserved_2',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'SMUT',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'reserved_4',0,4
+	.word	389
+	.byte	28,0,2,35,0,0,29
+	.byte	'Ifx_SCU_TRAPSTAT_Bits',0,12,238,8,3
+	.word	30035
+	.byte	7
+	.byte	'unsigned int',0,4,7,10
+	.byte	'_Ifx_SCU_WDTCPU_CON0_Bits',0,12,241,8,16,4,11
+	.byte	'ENDINIT',0,4
+	.word	30190
+	.byte	1,31,2,35,0,11
+	.byte	'LCK',0,4
+	.word	30190
+	.byte	1,30,2,35,0,11
+	.byte	'PW',0,4
+	.word	30190
+	.byte	14,16,2,35,0,11
+	.byte	'REL',0,4
+	.word	30190
+	.byte	16,0,2,35,0,0,29
+	.byte	'Ifx_SCU_WDTCPU_CON0_Bits',0,12,247,8,3
+	.word	30206
+	.byte	10
+	.byte	'_Ifx_SCU_WDTCPU_CON1_Bits',0,12,250,8,16,4,11
+	.byte	'reserved_0',0,1
+	.word	412
+	.byte	2,6,2,35,0,11
+	.byte	'IR0',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'DR',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'reserved_4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'IR1',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'UR',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'PAR',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'TCR',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'TCTR',0,1
+	.word	412
+	.byte	7,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_SCU_WDTCPU_CON1_Bits',0,12,134,9,3
+	.word	30336
+	.byte	10
+	.byte	'_Ifx_SCU_WDTCPU_SR_Bits',0,12,137,9,16,4,11
+	.byte	'AE',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'OE',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'IS0',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'DS',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'TO',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'IS1',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'US',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'PAS',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'TCS',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'TCT',0,1
+	.word	412
+	.byte	7,0,2,35,1,11
+	.byte	'TIM',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_SCU_WDTCPU_SR_Bits',0,12,150,9,3
+	.word	30574
+	.byte	10
+	.byte	'_Ifx_SCU_WDTS_CON0_Bits',0,12,153,9,16,4,11
+	.byte	'ENDINIT',0,4
+	.word	30190
+	.byte	1,31,2,35,0,11
+	.byte	'LCK',0,4
+	.word	30190
+	.byte	1,30,2,35,0,11
+	.byte	'PW',0,4
+	.word	30190
+	.byte	14,16,2,35,0,11
+	.byte	'REL',0,4
+	.word	30190
+	.byte	16,0,2,35,0,0,29
+	.byte	'Ifx_SCU_WDTS_CON0_Bits',0,12,159,9,3
+	.word	30797
+	.byte	10
+	.byte	'_Ifx_SCU_WDTS_CON1_Bits',0,12,162,9,16,4,11
+	.byte	'CLRIRF',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'reserved_1',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'IR0',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'DR',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'reserved_4',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'IR1',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'UR',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'PAR',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'TCR',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'TCTR',0,1
+	.word	412
+	.byte	7,0,2,35,1,11
+	.byte	'reserved_16',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_SCU_WDTS_CON1_Bits',0,12,175,9,3
+	.word	30923
+	.byte	10
+	.byte	'_Ifx_SCU_WDTS_SR_Bits',0,12,178,9,16,4,11
+	.byte	'AE',0,1
+	.word	412
+	.byte	1,7,2,35,0,11
+	.byte	'OE',0,1
+	.word	412
+	.byte	1,6,2,35,0,11
+	.byte	'IS0',0,1
+	.word	412
+	.byte	1,5,2,35,0,11
+	.byte	'DS',0,1
+	.word	412
+	.byte	1,4,2,35,0,11
+	.byte	'TO',0,1
+	.word	412
+	.byte	1,3,2,35,0,11
+	.byte	'IS1',0,1
+	.word	412
+	.byte	1,2,2,35,0,11
+	.byte	'US',0,1
+	.word	412
+	.byte	1,1,2,35,0,11
+	.byte	'PAS',0,1
+	.word	412
+	.byte	1,0,2,35,0,11
+	.byte	'TCS',0,1
+	.word	412
+	.byte	1,7,2,35,1,11
+	.byte	'TCT',0,1
+	.word	412
+	.byte	7,0,2,35,1,11
+	.byte	'TIM',0,2
+	.word	429
+	.byte	16,0,2,35,2,0,29
+	.byte	'Ifx_SCU_WDTS_SR_Bits',0,12,191,9,3
+	.word	31175
+	.byte	12,12,199,9,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	12700
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_ACCEN0',0,12,204,9,3
+	.word	31394
+	.byte	12,12,207,9,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	13257
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_ACCEN1',0,12,212,9,3
+	.word	31458
+	.byte	12,12,215,9,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	13334
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_ARSTDIS',0,12,220,9,3
+	.word	31522
+	.byte	12,12,223,9,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	13470
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_CCUCON0',0,12,228,9,3
+	.word	31587
+	.byte	12,12,231,9,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	13750
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_CCUCON1',0,12,236,9,3
+	.word	31652
+	.byte	12,12,239,9,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	13988
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_CCUCON2',0,12,244,9,3
+	.word	31717
+	.byte	12,12,247,9,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	14116
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_CCUCON3',0,12,252,9,3
+	.word	31782
+	.byte	12,12,255,9,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	14359
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_CCUCON4',0,12,132,10,3
+	.word	31847
+	.byte	12,12,135,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	14594
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_CCUCON5',0,12,140,10,3
+	.word	31912
+	.byte	12,12,143,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	14722
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_CCUCON6',0,12,148,10,3
+	.word	31977
+	.byte	12,12,151,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	14822
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_CCUCON7',0,12,156,10,3
+	.word	32042
+	.byte	12,12,159,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	14922
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_CHIPID',0,12,164,10,3
+	.word	32107
+	.byte	12,12,167,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	15130
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_DTSCON',0,12,172,10,3
+	.word	32171
+	.byte	12,12,175,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	15295
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_DTSLIM',0,12,180,10,3
+	.word	32235
+	.byte	12,12,183,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	15478
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_DTSSTAT',0,12,188,10,3
+	.word	32299
+	.byte	12,12,191,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	15632
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EICR',0,12,196,10,3
+	.word	32364
+	.byte	12,12,199,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	15996
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EIFR',0,12,204,10,3
+	.word	32426
+	.byte	12,12,207,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	16207
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EMSR',0,12,212,10,3
+	.word	32488
+	.byte	12,12,215,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	16459
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_ESRCFG',0,12,220,10,3
+	.word	32550
+	.byte	12,12,223,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	16577
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_ESROCFG',0,12,228,10,3
+	.word	32614
+	.byte	12,12,231,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	16688
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVR13CON',0,12,236,10,3
+	.word	32679
+	.byte	12,12,239,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	16851
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVR33CON',0,12,244,10,3
+	.word	32745
+	.byte	12,12,247,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17014
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRADCSTAT',0,12,252,10,3
+	.word	32811
+	.byte	12,12,255,10,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17172
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRDVSTAT',0,12,132,11,3
+	.word	32879
+	.byte	12,12,135,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17337
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRMONCTRL',0,12,140,11,3
+	.word	32946
+	.byte	12,12,143,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17666
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVROSCCTRL',0,12,148,11,3
+	.word	33014
+	.byte	12,12,151,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	17887
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVROVMON',0,12,156,11,3
+	.word	33082
+	.byte	12,12,159,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	18050
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRRSTCON',0,12,164,11,3
+	.word	33148
+	.byte	12,12,167,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	18322
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRSDCOEFF1',0,12,172,11,3
+	.word	33215
+	.byte	12,12,175,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	18475
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRSDCOEFF2',0,12,180,11,3
+	.word	33284
+	.byte	12,12,183,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	18631
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRSDCOEFF3',0,12,188,11,3
+	.word	33353
+	.byte	12,12,191,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	18793
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRSDCOEFF4',0,12,196,11,3
+	.word	33422
+	.byte	12,12,199,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	18936
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRSDCOEFF5',0,12,204,11,3
+	.word	33491
+	.byte	12,12,207,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	19101
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRSDCOEFF6',0,12,212,11,3
+	.word	33560
+	.byte	12,12,215,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	19246
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRSDCTRL1',0,12,220,11,3
+	.word	33629
+	.byte	12,12,223,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	19427
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRSDCTRL2',0,12,228,11,3
+	.word	33697
+	.byte	12,12,231,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	19601
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRSDCTRL3',0,12,236,11,3
+	.word	33765
+	.byte	12,12,239,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	19761
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRSDCTRL4',0,12,244,11,3
+	.word	33833
+	.byte	12,12,247,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	19905
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRSTAT',0,12,252,11,3
+	.word	33901
+	.byte	12,12,255,11,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	20179
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRTRIM',0,12,132,12,3
+	.word	33966
+	.byte	12,12,135,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	20318
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EVRUVMON',0,12,140,12,3
+	.word	34031
+	.byte	12,12,143,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	20481
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_EXTCON',0,12,148,12,3
+	.word	34097
+	.byte	12,12,151,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	20699
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_FDR',0,12,156,12,3
+	.word	34161
+	.byte	12,12,159,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	20862
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_FMR',0,12,164,12,3
+	.word	34222
+	.byte	12,12,167,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	21198
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_ID',0,12,172,12,3
+	.word	34283
+	.byte	12,12,175,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	21305
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_IGCR',0,12,180,12,3
+	.word	34343
+	.byte	12,12,183,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	21757
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_IN',0,12,188,12,3
+	.word	34405
+	.byte	12,12,191,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	21856
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_IOCR',0,12,196,12,3
+	.word	34465
+	.byte	12,12,199,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	22006
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_LBISTCTRL0',0,12,204,12,3
+	.word	34527
+	.byte	12,12,207,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	22155
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_LBISTCTRL1',0,12,212,12,3
+	.word	34595
+	.byte	12,12,215,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	22316
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_LBISTCTRL2',0,12,220,12,3
+	.word	34663
+	.byte	12,12,223,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	22446
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_LCLCON',0,12,228,12,3
+	.word	34731
+	.byte	12,12,231,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	22578
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_LCLTEST',0,12,236,12,3
+	.word	34795
+	.byte	12,12,239,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	22693
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_MANID',0,12,244,12,3
+	.word	34860
+	.byte	12,12,247,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	22804
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_OMR',0,12,252,12,3
+	.word	34923
+	.byte	12,12,255,12,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	22962
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_OSCCON',0,12,132,13,3
+	.word	34984
+	.byte	12,12,135,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	23374
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_OUT',0,12,140,13,3
+	.word	35048
+	.byte	12,12,143,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	23475
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_OVCCON',0,12,148,13,3
+	.word	35109
+	.byte	12,12,151,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	23742
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_OVCENABLE',0,12,156,13,3
+	.word	35173
+	.byte	12,12,159,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	23878
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PDISC',0,12,164,13,3
+	.word	35240
+	.byte	12,12,167,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	23989
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PDR',0,12,172,13,3
+	.word	35303
+	.byte	12,12,175,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	24122
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PDRR',0,12,180,13,3
+	.word	35364
+	.byte	12,12,183,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	24325
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PLLCON0',0,12,188,13,3
+	.word	35426
+	.byte	12,12,191,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	24681
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PLLCON1',0,12,196,13,3
+	.word	35491
+	.byte	12,12,199,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	24859
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PLLCON2',0,12,204,13,3
+	.word	35556
+	.byte	12,12,207,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	24959
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PLLERAYCON0',0,12,212,13,3
+	.word	35621
+	.byte	12,12,215,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	25329
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PLLERAYCON1',0,12,220,13,3
+	.word	35690
+	.byte	12,12,223,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	25515
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PLLERAYSTAT',0,12,228,13,3
+	.word	35759
+	.byte	12,12,231,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	25713
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PLLSTAT',0,12,236,13,3
+	.word	35828
+	.byte	12,12,239,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	25946
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PMCSR',0,12,244,13,3
+	.word	35893
+	.byte	12,12,247,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	26098
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PMSWCR0',0,12,252,13,3
+	.word	35956
+	.byte	12,12,255,13,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	26665
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PMSWCR1',0,12,132,14,3
+	.word	36021
+	.byte	12,12,135,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	26959
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PMSWCR2',0,12,140,14,3
+	.word	36086
+	.byte	12,12,143,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	27237
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PMSWSTAT',0,12,148,14,3
+	.word	36151
+	.byte	12,12,151,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	27733
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_PMSWSTATCLR',0,12,156,14,3
+	.word	36217
+	.byte	12,12,159,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	28255
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_RSTCON',0,12,164,14,3
+	.word	36286
+	.byte	12,12,167,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	28046
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_RSTCON2',0,12,172,14,3
+	.word	36350
+	.byte	12,12,175,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	28466
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_RSTSTAT',0,12,180,14,3
+	.word	36415
+	.byte	12,12,183,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	28898
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_SAFECON',0,12,188,14,3
+	.word	36480
+	.byte	12,12,191,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	28994
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_STSTAT',0,12,196,14,3
+	.word	36545
+	.byte	12,12,199,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	29254
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_SWRSTCON',0,12,204,14,3
+	.word	36609
+	.byte	12,12,207,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	29379
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_SYSCON',0,12,212,14,3
+	.word	36675
+	.byte	12,12,215,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	29576
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_TRAPCLR',0,12,220,14,3
+	.word	36739
+	.byte	12,12,223,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	29729
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_TRAPDIS',0,12,228,14,3
+	.word	36804
+	.byte	12,12,231,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	29882
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_TRAPSET',0,12,236,14,3
+	.word	36869
+	.byte	12,12,239,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	30035
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_TRAPSTAT',0,12,244,14,3
+	.word	36934
+	.byte	12,12,247,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	30206
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_WDTCPU_CON0',0,12,252,14,3
+	.word	37000
+	.byte	12,12,255,14,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	30336
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_WDTCPU_CON1',0,12,132,15,3
+	.word	37069
+	.byte	12,12,135,15,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	30574
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_WDTCPU_SR',0,12,140,15,3
+	.word	37138
+	.byte	12,12,143,15,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	30797
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_WDTS_CON0',0,12,148,15,3
+	.word	37205
+	.byte	12,12,151,15,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	30923
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_WDTS_CON1',0,12,156,15,3
+	.word	37272
+	.byte	12,12,159,15,9,4,13
+	.byte	'U',0
+	.word	389
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	405
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	31175
+	.byte	4,2,35,0,0,29
+	.byte	'Ifx_SCU_WDTS_SR',0,12,164,15,3
+	.word	37339
+	.byte	10
+	.byte	'_Ifx_SCU_WDTCPU',0,12,175,15,25,12,13
+	.byte	'CON0',0
+	.word	37000
+	.byte	4,2,35,0,13
+	.byte	'CON1',0
+	.word	37069
+	.byte	4,2,35,4,13
+	.byte	'SR',0
+	.word	37138
+	.byte	4,2,35,8,0,16
+	.word	37404
+	.byte	29
+	.byte	'Ifx_SCU_WDTCPU',0,12,180,15,3
+	.word	37467
+	.byte	10
+	.byte	'_Ifx_SCU_WDTS',0,12,183,15,25,12,13
+	.byte	'CON0',0
+	.word	37205
+	.byte	4,2,35,0,13
+	.byte	'CON1',0
+	.word	37272
+	.byte	4,2,35,4,13
+	.byte	'SR',0
+	.word	37339
+	.byte	4,2,35,8,0,16
+	.word	37496
+	.byte	29
+	.byte	'Ifx_SCU_WDTS',0,12,188,15,3
+	.word	37557
+	.byte	17,3,83,9,1,18
+	.byte	'IfxPort_InputMode_undefined',0,127,18
+	.byte	'IfxPort_InputMode_noPullDevice',0,0,18
+	.byte	'IfxPort_InputMode_pullDown',0,8,18
+	.byte	'IfxPort_InputMode_pullUp',0,16,0,29
+	.byte	'IfxPort_InputMode',0,3,89,3
+	.word	37584
+	.byte	17,3,120,9,1,18
+	.byte	'IfxPort_OutputIdx_general',0,128,1,18
+	.byte	'IfxPort_OutputIdx_alt1',0,136,1,18
+	.byte	'IfxPort_OutputIdx_alt2',0,144,1,18
+	.byte	'IfxPort_OutputIdx_alt3',0,152,1,18
+	.byte	'IfxPort_OutputIdx_alt4',0,160,1,18
+	.byte	'IfxPort_OutputIdx_alt5',0,168,1,18
+	.byte	'IfxPort_OutputIdx_alt6',0,176,1,18
+	.byte	'IfxPort_OutputIdx_alt7',0,184,1,0,29
+	.byte	'IfxPort_OutputIdx',0,3,130,1,3
+	.word	37735
+	.byte	17,3,134,1,9,1,18
+	.byte	'IfxPort_OutputMode_pushPull',0,128,1,18
+	.byte	'IfxPort_OutputMode_openDrain',0,192,1,0,29
+	.byte	'IfxPort_OutputMode',0,3,138,1,3
+	.word	37979
+	.byte	17,3,144,1,9,1,18
+	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed1',0,0,18
+	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed2',0,1,18
+	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed3',0,2,18
+	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed4',0,3,18
+	.byte	'IfxPort_PadDriver_lvdsSpeed1',0,4,18
+	.byte	'IfxPort_PadDriver_lvdsSpeed2',0,5,18
+	.byte	'IfxPort_PadDriver_lvdsSpeed3',0,6,18
+	.byte	'IfxPort_PadDriver_lvdsSpeed4',0,7,18
+	.byte	'IfxPort_PadDriver_ttlSpeed1',0,8,18
+	.byte	'IfxPort_PadDriver_ttlSpeed2',0,9,18
+	.byte	'IfxPort_PadDriver_ttlSpeed3',0,10,18
+	.byte	'IfxPort_PadDriver_ttlSpeed4',0,11,0,29
+	.byte	'IfxPort_PadDriver',0,3,158,1,3
+	.word	38077
+	.byte	29
+	.byte	'IfxPort_State',0,3,178,1,3
+	.word	8209
+	.byte	29
+	.byte	'GPIOMODE_enum',0,5,36,2
+	.word	10527
+	.byte	29
+	.byte	'IIC_type',0,7,51,3
+	.word	10791
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L48:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
+	.byte	57,15,11,15,0,0,11,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,12,23,1,58,15,59,15,57,15,11,15,0,0,13,13
+	.byte	0,3,8,73,19,11,15,56,9,0,0,14,1,1,11,15,73,19,0,0,15,33,0,47,15,0,0,16,53,0,73,19,0,0,17,4,1,58,15,59
+	.byte	15,57,15,11,15,0,0,18,40,0,3,8,28,13,0,0,19,38,0,73,19,0,0,20,46,1,3,8,54,15,39,12,63,12,60,12,0,0,21
+	.byte	5,0,73,19,0,0,22,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,23,5,0,3,8,73,19,0,0,24,46,1,49,19,0,0,25
+	.byte	5,0,49,19,0,0,26,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,27,46,1,3,8,58,15,59,15,57,15
+	.byte	73,19,54,15,39,12,63,12,60,12,0,0,28,4,1,3,8,58,15,59,15,57,15,11,15,0,0,29,22,0,3,8,58,15,59,15,57,15
+	.byte	73,19,0,0,30,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L49:
+	.word	.L208-.L207
+.L207:
+	.half	3
+	.word	.L210-.L209
+.L209:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl',0,0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'IFXPORT.h',0,2,0,0
+	.byte	'IfxPort_regdef.h',0,3,0,0
+	.byte	'zf_gpio.h',0,4,0,0
+	.byte	'common.h',0,5,0,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.h',0,0,0,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0,0,0,0
+	.byte	'PLATFORM_TYPES.H',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'IfxScu_cfg.h',0,6,0,0
+	.byte	'IfxScu_regdef.h',0,3,0,0,0
+.L210:
+.L208:
+	.sdecl	'.debug_info',debug,cluster('simiic_delay_set')
+	.sect	'.debug_info'
+.L50:
+	.word	226
+	.half	3
+	.word	.L51
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L53,.L52
+	.byte	2
+	.word	.L46
+	.byte	3
+	.byte	'simiic_delay_set',0,1,62,6,1,1,1
+	.word	.L23,.L120,.L22
+	.byte	4
+	.byte	'time',0,1,62,30
+	.word	.L121,.L122
+	.byte	5
+	.word	.L23,.L120
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('simiic_delay_set')
+	.sect	'.debug_abbrev'
+.L51:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('simiic_delay_set')
+	.sect	'.debug_line'
+.L52:
+	.word	.L212-.L211
+.L211:
+	.half	3
+	.word	.L214-.L213
+.L213:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0,0,0,0,0
+.L214:
+	.byte	5,5,7,0,5,2
+	.word	.L23
+	.byte	3,63,1,5,23,9
+	.half	.L215-.L23
+	.byte	1,5,1,9
+	.half	.L216-.L215
+	.byte	3,1,1,7,9
+	.half	.L54-.L216
+	.byte	0,1,1
+.L212:
+	.sdecl	'.debug_ranges',debug,cluster('simiic_delay_set')
+	.sect	'.debug_ranges'
+.L53:
+	.word	-1,.L23,0,.L54-.L23,0,0
+	.sdecl	'.debug_info',debug,cluster('simiic_start')
+	.sect	'.debug_info'
+.L55:
+	.word	205
+	.half	3
+	.word	.L56
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L58,.L57
+	.byte	2
+	.word	.L46
+	.byte	3
+	.byte	'simiic_start',0,1,81,6,1,1,1
+	.word	.L27,.L123,.L26
+	.byte	4
+	.word	.L27,.L123
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('simiic_start')
+	.sect	'.debug_abbrev'
+.L56:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('simiic_start')
+	.sect	'.debug_line'
+.L57:
+	.word	.L218-.L217
+.L217:
+	.half	3
+	.word	.L220-.L219
+.L219:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0,0,0,0,0
+.L220:
+	.byte	5,2,7,0,5,2
+	.word	.L27
+	.byte	3,210,0,1,9
+	.half	.L221-.L27
+	.byte	3,1,1,5,14,9
+	.half	.L222-.L221
+	.byte	3,1,1,5,2,9
+	.half	.L223-.L222
+	.byte	3,1,1,5,14,9
+	.half	.L224-.L223
+	.byte	3,1,1,5,2,9
+	.half	.L225-.L224
+	.byte	3,1,1,5,1,9
+	.half	.L226-.L225
+	.byte	3,1,1,7,9
+	.half	.L59-.L226
+	.byte	0,1,1
+.L218:
+	.sdecl	'.debug_ranges',debug,cluster('simiic_start')
+	.sect	'.debug_ranges'
+.L58:
+	.word	-1,.L27,0,.L59-.L27,0,0
+	.sdecl	'.debug_info',debug,cluster('simiic_stop')
+	.sect	'.debug_info'
+.L60:
+	.word	204
+	.half	3
+	.word	.L61
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L63,.L62
+	.byte	2
+	.word	.L46
+	.byte	3
+	.byte	'simiic_stop',0,1,92,6,1,1,1
+	.word	.L29,.L124,.L28
+	.byte	4
+	.word	.L29,.L124
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('simiic_stop')
+	.sect	'.debug_abbrev'
+.L61:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('simiic_stop')
+	.sect	'.debug_line'
+.L62:
+	.word	.L228-.L227
+.L227:
+	.half	3
+	.word	.L230-.L229
+.L229:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0,0,0,0,0
+.L230:
+	.byte	5,2,7,0,5,2
+	.word	.L29
+	.byte	3,221,0,1,9
+	.half	.L231-.L29
+	.byte	3,1,1,5,14,9
+	.half	.L232-.L231
+	.byte	3,1,1,5,2,9
+	.half	.L233-.L232
+	.byte	3,1,1,5,14,9
+	.half	.L234-.L233
+	.byte	3,1,1,5,2,9
+	.half	.L235-.L234
+	.byte	3,1,1,5,14,9
+	.half	.L236-.L235
+	.byte	3,1,1,5,1,9
+	.half	.L237-.L236
+	.byte	3,1,1,7,9
+	.half	.L64-.L237
+	.byte	0,1,1
+.L228:
+	.sdecl	'.debug_ranges',debug,cluster('simiic_stop')
+	.sect	'.debug_ranges'
+.L63:
+	.word	-1,.L29,0,.L64-.L29,0,0
+	.sdecl	'.debug_info',debug,cluster('send_ch')
+	.sect	'.debug_info'
+.L65:
+	.word	232
+	.half	3
+	.word	.L66
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L68,.L67
+	.byte	2
+	.word	.L46
+	.byte	3
+	.byte	'send_ch',0,1,144,1,6,1,1,1
+	.word	.L35,.L125,.L34
+	.byte	4
+	.byte	'c',0,1,144,1,20
+	.word	.L126,.L127
+	.byte	5
+	.word	.L35,.L125
+	.byte	6
+	.byte	'i',0,1,146,1,8
+	.word	.L126,.L128
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('send_ch')
+	.sect	'.debug_abbrev'
+.L66:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('send_ch')
+	.sect	'.debug_line'
+.L67:
+	.word	.L239-.L238
+.L238:
+	.half	3
+	.word	.L241-.L240
+.L240:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0,0,0,0,0
+.L241:
+	.byte	5,6,7,0,5,2
+	.word	.L35
+	.byte	3,143,1,1,5,10,9
+	.half	.L162-.L35
+	.byte	3,2,1,5,14,9
+	.half	.L164-.L162
+	.byte	3,1,1,5,9,9
+	.half	.L10-.L164
+	.byte	3,2,1,5,22,7,9
+	.half	.L242-.L10
+	.byte	1,5,28,9
+	.half	.L243-.L242
+	.byte	1,5,16,9
+	.half	.L11-.L243
+	.byte	3,1,1,5,11,9
+	.half	.L12-.L11
+	.byte	3,1,1,5,21,9
+	.half	.L166-.L12
+	.byte	3,1,1,5,9,9
+	.half	.L244-.L166
+	.byte	3,1,1,5,21,9
+	.half	.L245-.L244
+	.byte	3,1,1,5,9,9
+	.half	.L246-.L245
+	.byte	3,1,1,5,12,9
+	.half	.L9-.L246
+	.byte	3,120,1,5,14,9
+	.half	.L167-.L9
+	.byte	1,7,9
+	.half	.L247-.L167
+	.byte	3,10,1,5,1,9
+	.half	.L248-.L247
+	.byte	3,1,1,7,9
+	.half	.L69-.L248
+	.byte	0,1,1
+.L239:
+	.sdecl	'.debug_ranges',debug,cluster('send_ch')
+	.sect	'.debug_ranges'
+.L68:
+	.word	-1,.L35,0,.L69-.L35,0,0
+	.sdecl	'.debug_info',debug,cluster('read_ch')
+	.sect	'.debug_info'
+.L70:
+	.word	255
+	.half	3
+	.word	.L71
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L73,.L72
+	.byte	2
+	.word	.L46
+	.byte	3
+	.byte	'read_ch',0,1,163,1,7
+	.word	.L126
+	.byte	1,1,1
+	.word	.L37,.L129,.L36
+	.byte	4
+	.byte	'ack_x',0,1,163,1,21
+	.word	.L126,.L130
+	.byte	5
+	.word	.L37,.L129
+	.byte	6
+	.byte	'i',0,1,165,1,11
+	.word	.L126,.L131
+	.byte	6
+	.byte	'c',0,1,166,1,11
+	.word	.L126,.L132
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('read_ch')
+	.sect	'.debug_abbrev'
+.L71:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('read_ch')
+	.sect	'.debug_line'
+.L72:
+	.word	.L250-.L249
+.L249:
+	.half	3
+	.word	.L252-.L251
+.L251:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0,0,0,0,0
+.L252:
+	.byte	5,7,7,0,5,2
+	.word	.L37
+	.byte	3,162,1,1,5,6,9
+	.half	.L169-.L37
+	.byte	3,4,1,5,5,9
+	.half	.L170-.L169
+	.byte	3,1,1,5,17,9
+	.half	.L253-.L170
+	.byte	3,1,1,5,5,9
+	.half	.L254-.L253
+	.byte	3,1,1,9
+	.half	.L255-.L254
+	.byte	3,1,1,5,10,9
+	.half	.L256-.L255
+	.byte	3,1,1,5,16,9
+	.half	.L172-.L256
+	.byte	1,5,21,9
+	.half	.L14-.L172
+	.byte	3,2,1,5,9,9
+	.half	.L257-.L14
+	.byte	3,1,1,5,21,9
+	.half	.L258-.L257
+	.byte	3,1,1,5,9,9
+	.half	.L259-.L258
+	.byte	3,1,1,5,21,9
+	.half	.L260-.L259
+	.byte	3,1,1,5,10,9
+	.half	.L261-.L260
+	.byte	3,1,1,5,12,9
+	.half	.L173-.L261
+	.byte	3,1,1,5,9,9
+	.half	.L262-.L173
+	.byte	1,5,14,7,9
+	.half	.L263-.L262
+	.byte	3,2,1,5,18,9
+	.half	.L15-.L263
+	.byte	3,118,1,5,16,9
+	.half	.L13-.L15
+	.byte	1,5,5,7,9
+	.half	.L264-.L13
+	.byte	3,13,1,5,2,9
+	.half	.L265-.L264
+	.byte	3,1,1,5,14,9
+	.half	.L266-.L265
+	.byte	3,1,1,5,17,9
+	.half	.L267-.L266
+	.byte	3,1,1,5,5,9
+	.half	.L176-.L267
+	.byte	3,2,1,5,1,9
+	.half	.L16-.L176
+	.byte	3,1,1,7,9
+	.half	.L74-.L16
+	.byte	0,1,1
+.L250:
+	.sdecl	'.debug_ranges',debug,cluster('read_ch')
+	.sect	'.debug_ranges'
+.L73:
+	.word	-1,.L37,0,.L74-.L37,0,0
+	.sdecl	'.debug_info',debug,cluster('simiic_write_reg')
+	.sect	'.debug_info'
+.L75:
+	.word	265
+	.half	3
+	.word	.L76
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L78,.L77
+	.byte	2
+	.word	.L46
+	.byte	3
+	.byte	'simiic_write_reg',0,1,202,1,6,1,1,1
+	.word	.L39,.L133,.L38
+	.byte	4
+	.byte	'dev_add',0,1,202,1,29
+	.word	.L126,.L134
+	.byte	4
+	.byte	'reg',0,1,202,1,44
+	.word	.L126,.L135
+	.byte	4
+	.byte	'dat',0,1,202,1,55
+	.word	.L126,.L136
+	.byte	5
+	.word	.L39,.L133
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('simiic_write_reg')
+	.sect	'.debug_abbrev'
+.L76:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('simiic_write_reg')
+	.sect	'.debug_line'
+.L77:
+	.word	.L269-.L268
+.L268:
+	.half	3
+	.word	.L271-.L270
+.L270:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0,0,0,0,0
+.L271:
+	.byte	5,6,7,0,5,2
+	.word	.L39
+	.byte	3,201,1,1,5,14,9
+	.half	.L272-.L39
+	.byte	3,2,1,5,22,9
+	.half	.L178-.L272
+	.byte	3,1,1,5,27,9
+	.half	.L180-.L178
+	.byte	1,5,11,9
+	.half	.L181-.L180
+	.byte	3,1,1,9
+	.half	.L183-.L181
+	.byte	3,1,1,5,13,9
+	.half	.L185-.L183
+	.byte	3,1,1,5,1,9
+	.half	.L273-.L185
+	.byte	3,1,1,7,9
+	.half	.L79-.L273
+	.byte	0,1,1
+.L269:
+	.sdecl	'.debug_ranges',debug,cluster('simiic_write_reg')
+	.sect	'.debug_ranges'
+.L78:
+	.word	-1,.L39,0,.L79-.L39,0,0
+	.sdecl	'.debug_info',debug,cluster('simiic_read_reg')
+	.sect	'.debug_info'
+.L80:
+	.word	287
+	.half	3
+	.word	.L81
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L83,.L82
+	.byte	2
+	.word	.L46
+	.byte	3
+	.byte	'simiic_read_reg',0,1,221,1,7
+	.word	.L126
+	.byte	1,1,1
+	.word	.L41,.L137,.L40
+	.byte	4
+	.byte	'dev_add',0,1,221,1,29
+	.word	.L126,.L138
+	.byte	4
+	.byte	'reg',0,1,221,1,44
+	.word	.L126,.L139
+	.byte	4
+	.byte	'type',0,1,221,1,58
+	.word	.L140,.L141
+	.byte	5
+	.word	.L41,.L137
+	.byte	6
+	.byte	'dat',0,1,223,1,8
+	.word	.L126,.L142
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('simiic_read_reg')
+	.sect	'.debug_abbrev'
+.L81:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('simiic_read_reg')
+	.sect	'.debug_line'
+.L82:
+	.word	.L275-.L274
+.L274:
+	.half	3
+	.word	.L277-.L276
+.L276:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0,0,0,0,0
+.L277:
+	.byte	5,7,7,0,5,2
+	.word	.L41
+	.byte	3,220,1,1,5,14,9
+	.half	.L187-.L41
+	.byte	3,3,1,5,22,9
+	.half	.L186-.L187
+	.byte	3,1,1,5,27,9
+	.half	.L189-.L186
+	.byte	1,5,11,9
+	.half	.L190-.L189
+	.byte	3,1,1,5,2,9
+	.half	.L192-.L190
+	.byte	3,1,1,5,29,7,9
+	.half	.L278-.L192
+	.byte	1,5,14,9
+	.half	.L17-.L278
+	.byte	3,2,1,5,19,9
+	.half	.L279-.L17
+	.byte	3,1,1,5,24,9
+	.half	.L280-.L279
+	.byte	1,5,16,9
+	.half	.L281-.L280
+	.byte	3,1,1,5,6,9
+	.half	.L193-.L281
+	.byte	1,5,13,9
+	.half	.L195-.L193
+	.byte	3,1,1,5,2,9
+	.half	.L194-.L195
+	.byte	3,2,1,5,1,9
+	.half	.L18-.L194
+	.byte	3,1,1,7,9
+	.half	.L84-.L18
+	.byte	0,1,1
+.L275:
+	.sdecl	'.debug_ranges',debug,cluster('simiic_read_reg')
+	.sect	'.debug_ranges'
+.L83:
+	.word	-1,.L41,0,.L84-.L41,0,0
+	.sdecl	'.debug_info',debug,cluster('simiic_read_regs')
+	.sect	'.debug_info'
+.L85:
+	.word	304
+	.half	3
+	.word	.L86
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L88,.L87
+	.byte	2
+	.word	.L46
+	.byte	3
+	.byte	'simiic_read_regs',0,1,248,1,6,1,1,1
+	.word	.L43,.L143,.L42
+	.byte	4
+	.byte	'dev_add',0,1,248,1,29
+	.word	.L126,.L144
+	.byte	4
+	.byte	'reg',0,1,248,1,44
+	.word	.L126,.L145
+	.byte	4
+	.byte	'dat_add',0,1,248,1,56
+	.word	.L146,.L147
+	.byte	4
+	.byte	'num',0,1,248,1,71
+	.word	.L126,.L148
+	.byte	4
+	.byte	'type',0,1,248,1,85
+	.word	.L140,.L149
+	.byte	5
+	.word	.L43,.L143
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('simiic_read_regs')
+	.sect	'.debug_abbrev'
+.L86:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('simiic_read_regs')
+	.sect	'.debug_line'
+.L87:
+	.word	.L283-.L282
+.L282:
+	.half	3
+	.word	.L285-.L284
+.L284:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0,0,0,0,0
+.L285:
+	.byte	5,6,7,0,5,2
+	.word	.L43
+	.byte	3,247,1,1,5,14,9
+	.half	.L201-.L43
+	.byte	3,2,1,5,22,9
+	.half	.L197-.L201
+	.byte	3,1,1,5,27,9
+	.half	.L202-.L197
+	.byte	1,5,11,9
+	.half	.L203-.L202
+	.byte	3,1,1,5,2,9
+	.half	.L205-.L203
+	.byte	3,1,1,5,29,7,9
+	.half	.L286-.L205
+	.byte	1,5,14,9
+	.half	.L19-.L286
+	.byte	3,2,1,5,19,9
+	.half	.L287-.L19
+	.byte	3,1,1,5,24,9
+	.half	.L288-.L287
+	.byte	1,5,16,9
+	.half	.L289-.L288
+	.byte	3,1,1,5,28,9
+	.half	.L21-.L289
+	.byte	3,2,1,5,18,9
+	.half	.L290-.L21
+	.byte	1,5,16,9
+	.half	.L291-.L290
+	.byte	3,1,1,5,11,9
+	.half	.L20-.L291
+	.byte	3,125,1,5,16,9
+	.half	.L206-.L20
+	.byte	1,5,24,7,9
+	.half	.L292-.L206
+	.byte	3,5,1,5,14,9
+	.half	.L293-.L292
+	.byte	1,5,13,9
+	.half	.L294-.L293
+	.byte	3,1,1,5,1,9
+	.half	.L295-.L294
+	.byte	3,1,1,7,9
+	.half	.L89-.L295
+	.byte	0,1,1
+.L283:
+	.sdecl	'.debug_ranges',debug,cluster('simiic_read_regs')
+	.sect	'.debug_ranges'
+.L88:
+	.word	-1,.L43,0,.L89-.L43,0,0
+	.sdecl	'.debug_info',debug,cluster('simiic_init')
+	.sect	'.debug_info'
+.L90:
+	.word	205
+	.half	3
+	.word	.L91
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L93,.L92
+	.byte	2
+	.word	.L46
+	.byte	3
+	.byte	'simiic_init',0,1,146,2,6,1,1,1
+	.word	.L45,.L150,.L44
+	.byte	4
+	.word	.L45,.L150
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('simiic_init')
+	.sect	'.debug_abbrev'
+.L91:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('simiic_init')
+	.sect	'.debug_line'
+.L92:
+	.word	.L297-.L296
+.L296:
+	.half	3
+	.word	.L299-.L298
+.L298:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0,0,0,0,0
+.L299:
+	.byte	5,13,7,0,5,2
+	.word	.L45
+	.byte	3,147,2,1,5,28,9
+	.half	.L300-.L45
+	.byte	1,5,33,9
+	.half	.L301-.L300
+	.byte	1,5,36,9
+	.half	.L302-.L301
+	.byte	1,5,13,9
+	.half	.L303-.L302
+	.byte	3,1,1,5,28,9
+	.half	.L304-.L303
+	.byte	1,5,33,9
+	.half	.L305-.L304
+	.byte	1,5,36,9
+	.half	.L306-.L305
+	.byte	1,5,1,9
+	.half	.L307-.L306
+	.byte	3,1,1,7,9
+	.half	.L94-.L307
+	.byte	0,1,1
+.L297:
+	.sdecl	'.debug_ranges',debug,cluster('simiic_init')
+	.sect	'.debug_ranges'
+.L93:
+	.word	-1,.L45,0,.L94-.L45,0,0
+	.sdecl	'.debug_info',debug,cluster('simiic_delay')
+	.sect	'.debug_info'
+.L95:
+	.word	229
+	.half	3
+	.word	.L96
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L98,.L97
+	.byte	2
+	.word	.L46
+	.byte	3
+	.byte	'simiic_delay',0,1,72,6,1,1,1
+	.word	.L25,.L151,.L24
+	.byte	4
+	.word	.L25,.L151
+	.byte	5
+	.byte	'delay_time',0,1,74,9
+	.word	.L121,.L152
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('simiic_delay')
+	.sect	'.debug_abbrev'
+.L96:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('simiic_delay')
+	.sect	'.debug_line'
+.L97:
+	.word	.L309-.L308
+.L308:
+	.half	3
+	.word	.L311-.L310
+.L310:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0,0,0,0,0
+.L311:
+	.byte	5,18,7,0,5,2
+	.word	.L25
+	.byte	3,202,0,1,5,20,9
+	.half	.L157-.L25
+	.byte	3,1,1,5,18,9
+	.half	.L2-.L157
+	.byte	1,5,20,9
+	.half	.L159-.L2
+	.byte	1,5,1,7,9
+	.half	.L312-.L159
+	.byte	3,1,1,7,9
+	.half	.L99-.L312
+	.byte	0,1,1
+.L309:
+	.sdecl	'.debug_ranges',debug,cluster('simiic_delay')
+	.sect	'.debug_ranges'
+.L98:
+	.word	-1,.L25,0,.L99-.L25,0,0
+	.sdecl	'.debug_info',debug,cluster('simiic_sendack')
+	.sect	'.debug_info'
+.L100:
+	.word	227
+	.half	3
+	.word	.L101
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L103,.L102
+	.byte	2
+	.word	.L46
+	.byte	3
+	.byte	'simiic_sendack',0,1,105,6,1,1,1
+	.word	.L31,.L153,.L30
+	.byte	4
+	.byte	'ack_dat',0,1,105,35
+	.word	.L126,.L154
+	.byte	5
+	.word	.L31,.L153
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('simiic_sendack')
+	.sect	'.debug_abbrev'
+.L101:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('simiic_sendack')
+	.sect	'.debug_line'
+.L102:
+	.word	.L314-.L313
+.L313:
+	.half	3
+	.word	.L316-.L315
+.L315:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0,0,0,0,0
+.L316:
+	.byte	5,6,7,0,5,2
+	.word	.L31
+	.byte	3,232,0,1,5,5,9
+	.half	.L161-.L31
+	.byte	3,2,1,5,14,9
+	.half	.L317-.L161
+	.byte	3,1,1,5,2,9
+	.half	.L318-.L317
+	.byte	3,1,1,5,14,7,9
+	.half	.L319-.L318
+	.byte	1,5,20,9
+	.half	.L320-.L319
+	.byte	1,5,14,9
+	.half	.L4-.L320
+	.byte	3,1,1,5,5,9
+	.half	.L5-.L4
+	.byte	3,2,1,5,17,9
+	.half	.L321-.L5
+	.byte	3,1,1,5,5,9
+	.half	.L322-.L321
+	.byte	3,1,1,5,17,9
+	.half	.L323-.L322
+	.byte	3,1,1,5,1,9
+	.half	.L324-.L323
+	.byte	3,1,1,7,9
+	.half	.L104-.L324
+	.byte	0,1,1
+.L314:
+	.sdecl	'.debug_ranges',debug,cluster('simiic_sendack')
+	.sect	'.debug_ranges'
+.L103:
+	.word	-1,.L31,0,.L104-.L31,0,0
+	.sdecl	'.debug_info',debug,cluster('sccb_waitack')
+	.sect	'.debug_info'
+.L105:
+	.word	208
+	.half	3
+	.word	.L106
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L108,.L107
+	.byte	2
+	.word	.L46
+	.byte	3
+	.byte	'sccb_waitack',0,1,119,12
+	.word	.L155
+	.byte	1,1
+	.word	.L33,.L156,.L32
+	.byte	4
+	.word	.L33,.L156
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sccb_waitack')
+	.sect	'.debug_abbrev'
+.L106:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sccb_waitack')
+	.sect	'.debug_line'
+.L107:
+	.word	.L326-.L325
+.L325:
+	.half	3
+	.word	.L328-.L327
+.L327:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0,0,0,0,0
+.L328:
+	.byte	5,5,7,0,5,2
+	.word	.L33
+	.byte	3,248,0,1,5,2,9
+	.half	.L329-.L33
+	.byte	3,1,1,5,14,9
+	.half	.L330-.L329
+	.byte	3,1,1,5,2,9
+	.half	.L331-.L330
+	.byte	3,2,1,5,17,9
+	.half	.L332-.L331
+	.byte	3,1,1,5,8,9
+	.half	.L333-.L332
+	.byte	3,2,1,5,5,9
+	.half	.L334-.L333
+	.byte	1,5,9,7,9
+	.half	.L335-.L334
+	.byte	3,2,1,9
+	.half	.L336-.L335
+	.byte	3,1,1,5,16,9
+	.half	.L337-.L336
+	.byte	3,1,1,5,9,9
+	.half	.L338-.L337
+	.byte	1,5,5,9
+	.half	.L6-.L338
+	.byte	3,2,1,9
+	.half	.L339-.L6
+	.byte	3,1,1,5,14,9
+	.half	.L340-.L339
+	.byte	3,1,1,5,12,9
+	.half	.L341-.L340
+	.byte	3,1,1,5,5,9
+	.half	.L342-.L341
+	.byte	1,5,1,9
+	.half	.L7-.L342
+	.byte	3,1,1,7,9
+	.half	.L109-.L7
+	.byte	0,1,1
+.L326:
+	.sdecl	'.debug_ranges',debug,cluster('sccb_waitack')
+	.sect	'.debug_ranges'
+.L108:
+	.word	-1,.L33,0,.L109-.L33,0,0
+	.sdecl	'.debug_info',debug,cluster('IIC_ad_main')
+	.sect	'.debug_info'
+.L110:
+	.word	182
+	.half	3
+	.word	.L111
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L46
+	.byte	3
+	.byte	'IIC_ad_main',0,8,43,7
+	.word	.L126
+	.byte	1,5,3
+	.word	IIC_ad_main
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IIC_ad_main')
+	.sect	'.debug_abbrev'
+.L111:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('IIC_ad_sub')
+	.sect	'.debug_info'
+.L112:
+	.word	181
+	.half	3
+	.word	.L113
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L46
+	.byte	3
+	.byte	'IIC_ad_sub',0,8,44,7
+	.word	.L126
+	.byte	1,5,3
+	.word	IIC_ad_sub
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IIC_ad_sub')
+	.sect	'.debug_abbrev'
+.L113:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('IIC_buf')
+	.sect	'.debug_info'
+.L114:
+	.word	178
+	.half	3
+	.word	.L115
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L46
+	.byte	3
+	.byte	'IIC_buf',0,8,45,8
+	.word	.L146
+	.byte	1,5,3
+	.word	IIC_buf
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IIC_buf')
+	.sect	'.debug_abbrev'
+.L115:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('IIC_num')
+	.sect	'.debug_info'
+.L116:
+	.word	178
+	.half	3
+	.word	.L117
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L46
+	.byte	3
+	.byte	'IIC_num',0,8,46,7
+	.word	.L126
+	.byte	1,5,3
+	.word	IIC_num
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IIC_num')
+	.sect	'.debug_abbrev'
+.L117:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('simiic_delay_time')
+	.sect	'.debug_info'
+.L118:
+	.word	187
+	.half	3
+	.word	.L119
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L46
+	.byte	3
+	.byte	'simiic_delay_time',0,8,53,15
+	.word	.L121
+	.byte	5,3
+	.word	simiic_delay_time
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('simiic_delay_time')
+	.sect	'.debug_abbrev'
+.L119:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_loc',debug,cluster('read_ch')
+	.sect	'.debug_loc'
+.L130:
+	.word	-1,.L37,0,.L168-.L37
+	.half	1
+	.byte	84
+	.word	.L169-.L37,.L129-.L37
+	.half	1
+	.byte	88
+	.word	.L175-.L37,.L176-.L37
+	.half	1
+	.byte	84
+	.word	0,0
+.L132:
+	.word	-1,.L37,.L170-.L37,.L171-.L37
+	.half	1
+	.byte	95
+	.word	.L173-.L37,.L174-.L37
+	.half	1
+	.byte	95
+	.word	.L15-.L37,.L129-.L37
+	.half	1
+	.byte	95
+	.word	.L177-.L37,.L129-.L37
+	.half	1
+	.byte	82
+	.word	0,0
+.L131:
+	.word	-1,.L37,.L172-.L37,.L129-.L37
+	.half	1
+	.byte	89
+	.word	0,0
+.L36:
+	.word	-1,.L37,0,.L129-.L37
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sccb_waitack')
+	.sect	'.debug_loc'
+.L32:
+	.word	-1,.L33,0,.L156-.L33
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('send_ch')
+	.sect	'.debug_loc'
+.L127:
+	.word	-1,.L35,0,.L10-.L35
+	.half	1
+	.byte	84
+	.word	.L162-.L35,.L163-.L35
+	.half	1
+	.byte	88
+	.word	.L166-.L35,.L125-.L35
+	.half	1
+	.byte	88
+	.word	0,0
+.L128:
+	.word	-1,.L35,.L164-.L35,.L165-.L35
+	.half	1
+	.byte	95
+	.word	.L167-.L35,.L125-.L35
+	.half	1
+	.byte	95
+	.word	0,0
+.L34:
+	.word	-1,.L35,0,.L125-.L35
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('simiic_delay')
+	.sect	'.debug_loc'
+.L152:
+	.word	-1,.L25,.L157-.L25,.L158-.L25
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L159-.L25,.L151-.L25
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L24:
+	.word	-1,.L25,0,.L151-.L25
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('simiic_delay_set')
+	.sect	'.debug_loc'
+.L22:
+	.word	-1,.L23,0,.L120-.L23
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L122:
+	.word	-1,.L23,0,.L120-.L23
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('simiic_init')
+	.sect	'.debug_loc'
+.L44:
+	.word	-1,.L45,0,.L150-.L45
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('simiic_read_reg')
+	.sect	'.debug_loc'
+.L142:
+	.word	-1,.L41,.L193-.L41,.L194-.L41
+	.half	1
+	.byte	82
+	.word	.L195-.L41,.L137-.L41
+	.half	1
+	.byte	95
+	.word	.L196-.L41,.L137-.L41
+	.half	1
+	.byte	82
+	.word	0,0
+.L138:
+	.word	-1,.L41,0,.L186-.L41
+	.half	1
+	.byte	84
+	.word	.L186-.L41,.L189-.L41
+	.half	1
+	.byte	88
+	.word	0,0
+.L139:
+	.word	-1,.L41,0,.L186-.L41
+	.half	1
+	.byte	85
+	.word	.L190-.L41,.L191-.L41
+	.half	1
+	.byte	89
+	.word	.L191-.L41,.L192-.L41
+	.half	1
+	.byte	84
+	.word	0,0
+.L40:
+	.word	-1,.L41,0,.L137-.L41
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L141:
+	.word	-1,.L41,0,.L186-.L41
+	.half	1
+	.byte	86
+	.word	.L187-.L41,.L188-.L41
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('simiic_read_regs')
+	.sect	'.debug_loc'
+.L147:
+	.word	-1,.L43,0,.L197-.L43
+	.half	1
+	.byte	100
+	.word	.L198-.L43,.L143-.L43
+	.half	1
+	.byte	111
+	.word	0,0
+.L144:
+	.word	-1,.L43,0,.L197-.L43
+	.half	1
+	.byte	84
+	.word	.L197-.L43,.L202-.L43
+	.half	1
+	.byte	88
+	.word	0,0
+.L148:
+	.word	-1,.L43,0,.L197-.L43
+	.half	1
+	.byte	86
+	.word	.L199-.L43,.L200-.L43
+	.half	1
+	.byte	95
+	.word	.L206-.L43,.L143-.L43
+	.half	1
+	.byte	95
+	.word	0,0
+.L145:
+	.word	-1,.L43,0,.L197-.L43
+	.half	1
+	.byte	85
+	.word	.L203-.L43,.L204-.L43
+	.half	1
+	.byte	89
+	.word	.L204-.L43,.L205-.L43
+	.half	1
+	.byte	84
+	.word	0,0
+.L42:
+	.word	-1,.L43,0,.L143-.L43
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L149:
+	.word	-1,.L43,0,.L197-.L43
+	.half	1
+	.byte	87
+	.word	.L201-.L43,.L143-.L43
+	.half	1
+	.byte	90
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('simiic_sendack')
+	.sect	'.debug_loc'
+.L154:
+	.word	-1,.L31,0,.L160-.L31
+	.half	1
+	.byte	84
+	.word	.L161-.L31,.L153-.L31
+	.half	1
+	.byte	95
+	.word	0,0
+.L30:
+	.word	-1,.L31,0,.L153-.L31
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('simiic_start')
+	.sect	'.debug_loc'
+.L26:
+	.word	-1,.L27,0,.L123-.L27
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('simiic_stop')
+	.sect	'.debug_loc'
+.L28:
+	.word	-1,.L29,0,.L124-.L29
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('simiic_write_reg')
+	.sect	'.debug_loc'
+.L136:
+	.word	-1,.L39,0,.L178-.L39
+	.half	1
+	.byte	86
+	.word	.L183-.L39,.L184-.L39
+	.half	1
+	.byte	89
+	.word	.L184-.L39,.L185-.L39
+	.half	1
+	.byte	84
+	.word	0,0
+.L134:
+	.word	-1,.L39,0,.L178-.L39
+	.half	1
+	.byte	84
+	.word	.L179-.L39,.L180-.L39
+	.half	1
+	.byte	95
+	.word	0,0
+.L135:
+	.word	-1,.L39,0,.L178-.L39
+	.half	1
+	.byte	85
+	.word	.L181-.L39,.L182-.L39
+	.half	1
+	.byte	88
+	.word	.L182-.L39,.L183-.L39
+	.half	1
+	.byte	84
+	.word	0,0
+.L38:
+	.word	-1,.L39,0,.L133-.L39
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L343:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('simiic_delay_set')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L343,.L23,.L120-.L23
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('simiic_delay')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L343,.L25,.L151-.L25
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('simiic_start')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L343,.L27,.L123-.L27
+	.sdecl	'.debug_frame',debug,cluster('simiic_stop')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L343,.L29,.L124-.L29
+	.sdecl	'.debug_frame',debug,cluster('simiic_sendack')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L343,.L31,.L153-.L31
+	.sdecl	'.debug_frame',debug,cluster('sccb_waitack')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L343,.L33,.L156-.L33
+	.sdecl	'.debug_frame',debug,cluster('send_ch')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L343,.L35,.L125-.L35
+	.sdecl	'.debug_frame',debug,cluster('read_ch')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L343,.L37,.L129-.L37
+	.sdecl	'.debug_frame',debug,cluster('simiic_write_reg')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L343,.L39,.L133-.L39
+	.sdecl	'.debug_frame',debug,cluster('simiic_read_reg')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L343,.L41,.L137-.L41
+	.sdecl	'.debug_frame',debug,cluster('simiic_read_regs')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L343,.L43,.L143-.L43
+	.sdecl	'.debug_frame',debug,cluster('simiic_init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L343,.L45,.L150-.L45
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_IIC.c	   279  
+
+	; Module end

@@ -1,0 +1,599 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\.Ifx_LutLinearF32.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutLinearF32.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutLinearF32.src ..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutLinearF32.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutLinearF32.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_LutLinearF32.Ifx_LutLinearF32_searchBin',code,cluster('Ifx_LutLinearF32_searchBin')
+	.sect	'.text.Ifx_LutLinearF32.Ifx_LutLinearF32_searchBin'
+	.align	2
+	
+	.global	Ifx_LutLinearF32_searchBin
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	     1  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	     2   * \file Ifx_LutLinearF32.c
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	     3   * \brief Linear look-up function
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	     4   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	     5   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	     6   * \version disabled
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	     8   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	     9   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    10   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    11   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    12   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    17  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    18  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    20  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    22   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    26   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    27  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    28   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    32   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    33   * language processor.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    34  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    41   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    42  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    43   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    44   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    45  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    46  #include "Ifx_LutLinearF32.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    47  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    48  /** \brief Look-up table with binary search implementation
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    49   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    50   * Value inside table will be linearly interpolated.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    51   * Value outside table will be linearly extrapolated.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    52   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    53   * \param ml pointer to the multi-segment object
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    54   * \param index
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    55   * \return linear interpolated value */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    56  float32 Ifx_LutLinearF32_searchBin(const Ifx_LutLinearF32 *ml, float32 index)
+; Function Ifx_LutLinearF32_searchBin
+.L14:
+Ifx_LutLinearF32_searchBin:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    57  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    58      sint16 imin;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    59      sint16 imax;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    60      sint16 imid;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    61  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    62      imin = 0;
+	mov	d1,#0
+.L33:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    63      imax = ml->segmentCount - 1;
+	ld.b	d0,[a4]0
+.L48:
+	add	d2,d0,#-1
+.L34:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    64  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    65      if (ml->segments[1].boundary > ml->segments[0].boundary)
+	ld.a	a15,[a4]4
+.L49:
+	ld.w	d0,[a15]20
+.L50:
+	ld.a	a15,[a4]4
+.L51:
+	ld.w	d15,[a15]8
+.L52:
+	cmp.f	d0,d0,d15
+	extr.u	d15,d0,#2,#1
+.L53:
+	jeq	d15,#0,.L2
+.L54:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    66      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    67          while (imin < imax)
+	j	.L3
+.L4:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    68          {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    69              imid = imin + (imax - imin) / 2;
+	sub	d0,d2,d1
+.L55:
+	ge	d15,d0,#0
+	caddn	d0,d15,#1
+	sha	d0,#-1
+.L56:
+	add	d0,d1
+	extr	d0,d0,#0,#16
+.L36:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    70  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    71              if (index > ml->segments[imid].boundary)
+	mul	d15,d0,#12
+.L57:
+	ld.a	a15,[a4]4
+.L58:
+	addsc.a	a15,a15,d15,#0
+.L59:
+	ld.w	d15,[a15]8
+.L60:
+	cmp.f	d15,d4,d15
+	jnz.t	d15:2,.L5
+.L61:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    72              {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    73                  imin = imid + 1;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    74              }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    75              else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    76              {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    77                  imax = imid;
+	mov	d2,d0
+.L62:
+	j	.L6
+.L5:
+	add	d0,#1
+.L37:
+	extr	d1,d0,#0,#16
+.L6:
+.L3:
+	jlt	d1,d2,.L4
+.L63:
+	j	.L7
+.L2:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    78              }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    79          }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    80      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    81      else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    82      {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    83          while (imin < imax)
+	j	.L8
+.L9:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    84          {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    85              imid = imin + (imax - imin) / 2;
+	sub	d0,d2,d1
+.L64:
+	ge	d15,d0,#0
+	caddn	d0,d15,#1
+	sha	d0,#-1
+.L65:
+	add	d0,d1
+	extr	d0,d0,#0,#16
+.L38:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    86  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    87              if (index < ml->segments[imid].boundary)
+	mul	d15,d0,#12
+.L66:
+	ld.a	a15,[a4]4
+.L67:
+	addsc.a	a15,a15,d15,#0
+.L68:
+	ld.w	d15,[a15]8
+.L69:
+	cmp.f	d15,d4,d15
+	jnz.t	d15:0,.L10
+.L70:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    88              {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    89                  imin = imid + 1;
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    90              }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    91              else
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    92              {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    93                  imax = imid;
+	mov	d2,d0
+.L71:
+	j	.L11
+.L10:
+	add	d0,#1
+.L39:
+	extr	d1,d0,#0,#16
+.L11:
+.L8:
+	jlt	d1,d2,.L9
+.L7:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    94              }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    95          }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    96      }
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    97  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    98      return (ml->segments[imin].gain * index) + ml->segments[imin].offset;
+	mul	d15,d1,#12
+.L72:
+	ld.a	a15,[a4]4
+.L73:
+	addsc.a	a15,a15,d15,#0
+.L74:
+	ld.w	d0,[a15]
+.L75:
+	mul	d15,d1,#12
+.L76:
+	ld.a	a15,[a4]4
+.L77:
+	addsc.a	a15,a15,d15,#0
+.L78:
+	ld.w	d15,[a15]4
+.L79:
+	madd.f	d2,d15,d0,d4
+.L35:
+	j	.L12
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_LutLinearF32.c	    99  }
+.L12:
+	ret
+.L25:
+	
+__Ifx_LutLinearF32_searchBin_function_end:
+	.size	Ifx_LutLinearF32_searchBin,__Ifx_LutLinearF32_searchBin_function_end-Ifx_LutLinearF32_searchBin
+.L23:
+	; End of function
+	
+	.calls	'Ifx_LutLinearF32_searchBin','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L16:
+	.word	844
+	.half	3
+	.word	.L17
+	.byte	4
+.L15:
+	.byte	1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutLinearF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L18
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	178
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	185
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	227
+	.byte	7
+	.word	227
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	243
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	248
+	.byte	9
+	.byte	'value',0
+	.word	227
+	.byte	9
+	.byte	'compare',0
+	.word	227
+	.byte	0
+.L24:
+	.byte	2
+	.byte	'float',0,4,4,2
+	.byte	'char',0,1,6,10,1,57,9,12,11
+	.byte	'gain',0
+	.word	305
+	.byte	4,2,35,0,11
+	.byte	'offset',0
+	.word	305
+	.byte	4,2,35,4,11
+	.byte	'boundary',0
+	.word	305
+	.byte	4,2,35,8,0,3
+	.word	322
+	.byte	7
+	.word	376
+	.byte	10,1,64,9,8,11
+	.byte	'segmentCount',0
+	.word	314
+	.byte	1,2,35,0,11
+	.byte	'segments',0
+	.word	381
+	.byte	4,2,35,4,0,3
+	.word	386
+.L26:
+	.byte	7
+	.word	432
+.L29:
+	.byte	2
+	.byte	'short int',0,2,5,12
+	.byte	'__wchar_t',0,2,1,1
+	.word	442
+	.byte	12
+	.byte	'__size_t',0,2,1,1
+	.word	227
+	.byte	12
+	.byte	'__ptrdiff_t',0,2,1,1
+	.word	178
+	.byte	13,1,7
+	.word	510
+	.byte	12
+	.byte	'__codeptr',0,2,1,1
+	.word	512
+	.byte	2
+	.byte	'unsigned char',0,1,8,12
+	.byte	'uint8',0,3,105,29
+	.word	535
+	.byte	2
+	.byte	'unsigned short int',0,2,7,12
+	.byte	'uint16',0,3,109,29
+	.word	566
+	.byte	2
+	.byte	'unsigned long int',0,4,7,12
+	.byte	'uint32',0,3,113,29
+	.word	603
+	.byte	12
+	.byte	'sint8',0,3,122,29
+	.word	314
+	.byte	12
+	.byte	'sint16',0,3,126,29
+	.word	442
+	.byte	2
+	.byte	'long int',0,4,5,12
+	.byte	'sint32',0,3,131,1,29
+	.word	668
+	.byte	2
+	.byte	'long long int',0,8,5,12
+	.byte	'sint64',0,3,138,1,29
+	.word	696
+	.byte	12
+	.byte	'float32',0,3,167,1,29
+	.word	305
+	.byte	14
+	.byte	'void',0,7
+	.word	746
+	.byte	12
+	.byte	'pvoid',0,4,57,28
+	.word	752
+	.byte	12
+	.byte	'Ifx_TickTime',0,4,79,28
+	.word	696
+	.byte	12
+	.byte	'Ifx_LutLinearF32_Item',0,1,62,3
+	.word	322
+	.byte	12
+	.byte	'Ifx_LutLinearF32',0,1,68,3
+	.word	386
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L17:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,19,1,58,15,59,15,57,15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0
+	.byte	0,12,22,0,3,8,58,15,59,15,57,15,73,19,0,0,13,21,0,54,15,0,0,14,59,0,3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L18:
+	.word	.L41-.L40
+.L40:
+	.half	3
+	.word	.L43-.L42
+.L42:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutLinearF32.h',0,0,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutLinearF32.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0
+	.byte	'Ifx_Types.h',0,1,0,0,0
+.L43:
+.L41:
+	.sdecl	'.debug_info',debug,cluster('Ifx_LutLinearF32_searchBin')
+	.sect	'.debug_info'
+.L19:
+	.word	329
+	.half	3
+	.word	.L20
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutLinearF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L22,.L21
+	.byte	2
+	.word	.L15
+	.byte	3
+	.byte	'Ifx_LutLinearF32_searchBin',0,1,56,9
+	.word	.L24
+	.byte	1,1,1
+	.word	.L14,.L25,.L13
+	.byte	4
+	.byte	'ml',0,1,56,60
+	.word	.L26,.L27
+	.byte	4
+	.byte	'index',0,1,56,72
+	.word	.L24,.L28
+	.byte	5
+	.word	.L14,.L25
+	.byte	6
+	.byte	'imin',0,1,58,12
+	.word	.L29,.L30
+	.byte	6
+	.byte	'imax',0,1,59,12
+	.word	.L29,.L31
+	.byte	6
+	.byte	'imid',0,1,60,12
+	.word	.L29,.L32
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_LutLinearF32_searchBin')
+	.sect	'.debug_abbrev'
+.L20:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_LutLinearF32_searchBin')
+	.sect	'.debug_line'
+.L21:
+	.word	.L45-.L44
+.L44:
+	.half	3
+	.word	.L47-.L46
+.L46:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutLinearF32.c',0,0,0,0,0
+.L47:
+	.byte	5,10,7,0,5,2
+	.word	.L14
+	.byte	3,61,1,5,14,9
+	.half	.L33-.L14
+	.byte	3,1,1,5,29,9
+	.half	.L48-.L33
+	.byte	1,5,11,9
+	.half	.L34-.L48
+	.byte	3,2,1,5,24,9
+	.half	.L49-.L34
+	.byte	1,5,38,9
+	.half	.L50-.L49
+	.byte	1,5,51,9
+	.half	.L51-.L50
+	.byte	1,5,34,9
+	.half	.L52-.L51
+	.byte	1,5,5,9
+	.half	.L53-.L52
+	.byte	1,5,27,7,9
+	.half	.L54-.L53
+	.byte	3,2,1,5,33,9
+	.half	.L4-.L54
+	.byte	3,2,1,5,41,9
+	.half	.L55-.L4
+	.byte	1,5,25,9
+	.half	.L56-.L55
+	.byte	1,5,37,9
+	.half	.L36-.L56
+	.byte	3,2,1,5,27,9
+	.half	.L57-.L36
+	.byte	1,5,37,9
+	.half	.L58-.L57
+	.byte	1,5,43,9
+	.half	.L59-.L58
+	.byte	1,5,13,9
+	.half	.L60-.L59
+	.byte	1,5,22,9
+	.half	.L61-.L60
+	.byte	3,6,1,5,32,9
+	.half	.L62-.L61
+	.byte	3,124,1,5,29,9
+	.half	.L5-.L62
+	.byte	1,5,27,9
+	.half	.L3-.L5
+	.byte	3,122,1,7,9
+	.half	.L63-.L3
+	.byte	1,9
+	.half	.L2-.L63
+	.byte	3,16,1,5,33,9
+	.half	.L9-.L2
+	.byte	3,2,1,5,41,9
+	.half	.L64-.L9
+	.byte	1,5,25,9
+	.half	.L65-.L64
+	.byte	1,5,37,9
+	.half	.L38-.L65
+	.byte	3,2,1,5,27,9
+	.half	.L66-.L38
+	.byte	1,5,37,9
+	.half	.L67-.L66
+	.byte	1,5,43,9
+	.half	.L68-.L67
+	.byte	1,5,13,9
+	.half	.L69-.L68
+	.byte	1,5,22,9
+	.half	.L70-.L69
+	.byte	3,6,1,5,32,9
+	.half	.L71-.L70
+	.byte	3,124,1,5,29,9
+	.half	.L10-.L71
+	.byte	1,5,27,9
+	.half	.L8-.L10
+	.byte	3,122,1,5,25,7,9
+	.half	.L7-.L8
+	.byte	3,15,1,5,15,9
+	.half	.L72-.L7
+	.byte	1,5,25,9
+	.half	.L73-.L72
+	.byte	1,5,31,9
+	.half	.L74-.L73
+	.byte	1,5,60,9
+	.half	.L75-.L74
+	.byte	1,5,50,9
+	.half	.L76-.L75
+	.byte	1,5,60,9
+	.half	.L77-.L76
+	.byte	1,5,66,9
+	.half	.L78-.L77
+	.byte	1,5,46,9
+	.half	.L79-.L78
+	.byte	1,5,5,9
+	.half	.L35-.L79
+	.byte	1,5,1,9
+	.half	.L12-.L35
+	.byte	3,1,1,7,9
+	.half	.L23-.L12
+	.byte	0,1,1
+.L45:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_LutLinearF32_searchBin')
+	.sect	'.debug_ranges'
+.L22:
+	.word	-1,.L14,0,.L23-.L14,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_LutLinearF32_searchBin')
+	.sect	'.debug_loc'
+.L13:
+	.word	-1,.L14,0,.L25-.L14
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L31:
+	.word	-1,.L14,.L34-.L14,.L35-.L14
+	.half	1
+	.byte	82
+	.word	0,0
+.L32:
+	.word	-1,.L14,.L36-.L14,.L37-.L14
+	.half	5
+	.byte	144,32,157,32,0
+	.word	.L38-.L14,.L39-.L14
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L30:
+	.word	-1,.L14,.L33-.L14,.L25-.L14
+	.half	1
+	.byte	81
+	.word	0,0
+.L28:
+	.word	-1,.L14,0,.L25-.L14
+	.half	1
+	.byte	84
+	.word	0,0
+.L27:
+	.word	-1,.L14,0,.L25-.L14
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L80:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_LutLinearF32_searchBin')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L80,.L14,.L25-.L14
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+
+
+	; Module end

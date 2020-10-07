@@ -1,0 +1,1314 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\seekfree_peripheral\\.SEEKFREE_MPU6050.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.src ..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.SEEKFREE_MPU6050.mpu6050_self1_check',code,cluster('mpu6050_self1_check')
+	.sect	'.text.SEEKFREE_MPU6050.mpu6050_self1_check'
+	.align	2
+	
+	.global	mpu6050_self1_check
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	     1  /*********************************************************************************************************************
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	     2   * COPYRIGHT NOTICE
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	     3   * Copyright (c) 2020,逐飞科技
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	     4   * All rights reserved.
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	     5   * 技术讨论QQ群：三群：824575535
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	     6   *
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	     7   * 以下所有内容版权均属逐飞科技所有，未经允许不得用于商业用途，
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	     8   * 欢迎各位使用并传播本程序，修改内容时必须保留逐飞科技的版权声明。
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	     9   *
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    10   * @file       		MPU6050
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    11   * @company	   		成都逐飞科技有限公司
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    12   * @author     		逐飞科技(QQ3184284598)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    13   * @version    		查看doc内version文件 版本说明
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    14   * @Software 		tasking v6.3r1
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    15   * @Target core		TC264D
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    16   * @Taobao   		https://seekfree.taobao.com/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    17   * @date       		2020-3-23
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    18   * @note		
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    19  					接线定义：
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    20  					------------------------------------ 
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    21  						软件IIC
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    22                          SCL                 查看SEEKFREE_IIC文件内的SEEKFREE_SCL宏定义
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    23  						SDA                 查看SEEKFREE_IIC文件内的SEEKFREE_SDA宏定义
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    24                              
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    25                          硬件IIC
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    26                          SCL                 查看init_mpu6050_hardware函数内IIC初始化时所带参数
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    27  						SDA                 查看init_mpu6050_hardware函数内IIC初始化时所带参数    
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    28  					------------------------------------ 
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    29   ********************************************************************************************************************/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    30  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    31  //#include "zf_iic.h"
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    32  #include "zf_stm_systick.h"
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    33  #include "SEEKFREE_IIC.h"
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    34  #include "SEEKFREE_MPU6050.h"
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    35  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    36  int16 mpu_gyro_x,mpu_gyro_y,mpu_gyro_z;
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    37  int16 mpu_acc_x,mpu_acc_y,mpu_acc_z;
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    38  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    39  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    40  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    41  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    42  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    43  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    44  //  @brief      MPU6050自检函数
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    45  //  @param      NULL
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    46  //  @return     void					
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    47  //  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    48  //  Sample usage:				调用该函数前，请先调用模拟IIC的初始化
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    49  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    50  void mpu6050_self1_check(void)
+; Function mpu6050_self1_check
+.L5:
+mpu6050_self1_check:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    51  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    52      simiic_write_reg(MPU6050_DEV_ADDR, PWR_MGMT_1, 0x00);	//解除休眠状态
+	mov	d4,#104
+.L148:
+	mov	d5,#107
+.L149:
+	mov	d6,#0
+	call	simiic_write_reg
+.L150:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    53      simiic_write_reg(MPU6050_DEV_ADDR, SMPLRT_DIV, 0x07);   //125HZ采样率
+	mov	d4,#104
+.L151:
+	mov	d5,#25
+.L152:
+	mov	d6,#7
+	call	simiic_write_reg
+.L153:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    54      while(0x07 != simiic_read_reg(MPU6050_DEV_ADDR, SMPLRT_DIV,SIMIIC))
+	j	.L2
+.L3:
+.L2:
+	mov	d4,#104
+.L154:
+	mov	d5,#25
+.L155:
+	mov	d6,#0
+	call	simiic_read_reg
+.L156:
+	jne	d2,#7,.L3
+.L157:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    55      {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    56          //卡在这里原因有以下几点
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    57          //1 MPU6050坏了，如果是新的这样的概率极低
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    58          //2 接线错误或者没有接好
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    59          //3 可能你需要外接上拉电阻，上拉到3.3V
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    60  		//4 可能没有调用模拟IIC的初始化函数
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    61      }
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    62  }
+	ret
+.L54:
+	
+__mpu6050_self1_check_function_end:
+	.size	mpu6050_self1_check,__mpu6050_self1_check_function_end-mpu6050_self1_check
+.L35:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_MPU6050.mpu6050_init',code,cluster('mpu6050_init')
+	.sect	'.text.SEEKFREE_MPU6050.mpu6050_init'
+	.align	2
+	
+	.global	mpu6050_init
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    63  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    64  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    65  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    66  //  @brief      初始化MPU6050
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    67  //  @param      NULL
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    68  //  @return     void					
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    69  //  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    70  //  Sample usage:				调用该函数前，请先调用模拟IIC的初始化
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    71  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    72  void mpu6050_init(void)
+; Function mpu6050_init
+.L7:
+mpu6050_init:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    73  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    74  	simiic_init();
+	call	simiic_init
+.L66:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    75      systick_delay_ms(STM0, 100);                                   //上电延时
+	mov	d4,#0
+	mov.u	d5,#57600
+	addih	d5,d5,#1525
+	call	systick_delay
+.L67:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    76  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    77      mpu6050_self1_check();
+	call	mpu6050_self1_check
+.L68:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    78      simiic_write_reg(MPU6050_DEV_ADDR, PWR_MGMT_1, 0x00);	//解除休眠状态
+	mov	d4,#104
+.L69:
+	mov	d5,#107
+.L70:
+	mov	d6,#0
+	call	simiic_write_reg
+.L71:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    79      simiic_write_reg(MPU6050_DEV_ADDR, SMPLRT_DIV, 0x07);   //125HZ采样率
+	mov	d4,#104
+.L72:
+	mov	d5,#25
+.L73:
+	mov	d6,#7
+	call	simiic_write_reg
+.L74:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    80      simiic_write_reg(MPU6050_DEV_ADDR, MPU6050_CONFIG, 0x04);       //
+	mov	d4,#104
+.L75:
+	mov	d5,#26
+.L76:
+	mov	d6,#4
+	call	simiic_write_reg
+.L77:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    81      simiic_write_reg(MPU6050_DEV_ADDR, GYRO_CONFIG, 0x18);  //2000
+	mov	d4,#104
+.L78:
+	mov	d5,#27
+.L79:
+	mov	d6,#24
+	call	simiic_write_reg
+.L80:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    82      simiic_write_reg(MPU6050_DEV_ADDR, ACCEL_CONFIG, 0x10); //8g
+	mov	d4,#104
+.L81:
+	mov	d5,#28
+.L82:
+	mov	d6,#16
+	call	simiic_write_reg
+.L83:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    83  	simiic_write_reg(MPU6050_DEV_ADDR, User_Control, 0x00);
+	mov	d4,#104
+.L84:
+	mov	d5,#106
+.L85:
+	mov	d6,#0
+	call	simiic_write_reg
+.L86:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    84      simiic_write_reg(MPU6050_DEV_ADDR, INT_PIN_CFG, 0x02);
+	mov	d4,#104
+.L87:
+	mov	d5,#55
+.L88:
+	mov	d6,#2
+	call	simiic_write_reg
+.L89:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    85  }
+	ret
+.L48:
+	
+__mpu6050_init_function_end:
+	.size	mpu6050_init,__mpu6050_init_function_end-mpu6050_init
+.L20:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_MPU6050.get_accdata',code,cluster('get_accdata')
+	.sect	'.text.SEEKFREE_MPU6050.get_accdata'
+	.align	2
+	
+	.global	get_accdata
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    86  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    87  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    88  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    89  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    90  //  @brief      获取MPU6050加速度计数据
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    91  //  @param      NULL
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    92  //  @return     void
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    93  //  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    94  //  Sample usage:				执行该函数后，直接查看对应的变量即可
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    95  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    96  void get_accdata(void)
+; Function get_accdata
+.L9:
+get_accdata:	.type	func
+	sub.a	a10,#8
+.L56:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    97  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    98      uint8 dat[6];
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	    99  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   100      simiic_read_regs(MPU6050_DEV_ADDR, ACCEL_XOUT_H, dat, 6, SIMIIC);  
+	mov	d4,#104
+.L94:
+	mov	d5,#59
+.L95:
+	lea	a4,[a10]0
+.L96:
+	mov	d6,#6
+.L97:
+	mov	d7,#0
+	call	simiic_read_regs
+.L98:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   101      mpu_acc_x = (int16)(((uint16)dat[0]<<8 | dat[1]));
+	movh.a	a15,#@his(mpu_acc_x)
+	lea	a15,[a15]@los(mpu_acc_x)
+.L99:
+	ld.bu	d15,[a10]
+.L100:
+	sha	d0,d15,#8
+.L101:
+	ld.bu	d15,[a10]1
+.L102:
+	or	d0,d15
+.L103:
+	st.h	[a15],d0
+.L104:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   102      mpu_acc_y = (int16)(((uint16)dat[2]<<8 | dat[3]));
+	movh.a	a15,#@his(mpu_acc_y)
+	lea	a15,[a15]@los(mpu_acc_y)
+.L105:
+	ld.bu	d15,[a10]2
+.L106:
+	sha	d0,d15,#8
+.L107:
+	ld.bu	d15,[a10]3
+.L108:
+	or	d0,d15
+.L109:
+	st.h	[a15],d0
+.L110:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   103      mpu_acc_z = (int16)(((uint16)dat[4]<<8 | dat[5]));
+	movh.a	a15,#@his(mpu_acc_z)
+	lea	a15,[a15]@los(mpu_acc_z)
+.L111:
+	ld.bu	d15,[a10]4
+.L112:
+	sha	d0,d15,#8
+.L113:
+	ld.bu	d15,[a10]5
+.L114:
+	or	d0,d15
+.L115:
+	st.h	[a15],d0
+.L116:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   104  }
+	ret
+.L49:
+	
+__get_accdata_function_end:
+	.size	get_accdata,__get_accdata_function_end-get_accdata
+.L25:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_MPU6050.get_gyro',code,cluster('get_gyro')
+	.sect	'.text.SEEKFREE_MPU6050.get_gyro'
+	.align	2
+	
+	.global	get_gyro
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   105  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   106  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   107  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   108  //  @brief      获取MPU6050陀螺仪数据
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   109  //  @param      NULL
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   110  //  @return     void
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   111  //  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   112  //  Sample usage:				执行该函数后，直接查看对应的变量即可
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   113  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   114  void get_gyro(void)
+; Function get_gyro
+.L11:
+get_gyro:	.type	func
+	sub.a	a10,#8
+.L57:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   115  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   116      uint8 dat[6];
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   117  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   118      simiic_read_regs(MPU6050_DEV_ADDR, GYRO_XOUT_H, dat, 6, SIMIIC);  
+	mov	d4,#104
+.L121:
+	mov	d5,#67
+.L122:
+	lea	a4,[a10]0
+.L123:
+	mov	d6,#6
+.L124:
+	mov	d7,#0
+	call	simiic_read_regs
+.L125:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   119      mpu_gyro_x = (int16)(((uint16)dat[0]<<8 | dat[1]));
+	movh.a	a15,#@his(mpu_gyro_x)
+	lea	a15,[a15]@los(mpu_gyro_x)
+.L126:
+	ld.bu	d15,[a10]
+.L127:
+	sha	d0,d15,#8
+.L128:
+	ld.bu	d15,[a10]1
+.L129:
+	or	d0,d15
+.L130:
+	st.h	[a15],d0
+.L131:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   120      mpu_gyro_y = (int16)(((uint16)dat[2]<<8 | dat[3]));
+	movh.a	a15,#@his(mpu_gyro_y)
+	lea	a15,[a15]@los(mpu_gyro_y)
+.L132:
+	ld.bu	d15,[a10]2
+.L133:
+	sha	d0,d15,#8
+.L134:
+	ld.bu	d15,[a10]3
+.L135:
+	or	d0,d15
+.L136:
+	st.h	[a15],d0
+.L137:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   121      mpu_gyro_z = (int16)(((uint16)dat[4]<<8 | dat[5]));
+	movh.a	a15,#@his(mpu_gyro_z)
+	lea	a15,[a15]@los(mpu_gyro_z)
+.L138:
+	ld.bu	d15,[a10]4
+.L139:
+	sha	d0,d15,#8
+.L140:
+	ld.bu	d15,[a10]5
+.L141:
+	or	d0,d15
+.L142:
+	st.h	[a15],d0
+.L143:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   122  }
+	ret
+.L52:
+	
+__get_gyro_function_end:
+	.size	get_gyro,__get_gyro_function_end-get_gyro
+.L30:
+	; End of function
+	
+	.sdecl	'.bss.SEEKFREE_MPU6050.mpu_gyro_x',data,cluster('mpu_gyro_x')
+	.sect	'.bss.SEEKFREE_MPU6050.mpu_gyro_x'
+	.global	mpu_gyro_x
+	.align	2
+mpu_gyro_x:	.type	object
+	.size	mpu_gyro_x,2
+	.space	2
+	.sdecl	'.bss.SEEKFREE_MPU6050.mpu_gyro_y',data,cluster('mpu_gyro_y')
+	.sect	'.bss.SEEKFREE_MPU6050.mpu_gyro_y'
+	.global	mpu_gyro_y
+	.align	2
+mpu_gyro_y:	.type	object
+	.size	mpu_gyro_y,2
+	.space	2
+	.sdecl	'.bss.SEEKFREE_MPU6050.mpu_gyro_z',data,cluster('mpu_gyro_z')
+	.sect	'.bss.SEEKFREE_MPU6050.mpu_gyro_z'
+	.global	mpu_gyro_z
+	.align	2
+mpu_gyro_z:	.type	object
+	.size	mpu_gyro_z,2
+	.space	2
+	.sdecl	'.bss.SEEKFREE_MPU6050.mpu_acc_x',data,cluster('mpu_acc_x')
+	.sect	'.bss.SEEKFREE_MPU6050.mpu_acc_x'
+	.global	mpu_acc_x
+	.align	2
+mpu_acc_x:	.type	object
+	.size	mpu_acc_x,2
+	.space	2
+	.sdecl	'.bss.SEEKFREE_MPU6050.mpu_acc_y',data,cluster('mpu_acc_y')
+	.sect	'.bss.SEEKFREE_MPU6050.mpu_acc_y'
+	.global	mpu_acc_y
+	.align	2
+mpu_acc_y:	.type	object
+	.size	mpu_acc_y,2
+	.space	2
+	.sdecl	'.bss.SEEKFREE_MPU6050.mpu_acc_z',data,cluster('mpu_acc_z')
+	.sect	'.bss.SEEKFREE_MPU6050.mpu_acc_z'
+	.global	mpu_acc_z
+	.align	2
+mpu_acc_z:	.type	object
+	.size	mpu_acc_z,2
+	.space	2
+	.calls	'mpu6050_self1_check','simiic_write_reg'
+	.calls	'mpu6050_self1_check','simiic_read_reg'
+	.calls	'mpu6050_init','simiic_init'
+	.calls	'mpu6050_init','systick_delay'
+	.calls	'mpu6050_init','mpu6050_self1_check'
+	.calls	'mpu6050_init','simiic_write_reg'
+	.calls	'get_accdata','simiic_read_regs'
+	.calls	'get_gyro','simiic_read_regs'
+	.calls	'mpu6050_self1_check','',0
+	.calls	'mpu6050_init','',0
+	.calls	'get_accdata','',8
+	.extern	systick_delay
+	.extern	simiic_write_reg
+	.extern	simiic_read_reg
+	.extern	simiic_read_regs
+	.extern	simiic_init
+	.calls	'get_gyro','',8
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L13:
+	.word	972
+	.half	3
+	.word	.L14
+	.byte	4
+.L12:
+	.byte	1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L15
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	161
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	168
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	210
+	.byte	7
+	.word	210
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	226
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	231
+	.byte	9
+	.byte	'value',0
+	.word	210
+	.byte	9
+	.byte	'compare',0
+	.word	210
+	.byte	0,10,1,27,9,1,11
+	.byte	'STM0',0,0,11
+	.byte	'STM1',0,1,0,2
+	.byte	'unsigned long int',0,4,7,12
+	.byte	'systick_delay',0,1,34,6,1,1,1,1,13
+	.byte	'stmn',0,1,34,30
+	.word	288
+	.byte	13
+	.byte	'time',0,1,34,43
+	.word	308
+	.byte	0,2
+	.byte	'unsigned char',0,1,8,12
+	.byte	'simiic_write_reg',0,2,61,7,1,1,1,1,13
+	.byte	'dev_add',0,2,61,30
+	.word	378
+	.byte	13
+	.byte	'reg',0,2,61,45
+	.word	378
+	.byte	13
+	.byte	'dat',0,2,61,56
+	.word	378
+	.byte	0,14
+	.byte	'IIC',0,2,47,14,1,11
+	.byte	'SIMIIC',0,0,11
+	.byte	'SCCB',0,1,0,15
+	.byte	'simiic_read_reg',0,2,62,7
+	.word	378
+	.byte	1,1,1,1,13
+	.byte	'dev_add',0,2,62,29
+	.word	378
+	.byte	13
+	.byte	'reg',0,2,62,44
+	.word	378
+	.byte	13
+	.byte	'type',0,2,62,58
+	.word	461
+	.byte	0,7
+	.word	378
+	.byte	12
+	.byte	'simiic_read_regs',0,2,63,7,1,1,1,1,13
+	.byte	'dev_add',0,2,63,30
+	.word	378
+	.byte	13
+	.byte	'reg',0,2,63,45
+	.word	378
+	.byte	13
+	.byte	'dat_add',0,2,63,57
+	.word	557
+	.byte	13
+	.byte	'num',0,2,63,72
+	.word	378
+	.byte	13
+	.byte	'type',0,2,63,86
+	.word	461
+	.byte	0,16
+	.byte	'simiic_init',0,2,64,7,1,1,1,1
+.L50:
+	.byte	17,6
+	.word	378
+	.byte	18,5,0,19
+	.byte	'__size_t',0,3,1,1
+	.word	210
+	.byte	20,1,7
+	.word	703
+	.byte	19
+	.byte	'__codeptr',0,3,1,1
+	.word	705
+	.byte	19
+	.byte	'uint8',0,4,105,29
+	.word	378
+	.byte	2
+	.byte	'unsigned short int',0,2,7,19
+	.byte	'uint16',0,4,109,29
+	.word	742
+	.byte	19
+	.byte	'uint32',0,4,113,29
+	.word	308
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,19
+	.byte	'uint64',0,4,118,29
+	.word	794
+	.byte	2
+	.byte	'char',0,1,6,19
+	.byte	'int8',0,5,33,29
+	.word	835
+.L55:
+	.byte	2
+	.byte	'short int',0,2,5,19
+	.byte	'int16',0,5,34,29
+	.word	856
+	.byte	2
+	.byte	'long int',0,4,5,19
+	.byte	'int32',0,5,35,29
+	.word	883
+	.byte	2
+	.byte	'long long int',0,8,5,19
+	.byte	'int64',0,5,36,29
+	.word	909
+	.byte	19
+	.byte	'STMN_enum',0,1,31,2
+	.word	288
+	.byte	19
+	.byte	'IIC_type',0,2,51,3
+	.word	461
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L14:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,4,1,58,15,59,15,57,15,11,15,0,0,11,40,0,3,8,28,13,0,0,12,46,1,3
+	.byte	8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,13,5,0,3,8,58,15,59,15,57,15,73,19,0,0,14,4,1,3,8,58,15
+	.byte	59,15,57,15,11,15,0,0,15,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,16,46,0,3,8,58,15
+	.byte	59,15,57,15,54,15,39,12,63,12,60,12,0,0,17,1,1,11,15,73,19,0,0,18,33,0,47,15,0,0,19,22,0,3,8,58,15,59
+	.byte	15,57,15,73,19,0,0,20,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L15:
+	.word	.L59-.L58
+.L58:
+	.half	3
+	.word	.L61-.L60
+.L60:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common',0,0
+	.byte	'zf_stm_systick.h',0,1,0,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.h',0,0,0,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0,0,0,0
+	.byte	'PLATFORM_TYPES.H',0,2,0,0
+	.byte	'common.h',0,3,0,0,0
+.L61:
+.L59:
+	.sdecl	'.debug_info',debug,cluster('mpu6050_init')
+	.sect	'.debug_info'
+.L16:
+	.word	209
+	.half	3
+	.word	.L17
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L19,.L18
+	.byte	2
+	.word	.L12
+	.byte	3
+	.byte	'mpu6050_init',0,1,72,6,1,1,1
+	.word	.L7,.L48,.L6
+	.byte	4
+	.word	.L7,.L48
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('mpu6050_init')
+	.sect	'.debug_abbrev'
+.L17:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('mpu6050_init')
+	.sect	'.debug_line'
+.L18:
+	.word	.L63-.L62
+.L62:
+	.half	3
+	.word	.L65-.L64
+.L64:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0,0,0,0,0
+.L65:
+	.byte	5,13,7,0,5,2
+	.word	.L7
+	.byte	3,201,0,1,5,5,9
+	.half	.L66-.L7
+	.byte	3,1,1,5,24,9
+	.half	.L67-.L66
+	.byte	3,2,1,5,22,9
+	.half	.L68-.L67
+	.byte	3,1,1,5,40,9
+	.half	.L69-.L68
+	.byte	1,5,52,9
+	.half	.L70-.L69
+	.byte	1,5,22,9
+	.half	.L71-.L70
+	.byte	3,1,1,5,40,9
+	.half	.L72-.L71
+	.byte	1,5,52,9
+	.half	.L73-.L72
+	.byte	1,5,22,9
+	.half	.L74-.L73
+	.byte	3,1,1,5,40,9
+	.half	.L75-.L74
+	.byte	1,5,56,9
+	.half	.L76-.L75
+	.byte	1,5,22,9
+	.half	.L77-.L76
+	.byte	3,1,1,5,40,9
+	.half	.L78-.L77
+	.byte	1,5,53,9
+	.half	.L79-.L78
+	.byte	1,5,22,9
+	.half	.L80-.L79
+	.byte	3,1,1,5,40,9
+	.half	.L81-.L80
+	.byte	1,5,54,9
+	.half	.L82-.L81
+	.byte	1,5,19,9
+	.half	.L83-.L82
+	.byte	3,1,1,5,37,9
+	.half	.L84-.L83
+	.byte	1,5,51,9
+	.half	.L85-.L84
+	.byte	1,5,22,9
+	.half	.L86-.L85
+	.byte	3,1,1,5,40,9
+	.half	.L87-.L86
+	.byte	1,5,53,9
+	.half	.L88-.L87
+	.byte	1,5,1,9
+	.half	.L89-.L88
+	.byte	3,1,1,7,9
+	.half	.L20-.L89
+	.byte	0,1,1
+.L63:
+	.sdecl	'.debug_ranges',debug,cluster('mpu6050_init')
+	.sect	'.debug_ranges'
+.L19:
+	.word	-1,.L7,0,.L20-.L7,0,0
+	.sdecl	'.debug_info',debug,cluster('get_accdata')
+	.sect	'.debug_info'
+.L21:
+	.word	225
+	.half	3
+	.word	.L22
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L24,.L23
+	.byte	2
+	.word	.L12
+	.byte	3
+	.byte	'get_accdata',0,1,96,6,1,1,1
+	.word	.L9,.L49,.L8
+	.byte	4
+	.word	.L9,.L49
+	.byte	5
+	.byte	'dat',0,1,98,11
+	.word	.L50,.L51
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('get_accdata')
+	.sect	'.debug_abbrev'
+.L22:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('get_accdata')
+	.sect	'.debug_line'
+.L23:
+	.word	.L91-.L90
+.L90:
+	.half	3
+	.word	.L93-.L92
+.L92:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0,0,0,0,0
+.L93:
+	.byte	5,6,7,0,5,2
+	.word	.L9
+	.byte	3,223,0,1,5,22,9
+	.half	.L56-.L9
+	.byte	3,4,1,5,40,9
+	.half	.L94-.L56
+	.byte	1,5,54,9
+	.half	.L95-.L94
+	.byte	1,5,59,9
+	.half	.L96-.L95
+	.byte	1,5,62,9
+	.half	.L97-.L96
+	.byte	1,5,5,9
+	.half	.L98-.L97
+	.byte	3,1,1,5,37,9
+	.half	.L99-.L98
+	.byte	1,5,40,9
+	.half	.L100-.L99
+	.byte	1,5,49,9
+	.half	.L101-.L100
+	.byte	1,5,44,9
+	.half	.L102-.L101
+	.byte	1,5,15,9
+	.half	.L103-.L102
+	.byte	1,5,5,9
+	.half	.L104-.L103
+	.byte	3,1,1,5,37,9
+	.half	.L105-.L104
+	.byte	1,5,40,9
+	.half	.L106-.L105
+	.byte	1,5,49,9
+	.half	.L107-.L106
+	.byte	1,5,44,9
+	.half	.L108-.L107
+	.byte	1,5,15,9
+	.half	.L109-.L108
+	.byte	1,5,5,9
+	.half	.L110-.L109
+	.byte	3,1,1,5,37,9
+	.half	.L111-.L110
+	.byte	1,5,40,9
+	.half	.L112-.L111
+	.byte	1,5,49,9
+	.half	.L113-.L112
+	.byte	1,5,44,9
+	.half	.L114-.L113
+	.byte	1,5,15,9
+	.half	.L115-.L114
+	.byte	1,5,1,9
+	.half	.L116-.L115
+	.byte	3,1,1,7,9
+	.half	.L25-.L116
+	.byte	0,1,1
+.L91:
+	.sdecl	'.debug_ranges',debug,cluster('get_accdata')
+	.sect	'.debug_ranges'
+.L24:
+	.word	-1,.L9,0,.L25-.L9,0,0
+	.sdecl	'.debug_info',debug,cluster('get_gyro')
+	.sect	'.debug_info'
+.L26:
+	.word	222
+	.half	3
+	.word	.L27
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L29,.L28
+	.byte	2
+	.word	.L12
+	.byte	3
+	.byte	'get_gyro',0,1,114,6,1,1,1
+	.word	.L11,.L52,.L10
+	.byte	4
+	.word	.L11,.L52
+	.byte	5
+	.byte	'dat',0,1,116,11
+	.word	.L50,.L53
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('get_gyro')
+	.sect	'.debug_abbrev'
+.L27:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('get_gyro')
+	.sect	'.debug_line'
+.L28:
+	.word	.L118-.L117
+.L117:
+	.half	3
+	.word	.L120-.L119
+.L119:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0,0,0,0,0
+.L120:
+	.byte	5,6,7,0,5,2
+	.word	.L11
+	.byte	3,241,0,1,5,22,9
+	.half	.L57-.L11
+	.byte	3,4,1,5,40,9
+	.half	.L121-.L57
+	.byte	1,5,53,9
+	.half	.L122-.L121
+	.byte	1,5,58,9
+	.half	.L123-.L122
+	.byte	1,5,61,9
+	.half	.L124-.L123
+	.byte	1,5,5,9
+	.half	.L125-.L124
+	.byte	3,1,1,5,38,9
+	.half	.L126-.L125
+	.byte	1,5,41,9
+	.half	.L127-.L126
+	.byte	1,5,50,9
+	.half	.L128-.L127
+	.byte	1,5,45,9
+	.half	.L129-.L128
+	.byte	1,5,16,9
+	.half	.L130-.L129
+	.byte	1,5,5,9
+	.half	.L131-.L130
+	.byte	3,1,1,5,38,9
+	.half	.L132-.L131
+	.byte	1,5,41,9
+	.half	.L133-.L132
+	.byte	1,5,50,9
+	.half	.L134-.L133
+	.byte	1,5,45,9
+	.half	.L135-.L134
+	.byte	1,5,16,9
+	.half	.L136-.L135
+	.byte	1,5,5,9
+	.half	.L137-.L136
+	.byte	3,1,1,5,38,9
+	.half	.L138-.L137
+	.byte	1,5,41,9
+	.half	.L139-.L138
+	.byte	1,5,50,9
+	.half	.L140-.L139
+	.byte	1,5,45,9
+	.half	.L141-.L140
+	.byte	1,5,16,9
+	.half	.L142-.L141
+	.byte	1,5,1,9
+	.half	.L143-.L142
+	.byte	3,1,1,7,9
+	.half	.L30-.L143
+	.byte	0,1,1
+.L118:
+	.sdecl	'.debug_ranges',debug,cluster('get_gyro')
+	.sect	'.debug_ranges'
+.L29:
+	.word	-1,.L11,0,.L30-.L11,0,0
+	.sdecl	'.debug_info',debug,cluster('mpu6050_self1_check')
+	.sect	'.debug_info'
+.L31:
+	.word	216
+	.half	3
+	.word	.L32
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L34,.L33
+	.byte	2
+	.word	.L12
+	.byte	3
+	.byte	'mpu6050_self1_check',0,1,50,6,1,1,1
+	.word	.L5,.L54,.L4
+	.byte	4
+	.word	.L5,.L54
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('mpu6050_self1_check')
+	.sect	'.debug_abbrev'
+.L32:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('mpu6050_self1_check')
+	.sect	'.debug_line'
+.L33:
+	.word	.L145-.L144
+.L144:
+	.half	3
+	.word	.L147-.L146
+.L146:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0,0,0,0,0
+.L147:
+	.byte	5,22,7,0,5,2
+	.word	.L5
+	.byte	3,51,1,5,40,9
+	.half	.L148-.L5
+	.byte	1,5,52,9
+	.half	.L149-.L148
+	.byte	1,5,22,9
+	.half	.L150-.L149
+	.byte	3,1,1,5,40,9
+	.half	.L151-.L150
+	.byte	1,5,52,9
+	.half	.L152-.L151
+	.byte	1,5,71,9
+	.half	.L153-.L152
+	.byte	3,1,1,5,35,9
+	.half	.L2-.L153
+	.byte	1,5,53,9
+	.half	.L154-.L2
+	.byte	1,5,64,9
+	.half	.L155-.L154
+	.byte	1,5,71,9
+	.half	.L156-.L155
+	.byte	1,5,1,7,9
+	.half	.L157-.L156
+	.byte	3,8,1,7,9
+	.half	.L35-.L157
+	.byte	0,1,1
+.L145:
+	.sdecl	'.debug_ranges',debug,cluster('mpu6050_self1_check')
+	.sect	'.debug_ranges'
+.L34:
+	.word	-1,.L5,0,.L35-.L5,0,0
+	.sdecl	'.debug_info',debug,cluster('mpu_gyro_x')
+	.sect	'.debug_info'
+.L36:
+	.word	185
+	.half	3
+	.word	.L37
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L12
+	.byte	3
+	.byte	'mpu_gyro_x',0,3,36,7
+	.word	.L55
+	.byte	1,5,3
+	.word	mpu_gyro_x
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('mpu_gyro_x')
+	.sect	'.debug_abbrev'
+.L37:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('mpu_gyro_y')
+	.sect	'.debug_info'
+.L38:
+	.word	185
+	.half	3
+	.word	.L39
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L12
+	.byte	3
+	.byte	'mpu_gyro_y',0,3,36,18
+	.word	.L55
+	.byte	1,5,3
+	.word	mpu_gyro_y
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('mpu_gyro_y')
+	.sect	'.debug_abbrev'
+.L39:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('mpu_gyro_z')
+	.sect	'.debug_info'
+.L40:
+	.word	185
+	.half	3
+	.word	.L41
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L12
+	.byte	3
+	.byte	'mpu_gyro_z',0,3,36,29
+	.word	.L55
+	.byte	1,5,3
+	.word	mpu_gyro_z
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('mpu_gyro_z')
+	.sect	'.debug_abbrev'
+.L41:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('mpu_acc_x')
+	.sect	'.debug_info'
+.L42:
+	.word	184
+	.half	3
+	.word	.L43
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L12
+	.byte	3
+	.byte	'mpu_acc_x',0,3,37,7
+	.word	.L55
+	.byte	1,5,3
+	.word	mpu_acc_x
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('mpu_acc_x')
+	.sect	'.debug_abbrev'
+.L43:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('mpu_acc_y')
+	.sect	'.debug_info'
+.L44:
+	.word	184
+	.half	3
+	.word	.L45
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L12
+	.byte	3
+	.byte	'mpu_acc_y',0,3,37,17
+	.word	.L55
+	.byte	1,5,3
+	.word	mpu_acc_y
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('mpu_acc_y')
+	.sect	'.debug_abbrev'
+.L45:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('mpu_acc_z')
+	.sect	'.debug_info'
+.L46:
+	.word	184
+	.half	3
+	.word	.L47
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_MPU6050.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L12
+	.byte	3
+	.byte	'mpu_acc_z',0,3,37,27
+	.word	.L55
+	.byte	1,5,3
+	.word	mpu_acc_z
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('mpu_acc_z')
+	.sect	'.debug_abbrev'
+.L47:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('get_accdata')
+	.sect	'.debug_loc'
+.L51:
+	.word	-1,.L9,0,.L49-.L9
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L8:
+	.word	-1,.L9,0,.L56-.L9
+	.half	2
+	.byte	138,0
+	.word	.L56-.L9,.L49-.L9
+	.half	2
+	.byte	138,8
+	.word	.L49-.L9,.L49-.L9
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('get_gyro')
+	.sect	'.debug_loc'
+.L53:
+	.word	-1,.L11,0,.L52-.L11
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L10:
+	.word	-1,.L11,0,.L57-.L11
+	.half	2
+	.byte	138,0
+	.word	.L57-.L11,.L52-.L11
+	.half	2
+	.byte	138,8
+	.word	.L52-.L11,.L52-.L11
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('mpu6050_init')
+	.sect	'.debug_loc'
+.L6:
+	.word	-1,.L7,0,.L48-.L7
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('mpu6050_self1_check')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L54-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L158:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('mpu6050_self1_check')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L158,.L5,.L54-.L5
+	.sdecl	'.debug_frame',debug,cluster('mpu6050_init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L158,.L7,.L48-.L7
+	.sdecl	'.debug_frame',debug,cluster('get_accdata')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L158,.L9,.L49-.L9
+	.byte	4
+	.word	(.L56-.L9)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L49-.L56)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('get_gyro')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L158,.L11,.L52-.L11
+	.byte	4
+	.word	(.L57-.L11)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L52-.L57)/2
+	.byte	19,0,8,26,0,0
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   123  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   124  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   125  //  以上函数是使用软件IIC通信，相比较硬件IIC，软件IIC引脚更加灵活，可以使用任意普通IO
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   126  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   127  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   128  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   129  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   130  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   131  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   132  ////-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   133  ////  以下函数是使用硬件IIC通信，相比较软件IIC，硬件IIC速度可以做到更快。
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   134  ////-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   135  //
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   136  //#define IIC_NUM         IIC_1
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   137  //#define IIC_SDA_PIN     IIC1_SDA_B17
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   138  //#define IIC_SCL_PIN     IIC1_SCL_B16
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   139  ////-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   140  ////  @brief      MPU6050自检函数
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   141  ////  @param      NULL
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   142  ////  @return     void
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   143  ////  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   144  ////  Sample usage:
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   145  ////-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   146  //void mpu6050_self2_check(void)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   147  //{
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   148  //    uint8 dat=0;
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   149  //
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   150  //    iic_write_reg(IIC_NUM, MPU6050_DEV_ADDR, PWR_MGMT_1, 0x00);	//解除休眠状态
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   151  //    iic_write_reg(IIC_NUM, MPU6050_DEV_ADDR, SMPLRT_DIV, 0x07); //125HZ采样率
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   152  //    while(0x07 != dat)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   153  //    {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   154  //        iic_read_reg(IIC_NUM, MPU6050_DEV_ADDR, SMPLRT_DIV, &dat);
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   155  //        systick_delay_ms(STM0, 10);
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   156  //        //卡在这里原因有以下几点
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   157  //        //1 MPU6050坏了，如果是新的这样的概率极低
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   158  //        //2 接线错误或者没有接好
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   159  //        //3 可能你需要外接上拉电阻，上拉到3.3V
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   160  //    }
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   161  //}
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   162  //
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   163  ////-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   164  ////  @brief      初始化MPU6050
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   165  ////  @param      NULL
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   166  ////  @return     void
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   167  ////  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   168  ////  Sample usage:
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   169  ////-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   170  //void mpu6050_init_hardware(void)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   171  //{
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   172  //    systick_delay_ms(STM0, 100);                                      //上电延时
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   173  //    iic_init(IIC_NUM, IIC_SDA_PIN, IIC_SCL_PIN,400*1000);       //硬件IIC初始化     波特率400K
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   174  //
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   175  //    mpu6050_self2_check();
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   176  //    iic_write_reg(IIC_NUM,MPU6050_DEV_ADDR, PWR_MGMT_1, 0x00);	//解除休眠状态
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   177  //    iic_write_reg(IIC_NUM,MPU6050_DEV_ADDR, SMPLRT_DIV, 0x07);    //125HZ采样率
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   178  //    iic_write_reg(IIC_NUM,MPU6050_DEV_ADDR, MPU6050_CONFIG, 0x04);        //
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   179  //    iic_write_reg(IIC_NUM,MPU6050_DEV_ADDR, GYRO_CONFIG, 0x18);   //2000
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   180  //    iic_write_reg(IIC_NUM,MPU6050_DEV_ADDR, ACCEL_CONFIG, 0x10);  //8g
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   181  //	iic_write_reg(IIC_NUM,MPU6050_DEV_ADDR, User_Control, 0x00);
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   182  //    iic_write_reg(IIC_NUM,MPU6050_DEV_ADDR, INT_PIN_CFG, 0x02);
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   183  //}
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   184  //
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   185  ////-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   186  ////  @brief      获取MPU6050加速度计数据
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   187  ////  @param      NULL
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   188  ////  @return     void
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   189  ////  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   190  ////  Sample usage:				执行该函数后，直接查看对应的变量即可
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   191  ////-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   192  //void get_accdata_hardware(void)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   193  //{
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   194  //    uint8 dat[6];
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   195  //
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   196  //    iic_read_reg_bytes(IIC_NUM,MPU6050_DEV_ADDR, ACCEL_XOUT_H, dat, 6);
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   197  //    mpu_acc_x = (int16)(((uint16)dat[0]<<8 | dat[1]));
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   198  //    mpu_acc_y = (int16)(((uint16)dat[2]<<8 | dat[3]));
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   199  //    mpu_acc_z = (int16)(((uint16)dat[4]<<8 | dat[5]));
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   200  //}
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   201  //
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   202  ////-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   203  ////  @brief      获取MPU6050陀螺仪数据
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   204  ////  @param      NULL
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   205  ////  @return     void
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   206  ////  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   207  ////  Sample usage:				执行该函数后，直接查看对应的变量即可
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   208  ////-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   209  //void get_gyro_hardware(void)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   210  //{
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   211  //    uint8 dat[6];
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   212  //
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   213  //    iic_read_reg_bytes(IIC_NUM,MPU6050_DEV_ADDR, GYRO_XOUT_H, dat, 6);
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   214  //    mpu_gyro_x = (int16)(((uint16)dat[0]<<8 | dat[1]));
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   215  //    mpu_gyro_y = (int16)(((uint16)dat[2]<<8 | dat[3]));
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   216  //    mpu_gyro_z = (int16)(((uint16)dat[4]<<8 | dat[5]));
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   217  //}
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   218  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   219  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   220  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   221  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   222  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   223  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   224  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_MPU6050.c	   225  
+
+	; Module end

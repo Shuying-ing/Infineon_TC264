@@ -1,0 +1,3088 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\seekfree_peripheral\\.SEEKFREE_FONT.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\seekfree_peripheral\\SEEKFREE_FONT.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\seekfree_peripheral\\SEEKFREE_FONT.src ..\\Libraries\\seekfree_peripheral\\SEEKFREE_FONT.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FONT.c'
+
+	
+$TC16X
+	
+	.sdecl	'.rodata.SEEKFREE_FONT.tft_ascii',data,rom,cluster('tft_ascii')
+	.sect	'.rodata.SEEKFREE_FONT.tft_ascii'
+	.global	tft_ascii
+tft_ascii:	.type	object
+	.size	tft_ascii,1520
+	.space	19
+	.byte	8,8,8,8
+	.byte	8,8,8
+	.space	2
+	.byte	8,8
+	.space	3
+	.byte	72,36,36,18
+	.space	14
+	.byte	72,72,72,126
+	.byte	36,36,36,126
+	.byte	36,36,36
+	.space	4
+	.byte	16,60,82,82
+	.byte	18,28,48,80
+	.byte	80,82,82,60
+	.byte	16,16
+	.space	3
+	.byte	34,37,21,21
+	.byte	13,42,88,84
+	.byte	84,82,34
+	.space	5
+	.byte	12,18,18,18
+	.byte	10,118,37,41
+	.byte	25,145,110
+	.space	3
+	.byte	6,4,4,2
+	.space	12
+	.byte	64,32,16,16
+	.byte	8,8,8,8
+	.byte	8,8,16,16
+	.byte	32,64
+	.space	2
+	.byte	2,4,8,8
+	.byte	16,16,16,16
+	.byte	16,16,8,8
+	.byte	4,2
+	.space	5
+	.byte	8,8,107,28
+	.byte	28,107,8,8
+	.space	9
+	.byte	16,16,16,254
+	.byte	16,16,16
+	.space	16
+	.byte	6,4,4,2
+	.space	8
+	.byte	126
+	.space	19
+	.byte	6,6
+	.space	4
+	.byte	64,32,32,32
+	.byte	16,16,8,8
+	.byte	8,4,4,2
+	.byte	2
+	.space	4
+	.byte	24,36,66,66
+	.byte	66,66,66,66
+	.byte	66,36,24
+	.space	5
+	.byte	16,28,16,16
+	.byte	16,16,16,16
+	.byte	16,16,124
+	.space	5
+	.byte	60,66,66,66
+	.byte	64,32,16,8
+	.byte	4,66,126
+	.space	5
+	.byte	60,66,66,64
+	.byte	32,24,32,64
+	.byte	66,66,60
+	.space	5
+	.byte	32,48,48,40
+	.byte	36,36,34,254
+	.byte	32,32,248
+	.space	5
+	.byte	126,2,2,2
+	.byte	30,34,64,64
+	.byte	66,34,28
+	.space	5
+	.byte	24,36,2,2
+	.byte	58,70,66,66
+	.byte	66,68,56
+	.space	5
+	.byte	126,66,32,32
+	.byte	16,16,8,8
+	.byte	8,8,8
+	.space	5
+	.byte	60,66,66,66
+	.byte	36,24,36,66
+	.byte	66,66,60
+	.space	5
+	.byte	28,34,66,66
+	.byte	66,98,92,64
+	.byte	64,36,24
+	.space	8
+	.byte	24,24
+	.space	4
+	.byte	24,24
+	.space	9
+	.byte	8
+	.space	5
+	.byte	8,8,8
+	.space	3
+	.byte	64,32,16,8
+	.byte	4,2,4,8
+	.byte	16,32,64
+	.space	8
+	.byte	126
+	.space	2
+	.byte	126
+	.space	9
+	.byte	2,4,8,16
+	.byte	32,64,32,16
+	.byte	8,4,2
+	.space	5
+	.byte	60,66,66,70
+	.byte	32,16,16,16
+	.space	1
+	.byte	24,24
+	.space	5
+	.byte	28,34,90,85
+	.byte	85,85,85,85
+	.byte	58,66,60
+	.space	5
+	.byte	8,8,24,20
+	.byte	20,36,60,34
+	.byte	66,66,231
+	.space	5
+	.byte	31,34,34,34
+	.byte	30,34,66,66
+	.byte	66,34,31
+	.space	5
+	.byte	124,66,66,1
+	.byte	1,1,1,1
+	.byte	66,34,28
+	.space	5
+	.byte	31,34,66,66
+	.byte	66,66,66,66
+	.byte	66,34,31
+	.space	5
+	.byte	63,66,18,18
+	.byte	30,18,18,2
+	.byte	66,66,63
+	.space	5
+	.byte	63,66,18,18
+	.byte	30,18,18,2
+	.byte	2,2,7
+	.space	5
+	.byte	60,34,34,1
+	.byte	1,1,113,33
+	.byte	34,34,28
+	.space	5
+	.byte	231,66,66,66
+	.byte	66,126,66,66
+	.byte	66,66,231
+	.space	5
+	.byte	62,8,8,8
+	.byte	8,8,8,8
+	.byte	8,8,62
+	.space	5
+	.byte	124,16,16,16
+	.byte	16,16,16,16
+	.byte	16,16,16,17
+	.byte	15
+	.space	3
+	.byte	119,34,18,10
+	.byte	14,10,18,18
+	.byte	34,34,119
+	.space	5
+	.byte	7,2,2,2
+	.byte	2,2,2,2
+	.byte	2,66,127
+	.space	5
+	.byte	119,54,54,54
+	.byte	54,54,42,42
+	.byte	42,42,107
+	.space	5
+	.byte	227,70,70,74
+	.byte	74,82,82,82
+	.byte	98,98,71
+	.space	5
+	.byte	28,34,65,65
+	.byte	65,65,65,65
+	.byte	65,34,28
+	.space	5
+	.byte	63,66,66,66
+	.byte	66,62,2,2
+	.byte	2,2,7
+	.space	5
+	.byte	28,34,65,65
+	.byte	65,65,65,65
+	.byte	77,50,28,96
+	.space	4
+	.byte	63,66,66,66
+	.byte	62,18,18,34
+	.byte	34,66,199
+	.space	5
+	.byte	124,66,66,2
+	.byte	4,24,32,64
+	.byte	66,66,62
+	.space	5
+	.byte	127,73,8,8
+	.byte	8,8,8,8
+	.byte	8,8,28
+	.space	5
+	.byte	231,66,66,66
+	.byte	66,66,66,66
+	.byte	66,66,60
+	.space	5
+	.byte	231,66,66,34
+	.byte	36,36,20,20
+	.byte	24,8,8
+	.space	5
+	.byte	107,42,42,42
+	.byte	42,42,54,20
+	.byte	20,20,20
+	.space	5
+	.byte	231,66,36,36
+	.byte	24,24,24,36
+	.byte	36,66,231
+	.space	5
+	.byte	119,34,34,20
+	.byte	20,8,8,8
+	.byte	8,8,28
+	.space	5
+	.byte	126,33,32,16
+	.byte	16,8,4,4
+	.byte	66,66,63
+	.space	3
+	.byte	120,8,8,8
+	.byte	8,8,8,8
+	.byte	8,8,8,8
+	.byte	8,120
+	.space	3
+	.byte	2,4,4,4
+	.byte	8,8,8,16
+	.byte	16,32,32,32
+	.byte	64,64
+	.space	1
+	.byte	30,16,16,16
+	.byte	16,16,16,16
+	.byte	16,16,16,16
+	.byte	16,30
+	.space	2
+	.byte	24,36
+	.space	28
+	.byte	255
+	.space	1
+	.byte	6,8
+	.space	20
+	.byte	28,34,48,44
+	.byte	34,50,108
+	.space	6
+	.byte	3,2,2,26
+	.byte	38,66,66,66
+	.byte	38,26
+	.space	9
+	.byte	56,68,2,2
+	.byte	2,68,56
+	.space	6
+	.byte	96,64,64,124
+	.byte	66,66,66,66
+	.byte	98,220
+	.space	9
+	.byte	60,66,66,126
+	.byte	2,66,60
+	.space	6
+	.byte	48,72,8,62
+	.byte	8,8,8,8
+	.byte	8,62
+	.space	9
+	.byte	124,34,34,28
+	.byte	2,60,66,66
+	.byte	60
+	.space	4
+	.byte	3,2,2,58
+	.byte	70,66,66,66
+	.byte	66,231
+	.space	5
+	.byte	12,12
+	.space	2
+	.byte	14,8,8,8
+	.byte	8,8,62
+	.space	5
+	.byte	48,48
+	.space	2
+	.byte	56,32,32,32
+	.byte	32,32,32,34
+	.byte	30
+	.space	4
+	.byte	3,2,2,114
+	.byte	18,10,14,18
+	.byte	34,119
+	.space	5
+	.byte	8,14,8,8
+	.byte	8,8,8,8
+	.byte	8,8,62
+	.space	9
+	.byte	127,146,146,146
+	.byte	146,146,183
+	.space	9
+	.byte	59,70,66,66
+	.byte	66,66,231
+	.space	9
+	.byte	60,66,66,66
+	.byte	66,66,60
+	.space	9
+	.byte	27,38,66,66
+	.byte	66,38,26,2
+	.byte	7
+	.space	7
+	.byte	88,100,66,66
+	.byte	66,100,88,64
+	.byte	224
+	.space	7
+	.byte	119,76,4,4
+	.byte	4,4,31
+	.space	9
+	.byte	124,66,2,60
+	.byte	64,66,62
+	.space	7
+	.byte	8,8,62,8
+	.byte	8,8,8,72
+	.byte	48
+	.space	9
+	.byte	99,66,66,66
+	.byte	66,98,220
+	.space	9
+	.byte	119,34,34,20
+	.byte	20,8,8
+	.space	9
+	.byte	219,145,82,90
+	.byte	42,36,36
+	.space	9
+	.byte	110,36,24,24
+	.byte	24,36,118
+	.space	9
+	.byte	231,66,36,36
+	.byte	24,24,8,8
+	.byte	6
+	.space	7
+	.byte	126,34,16,8
+	.byte	8,68,126
+	.space	3
+	.byte	192,32,32,32
+	.byte	32,32,32,16
+	.byte	32,32,32,32
+	.byte	32,192
+	.space	1
+	.byte	16,16,16,16
+	.byte	16,16,16,16
+	.byte	16,16,16,16
+	.byte	16,16,16,16
+	.space	1
+	.byte	3,4,4,4
+	.byte	4,4,4,8
+	.byte	4,4,4,4
+	.byte	4,3
+	.space	1
+	.byte	4,90,32
+	.space	13
+	.sdecl	'.rodata.SEEKFREE_FONT.gImage_qq',data,rom,cluster('gImage_qq')
+	.sect	'.rodata.SEEKFREE_FONT.gImage_qq'
+	.global	gImage_qq
+gImage_qq:	.type	object
+	.size	gImage_qq,3200
+	.byte	219,222,93,239
+	.byte	93,239,125,239
+	.byte	93,239,93,239
+	.byte	93,239,93,239
+	.byte	93,239,93,239
+	.byte	93,239,93,239
+	.byte	93,239,93,239
+	.byte	93,239,190,247
+	.byte	255,255,222,255
+	.byte	56,198,146,140
+	.byte	142,107,110,107
+	.byte	16,124,150,173
+	.byte	60,231,255,255
+	.byte	255,255,125,239
+	.byte	93,239,93,239
+	.byte	93,239,93,239
+	.byte	93,239,93,239
+	.byte	93,239,93,239
+	.byte	93,239,93,239
+	.byte	93,239,93,239
+	.byte	93,239,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,93,239
+	.byte	21,157,79,99
+	.byte	108,66,10,50
+	.byte	136,41,70,25
+	.byte	37,25,69,33
+	.byte	232,49,142,107
+	.byte	24,190,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	93,239,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,223,255
+	.byte	245,156,15,83
+	.byte	16,75,81,83
+	.byte	15,75,108,58
+	.byte	233,49,103,33
+	.byte	37,25,228,16
+	.byte	163,8,98
+	.space	1
+	.byte	131,8,138,74
+	.byte	89,198,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	93,239,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	28,231,79,91
+	.byte	179,99,184,124
+	.byte	245,99,17,67
+	.byte	77,50,234,41
+	.byte	136,33,38,25
+	.byte	5,25,5,25
+	.byte	4,17,4,17
+	.byte	228,16,131
+	.space	1
+	.byte	163,8,114,140
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	93,239,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,219,222
+	.byte	75,58,240,66
+	.byte	53,108,84,75
+	.byte	177,50,46,42
+	.byte	235,33,169,33
+	.byte	103,25,5,25
+	.byte	4,17,4,17
+	.byte	4,17,4,17
+	.byte	4,17,5,25
+	.byte	228,16,66
+	.space	1
+	.byte	175,115,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	93,239,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	93,239,9,50
+	.byte	76,50,16,75
+	.byte	143,50,79,42
+	.byte	46,42,204,25
+	.byte	137,25,137,33
+	.byte	71,25,5,25
+	.byte	4,17,4,17
+	.byte	196,16,196,16
+	.byte	4,17,4,17
+	.byte	4,17,228,16
+	.byte	66
+	.space	1
+	.byte	49,132,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,93,239
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,236,82
+	.byte	71,25,76,50
+	.byte	11,42,236,33
+	.byte	236,33,12,34
+	.byte	145,91,238,74
+	.byte	6,17,38,25
+	.byte	4,25,228,16
+	.byte	228,16,167,41
+	.byte	102,33,163,8
+	.byte	5,25,4,17
+	.byte	4,17,228,16
+	.byte	130
+	.space	1
+	.byte	247,189,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	93,239,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,53,165
+	.byte	131,8,136,33
+	.byte	136,33,137,33
+	.byte	170,33,138,33
+	.byte	107,66,113,140
+	.byte	255,255,114,140
+	.byte	131,8,4,17
+	.byte	196,8,41,66
+	.byte	251,222,93,239
+	.byte	236,90,131,8
+	.byte	4,17,4,17
+	.byte	4,17,131,8
+	.byte	232,49,223,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	93,239,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	190,247,199,49
+	.byte	196,16,37,25
+	.byte	38,25,71,25
+	.byte	71,25,168,41
+	.byte	138,82,40,74
+	.byte	85,173,255,255
+	.byte	232,49,163,8
+	.byte	5,25,77,107
+	.byte	77,107,255,255
+	.byte	125,239,69,33
+	.byte	196,16,4,17
+	.byte	4,17,4,17
+	.byte	98
+	.space	1
+	.byte	118,173,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,93,239
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,150,181
+	.byte	98
+	.space	1
+	.byte	4,17,4,25
+	.byte	5,17,5,25
+	.byte	196,8,139,74
+	.byte	182,181,93,239
+	.byte	247,189,255,255
+	.byte	142,107,98
+	.space	1
+	.byte	41,66,170,90
+	.byte	8,66,255,255
+	.byte	255,255,204,82
+	.byte	131,8,4,17
+	.byte	4,17,4,17
+	.byte	163,8,173,82
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	190,247,255,255
+	.byte	223,255,219,222
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	78,99,98
+	.space	1
+	.byte	4,17,4,17
+	.byte	4,17,228,16
+	.byte	98
+	.space	1
+	.byte	142,99,255,255
+	.byte	255,255,255,255
+	.byte	255,255,207,115
+	.byte	1
+	.space	1
+	.byte	243,156,44,99
+	.byte	150,181,255,255
+	.byte	255,255,45,91
+	.byte	131
+	.space	1
+	.byte	4,17,4,17
+	.byte	4,17,228,16
+	.byte	103,33,61,239
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,183,181
+	.byte	118,173,125,239
+	.byte	203,82,179,148
+	.byte	255,255,255,255
+	.byte	223,255,232,49
+	.byte	163,8,4,17
+	.byte	4,17,4,17
+	.byte	4,17,163,8
+	.byte	73,66,255,247
+	.byte	255,247,255,255
+	.byte	255,255,106,74
+	.byte	1
+	.space	1
+	.byte	114,132,255,255
+	.byte	255,255,255,247
+	.byte	223,239,9,58
+	.byte	163,8,4,17
+	.byte	4,17,4,17
+	.byte	4,17,5,17
+	.byte	24,190,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	240,123,98
+	.space	1
+	.byte	232,49,199,49
+	.byte	65
+	.space	1
+	.byte	53,165,255,255
+	.byte	93,239,70,33
+	.byte	196,16,4,17
+	.byte	4,17,4,17
+	.byte	4,17,228,16
+	.byte	163,8,118,157
+	.byte	255,247,255,255
+	.byte	183,173,163,8
+	.byte	163,8,199,49
+	.byte	158,231,255,247
+	.byte	255,247,118,165
+	.byte	163,8,228,16
+	.byte	4,17,4,17
+	.byte	4,17,5,17
+	.byte	5,17,53,165
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,219,222
+	.byte	167,41,131
+	.space	1
+	.byte	196,16,196,16
+	.byte	196,16,28,231
+	.byte	158,239,5,17
+	.byte	228,16,4,17
+	.byte	4,17,4,17
+	.byte	4,17,4,25
+	.byte	196,8,229,16
+	.byte	209,107,209,107
+	.byte	197,8,100
+	.space	1
+	.byte	165,8,67
+	.space	1
+	.byte	43,50,119,157
+	.byte	179,132,37,25
+	.byte	196,16,4,17
+	.byte	4,17,4,17
+	.byte	4,17,37,25
+	.byte	38,9,53,157
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	175,115,98
+	.space	1
+	.byte	4,25,5,25
+	.byte	130
+	.space	1
+	.byte	13,91,142,155
+	.byte	98,16,5,17
+	.byte	4,17,4,17
+	.byte	4,25,228,16
+	.byte	133
+	.space	1
+	.byte	5,17,196,57
+	.byte	129,90,64,123
+	.byte	34,156,67,172
+	.byte	3,164,131,155
+	.byte	130,114,130,73
+	.byte	194,24,164
+	.space	1
+	.byte	197
+	.space	1
+	.byte	228,16,4,25
+	.byte	4,17,5,25
+	.byte	71,25,103,17
+	.byte	236,90,190,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	223,255,219,214
+	.byte	196,16,228,16
+	.byte	4,17,5,17
+	.byte	164,24,1,192
+	.byte	131,136,228
+	.space	1
+	.byte	5,25,4,25
+	.byte	197,8,68,33
+	.byte	67,131,35,213
+	.byte	66,254,228,254
+	.byte	39,255,7,255
+	.byte	164,254,100,254
+	.byte	3,254,163,253
+	.byte	226,252,66,236
+	.byte	131,179,36,98
+	.byte	229,16,196,8
+	.byte	4,25,38,25
+	.byte	168,25,135,33
+	.space	1
+	.byte	144,211,188,255
+	.byte	255,255,255,255
+	.byte	255,255,255,93
+	.byte	239,255,255,240
+	.byte	123,66
+	.space	1
+	.byte	5,25,5,17
+	.byte	131,40,1,208
+	.byte	68,248,163,72
+	.byte	228
+	.space	1
+	.byte	197,8,68,90
+	.byte	2,237,226,253
+	.byte	2,254,102,254
+	.byte	116,255,184,255
+	.byte	115,255,231,246
+	.byte	166,246,69,246
+	.byte	164,245,195,252
+	.byte	98,252,194,252
+	.byte	194,252,227,203
+	.byte	196,73,6,17
+	.byte	136,25,135,1
+	.byte	164,144,1,248
+	.byte	236,154,255,255
+	.byte	255,255,255,255
+	.byte	255,255,93,239
+	.byte	255,255,158,247
+	.byte	232,49,131
+	.space	1
+	.byte	5,9,130,64
+	.byte	1,192,35,248
+	.byte	133,240,163,72
+	.byte	164
+	.space	1
+	.byte	68,90,2,253
+	.byte	35,204,194,220
+	.byte	4,254,40,254
+	.byte	72,246,70,246
+	.byte	36,246,228,245
+	.byte	100,253,227,252
+	.byte	98,252,194,252
+	.byte	2,228,2,220
+	.byte	226,252,164,122
+	.byte	72,1,103,1
+	.byte	196,120,36,248
+	.byte	2,248,132,176
+	.byte	125,231,255,255
+	.byte	255,255,255,255
+	.byte	93,239,255,255
+	.byte	255,255,219,222
+	.byte	37,25,163
+	.space	1
+	.byte	196,56,2,224
+	.byte	34,216,68,248
+	.byte	166,248,164,120
+	.byte	99
+	.space	1
+	.byte	67,33,131,114
+	.byte	131,57,130,155
+	.byte	33,245,97,253
+	.byte	34,253,226,252
+	.byte	162,252,66,252
+	.byte	66,252,66,252
+	.byte	34,171,131,65
+	.byte	195,146,4,82
+	.byte	38,1,37,25
+	.byte	164,152,68,248
+	.byte	35,248,2,248
+	.byte	164,208,158,239
+	.byte	255,255,255,255
+	.byte	255,255,93,239
+	.byte	255,255,255,255
+	.byte	255,255,154,214
+	.byte	135,41,165
+	.space	1
+	.byte	67,184,34,248
+	.byte	35,224,101,248
+	.byte	232,248,7,201
+	.byte	131,72,66
+	.space	1
+	.byte	163
+	.space	1
+	.byte	132
+	.space	1
+	.byte	99,41,162,122
+	.byte	98,179,162,203
+	.byte	98,211,2,187
+	.byte	130,138,131,57
+	.byte	164
+	.space	1
+	.byte	229
+	.space	1
+	.byte	229
+	.space	1
+	.byte	229,8,196,96
+	.byte	100,216,68,248
+	.byte	36,248,35,248
+	.byte	2,248,131,136
+	.byte	219,198,255,255
+	.byte	255,255,255,255
+	.byte	93,239,255,255
+	.byte	255,255,255,255
+	.byte	255,255,61,231
+	.byte	80,91,8,49
+	.byte	35,232,67,248
+	.byte	68,240,101,248
+	.byte	9,249,171,249
+	.byte	137,209,6,137
+	.byte	163,72,66,24
+	.byte	2
+	.space	1
+	.byte	66
+	.space	1
+	.byte	97
+	.space	1
+	.byte	130
+	.space	1
+	.byte	98
+	.space	1
+	.byte	98
+	.space	1
+	.byte	131
+	.space	1
+	.byte	163,32,196,80
+	.byte	165,136,133,216
+	.byte	101,248,68,248
+	.byte	68,248,35,248
+	.byte	35,248,3,208
+	.byte	130,16,199,41
+	.byte	93,239,255,255
+	.byte	255,255,93,239
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	108,50,165,56
+	.byte	2,216,35,248
+	.byte	101,248,102,248
+	.byte	167,248,74,249
+	.byte	12,250,77,250
+	.byte	76,234,11,210
+	.byte	169,185,104,177
+	.byte	71,169,39,177
+	.byte	7,185,7,209
+	.byte	231,232,199,248
+	.byte	167,248,101,248
+	.byte	101,248,68,248
+	.byte	35,248,3,248
+	.byte	2,208,163,40
+	.byte	5,9,196,8
+	.byte	236,90,255,255
+	.byte	255,255,93,239
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,251,222
+	.byte	5,25,196
+	.space	1
+	.byte	167,65,230,192
+	.byte	3,248,134,248
+	.byte	167,248,135,248
+	.byte	134,248,199,248
+	.byte	41,249,138,249
+	.byte	171,249,171,249
+	.byte	139,249,106,249
+	.byte	41,249,8,249
+	.byte	199,248,166,248
+	.byte	134,248,101,248
+	.byte	100,248,35,248
+	.byte	2,240,6,177
+	.byte	37,41,228
+	.space	1
+	.byte	228,16,37,25
+	.byte	37,25,20,157
+	.byte	255,255,93,239
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,150,173
+	.byte	98
+	.space	1
+	.byte	130,8,53,149
+	.byte	186,206,139,162
+	.byte	68,208,37,248
+	.byte	135,248,167,248
+	.byte	199,248,167,248
+	.byte	135,248,134,248
+	.byte	134,248,134,248
+	.byte	135,248,167,248
+	.byte	167,248,166,248
+	.byte	133,248,101,248
+	.byte	100,248,36,240
+	.byte	100,184,13,147
+	.byte	187,182,207,99
+	.byte	131,8,4,17
+	.byte	228,16,102,33
+	.byte	73,58,93,239
+	.byte	93,239,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	211,148,66
+	.space	1
+	.byte	228,16,187,206
+	.byte	255,255,190,231
+	.byte	118,181,204,170
+	.byte	7,193,69,224
+	.byte	69,248,70,248
+	.byte	102,248,134,248
+	.byte	134,248,134,248
+	.byte	134,248,101,248
+	.byte	69,248,101,248
+	.byte	101,232,68,208
+	.byte	67,168,1,136
+	.byte	130,144,60,215
+	.byte	255,239,85,149
+	.byte	131,8,4,17
+	.byte	4,17,5,25
+	.byte	70,25,179,148
+	.byte	93,239,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	179,148,65
+	.space	1
+	.byte	134,33,93,223
+	.byte	255,255,255,255
+	.byte	255,255,223,231
+	.byte	122,198,211,180
+	.byte	78,179,42,194
+	.byte	104,209,230,224
+	.byte	166,232,165,232
+	.byte	165,232,230,216
+	.byte	136,201,6,169
+	.byte	34,168,2,168
+	.space	1
+	.byte	160
+	.space	1
+	.byte	200
+	.space	1
+	.byte	216,247,229,255
+	.byte	231,248,173,196
+	.byte	16,228,16,4
+	.byte	17,228,16,5
+	.byte	17,139,74,93
+	.byte	239,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,85
+	.byte	165,65
+	.space	1
+	.byte	167,41,93,223
+	.byte	255,247,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,239,125,223
+	.byte	219,206,89,206
+	.byte	248,205,215,205
+	.byte	247,197,121,206
+	.byte	251,190,171,162
+	.byte	3,240,69,248
+	.byte	66,208,67,232
+	.space	1
+	.byte	240,114,212,255
+	.byte	223,57,174,228
+	.byte	16,228,16,4
+	.byte	17,228,16,5
+	.byte	17,135,41,93
+	.byte	239,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,89
+	.byte	206,131,8,70
+	.byte	33,28,215,255
+	.byte	247,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	239,139,186,4
+	.byte	248,69,248,98
+	.byte	224,68,240
+	.space	1
+	.byte	248,142,219,255
+	.byte	223,248,165,196
+	.byte	16,228,16,228
+	.byte	16,4,17,228
+	.byte	16,37,25,93
+	.byte	239,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,190
+	.byte	247,135,41,131
+	.byte	8,57,182,255
+	.byte	247,223,247,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,190
+	.byte	231,74,186,3
+	.byte	248,69,248,100
+	.byte	248,68,248
+	.space	1
+	.byte	248,110,227,255
+	.byte	215,244,140,131
+	.byte	8,4,17,228
+	.byte	16,228,16,228
+	.byte	16,5,25,93
+	.byte	239,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,239,115
+	.space	2
+	.byte	114,132,255,239
+	.byte	190,239,223,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,223,231
+	.byte	139,186,3,248
+	.byte	69,248,69,248
+	.byte	35,248
+	.space	1
+	.byte	248,211,212,255
+	.byte	215,78,91,33
+	.space	1
+	.byte	41,58,85,165
+	.byte	131,8,196,16
+	.byte	37,25,93,239
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	251,222,163,8
+	.byte	232,49,158,223
+	.byte	158,231,191,239
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,247
+	.byte	81,188,2,224
+	.byte	3,248,3,240
+	.byte	67,224,236,194
+	.byte	126,207,252,190
+	.byte	70,33,33
+	.space	1
+	.byte	211,148,255,255
+	.byte	81,132
+	.space	2
+	.byte	135,41,93,239
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,81,132
+	.space	2
+	.byte	244,140,255,239
+	.byte	158,231,191,239
+	.byte	223,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,61,223
+	.byte	85,189,82,188
+	.byte	114,188,183,181
+	.byte	93,199,255,223
+	.byte	240,107
+	.space	2
+	.byte	9,58,191,247
+	.byte	255,255,255,255
+	.byte	20,157,85,165
+	.byte	93,239,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,172,74
+	.byte	164,8,187,190
+	.byte	223,231,126,231
+	.byte	190,239,223,247
+	.byte	223,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	223,255,223,247
+	.byte	255,239,223,223
+	.byte	191,215,158,215
+	.byte	223,223,216,165
+	.byte	131,8,38,17
+	.byte	219,214,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	93,239,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	121,238,139,220
+	.byte	33,49,169,33
+	.byte	61,207,191,223
+	.byte	126,223,158,231
+	.byte	190,239,191,239
+	.byte	223,247,223,247
+	.byte	223,247,223,247
+	.byte	223,247,191,239
+	.byte	190,239,158,231
+	.byte	126,223,94,215
+	.byte	94,215,223,223
+	.byte	154,182,38,25
+	.byte	66,8,237,163
+	.byte	191,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	93,239,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,116,221
+	.byte	192,219
+	.space	1
+	.byte	254,66,238,2
+	.byte	66,137,33,123
+	.byte	182,223,223,126
+	.byte	215,126,223,126
+	.byte	223,158,231,158
+	.byte	231,158,231,158
+	.byte	231,158,231,126
+	.byte	223,126,223,93
+	.byte	215,93,215,158
+	.byte	223,255,231,248
+	.byte	165,7,17,227
+	.byte	24,2,197,96
+	.byte	253,230,211,219
+	.byte	238,255,255,255
+	.byte	255,255,255,255
+	.byte	255,93,239,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,158,247,132
+	.byte	186,193,252,66
+	.byte	254,130,254,162
+	.byte	254,129,131,69
+	.byte	33,116,116,94
+	.byte	199,223,223,126
+	.byte	215,94,215,93
+	.byte	215,94,215,94
+	.byte	215,93,215,93
+	.byte	215,94,215,158
+	.byte	223,255,231,61
+	.byte	199,241,99,132
+	.byte	8,66,82,38
+	.byte	230,41,255,134
+	.byte	254,224,243,106
+	.byte	195,255,255,255
+	.byte	255,255,255,255
+	.byte	255,93,239,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,24,222,193
+	.byte	210,162,253,34
+	.byte	254,66,254,66
+	.byte	254,98,254,226
+	.byte	212,65,106,73
+	.byte	66,83,116,59
+	.byte	166,62,199,191
+	.byte	215,191,215,191
+	.byte	215,191,223,191
+	.byte	215,62,199,26
+	.byte	166,242,99,167
+	.byte	41,130,65,34
+	.byte	180,98,254,131
+	.byte	254,170,254,15
+	.byte	255,103,253,99
+	.byte	186,60,239,255
+	.byte	255,255,255,255
+	.byte	255,93,239,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,154,230,128
+	.byte	210,33,253,194
+	.byte	253,226,245,194
+	.byte	245,130,245,130
+	.byte	253,98,253,97
+	.byte	220,33,155,132
+	.byte	106,233,106,44
+	.byte	99,175,99,17
+	.byte	116,110,99,44
+	.byte	99,137,90,4
+	.byte	82,129,122,194
+	.byte	203,226,252,98
+	.byte	253,130,253,194
+	.byte	253,194,253,228
+	.byte	253,36,253,98
+	.byte	202,28,231,255
+	.byte	255,255,255,255
+	.byte	255,93,239,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,177
+	.byte	204,129,210,192
+	.byte	243,193,252,2
+	.byte	253,2,253,226
+	.byte	252,194,252,194
+	.byte	252,129,252,128
+	.byte	251,192,201,164
+	.byte	129,53,173,89
+	.byte	206,113,156,33
+	.byte	129
+	.space	1
+	.byte	218,161,251,130
+	.byte	252,162,252,130
+	.byte	252,162,252,2
+	.byte	253,34,253,226
+	.byte	252
+	.space	1
+	.byte	252,96,218,144
+	.byte	204,255,255,255
+	.byte	255,255,255,255
+	.byte	255,93,239,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,89,222,13
+	.byte	196,6,203,228
+	.byte	210,3,219,3
+	.byte	219,227,218,195
+	.byte	210,164,194,9
+	.byte	179,210,188,158
+	.byte	247,255,255,255
+	.byte	255,255,255,251
+	.byte	230,14,180,166
+	.byte	186,131,210,227
+	.byte	226,2,235,34
+	.byte	235,34,227,3
+	.byte	219,228,210,106
+	.byte	195,182,213,255
+	.byte	255,255,255,255
+	.byte	255,255,255,255
+	.byte	255
+	.sdecl	'.rodata.SEEKFREE_FONT.chinese_test',data,rom,cluster('chinese_test')
+	.sect	'.rodata.SEEKFREE_FONT.chinese_test'
+	.global	chinese_test
+chinese_test:	.type	object
+	.size	chinese_test,128
+	.space	2
+	.byte	35,252,16,64
+	.byte	16,128,1,68
+	.byte	6,104,240,176
+	.byte	17,40,22,104
+	.byte	16,164,17,36
+	.byte	22,32,16,160
+	.byte	40,64,71,254
+	.space	4
+	.byte	255,192
+	.space	1
+	.byte	64
+	.space	1
+	.byte	68
+	.space	1
+	.byte	72
+	.space	1
+	.byte	80
+	.space	1
+	.byte	96
+	.space	1
+	.byte	80
+	.space	1
+	.byte	72
+	.space	1
+	.byte	68
+	.space	1
+	.byte	32
+	.space	1
+	.byte	32
+	.space	1
+	.byte	18
+	.space	1
+	.byte	10
+	.space	1
+	.byte	6
+	.space	1
+	.byte	2,8,16,29
+	.byte	16,240,144,16
+	.byte	144,16,16,253
+	.byte	16,16,144,56
+	.byte	144,52,16,80
+	.byte	30,83,240,144
+	.byte	16,16,16,16
+	.byte	16,16,16,16
+	.byte	16,16,32,16
+	.byte	32,16,32,19
+	.byte	254,252,32,16
+	.byte	32,16,32,21
+	.byte	252,24,132,48
+	.byte	136,208,72,16
+	.byte	80,16,32,16
+	.byte	80,81,136,38
+	.byte	6
+	.sdecl	'.rodata.SEEKFREE_FONT.oled_6x8',data,rom,cluster('oled_6x8')
+	.sect	'.rodata.SEEKFREE_FONT.oled_6x8'
+	.global	oled_6x8
+oled_6x8:	.type	object
+	.size	oled_6x8,552
+	.space	9
+	.byte	47
+	.space	4
+	.byte	7
+	.space	1
+	.byte	7
+	.space	2
+	.byte	20,127,20,127
+	.byte	20
+	.space	1
+	.byte	36,42,127,42
+	.byte	18
+	.space	1
+	.byte	98,100,8,19
+	.byte	35
+	.space	1
+	.byte	54,73,85,34
+	.byte	80
+	.space	2
+	.byte	5,3
+	.space	4
+	.byte	28,34,65
+	.space	3
+	.byte	65,34,28
+	.space	2
+	.byte	20,8,62,8
+	.byte	20
+	.space	1
+	.byte	8,8,62,8
+	.byte	8
+	.space	3
+	.byte	160,96
+	.space	2
+	.byte	8,8,8,8
+	.byte	8
+	.space	2
+	.byte	96,96
+	.space	3
+	.byte	32,16,8,4
+	.byte	2
+	.space	1
+	.byte	62,81,73,69
+	.byte	62
+	.space	2
+	.byte	66,127,64
+	.space	2
+	.byte	66,97,81,73
+	.byte	70
+	.space	1
+	.byte	33,65,69,75
+	.byte	49
+	.space	1
+	.byte	24,20,18,127
+	.byte	16
+	.space	1
+	.byte	39,69,69,69
+	.byte	57
+	.space	1
+	.byte	60,74,73,73
+	.byte	48
+	.space	1
+	.byte	1,113,9,5
+	.byte	3
+	.space	1
+	.byte	54,73,73,73
+	.byte	54
+	.space	1
+	.byte	6,73,73,41
+	.byte	30
+	.space	2
+	.byte	54,54
+	.space	4
+	.byte	86,54
+	.space	3
+	.byte	8,20,34,65
+	.space	2
+	.byte	20,20,20,20
+	.byte	20
+	.space	2
+	.byte	65,34,20,8
+	.space	1
+	.byte	2,1,81,9
+	.byte	6
+	.space	1
+	.byte	50,73,89,81
+	.byte	62
+	.space	1
+	.byte	124,18,17,18
+	.byte	124
+	.space	1
+	.byte	127,73,73,73
+	.byte	54
+	.space	1
+	.byte	62,65,65,65
+	.byte	34
+	.space	1
+	.byte	127,65,65,34
+	.byte	28
+	.space	1
+	.byte	127,73,73,73
+	.byte	65
+	.space	1
+	.byte	127,9,9,9
+	.byte	1
+	.space	1
+	.byte	62,65,73,73
+	.byte	122
+	.space	1
+	.byte	127,8,8,8
+	.byte	127
+	.space	2
+	.byte	65,127,65
+	.space	2
+	.byte	32,64,65,63
+	.byte	1
+	.space	1
+	.byte	127,8,20,34
+	.byte	65
+	.space	1
+	.byte	127,64,64,64
+	.byte	64
+	.space	1
+	.byte	127,2,12,2
+	.byte	127
+	.space	1
+	.byte	127,4,8,16
+	.byte	127
+	.space	1
+	.byte	62,65,65,65
+	.byte	62
+	.space	1
+	.byte	127,9,9,9
+	.byte	6
+	.space	1
+	.byte	62,65,81,33
+	.byte	94
+	.space	1
+	.byte	127,9,25,41
+	.byte	70
+	.space	1
+	.byte	70,73,73,73
+	.byte	49
+	.space	1
+	.byte	1,1,127,1
+	.byte	1
+	.space	1
+	.byte	63,64,64,64
+	.byte	63
+	.space	1
+	.byte	31,32,64,32
+	.byte	31
+	.space	1
+	.byte	63,64,56,64
+	.byte	63
+	.space	1
+	.byte	99,20,8,20
+	.byte	99
+	.space	1
+	.byte	7,8,112,8
+	.byte	7
+	.space	1
+	.byte	97,81,73,69
+	.byte	67
+	.space	2
+	.byte	127,65,65
+	.space	2
+	.byte	85,42,85,42
+	.byte	85
+	.space	2
+	.byte	65,65,127
+	.space	2
+	.byte	4,2,1,2
+	.byte	4
+	.space	1
+	.byte	64,64,64,64
+	.byte	64
+	.space	2
+	.byte	1,2,4
+	.space	2
+	.byte	32,84,84,84
+	.byte	120
+	.space	1
+	.byte	127,72,68,68
+	.byte	56
+	.space	1
+	.byte	56,68,68,68
+	.byte	32
+	.space	1
+	.byte	56,68,68,72
+	.byte	127
+	.space	1
+	.byte	56,84,84,84
+	.byte	24
+	.space	1
+	.byte	8,126,9,1
+	.byte	2
+	.space	1
+	.byte	24,164,164,164
+	.byte	124
+	.space	1
+	.byte	127,8,4,4
+	.byte	120
+	.space	2
+	.byte	68,125,64
+	.space	2
+	.byte	64,128,132,125
+	.space	2
+	.byte	127,16,40,68
+	.space	3
+	.byte	65,127,64
+	.space	2
+	.byte	124,4,24,4
+	.byte	120
+	.space	1
+	.byte	124,8,4,4
+	.byte	120
+	.space	1
+	.byte	56,68,68,68
+	.byte	56
+	.space	1
+	.byte	252,36,36,36
+	.byte	24
+	.space	1
+	.byte	24,36,36,24
+	.byte	252
+	.space	1
+	.byte	124,8,4,4
+	.byte	8
+	.space	1
+	.byte	72,84,84,84
+	.byte	32
+	.space	1
+	.byte	4,63,68,64
+	.byte	32
+	.space	1
+	.byte	60,64,64,32
+	.byte	124
+	.space	1
+	.byte	28,32,64,32
+	.byte	28
+	.space	1
+	.byte	60,64,48,64
+	.byte	60
+	.space	1
+	.byte	68,40,16,40
+	.byte	68
+	.space	1
+	.byte	28,160,160,160
+	.byte	124
+	.space	1
+	.byte	68,100,84,76
+	.byte	68,20,20,20
+	.byte	20,20,20
+	.sdecl	'.rodata.SEEKFREE_FONT.oled_8x16',data,rom,cluster('oled_8x16')
+	.sect	'.rodata.SEEKFREE_FONT.oled_8x16'
+	.global	oled_8x16
+oled_8x16:	.type	object
+	.size	oled_8x16,1520
+	.space	19
+	.byte	248
+	.space	7
+	.byte	51,48
+	.space	4
+	.byte	16,12,6,16
+	.byte	12,6
+	.space	9
+	.byte	64,192,120,64
+	.byte	192,120,64
+	.space	1
+	.byte	4,63,4,4
+	.byte	63,4,4
+	.space	2
+	.byte	112,136,252,8
+	.byte	48
+	.space	3
+	.byte	24,32,255,33
+	.byte	30
+	.space	2
+	.byte	240,8,240
+	.space	1
+	.byte	224,24
+	.space	3
+	.byte	33,28,3,30
+	.byte	33,30
+	.space	2
+	.byte	240,8,136,112
+	.space	3
+	.byte	30,33,35,36
+	.byte	25,39,33,16
+	.byte	16,22,14
+	.space	16
+	.byte	224,24,4,2
+	.space	4
+	.byte	7,24,32,64
+	.space	2
+	.byte	2,4,24,224
+	.space	4
+	.byte	64,32,24,7
+	.space	3
+	.byte	64,64,128,240
+	.byte	128,64,64
+	.space	1
+	.byte	2,2,1,15
+	.byte	1,2,2
+	.space	4
+	.byte	240
+	.space	4
+	.byte	1,1,1,31
+	.byte	1,1,1
+	.space	9
+	.byte	128,176,112
+	.space	14
+	.byte	1,1,1,1
+	.byte	1,1,1
+	.space	9
+	.byte	48,48
+	.space	9
+	.byte	128,96,24,4
+	.space	1
+	.byte	96,24,6,1
+	.space	4
+	.byte	224,16,8,8
+	.byte	16,224
+	.space	2
+	.byte	15,16,32,32
+	.byte	16,15
+	.space	2
+	.byte	16,16,248
+	.space	5
+	.byte	32,32,63,32
+	.byte	32
+	.space	3
+	.byte	112,8,8,8
+	.byte	136,112
+	.space	2
+	.byte	48,40,36,34
+	.byte	33,48
+	.space	2
+	.byte	48,8,136,136
+	.byte	72,48
+	.space	2
+	.byte	24,32,32,32
+	.byte	17,14
+	.space	3
+	.byte	192,32,16,248
+	.space	3
+	.byte	7,4,36,36
+	.byte	63,36
+	.space	2
+	.byte	248,8,136,136
+	.byte	8,8
+	.space	2
+	.byte	25,33,32,32
+	.byte	17,14
+	.space	2
+	.byte	224,16,136,136
+	.byte	24
+	.space	3
+	.byte	15,17,32,32
+	.byte	17,14
+	.space	2
+	.byte	56,8,8,200
+	.byte	56,8
+	.space	4
+	.byte	63
+	.space	5
+	.byte	112,136,8,8
+	.byte	136,112
+	.space	2
+	.byte	28,34,33,33
+	.byte	34,28
+	.space	2
+	.byte	224,16,8,8
+	.byte	16,224
+	.space	3
+	.byte	49,34,34,17
+	.byte	15
+	.space	4
+	.byte	192,192
+	.space	6
+	.byte	48,48
+	.space	6
+	.byte	128
+	.space	6
+	.byte	128,96
+	.space	6
+	.byte	128,64,32,16
+	.byte	8
+	.space	2
+	.byte	1,2,4,8
+	.byte	16,32
+	.space	1
+	.byte	64,64,64,64
+	.byte	64,64,64
+	.space	1
+	.byte	4,4,4,4
+	.byte	4,4,4
+	.space	2
+	.byte	8,16,32,64
+	.byte	128
+	.space	3
+	.byte	32,16,8,4
+	.byte	2,1
+	.space	2
+	.byte	112,72,8,8
+	.byte	8,240
+	.space	4
+	.byte	48,54,1
+	.space	2
+	.byte	192,48,200,40
+	.byte	232,16,224
+	.space	1
+	.byte	7,24,39,36
+	.byte	35,20,11
+	.space	3
+	.byte	192,56,224
+	.space	3
+	.byte	32,60,35,2
+	.byte	2,39,56,32
+	.byte	8,248,136,136
+	.byte	136,112
+	.space	2
+	.byte	32,63,32,32
+	.byte	32,17,14
+	.space	1
+	.byte	192,48,8,8
+	.byte	8,8,56
+	.space	1
+	.byte	7,24,32,32
+	.byte	32,16,8
+	.space	1
+	.byte	8,248,8,8
+	.byte	8,16,224
+	.space	1
+	.byte	32,63,32,32
+	.byte	32,16,15
+	.space	1
+	.byte	8,248,136,136
+	.byte	232,8,16
+	.space	1
+	.byte	32,63,32,32
+	.byte	35,32,24
+	.space	1
+	.byte	8,248,136,136
+	.byte	232,8,16
+	.space	1
+	.byte	32,63,32
+	.space	1
+	.byte	3
+	.space	3
+	.byte	192,48,8,8
+	.byte	8,56
+	.space	2
+	.byte	7,24,32,32
+	.byte	34,30,2
+	.space	1
+	.byte	8,248,8
+	.space	2
+	.byte	8,248,8,32
+	.byte	63,33,1,1
+	.byte	33,63,32
+	.space	1
+	.byte	8,8,248,8
+	.byte	8
+	.space	3
+	.byte	32,32,63,32
+	.byte	32
+	.space	4
+	.byte	8,8,248,8
+	.byte	8
+	.space	1
+	.byte	192,128,128,128
+	.byte	127
+	.space	3
+	.byte	8,248,136,192
+	.byte	40,24,8
+	.space	1
+	.byte	32,63,32,1
+	.byte	38,56,32
+	.space	1
+	.byte	8,248,8
+	.space	5
+	.byte	32,63,32,32
+	.byte	32,32,48
+	.space	1
+	.byte	8,248,248
+	.space	1
+	.byte	248,248,8
+	.space	1
+	.byte	32,63
+	.space	1
+	.byte	63
+	.space	1
+	.byte	63,32
+	.space	1
+	.byte	8,248,48,192
+	.space	1
+	.byte	8,248,8,32
+	.byte	63,32
+	.space	1
+	.byte	7,24,63
+	.space	1
+	.byte	224,16,8,8
+	.byte	8,16,224
+	.space	1
+	.byte	15,16,32,32
+	.byte	32,16,15
+	.space	1
+	.byte	8,248,8,8
+	.byte	8,8,240
+	.space	1
+	.byte	32,63,33,1
+	.byte	1,1
+	.space	2
+	.byte	224,16,8,8
+	.byte	8,16,224
+	.space	1
+	.byte	15,24,36,36
+	.byte	56,80,79
+	.space	1
+	.byte	8,248,136,136
+	.byte	136,136,112
+	.space	1
+	.byte	32,63,32
+	.space	1
+	.byte	3,12,48,32
+	.space	1
+	.byte	112,136,8,8
+	.byte	8,56
+	.space	2
+	.byte	56,32,33,33
+	.byte	34,28
+	.space	1
+	.byte	24,8,8,248
+	.byte	8,8,24
+	.space	3
+	.byte	32,63,32
+	.space	3
+	.byte	8,248,8
+	.space	2
+	.byte	8,248,8
+	.space	1
+	.byte	31,32,32,32
+	.byte	32,31
+	.space	1
+	.byte	8,120,136
+	.space	2
+	.byte	200,56,8
+	.space	2
+	.byte	7,56,14,1
+	.space	2
+	.byte	248,8
+	.space	1
+	.byte	248
+	.space	1
+	.byte	8,248
+	.space	1
+	.byte	3,60,7
+	.space	1
+	.byte	7,60,3
+	.space	1
+	.byte	8,24,104,128
+	.byte	128,104,24,8
+	.byte	32,48,44,3
+	.byte	3,44,48,32
+	.byte	8,56,200
+	.space	1
+	.byte	200,56,8
+	.space	3
+	.byte	32,63,32
+	.space	3
+	.byte	16,8,8,8
+	.byte	200,56,8
+	.space	1
+	.byte	32,56,38,33
+	.byte	32,32,24
+	.space	4
+	.byte	254,2,2,2
+	.space	4
+	.byte	127,64,64,64
+	.space	2
+	.byte	12,48,192
+	.space	7
+	.byte	1,6,56,192
+	.space	2
+	.byte	2,2,2,254
+	.space	4
+	.byte	64,64,64,127
+	.space	5
+	.byte	4,2,2,2
+	.byte	4
+	.space	17
+	.byte	128,128,128,128
+	.byte	128,128,128,128
+	.space	1
+	.byte	2,2,4
+	.space	14
+	.byte	128,128,128,128
+	.space	3
+	.byte	25,36,34,34
+	.byte	34,63,32,8
+	.byte	248
+	.space	1
+	.byte	128,128
+	.space	4
+	.byte	63,17,32,32
+	.byte	17,14
+	.space	4
+	.byte	128,128,128
+	.space	3
+	.byte	14,17,32,32
+	.byte	32,17
+	.space	4
+	.byte	128,128,136,248
+	.space	2
+	.byte	14,17,32,32
+	.byte	16,63,32
+	.space	2
+	.byte	128,128,128,128
+	.space	3
+	.byte	31,34,34,34
+	.byte	34,19
+	.space	2
+	.byte	128,128,240,136
+	.byte	136,136,24
+	.space	1
+	.byte	32,32,63,32
+	.byte	32
+	.space	4
+	.byte	128,128,128,128
+	.byte	128
+	.space	2
+	.byte	107,148,148,148
+	.byte	147,96
+	.space	1
+	.byte	8,248
+	.space	1
+	.byte	128,128,128
+	.space	2
+	.byte	32,63,33
+	.space	2
+	.byte	32,63,32
+	.space	1
+	.byte	128,152,152
+	.space	5
+	.byte	32,32,63,32
+	.byte	32
+	.space	5
+	.byte	128,152,152
+	.space	3
+	.byte	192,128,128,128
+	.byte	127
+	.space	2
+	.byte	8,248
+	.space	2
+	.byte	128,128,128
+	.space	1
+	.byte	32,63,36,2
+	.byte	45,48,32
+	.space	2
+	.byte	8,8,248
+	.space	5
+	.byte	32,32,63,32
+	.byte	32
+	.space	2
+	.byte	128,128,128,128
+	.byte	128,128,128
+	.space	1
+	.byte	32,63,32
+	.space	1
+	.byte	63,32
+	.space	1
+	.byte	63,128,128
+	.space	1
+	.byte	128,128,128
+	.space	2
+	.byte	32,63,33
+	.space	2
+	.byte	32,63,32
+	.space	2
+	.byte	128,128,128,128
+	.space	3
+	.byte	31,32,32,32
+	.byte	32,31
+	.space	1
+	.byte	128,128
+	.space	1
+	.byte	128,128
+	.space	3
+	.byte	128,255,161,32
+	.byte	32,17,14
+	.space	4
+	.byte	128,128,128,128
+	.space	2
+	.byte	14,17,32,32
+	.byte	160,255,128,128
+	.byte	128,128
+	.space	1
+	.byte	128,128,128
+	.space	1
+	.byte	32,32,63,33
+	.byte	32
+	.space	1
+	.byte	1
+	.space	3
+	.byte	128,128,128,128
+	.byte	128
+	.space	2
+	.byte	51,36,36,36
+	.byte	36,25
+	.space	2
+	.byte	128,128,224,128
+	.byte	128
+	.space	5
+	.byte	31,32,32
+	.space	2
+	.byte	128,128
+	.space	3
+	.byte	128,128
+	.space	2
+	.byte	31,32,32,32
+	.byte	16,63,32,128
+	.byte	128,128
+	.space	2
+	.byte	128,128,128
+	.space	1
+	.byte	1,14,48,8
+	.byte	6,1
+	.space	1
+	.byte	128,128
+	.space	1
+	.byte	128
+	.space	1
+	.byte	128,128,128,15
+	.byte	48,12,3,12
+	.byte	48,15
+	.space	2
+	.byte	128,128
+	.space	1
+	.byte	128,128,128
+	.space	2
+	.byte	32,49,46,14
+	.byte	49,32
+	.space	1
+	.byte	128,128,128
+	.space	2
+	.byte	128,128,128,128
+	.byte	129,142,112,24
+	.byte	6,1
+	.space	2
+	.byte	128,128,128,128
+	.byte	128,128
+	.space	2
+	.byte	33,48,44,34
+	.byte	33,48
+	.space	5
+	.byte	128,124,2,2
+	.space	5
+	.byte	63,64,64
+	.space	4
+	.byte	255
+	.space	7
+	.byte	255
+	.space	4
+	.byte	2,2,124,128
+	.space	4
+	.byte	64,64,63
+	.space	5
+	.byte	6,1,1,2
+	.byte	2,4,4
+	.space	8
+	.sdecl	'.rodata.SEEKFREE_FONT.oled_16x16_chinese',data,rom,cluster('oled_16x16_chinese')
+	.sect	'.rodata.SEEKFREE_FONT.oled_16x16_chinese'
+	.global	oled_16x16_chinese
+oled_16x16_chinese:	.type	object
+	.size	oled_16x16_chinese,128
+	.byte	64,64,66,204
+	.space	1
+	.byte	32,34,146,74
+	.byte	54,226,66,162
+	.byte	18
+	.space	3
+	.byte	64,32,31,32
+	.byte	73,73,68,82
+	.byte	97,95,64,65
+	.byte	70,64
+	.space	1
+	.byte	2,2,2,2
+	.byte	2,2,2,2
+	.byte	2,254,64,160
+	.byte	16,8
+	.space	11
+	.byte	3,12,16,33
+	.byte	66,240
+	.space	1
+	.byte	36,36,164,254
+	.byte	163,34
+	.space	1
+	.byte	34,204
+	.space	2
+	.byte	255
+	.space	4
+	.byte	8,6,1,255
+	.space	1
+	.byte	1,4,4,4
+	.byte	4,4,255,2
+	.byte	2,2
+	.space	1
+	.byte	16,16,16,255
+	.byte	16,144,8,136
+	.byte	136,136,255,136
+	.byte	136,136,8
+	.space	1
+	.byte	4,68,130,127
+	.byte	1,128,128,64
+	.byte	67,44,16,40
+	.byte	70,129,128
+	.space	1
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	674
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FONT.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	158
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	165
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	207
+	.byte	7
+	.word	207
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	223
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	228
+	.byte	9
+	.byte	'value',0
+	.word	207
+	.byte	9
+	.byte	'compare',0
+	.word	207
+	.byte	0,10
+	.byte	'__size_t',0,1,1,1
+	.word	207
+	.byte	11,1,7
+	.word	302
+	.byte	10
+	.byte	'__codeptr',0,1,1,1
+	.word	304
+	.byte	2
+	.byte	'unsigned char',0,1,8,10
+	.byte	'uint8',0,2,105,29
+	.word	327
+	.byte	2
+	.byte	'unsigned short int',0,2,7,10
+	.byte	'uint16',0,2,109,29
+	.word	358
+	.byte	2
+	.byte	'unsigned long int',0,4,7,10
+	.byte	'uint32',0,2,113,29
+	.word	395
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,10
+	.byte	'uint64',0,2,118,29
+	.word	431
+	.byte	2
+	.byte	'char',0,1,6,10
+	.byte	'int8',0,3,33,29
+	.word	472
+	.byte	2
+	.byte	'short int',0,2,5,10
+	.byte	'int16',0,3,34,29
+	.word	493
+	.byte	2
+	.byte	'long int',0,4,5,10
+	.byte	'int32',0,3,35,29
+	.word	520
+	.byte	2
+	.byte	'long long int',0,8,5,10
+	.byte	'int64',0,3,36,29
+	.word	546
+	.byte	12,16
+	.word	327
+	.byte	13,15,0,12,240,11
+	.word	577
+	.byte	13,94,0
+.L18:
+	.byte	3
+	.word	586
+	.byte	12,128,25
+	.word	327
+	.byte	13,255,24,0
+.L19:
+	.byte	3
+	.word	601
+	.byte	12,128,1
+	.word	577
+	.byte	13,7,0
+.L20:
+	.byte	3
+	.word	617
+	.byte	12,6
+	.word	327
+	.byte	13,5,0,12,168,4
+	.word	632
+	.byte	13,91,0
+.L21:
+	.byte	3
+	.word	641
+	.byte	12,240,11
+	.word	327
+	.byte	13,239,11,0
+.L22:
+	.byte	3
+	.word	656
+.L23:
+	.byte	3
+	.word	617
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0,0,12,1,1,11
+	.byte	15,73,19,0,0,13,33,0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L25-.L24
+.L24:
+	.half	3
+	.word	.L27-.L26
+.L26:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common',0,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FONT.c',0,0,0,0
+	.byte	'PLATFORM_TYPES.H',0,1,0,0
+	.byte	'common.h',0,2,0,0,0
+.L27:
+.L25:
+	.sdecl	'.debug_info',debug,cluster('tft_ascii')
+	.sect	'.debug_info'
+.L6:
+	.word	181
+	.half	3
+	.word	.L7
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FONT.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'tft_ascii',0,1,24,13
+	.word	.L18
+	.byte	1,5,3
+	.word	tft_ascii
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('tft_ascii')
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('gImage_qq')
+	.sect	'.debug_info'
+.L8:
+	.word	182
+	.half	3
+	.word	.L9
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FONT.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'gImage_qq',0,1,229,1,21
+	.word	.L19
+	.byte	1,5,3
+	.word	gImage_qq
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('gImage_qq')
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('chinese_test')
+	.sect	'.debug_info'
+.L10:
+	.word	185
+	.half	3
+	.word	.L11
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FONT.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'chinese_test',0,1,183,3,13
+	.word	.L20
+	.byte	1,5,3
+	.word	chinese_test
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('chinese_test')
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('oled_6x8')
+	.sect	'.debug_info'
+.L12:
+	.word	181
+	.half	3
+	.word	.L13
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FONT.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'oled_6x8',0,1,198,3,13
+	.word	.L21
+	.byte	1,5,3
+	.word	oled_6x8
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('oled_6x8')
+	.sect	'.debug_abbrev'
+.L13:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('oled_8x16')
+	.sect	'.debug_info'
+.L14:
+	.word	182
+	.half	3
+	.word	.L15
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FONT.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'oled_8x16',0,1,169,4,13
+	.word	.L22
+	.byte	1,5,3
+	.word	oled_8x16
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('oled_8x16')
+	.sect	'.debug_abbrev'
+.L15:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('oled_16x16_chinese')
+	.sect	'.debug_info'
+.L16:
+	.word	191
+	.half	3
+	.word	.L17
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_FONT.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'oled_16x16_chinese',0,1,147,5,13
+	.word	.L23
+	.byte	1,5,3
+	.word	oled_16x16_chinese
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('oled_16x16_chinese')
+	.sect	'.debug_abbrev'
+.L17:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	     1  /*********************************************************************************************************************
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	     2   * COPYRIGHT NOTICE
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	     3   * Copyright (c) 2020,逐飞科技
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	     4   * All rights reserved.
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	     5   * 技术讨论QQ群：三群：824575535
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	     6   *
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	     7   * 以下所有内容版权均属逐飞科技所有，未经允许不得用于商业用途，
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	     8   * 欢迎各位使用并传播本程序，修改内容时必须保留逐飞科技的版权声明。
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	     9   *
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    10   * @file       		字体库
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    11   * @company	   		成都逐飞科技有限公司
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    12   * @author     		逐飞科技(QQ3184284598)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    13   * @version    		查看doc内version文件 版本说明
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    14   * @Software 		tasking v6.3r1
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    15   * @Target core		TC264D
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    16   * @Taobao   		https://seekfree.taobao.com/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    17   * @date       		2020-3-23
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    18   ********************************************************************************************************************/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    19  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    20  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    21  #include "SEEKFREE_FONT.h"
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    22  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    23  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    24  const uint8 tft_ascii[95][16] = 
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    25  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    26      //阴码 逐行式 字宽16 字高16 逆向 
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    27  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00},/*" ",0*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    28  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    29  	{0x00,0x00,0x00,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x00,0x00,0x08,0x08,0x00,0x00},/*"!",1*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    30  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    31  	{0x00,0x48,0x24,0x24,0x12,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00},/*""",2*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    32  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    33  	{0x00,0x00,0x00,0x48,0x48,0x48,0x7E,0x24,0x24,0x24,0x7E,0x24,0x24,0x24,0x00,0x00},/*"#",3*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    34  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    35  	{0x00,0x00,0x10,0x3C,0x52,0x52,0x12,0x1C,0x30,0x50,0x50,0x52,0x52,0x3C,0x10,0x10},/*"$",4*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    36  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    37  	{0x00,0x00,0x00,0x22,0x25,0x15,0x15,0x0D,0x2A,0x58,0x54,0x54,0x52,0x22,0x00,0x00},/*"%",5*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    38  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    39  	{0x00,0x00,0x00,0x0C,0x12,0x12,0x12,0x0A,0x76,0x25,0x29,0x19,0x91,0x6E,0x00,0x00},/*"&",6*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    40  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    41  	{0x00,0x06,0x04,0x04,0x02,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00},/*"'",7*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    42  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    43  	{0x00,0x40,0x20,0x10,0x10,0x08,0x08,0x08,0x08,0x08,0x08,0x10,0x10,0x20,0x40,0x00},/*"(",8*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    44  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    45  	{0x00,0x02,0x04,0x08,0x08,0x10,0x10,0x10,0x10,0x10,0x10,0x08,0x08,0x04,0x02,0x00},/*")",9*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    46  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    47  	{0x00,0x00,0x00,0x00,0x08,0x08,0x6B,0x1C,0x1C,0x6B,0x08,0x08,0x00,0x00,0x00,0x00},/*"*",10*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    48  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    49  	{0x00,0x00,0x00,0x00,0x00,0x10,0x10,0x10,0xFE,0x10,0x10,0x10,0x00,0x00,0x00,0x00},/*"+",11*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    50  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    51  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x06,0x04,0x04,0x02},/*",",12*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    52  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    53  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x7E,0x00,0x00,0x00,0x00,0x00,0x00,0x00},/*"-",13*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    54  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    55  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x06,0x06,0x00,0x00},/*".",14*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    56  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    57  	{0x00,0x00,0x40,0x20,0x20,0x20,0x10,0x10,0x08,0x08,0x08,0x04,0x04,0x02,0x02,0x00},/*"/",15*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    58  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    59  	{0x00,0x00,0x00,0x18,0x24,0x42,0x42,0x42,0x42,0x42,0x42,0x42,0x24,0x18,0x00,0x00},/*"0",16*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    60  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    61  	{0x00,0x00,0x00,0x10,0x1C,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x7C,0x00,0x00},/*"1",17*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    62  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    63  	{0x00,0x00,0x00,0x3C,0x42,0x42,0x42,0x40,0x20,0x10,0x08,0x04,0x42,0x7E,0x00,0x00},/*"2",18*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    64  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    65  	{0x00,0x00,0x00,0x3C,0x42,0x42,0x40,0x20,0x18,0x20,0x40,0x42,0x42,0x3C,0x00,0x00},/*"3",19*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    66  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    67  	{0x00,0x00,0x00,0x20,0x30,0x30,0x28,0x24,0x24,0x22,0xFE,0x20,0x20,0xF8,0x00,0x00},/*"4",20*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    68  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    69  	{0x00,0x00,0x00,0x7E,0x02,0x02,0x02,0x1E,0x22,0x40,0x40,0x42,0x22,0x1C,0x00,0x00},/*"5",21*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    70  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    71  	{0x00,0x00,0x00,0x18,0x24,0x02,0x02,0x3A,0x46,0x42,0x42,0x42,0x44,0x38,0x00,0x00},/*"6",22*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    72  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    73  	{0x00,0x00,0x00,0x7E,0x42,0x20,0x20,0x10,0x10,0x08,0x08,0x08,0x08,0x08,0x00,0x00},/*"7",23*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    74  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    75  	{0x00,0x00,0x00,0x3C,0x42,0x42,0x42,0x24,0x18,0x24,0x42,0x42,0x42,0x3C,0x00,0x00},/*"8",24*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    76  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    77  	{0x00,0x00,0x00,0x1C,0x22,0x42,0x42,0x42,0x62,0x5C,0x40,0x40,0x24,0x18,0x00,0x00},/*"9",25*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    78  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    79  	{0x00,0x00,0x00,0x00,0x00,0x00,0x18,0x18,0x00,0x00,0x00,0x00,0x18,0x18,0x00,0x00},/*":",26*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    80  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    81  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x08,0x00,0x00,0x00,0x00,0x00,0x08,0x08,0x08},/*";",27*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    82  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    83  	{0x00,0x00,0x00,0x40,0x20,0x10,0x08,0x04,0x02,0x04,0x08,0x10,0x20,0x40,0x00,0x00},/*"<",28*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    84  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    85  	{0x00,0x00,0x00,0x00,0x00,0x00,0x7E,0x00,0x00,0x7E,0x00,0x00,0x00,0x00,0x00,0x00},/*"=",29*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    86  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    87  	{0x00,0x00,0x00,0x02,0x04,0x08,0x10,0x20,0x40,0x20,0x10,0x08,0x04,0x02,0x00,0x00},/*">",30*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    88  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    89  	{0x00,0x00,0x00,0x3C,0x42,0x42,0x46,0x20,0x10,0x10,0x10,0x00,0x18,0x18,0x00,0x00},/*"?",31*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    90  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    91  	{0x00,0x00,0x00,0x1C,0x22,0x5A,0x55,0x55,0x55,0x55,0x55,0x3A,0x42,0x3C,0x00,0x00},/*"@",32*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    92  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    93  	{0x00,0x00,0x00,0x08,0x08,0x18,0x14,0x14,0x24,0x3C,0x22,0x42,0x42,0xE7,0x00,0x00},/*"A",33*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    94  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    95  	{0x00,0x00,0x00,0x1F,0x22,0x22,0x22,0x1E,0x22,0x42,0x42,0x42,0x22,0x1F,0x00,0x00},/*"B",34*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    96  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    97  	{0x00,0x00,0x00,0x7C,0x42,0x42,0x01,0x01,0x01,0x01,0x01,0x42,0x22,0x1C,0x00,0x00},/*"C",35*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    98  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	    99  	{0x00,0x00,0x00,0x1F,0x22,0x42,0x42,0x42,0x42,0x42,0x42,0x42,0x22,0x1F,0x00,0x00},/*"D",36*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   100  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   101  	{0x00,0x00,0x00,0x3F,0x42,0x12,0x12,0x1E,0x12,0x12,0x02,0x42,0x42,0x3F,0x00,0x00},/*"E",37*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   102  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   103  	{0x00,0x00,0x00,0x3F,0x42,0x12,0x12,0x1E,0x12,0x12,0x02,0x02,0x02,0x07,0x00,0x00},/*"F",38*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   104  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   105  	{0x00,0x00,0x00,0x3C,0x22,0x22,0x01,0x01,0x01,0x71,0x21,0x22,0x22,0x1C,0x00,0x00},/*"G",39*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   106  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   107  	{0x00,0x00,0x00,0xE7,0x42,0x42,0x42,0x42,0x7E,0x42,0x42,0x42,0x42,0xE7,0x00,0x00},/*"H",40*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   108  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   109  	{0x00,0x00,0x00,0x3E,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x3E,0x00,0x00},/*"I",41*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   110  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   111  	{0x00,0x00,0x00,0x7C,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x11,0x0F},/*"J",42*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   112  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   113  	{0x00,0x00,0x00,0x77,0x22,0x12,0x0A,0x0E,0x0A,0x12,0x12,0x22,0x22,0x77,0x00,0x00},/*"K",43*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   114  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   115  	{0x00,0x00,0x00,0x07,0x02,0x02,0x02,0x02,0x02,0x02,0x02,0x02,0x42,0x7F,0x00,0x00},/*"L",44*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   116  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   117  	{0x00,0x00,0x00,0x77,0x36,0x36,0x36,0x36,0x36,0x2A,0x2A,0x2A,0x2A,0x6B,0x00,0x00},/*"M",45*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   118  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   119  	{0x00,0x00,0x00,0xE3,0x46,0x46,0x4A,0x4A,0x52,0x52,0x52,0x62,0x62,0x47,0x00,0x00},/*"N",46*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   120  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   121  	{0x00,0x00,0x00,0x1C,0x22,0x41,0x41,0x41,0x41,0x41,0x41,0x41,0x22,0x1C,0x00,0x00},/*"O",47*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   122  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   123  	{0x00,0x00,0x00,0x3F,0x42,0x42,0x42,0x42,0x3E,0x02,0x02,0x02,0x02,0x07,0x00,0x00},/*"P",48*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   124  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   125  	{0x00,0x00,0x00,0x1C,0x22,0x41,0x41,0x41,0x41,0x41,0x41,0x4D,0x32,0x1C,0x60,0x00},/*"Q",49*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   126  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   127  	{0x00,0x00,0x00,0x3F,0x42,0x42,0x42,0x3E,0x12,0x12,0x22,0x22,0x42,0xC7,0x00,0x00},/*"R",50*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   128  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   129  	{0x00,0x00,0x00,0x7C,0x42,0x42,0x02,0x04,0x18,0x20,0x40,0x42,0x42,0x3E,0x00,0x00},/*"S",51*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   130  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   131  	{0x00,0x00,0x00,0x7F,0x49,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x1C,0x00,0x00},/*"T",52*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   132  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   133  	{0x00,0x00,0x00,0xE7,0x42,0x42,0x42,0x42,0x42,0x42,0x42,0x42,0x42,0x3C,0x00,0x00},/*"U",53*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   134  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   135  	{0x00,0x00,0x00,0xE7,0x42,0x42,0x22,0x24,0x24,0x14,0x14,0x18,0x08,0x08,0x00,0x00},/*"V",54*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   136  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   137  	{0x00,0x00,0x00,0x6B,0x2A,0x2A,0x2A,0x2A,0x2A,0x36,0x14,0x14,0x14,0x14,0x00,0x00},/*"W",55*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   138  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   139  	{0x00,0x00,0x00,0xE7,0x42,0x24,0x24,0x18,0x18,0x18,0x24,0x24,0x42,0xE7,0x00,0x00},/*"X",56*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   140  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   141  	{0x00,0x00,0x00,0x77,0x22,0x22,0x14,0x14,0x08,0x08,0x08,0x08,0x08,0x1C,0x00,0x00},/*"Y",57*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   142  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   143  	{0x00,0x00,0x00,0x7E,0x21,0x20,0x10,0x10,0x08,0x04,0x04,0x42,0x42,0x3F,0x00,0x00},/*"Z",58*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   144  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   145  	{0x00,0x78,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x78,0x00},/*"[",59*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   146  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   147  	{0x00,0x00,0x02,0x04,0x04,0x04,0x08,0x08,0x08,0x10,0x10,0x20,0x20,0x20,0x40,0x40},/*"\",60*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   148  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   149  	{0x00,0x1E,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x1E,0x00},/*"]",61*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   150  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   151  	{0x00,0x18,0x24,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00},/*"^",62*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   152  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   153  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xFF},/*"_",63*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   154  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   155  	{0x00,0x06,0x08,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00},/*"`",64*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   156  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   157  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x1C,0x22,0x30,0x2C,0x22,0x32,0x6C,0x00,0x00},/*"a",65*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   158  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   159  	{0x00,0x00,0x00,0x00,0x03,0x02,0x02,0x1A,0x26,0x42,0x42,0x42,0x26,0x1A,0x00,0x00},/*"b",66*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   160  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   161  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x38,0x44,0x02,0x02,0x02,0x44,0x38,0x00,0x00},/*"c",67*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   162  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   163  	{0x00,0x00,0x00,0x00,0x60,0x40,0x40,0x7C,0x42,0x42,0x42,0x42,0x62,0xDC,0x00,0x00},/*"d",68*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   164  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   165  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x3C,0x42,0x42,0x7E,0x02,0x42,0x3C,0x00,0x00},/*"e",69*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   166  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   167  	{0x00,0x00,0x00,0x00,0x30,0x48,0x08,0x3E,0x08,0x08,0x08,0x08,0x08,0x3E,0x00,0x00},/*"f",70*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   168  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   169  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x7C,0x22,0x22,0x1C,0x02,0x3C,0x42,0x42,0x3C},/*"g",71*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   170  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   171  	{0x00,0x00,0x00,0x00,0x03,0x02,0x02,0x3A,0x46,0x42,0x42,0x42,0x42,0xE7,0x00,0x00},/*"h",72*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   172  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   173  	{0x00,0x00,0x00,0x0C,0x0C,0x00,0x00,0x0E,0x08,0x08,0x08,0x08,0x08,0x3E,0x00,0x00},/*"i",73*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   174  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   175  	{0x00,0x00,0x00,0x30,0x30,0x00,0x00,0x38,0x20,0x20,0x20,0x20,0x20,0x20,0x22,0x1E},/*"j",74*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   176  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   177  	{0x00,0x00,0x00,0x00,0x03,0x02,0x02,0x72,0x12,0x0A,0x0E,0x12,0x22,0x77,0x00,0x00},/*"k",75*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   178  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   179  	{0x00,0x00,0x00,0x08,0x0E,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x08,0x3E,0x00,0x00},/*"l",76*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   180  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   181  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x7F,0x92,0x92,0x92,0x92,0x92,0xB7,0x00,0x00},/*"m",77*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   182  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   183  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x3B,0x46,0x42,0x42,0x42,0x42,0xE7,0x00,0x00},/*"n",78*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   184  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   185  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x3C,0x42,0x42,0x42,0x42,0x42,0x3C,0x00,0x00},/*"o",79*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   186  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   187  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x1B,0x26,0x42,0x42,0x42,0x26,0x1A,0x02,0x07},/*"p",80*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   188  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   189  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x58,0x64,0x42,0x42,0x42,0x64,0x58,0x40,0xE0},/*"q",81*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   190  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   191  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x77,0x4C,0x04,0x04,0x04,0x04,0x1F,0x00,0x00},/*"r",82*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   192  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   193  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x7C,0x42,0x02,0x3C,0x40,0x42,0x3E,0x00,0x00},/*"s",83*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   194  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   195  	{0x00,0x00,0x00,0x00,0x00,0x08,0x08,0x3E,0x08,0x08,0x08,0x08,0x48,0x30,0x00,0x00},/*"t",84*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   196  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   197  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x63,0x42,0x42,0x42,0x42,0x62,0xDC,0x00,0x00},/*"u",85*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   198  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   199  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x77,0x22,0x22,0x14,0x14,0x08,0x08,0x00,0x00},/*"v",86*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   200  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   201  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xDB,0x91,0x52,0x5A,0x2A,0x24,0x24,0x00,0x00},/*"w",87*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   202  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   203  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x6E,0x24,0x18,0x18,0x18,0x24,0x76,0x00,0x00},/*"x",88*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   204  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   205  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xE7,0x42,0x24,0x24,0x18,0x18,0x08,0x08,0x06},/*"y",89*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   206  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   207  	{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x7E,0x22,0x10,0x08,0x08,0x44,0x7E,0x00,0x00},/*"z",90*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   208  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   209  	{0x00,0xC0,0x20,0x20,0x20,0x20,0x20,0x20,0x10,0x20,0x20,0x20,0x20,0x20,0xC0,0x00},/*"{",91*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   210  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   211  	{0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10},/*"|",92*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   212  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   213  	{0x00,0x03,0x04,0x04,0x04,0x04,0x04,0x04,0x08,0x04,0x04,0x04,0x04,0x04,0x03,0x00},/*"}",93*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   214  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   215  	{0x04,0x5A,0x20,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00},/*"~",94*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   216  };
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   217  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   218  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   219  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   220  //16位BMP 40X40 QQ图像取模数据
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   221  //Image2LCD取模选项设置
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   222  //水平扫描
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   223  //16位
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   224  //40X40
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   225  //不包含图像头数据
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   226  //自左至右
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   227  //自顶至底
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   228  //低位在前
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   229  const unsigned char gImage_qq[3200] = { /*0X00,0X10,0X28,0X00,0X28,0X00,0X01,0X1B,*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   230      0XDB,0XDE,0X5D,0XEF,0X5D,0XEF,0X7D,0XEF,0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   231      0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,0XBE,0XF7,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   232      0XFF,0XFF,0XDE,0XFF,0X38,0XC6,0X92,0X8C,0X8E,0X6B,0X6E,0X6B,0X10,0X7C,0X96,0XAD,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   233      0X3C,0XE7,0XFF,0XFF,0XFF,0XFF,0X7D,0XEF,0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   234      0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,0X5D,0XEF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   235      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   236      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0X5D,0XEF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   237      0X15,0X9D,0X4F,0X63,0X6C,0X42,0X0A,0X32,0X88,0X29,0X46,0X19,0X25,0X19,0X45,0X21,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   238      0XE8,0X31,0X8E,0X6B,0X18,0XBE,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   239      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   240      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   241      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XDF,0XFF,0XF5,0X9C,0X0F,0X53,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   242      0X10,0X4B,0X51,0X53,0X0F,0X4B,0X6C,0X3A,0XE9,0X31,0X67,0X21,0X25,0X19,0XE4,0X10,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   243      0XA3,0X08,0X62,0X00,0X83,0X08,0X8A,0X4A,0X59,0XC6,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   244      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   245      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   246      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0X1C,0XE7,0X4F,0X5B,0XB3,0X63,0XB8,0X7C,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   247      0XF5,0X63,0X11,0X43,0X4D,0X32,0XEA,0X29,0X88,0X21,0X26,0X19,0X05,0X19,0X05,0X19,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   248      0X04,0X11,0X04,0X11,0XE4,0X10,0X83,0X00,0XA3,0X08,0X72,0X8C,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   249      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   250      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   251      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XDB,0XDE,0X4B,0X3A,0XF0,0X42,0X35,0X6C,0X54,0X4B,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   252      0XB1,0X32,0X2E,0X2A,0XEB,0X21,0XA9,0X21,0X67,0X19,0X05,0X19,0X04,0X11,0X04,0X11,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   253      0X04,0X11,0X04,0X11,0X04,0X11,0X05,0X19,0XE4,0X10,0X42,0X00,0XAF,0X73,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   254      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   255      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   256      0XFF,0XFF,0XFF,0XFF,0X5D,0XEF,0X09,0X32,0X4C,0X32,0X10,0X4B,0X8F,0X32,0X4F,0X2A,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   257      0X2E,0X2A,0XCC,0X19,0X89,0X19,0X89,0X21,0X47,0X19,0X05,0X19,0X04,0X11,0X04,0X11,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   258      0XC4,0X10,0XC4,0X10,0X04,0X11,0X04,0X11,0X04,0X11,0XE4,0X10,0X42,0X00,0X31,0X84,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   259      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   260      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   261      0XFF,0XFF,0XFF,0XFF,0XEC,0X52,0X47,0X19,0X4C,0X32,0X0B,0X2A,0XEC,0X21,0XEC,0X21,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   262      0X0C,0X22,0X91,0X5B,0XEE,0X4A,0X06,0X11,0X26,0X19,0X04,0X19,0XE4,0X10,0XE4,0X10,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   263      0XA7,0X29,0X66,0X21,0XA3,0X08,0X05,0X19,0X04,0X11,0X04,0X11,0XE4,0X10,0X82,0X00,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   264      0XF7,0XBD,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   265      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   266      0XFF,0XFF,0X35,0XA5,0X83,0X08,0X88,0X21,0X88,0X21,0X89,0X21,0XAA,0X21,0X8A,0X21,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   267      0X6B,0X42,0X71,0X8C,0XFF,0XFF,0X72,0X8C,0X83,0X08,0X04,0X11,0XC4,0X08,0X29,0X42,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   268      0XFB,0XDE,0X5D,0XEF,0XEC,0X5A,0X83,0X08,0X04,0X11,0X04,0X11,0X04,0X11,0X83,0X08,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   269      0XE8,0X31,0XDF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   270      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   271      0XBE,0XF7,0XC7,0X31,0XC4,0X10,0X25,0X19,0X26,0X19,0X47,0X19,0X47,0X19,0XA8,0X29,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   272      0X8A,0X52,0X28,0X4A,0X55,0XAD,0XFF,0XFF,0XE8,0X31,0XA3,0X08,0X05,0X19,0X4D,0X6B,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   273      0X4D,0X6B,0XFF,0XFF,0X7D,0XEF,0X45,0X21,0XC4,0X10,0X04,0X11,0X04,0X11,0X04,0X11,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   274      0X62,0X00,0X76,0XAD,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   275      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   276      0X96,0XB5,0X62,0X00,0X04,0X11,0X04,0X19,0X05,0X11,0X05,0X19,0XC4,0X08,0X8B,0X4A,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   277      0XB6,0XB5,0X5D,0XEF,0XF7,0XBD,0XFF,0XFF,0X8E,0X6B,0X62,0X00,0X29,0X42,0XAA,0X5A,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   278      0X08,0X42,0XFF,0XFF,0XFF,0XFF,0XCC,0X52,0X83,0X08,0X04,0X11,0X04,0X11,0X04,0X11,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   279      0XA3,0X08,0XAD,0X52,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   280      0XBE,0XF7,0XFF,0XFF,0XDF,0XFF,0XDB,0XDE,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   281      0X4E,0X63,0X62,0X00,0X04,0X11,0X04,0X11,0X04,0X11,0XE4,0X10,0X62,0X00,0X8E,0X63,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   282      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XCF,0X73,0X01,0X00,0XF3,0X9C,0X2C,0X63,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   283      0X96,0XB5,0XFF,0XFF,0XFF,0XFF,0X2D,0X5B,0X83,0X00,0X04,0X11,0X04,0X11,0X04,0X11,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   284      0XE4,0X10,0X67,0X21,0X3D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   285      0XB7,0XB5,0X76,0XAD,0X7D,0XEF,0XCB,0X52,0XB3,0X94,0XFF,0XFF,0XFF,0XFF,0XDF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   286      0XE8,0X31,0XA3,0X08,0X04,0X11,0X04,0X11,0X04,0X11,0X04,0X11,0XA3,0X08,0X49,0X42,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   287      0XFF,0XF7,0XFF,0XF7,0XFF,0XFF,0XFF,0XFF,0X6A,0X4A,0X01,0X00,0X72,0X84,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   288      0XFF,0XFF,0XFF,0XF7,0XDF,0XEF,0X09,0X3A,0XA3,0X08,0X04,0X11,0X04,0X11,0X04,0X11,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   289      0X04,0X11,0X05,0X11,0X18,0XBE,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   290      0XF0,0X7B,0X62,0X00,0XE8,0X31,0XC7,0X31,0X41,0X00,0X35,0XA5,0XFF,0XFF,0X5D,0XEF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   291      0X46,0X21,0XC4,0X10,0X04,0X11,0X04,0X11,0X04,0X11,0X04,0X11,0XE4,0X10,0XA3,0X08,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   292      0X76,0X9D,0XFF,0XF7,0XFF,0XFF,0XB7,0XAD,0XA3,0X08,0XA3,0X08,0XC7,0X31,0X9E,0XE7,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   293      0XFF,0XF7,0XFF,0XF7,0X76,0XA5,0XA3,0X08,0XE4,0X10,0X04,0X11,0X04,0X11,0X04,0X11,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   294      0X05,0X11,0X05,0X11,0X35,0XA5,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   295      0XDB,0XDE,0XA7,0X29,0X83,0X00,0XC4,0X10,0XC4,0X10,0XC4,0X10,0X1C,0XE7,0X9E,0XEF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   296      0X05,0X11,0XE4,0X10,0X04,0X11,0X04,0X11,0X04,0X11,0X04,0X11,0X04,0X19,0XC4,0X08,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   297      0XE5,0X10,0XD1,0X6B,0XD1,0X6B,0XC5,0X08,0X64,0X00,0XA5,0X08,0X43,0X00,0X2B,0X32,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   298      0X77,0X9D,0XB3,0X84,0X25,0X19,0XC4,0X10,0X04,0X11,0X04,0X11,0X04,0X11,0X04,0X11,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   299      0X25,0X19,0X26,0X09,0X35,0X9D,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   300      0XFF,0XFF,0XAF,0X73,0X62,0X00,0X04,0X19,0X05,0X19,0X82,0X00,0X0D,0X5B,0X8E,0X9B,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   301      0X62,0X10,0X05,0X11,0X04,0X11,0X04,0X11,0X04,0X19,0XE4,0X10,0X85,0X00,0X05,0X11,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   302      0XC4,0X39,0X81,0X5A,0X40,0X7B,0X22,0X9C,0X43,0XAC,0X03,0XA4,0X83,0X9B,0X82,0X72,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   303      0X82,0X49,0XC2,0X18,0XA4,0X00,0XC5,0X00,0XE4,0X10,0X04,0X19,0X04,0X11,0X05,0X19,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   304      0X47,0X19,0X67,0X11,0XEC,0X5A,0XBE,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   305      0XDF,0XFF,0XDB,0XD6,0XC4,0X10,0XE4,0X10,0X04,0X11,0X05,0X11,0XA4,0X18,0X01,0XC0,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   306      0X83,0X88,0XE4,0X00,0X05,0X19,0X04,0X19,0XC5,0X08,0X44,0X21,0X43,0X83,0X23,0XD5,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   307      0X42,0XFE,0XE4,0XFE,0X27,0XFF,0X07,0XFF,0XA4,0XFE,0X64,0XFE,0X03,0XFE,0XA3,0XFD,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   308      0XE2,0XFC,0X42,0XEC,0X83,0XB3,0X24,0X62,0XE5,0X10,0XC4,0X08,0X04,0X19,0X26,0X19,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   309      0XA8,0X19,0X87,0X21,0X00,0X90,0XD3,0XBC,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   310      0X5D,0XEF,0XFF,0XFF,0XF0,0X7B,0X42,0X00,0X05,0X19,0X05,0X11,0X83,0X28,0X01,0XD0,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   311      0X44,0XF8,0XA3,0X48,0XE4,0X00,0XC5,0X08,0X44,0X5A,0X02,0XED,0XE2,0XFD,0X02,0XFE,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   312      0X66,0XFE,0X74,0XFF,0XB8,0XFF,0X73,0XFF,0XE7,0XF6,0XA6,0XF6,0X45,0XF6,0XA4,0XF5,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   313      0XC3,0XFC,0X62,0XFC,0XC2,0XFC,0XC2,0XFC,0XE3,0XCB,0XC4,0X49,0X06,0X11,0X88,0X19,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   314      0X87,0X01,0XA4,0X90,0X01,0XF8,0XEC,0X9A,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   315      0X5D,0XEF,0XFF,0XFF,0X9E,0XF7,0XE8,0X31,0X83,0X00,0X05,0X09,0X82,0X40,0X01,0XC0,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   316      0X23,0XF8,0X85,0XF0,0XA3,0X48,0XA4,0X00,0X44,0X5A,0X02,0XFD,0X23,0XCC,0XC2,0XDC,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   317      0X04,0XFE,0X28,0XFE,0X48,0XF6,0X46,0XF6,0X24,0XF6,0XE4,0XF5,0X64,0XFD,0XE3,0XFC,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   318      0X62,0XFC,0XC2,0XFC,0X02,0XE4,0X02,0XDC,0XE2,0XFC,0XA4,0X7A,0X48,0X01,0X67,0X01,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   319      0XC4,0X78,0X24,0XF8,0X02,0XF8,0X84,0XB0,0X7D,0XE7,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   320      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XDB,0XDE,0X25,0X19,0XA3,0X00,0XC4,0X38,0X02,0XE0,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   321      0X22,0XD8,0X44,0XF8,0XA6,0XF8,0XA4,0X78,0X63,0X00,0X43,0X21,0X83,0X72,0X83,0X39,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   322      0X82,0X9B,0X21,0XF5,0X61,0XFD,0X22,0XFD,0XE2,0XFC,0XA2,0XFC,0X42,0XFC,0X42,0XFC,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   323      0X42,0XFC,0X22,0XAB,0X83,0X41,0XC3,0X92,0X04,0X52,0X26,0X01,0X25,0X19,0XA4,0X98,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   324      0X44,0XF8,0X23,0XF8,0X02,0XF8,0XA4,0XD0,0X9E,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   325      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0X9A,0XD6,0X87,0X29,0XA5,0X00,0X43,0XB8,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   326      0X22,0XF8,0X23,0XE0,0X65,0XF8,0XE8,0XF8,0X07,0XC9,0X83,0X48,0X42,0X00,0XA3,0X00,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   327      0X84,0X00,0X63,0X29,0XA2,0X7A,0X62,0XB3,0XA2,0XCB,0X62,0XD3,0X02,0XBB,0X82,0X8A,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   328      0X83,0X39,0XA4,0X00,0XE5,0X00,0XE5,0X00,0XE5,0X08,0XC4,0X60,0X64,0XD8,0X44,0XF8,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   329      0X24,0XF8,0X23,0XF8,0X02,0XF8,0X83,0X88,0XDB,0XC6,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   330      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0X3D,0XE7,0X50,0X5B,0X08,0X31,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   331      0X23,0XE8,0X43,0XF8,0X44,0XF0,0X65,0XF8,0X09,0XF9,0XAB,0XF9,0X89,0XD1,0X06,0X89,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   332      0XA3,0X48,0X42,0X18,0X02,0X00,0X42,0X00,0X61,0X00,0X82,0X00,0X62,0X00,0X62,0X00,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   333      0X83,0X00,0XA3,0X20,0XC4,0X50,0XA5,0X88,0X85,0XD8,0X65,0XF8,0X44,0XF8,0X44,0XF8,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   334      0X23,0XF8,0X23,0XF8,0X03,0XD0,0X82,0X10,0XC7,0X29,0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   335      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0X6C,0X32,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   336      0XA5,0X38,0X02,0XD8,0X23,0XF8,0X65,0XF8,0X66,0XF8,0XA7,0XF8,0X4A,0XF9,0X0C,0XFA,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   337      0X4D,0XFA,0X4C,0XEA,0X0B,0XD2,0XA9,0XB9,0X68,0XB1,0X47,0XA9,0X27,0XB1,0X07,0XB9,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   338      0X07,0XD1,0XE7,0XE8,0XC7,0XF8,0XA7,0XF8,0X65,0XF8,0X65,0XF8,0X44,0XF8,0X23,0XF8,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   339      0X03,0XF8,0X02,0XD0,0XA3,0X28,0X05,0X09,0XC4,0X08,0XEC,0X5A,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   340      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFB,0XDE,0X05,0X19,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   341      0XC4,0X00,0XA7,0X41,0XE6,0XC0,0X03,0XF8,0X86,0XF8,0XA7,0XF8,0X87,0XF8,0X86,0XF8,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   342      0XC7,0XF8,0X29,0XF9,0X8A,0XF9,0XAB,0XF9,0XAB,0XF9,0X8B,0XF9,0X6A,0XF9,0X29,0XF9,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   343      0X08,0XF9,0XC7,0XF8,0XA6,0XF8,0X86,0XF8,0X65,0XF8,0X64,0XF8,0X23,0XF8,0X02,0XF0,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   344      0X06,0XB1,0X25,0X29,0XE4,0X00,0XE4,0X10,0X25,0X19,0X25,0X19,0X14,0X9D,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   345      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0X96,0XAD,0X62,0X00,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   346      0X82,0X08,0X35,0X95,0XBA,0XCE,0X8B,0XA2,0X44,0XD0,0X25,0XF8,0X87,0XF8,0XA7,0XF8,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   347      0XC7,0XF8,0XA7,0XF8,0X87,0XF8,0X86,0XF8,0X86,0XF8,0X86,0XF8,0X87,0XF8,0XA7,0XF8,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   348      0XA7,0XF8,0XA6,0XF8,0X85,0XF8,0X65,0XF8,0X64,0XF8,0X24,0XF0,0X64,0XB8,0X0D,0X93,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   349      0XBB,0XB6,0XCF,0X63,0X83,0X08,0X04,0X11,0XE4,0X10,0X66,0X21,0X49,0X3A,0X5D,0XEF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   350      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XD3,0X94,0X42,0X00,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   351      0XE4,0X10,0XBB,0XCE,0XFF,0XFF,0XBE,0XE7,0X76,0XB5,0XCC,0XAA,0X07,0XC1,0X45,0XE0,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   352      0X45,0XF8,0X46,0XF8,0X66,0XF8,0X86,0XF8,0X86,0XF8,0X86,0XF8,0X86,0XF8,0X65,0XF8,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   353      0X45,0XF8,0X65,0XF8,0X65,0XE8,0X44,0XD0,0X43,0XA8,0X01,0X88,0X82,0X90,0X3C,0XD7,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   354      0XFF,0XEF,0X55,0X95,0X83,0X08,0X04,0X11,0X04,0X11,0X05,0X19,0X46,0X19,0XB3,0X94,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   355      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XB3,0X94,0X41,0X00,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   356      0X86,0X21,0X5D,0XDF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XDF,0XE7,0X7A,0XC6,0XD3,0XB4,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   357      0X4E,0XB3,0X2A,0XC2,0X68,0XD1,0XE6,0XE0,0XA6,0XE8,0XA5,0XE8,0XA5,0XE8,0XE6,0XD8,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   358      0X88,0XC9,0X06,0XA9,0X22,0XA8,0X02,0XA8,0X00,0XA0,0X00,0XC8,0X00,0XD8,0XF7,0XE5,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   359      0XFF,0XE7,0XF8,0XAD,0XC4,0X10,0XE4,0X10,0X04,0X11,0XE4,0X10,0X05,0X11,0X8B,0X4A,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   360      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0X55,0XA5,0X41,0X00,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   361      0XA7,0X29,0X5D,0XDF,0XFF,0XF7,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   362      0XFF,0XEF,0X7D,0XDF,0XDB,0XCE,0X59,0XCE,0XF8,0XCD,0XD7,0XCD,0XF7,0XC5,0X79,0XCE,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   363      0XFB,0XBE,0XAB,0XA2,0X03,0XF0,0X45,0XF8,0X42,0XD0,0X43,0XE8,0X00,0XF0,0X72,0XD4,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   364      0XFF,0XDF,0X39,0XAE,0XE4,0X10,0XE4,0X10,0X04,0X11,0XE4,0X10,0X05,0X11,0X87,0X29,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   365      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0X59,0XCE,0X83,0X08,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   366      0X46,0X21,0X1C,0XD7,0XFF,0XF7,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   367      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   368      0XFF,0XEF,0X8B,0XBA,0X04,0XF8,0X45,0XF8,0X62,0XE0,0X44,0XF0,0X00,0XF8,0X8E,0XDB,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   369      0XFF,0XDF,0XF8,0XA5,0XC4,0X10,0XE4,0X10,0XE4,0X10,0X04,0X11,0XE4,0X10,0X25,0X19,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   370      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XBE,0XF7,0X87,0X29,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   371      0X83,0X08,0X39,0XB6,0XFF,0XF7,0XDF,0XF7,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   372      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   373      0XBE,0XE7,0X4A,0XBA,0X03,0XF8,0X45,0XF8,0X64,0XF8,0X44,0XF8,0X00,0XF8,0X6E,0XE3,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   374      0XFF,0XD7,0XF4,0X8C,0X83,0X08,0X04,0X11,0XE4,0X10,0XE4,0X10,0XE4,0X10,0X05,0X19,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   375      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XEF,0X73,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   376      0X00,0X00,0X72,0X84,0XFF,0XEF,0XBE,0XEF,0XDF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   377      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   378      0XDF,0XE7,0X8B,0XBA,0X03,0XF8,0X45,0XF8,0X45,0XF8,0X23,0XF8,0X00,0XF8,0XD3,0XD4,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   379      0XFF,0XD7,0X4E,0X5B,0X21,0X00,0X29,0X3A,0X55,0XA5,0X83,0X08,0XC4,0X10,0X25,0X19,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   380      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFB,0XDE,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   381      0XA3,0X08,0XE8,0X31,0X9E,0XDF,0X9E,0XE7,0XBF,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   382      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   383      0XFF,0XF7,0X51,0XBC,0X02,0XE0,0X03,0XF8,0X03,0XF0,0X43,0XE0,0XEC,0XC2,0X7E,0XCF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   384      0XFC,0XBE,0X46,0X21,0X21,0X00,0XD3,0X94,0XFF,0XFF,0X51,0X84,0X00,0X00,0X87,0X29,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   385      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   386      0X51,0X84,0X00,0X00,0XF4,0X8C,0XFF,0XEF,0X9E,0XE7,0XBF,0XEF,0XDF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   387      0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   388      0XFF,0XFF,0X3D,0XDF,0X55,0XBD,0X52,0XBC,0X72,0XBC,0XB7,0XB5,0X5D,0XC7,0XFF,0XDF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   389      0XF0,0X6B,0X00,0X00,0X09,0X3A,0XBF,0XF7,0XFF,0XFF,0XFF,0XFF,0X14,0X9D,0X55,0XA5,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   390      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   391      0XFF,0XFF,0XAC,0X4A,0XA4,0X08,0XBB,0XBE,0XDF,0XE7,0X7E,0XE7,0XBE,0XEF,0XDF,0XF7,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   392      0XDF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   393      0XDF,0XFF,0XDF,0XF7,0XFF,0XEF,0XDF,0XDF,0XBF,0XD7,0X9E,0XD7,0XDF,0XDF,0XD8,0XA5,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   394      0X83,0X08,0X26,0X11,0XDB,0XD6,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   395      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   396      0X79,0XEE,0X8B,0XDC,0X21,0X31,0XA9,0X21,0X3D,0XCF,0XBF,0XDF,0X7E,0XDF,0X9E,0XE7,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   397      0XBE,0XEF,0XBF,0XEF,0XDF,0XF7,0XDF,0XF7,0XDF,0XF7,0XDF,0XF7,0XDF,0XF7,0XBF,0XEF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   398      0XBE,0XEF,0X9E,0XE7,0X7E,0XDF,0X5E,0XD7,0X5E,0XD7,0XDF,0XDF,0X9A,0XB6,0X26,0X19,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   399      0X42,0X08,0XED,0XA3,0XBF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   400      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0X74,0XDD,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   401      0XC0,0XDB,0X00,0XFE,0X42,0XEE,0X02,0X42,0X89,0X21,0X7B,0XB6,0XDF,0XDF,0X7E,0XD7,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   402      0X7E,0XDF,0X7E,0XDF,0X9E,0XE7,0X9E,0XE7,0X9E,0XE7,0X9E,0XE7,0X9E,0XE7,0X7E,0XDF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   403      0X7E,0XDF,0X5D,0XD7,0X5D,0XD7,0X9E,0XDF,0XFF,0XE7,0XF8,0XA5,0X07,0X11,0XE3,0X18,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   404      0X02,0XC5,0X60,0XFD,0XE6,0XD3,0XDB,0XEE,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   405      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0X9E,0XF7,0X84,0XBA,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   406      0XC1,0XFC,0X42,0XFE,0X82,0XFE,0XA2,0XFE,0X81,0X83,0X45,0X21,0X74,0X74,0X5E,0XC7,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   407      0XDF,0XDF,0X7E,0XD7,0X5E,0XD7,0X5D,0XD7,0X5E,0XD7,0X5E,0XD7,0X5D,0XD7,0X5D,0XD7,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   408      0X5E,0XD7,0X9E,0XDF,0XFF,0XE7,0X3D,0XC7,0XF1,0X63,0X84,0X08,0X42,0X52,0X26,0XE6,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   409      0X29,0XFF,0X86,0XFE,0XE0,0XF3,0X6A,0XC3,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   410      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0X18,0XDE,0XC1,0XD2,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   411      0XA2,0XFD,0X22,0XFE,0X42,0XFE,0X42,0XFE,0X62,0XFE,0XE2,0XD4,0X41,0X6A,0X49,0X42,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   412      0X53,0X74,0X3B,0XA6,0X3E,0XC7,0XBF,0XD7,0XBF,0XD7,0XBF,0XD7,0XBF,0XDF,0XBF,0XD7,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   413      0X3E,0XC7,0X1A,0XA6,0XF2,0X63,0XA7,0X29,0X82,0X41,0X22,0XB4,0X62,0XFE,0X83,0XFE,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   414      0XAA,0XFE,0X0F,0XFF,0X67,0XFD,0X63,0XBA,0X3C,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   415      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0X9A,0XE6,0X80,0XD2,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   416      0X21,0XFD,0XC2,0XFD,0XE2,0XF5,0XC2,0XF5,0X82,0XF5,0X82,0XFD,0X62,0XFD,0X61,0XDC,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   417      0X21,0X9B,0X84,0X6A,0XE9,0X6A,0X2C,0X63,0XAF,0X63,0X11,0X74,0X6E,0X63,0X2C,0X63,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   418      0X89,0X5A,0X04,0X52,0X81,0X7A,0XC2,0XCB,0XE2,0XFC,0X62,0XFD,0X82,0XFD,0XC2,0XFD,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   419      0XC2,0XFD,0XE4,0XFD,0X24,0XFD,0X62,0XCA,0X1C,0XE7,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   420      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XB1,0XCC,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   421      0X81,0XD2,0XC0,0XF3,0XC1,0XFC,0X02,0XFD,0X02,0XFD,0XE2,0XFC,0XC2,0XFC,0XC2,0XFC,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   422      0X81,0XFC,0X80,0XFB,0XC0,0XC9,0XA4,0X81,0X35,0XAD,0X59,0XCE,0X71,0X9C,0X21,0X81,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   423      0X00,0XDA,0XA1,0XFB,0X82,0XFC,0XA2,0XFC,0X82,0XFC,0XA2,0XFC,0X02,0XFD,0X22,0XFD,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   424      0XE2,0XFC,0X00,0XFC,0X60,0XDA,0X90,0XCC,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   425      0X5D,0XEF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   426      0X59,0XDE,0X0D,0XC4,0X06,0XCB,0XE4,0XD2,0X03,0XDB,0X03,0XDB,0XE3,0XDA,0XC3,0XD2,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   427      0XA4,0XC2,0X09,0XB3,0XD2,0XBC,0X9E,0XF7,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFB,0XE6,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   428      0X0E,0XB4,0XA6,0XBA,0X83,0XD2,0XE3,0XE2,0X02,0XEB,0X22,0XEB,0X22,0XE3,0X03,0XDB,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   429      0XE4,0XD2,0X6A,0XC3,0XB6,0XD5,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   430  };
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   431  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   432  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   433  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   434  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   435  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   436  //  使用PCtoLCD2002软件取模		
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   437  //  阴码、逐行式、顺向   16*16
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   438  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   439  const uint8 chinese_test[8][16] = 
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   440  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   441      {0x00,0x00,0x23,0xFC,0x10,0x40,0x10,0x80,0x01,0x44,0x06,0x68,0xF0,0xB0,0x11,0x28},
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   442      {0x16,0x68,0x10,0xA4,0x11,0x24,0x16,0x20,0x10,0xA0,0x28,0x40,0x47,0xFE,0x00,0x00},/*"逐",0*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   443      {0x00,0x00,0xFF,0xC0,0x00,0x40,0x00,0x44,0x00,0x48,0x00,0x50,0x00,0x60,0x00,0x50},
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   444      {0x00,0x48,0x00,0x44,0x00,0x20,0x00,0x20,0x00,0x12,0x00,0x0A,0x00,0x06,0x00,0x02},/*"飞",1*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   445      {0x08,0x10,0x1D,0x10,0xF0,0x90,0x10,0x90,0x10,0x10,0xFD,0x10,0x10,0x90,0x38,0x90},
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   446      {0x34,0x10,0x50,0x1E,0x53,0xF0,0x90,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10},/*"科",2*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   447      {0x10,0x20,0x10,0x20,0x10,0x20,0x13,0xFE,0xFC,0x20,0x10,0x20,0x10,0x20,0x15,0xFC},
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   448      {0x18,0x84,0x30,0x88,0xD0,0x48,0x10,0x50,0x10,0x20,0x10,0x50,0x51,0x88,0x26,0x06},/*"技",3*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   449  };
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   450  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   451  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   452  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   453  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   454  const uint8 oled_6x8[][6] =
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   455  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   456  	{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 },   // sp
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   457  	{ 0x00, 0x00, 0x00, 0x2f, 0x00, 0x00 },   // !
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   458  	{ 0x00, 0x00, 0x07, 0x00, 0x07, 0x00 },   // "
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   459  	{ 0x00, 0x14, 0x7f, 0x14, 0x7f, 0x14 },   // #
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   460  	{ 0x00, 0x24, 0x2a, 0x7f, 0x2a, 0x12 },   // $
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   461  	{ 0x00, 0x62, 0x64, 0x08, 0x13, 0x23 },   // %
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   462  	{ 0x00, 0x36, 0x49, 0x55, 0x22, 0x50 },   // &
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   463  	{ 0x00, 0x00, 0x05, 0x03, 0x00, 0x00 },   // '
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   464  	{ 0x00, 0x00, 0x1c, 0x22, 0x41, 0x00 },   // (
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   465  	{ 0x00, 0x00, 0x41, 0x22, 0x1c, 0x00 },   // )
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   466  	{ 0x00, 0x14, 0x08, 0x3E, 0x08, 0x14 },   // *
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   467  	{ 0x00, 0x08, 0x08, 0x3E, 0x08, 0x08 },   // +
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   468  	{ 0x00, 0x00, 0x00, 0xA0, 0x60, 0x00 },   // ,
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   469  	{ 0x00, 0x08, 0x08, 0x08, 0x08, 0x08 },   // -
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   470  	{ 0x00, 0x00, 0x60, 0x60, 0x00, 0x00 },   // .
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   471  	{ 0x00, 0x20, 0x10, 0x08, 0x04, 0x02 },   // /
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   472  	{ 0x00, 0x3E, 0x51, 0x49, 0x45, 0x3E },   // 0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   473  	{ 0x00, 0x00, 0x42, 0x7F, 0x40, 0x00 },   // 1
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   474  	{ 0x00, 0x42, 0x61, 0x51, 0x49, 0x46 },   // 2
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   475  	{ 0x00, 0x21, 0x41, 0x45, 0x4B, 0x31 },   // 3
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   476  	{ 0x00, 0x18, 0x14, 0x12, 0x7F, 0x10 },   // 4
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   477  	{ 0x00, 0x27, 0x45, 0x45, 0x45, 0x39 },   // 5
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   478  	{ 0x00, 0x3C, 0x4A, 0x49, 0x49, 0x30 },   // 6
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   479  	{ 0x00, 0x01, 0x71, 0x09, 0x05, 0x03 },   // 7
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   480  	{ 0x00, 0x36, 0x49, 0x49, 0x49, 0x36 },   // 8
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   481  	{ 0x00, 0x06, 0x49, 0x49, 0x29, 0x1E },   // 9
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   482  	{ 0x00, 0x00, 0x36, 0x36, 0x00, 0x00 },   // :
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   483  	{ 0x00, 0x00, 0x56, 0x36, 0x00, 0x00 },   // ;
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   484  	{ 0x00, 0x08, 0x14, 0x22, 0x41, 0x00 },   // <
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   485  	{ 0x00, 0x14, 0x14, 0x14, 0x14, 0x14 },   // =
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   486  	{ 0x00, 0x00, 0x41, 0x22, 0x14, 0x08 },   // >
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   487  	{ 0x00, 0x02, 0x01, 0x51, 0x09, 0x06 },   // ?
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   488  	{ 0x00, 0x32, 0x49, 0x59, 0x51, 0x3E },   // @
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   489  	{ 0x00, 0x7C, 0x12, 0x11, 0x12, 0x7C },   // A
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   490  	{ 0x00, 0x7F, 0x49, 0x49, 0x49, 0x36 },   // B
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   491  	{ 0x00, 0x3E, 0x41, 0x41, 0x41, 0x22 },   // C
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   492  	{ 0x00, 0x7F, 0x41, 0x41, 0x22, 0x1C },   // D
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   493  	{ 0x00, 0x7F, 0x49, 0x49, 0x49, 0x41 },   // E
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   494  	{ 0x00, 0x7F, 0x09, 0x09, 0x09, 0x01 },   // F
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   495  	{ 0x00, 0x3E, 0x41, 0x49, 0x49, 0x7A },   // G
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   496  	{ 0x00, 0x7F, 0x08, 0x08, 0x08, 0x7F },   // H
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   497  	{ 0x00, 0x00, 0x41, 0x7F, 0x41, 0x00 },   // I
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   498  	{ 0x00, 0x20, 0x40, 0x41, 0x3F, 0x01 },   // J
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   499  	{ 0x00, 0x7F, 0x08, 0x14, 0x22, 0x41 },   // K
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   500  	{ 0x00, 0x7F, 0x40, 0x40, 0x40, 0x40 },   // L
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   501  	{ 0x00, 0x7F, 0x02, 0x0C, 0x02, 0x7F },   // M
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   502  	{ 0x00, 0x7F, 0x04, 0x08, 0x10, 0x7F },   // N
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   503  	{ 0x00, 0x3E, 0x41, 0x41, 0x41, 0x3E },   // O
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   504  	{ 0x00, 0x7F, 0x09, 0x09, 0x09, 0x06 },   // P
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   505  	{ 0x00, 0x3E, 0x41, 0x51, 0x21, 0x5E },   // Q
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   506  	{ 0x00, 0x7F, 0x09, 0x19, 0x29, 0x46 },   // R
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   507  	{ 0x00, 0x46, 0x49, 0x49, 0x49, 0x31 },   // S
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   508  	{ 0x00, 0x01, 0x01, 0x7F, 0x01, 0x01 },   // T
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   509  	{ 0x00, 0x3F, 0x40, 0x40, 0x40, 0x3F },   // U
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   510  	{ 0x00, 0x1F, 0x20, 0x40, 0x20, 0x1F },   // V
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   511  	{ 0x00, 0x3F, 0x40, 0x38, 0x40, 0x3F },   // W
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   512  	{ 0x00, 0x63, 0x14, 0x08, 0x14, 0x63 },   // X
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   513  	{ 0x00, 0x07, 0x08, 0x70, 0x08, 0x07 },   // Y
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   514  	{ 0x00, 0x61, 0x51, 0x49, 0x45, 0x43 },   // Z
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   515  	{ 0x00, 0x00, 0x7F, 0x41, 0x41, 0x00 },   // [
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   516  	{ 0x00, 0x55, 0x2A, 0x55, 0x2A, 0x55 },   // 55
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   517  	{ 0x00, 0x00, 0x41, 0x41, 0x7F, 0x00 },   // ]
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   518  	{ 0x00, 0x04, 0x02, 0x01, 0x02, 0x04 },   // ^
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   519  	{ 0x00, 0x40, 0x40, 0x40, 0x40, 0x40 },   // _
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   520  	{ 0x00, 0x00, 0x01, 0x02, 0x04, 0x00 },   // '
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   521  	{ 0x00, 0x20, 0x54, 0x54, 0x54, 0x78 },   // a
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   522  	{ 0x00, 0x7F, 0x48, 0x44, 0x44, 0x38 },   // b
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   523  	{ 0x00, 0x38, 0x44, 0x44, 0x44, 0x20 },   // c
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   524  	{ 0x00, 0x38, 0x44, 0x44, 0x48, 0x7F },   // d
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   525  	{ 0x00, 0x38, 0x54, 0x54, 0x54, 0x18 },   // e
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   526  	{ 0x00, 0x08, 0x7E, 0x09, 0x01, 0x02 },   // f
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   527  	{ 0x00, 0x18, 0xA4, 0xA4, 0xA4, 0x7C },   // g
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   528  	{ 0x00, 0x7F, 0x08, 0x04, 0x04, 0x78 },   // h
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   529  	{ 0x00, 0x00, 0x44, 0x7D, 0x40, 0x00 },   // i
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   530  	{ 0x00, 0x40, 0x80, 0x84, 0x7D, 0x00 },   // j
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   531  	{ 0x00, 0x7F, 0x10, 0x28, 0x44, 0x00 },   // k
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   532  	{ 0x00, 0x00, 0x41, 0x7F, 0x40, 0x00 },   // l
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   533  	{ 0x00, 0x7C, 0x04, 0x18, 0x04, 0x78 },   // m
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   534  	{ 0x00, 0x7C, 0x08, 0x04, 0x04, 0x78 },   // n
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   535  	{ 0x00, 0x38, 0x44, 0x44, 0x44, 0x38 },   // o
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   536  	{ 0x00, 0xFC, 0x24, 0x24, 0x24, 0x18 },   // p
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   537  	{ 0x00, 0x18, 0x24, 0x24, 0x18, 0xFC },   // q
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   538  	{ 0x00, 0x7C, 0x08, 0x04, 0x04, 0x08 },   // r
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   539  	{ 0x00, 0x48, 0x54, 0x54, 0x54, 0x20 },   // s
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   540  	{ 0x00, 0x04, 0x3F, 0x44, 0x40, 0x20 },   // t
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   541  	{ 0x00, 0x3C, 0x40, 0x40, 0x20, 0x7C },   // u
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   542  	{ 0x00, 0x1C, 0x20, 0x40, 0x20, 0x1C },   // v
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   543  	{ 0x00, 0x3C, 0x40, 0x30, 0x40, 0x3C },   // w
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   544  	{ 0x00, 0x44, 0x28, 0x10, 0x28, 0x44 },   // x
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   545  	{ 0x00, 0x1C, 0xA0, 0xA0, 0xA0, 0x7C },   // y
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   546  	{ 0x00, 0x44, 0x64, 0x54, 0x4C, 0x44 },   // z
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   547  	{ 0x14, 0x14, 0x14, 0x14, 0x14, 0x14 }    // horiz lines
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   548  };
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   549  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   550  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   551  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   552  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   553  const uint8 oled_8x16[]=
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   554  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   555  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,//  0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   556  	0x00,0x00,0x00,0xF8,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x33,0x30,0x00,0x00,0x00,//! 1
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   557  	0x00,0x10,0x0C,0x06,0x10,0x0C,0x06,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,//" 2
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   558  	0x40,0xC0,0x78,0x40,0xC0,0x78,0x40,0x00,0x04,0x3F,0x04,0x04,0x3F,0x04,0x04,0x00,//# 3
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   559  	0x00,0x70,0x88,0xFC,0x08,0x30,0x00,0x00,0x00,0x18,0x20,0xFF,0x21,0x1E,0x00,0x00,//$ 4
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   560  	0xF0,0x08,0xF0,0x00,0xE0,0x18,0x00,0x00,0x00,0x21,0x1C,0x03,0x1E,0x21,0x1E,0x00,//% 5
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   561  	0x00,0xF0,0x08,0x88,0x70,0x00,0x00,0x00,0x1E,0x21,0x23,0x24,0x19,0x27,0x21,0x10,//& 6
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   562  	0x10,0x16,0x0E,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,//' 7
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   563  	0x00,0x00,0x00,0xE0,0x18,0x04,0x02,0x00,0x00,0x00,0x00,0x07,0x18,0x20,0x40,0x00,//( 8
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   564  	0x00,0x02,0x04,0x18,0xE0,0x00,0x00,0x00,0x00,0x40,0x20,0x18,0x07,0x00,0x00,0x00,//) 9
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   565  	0x40,0x40,0x80,0xF0,0x80,0x40,0x40,0x00,0x02,0x02,0x01,0x0F,0x01,0x02,0x02,0x00,//* 10
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   566  	0x00,0x00,0x00,0xF0,0x00,0x00,0x00,0x00,0x01,0x01,0x01,0x1F,0x01,0x01,0x01,0x00,//+ 11
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   567  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x80,0xB0,0x70,0x00,0x00,0x00,0x00,0x00,//, 12
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   568  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x01,0x01,0x01,0x01,0x01,0x01,0x01,//- 13
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   569  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x30,0x30,0x00,0x00,0x00,0x00,0x00,//. 14
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   570  	0x00,0x00,0x00,0x00,0x80,0x60,0x18,0x04,0x00,0x60,0x18,0x06,0x01,0x00,0x00,0x00,/// 15
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   571  	0x00,0xE0,0x10,0x08,0x08,0x10,0xE0,0x00,0x00,0x0F,0x10,0x20,0x20,0x10,0x0F,0x00,//0 16
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   572  	0x00,0x10,0x10,0xF8,0x00,0x00,0x00,0x00,0x00,0x20,0x20,0x3F,0x20,0x20,0x00,0x00,//1 17
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   573  	0x00,0x70,0x08,0x08,0x08,0x88,0x70,0x00,0x00,0x30,0x28,0x24,0x22,0x21,0x30,0x00,//2 18
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   574  	0x00,0x30,0x08,0x88,0x88,0x48,0x30,0x00,0x00,0x18,0x20,0x20,0x20,0x11,0x0E,0x00,//3 19
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   575  	0x00,0x00,0xC0,0x20,0x10,0xF8,0x00,0x00,0x00,0x07,0x04,0x24,0x24,0x3F,0x24,0x00,//4 20
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   576  	0x00,0xF8,0x08,0x88,0x88,0x08,0x08,0x00,0x00,0x19,0x21,0x20,0x20,0x11,0x0E,0x00,//5 21
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   577  	0x00,0xE0,0x10,0x88,0x88,0x18,0x00,0x00,0x00,0x0F,0x11,0x20,0x20,0x11,0x0E,0x00,//6 22
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   578  	0x00,0x38,0x08,0x08,0xC8,0x38,0x08,0x00,0x00,0x00,0x00,0x3F,0x00,0x00,0x00,0x00,//7 23
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   579  	0x00,0x70,0x88,0x08,0x08,0x88,0x70,0x00,0x00,0x1C,0x22,0x21,0x21,0x22,0x1C,0x00,//8 24
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   580  	0x00,0xE0,0x10,0x08,0x08,0x10,0xE0,0x00,0x00,0x00,0x31,0x22,0x22,0x11,0x0F,0x00,//9 25
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   581  	0x00,0x00,0x00,0xC0,0xC0,0x00,0x00,0x00,0x00,0x00,0x00,0x30,0x30,0x00,0x00,0x00,//: 26
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   582  	0x00,0x00,0x00,0x80,0x00,0x00,0x00,0x00,0x00,0x00,0x80,0x60,0x00,0x00,0x00,0x00,//; 27
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   583  	0x00,0x00,0x80,0x40,0x20,0x10,0x08,0x00,0x00,0x01,0x02,0x04,0x08,0x10,0x20,0x00,//< 28
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   584  	0x40,0x40,0x40,0x40,0x40,0x40,0x40,0x00,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x00,//= 29
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   585  	0x00,0x08,0x10,0x20,0x40,0x80,0x00,0x00,0x00,0x20,0x10,0x08,0x04,0x02,0x01,0x00,//> 30
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   586  	0x00,0x70,0x48,0x08,0x08,0x08,0xF0,0x00,0x00,0x00,0x00,0x30,0x36,0x01,0x00,0x00,//? 31
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   587  	0xC0,0x30,0xC8,0x28,0xE8,0x10,0xE0,0x00,0x07,0x18,0x27,0x24,0x23,0x14,0x0B,0x00,//@ 32
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   588  	0x00,0x00,0xC0,0x38,0xE0,0x00,0x00,0x00,0x20,0x3C,0x23,0x02,0x02,0x27,0x38,0x20,//A 33
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   589  	0x08,0xF8,0x88,0x88,0x88,0x70,0x00,0x00,0x20,0x3F,0x20,0x20,0x20,0x11,0x0E,0x00,//B 34
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   590  	0xC0,0x30,0x08,0x08,0x08,0x08,0x38,0x00,0x07,0x18,0x20,0x20,0x20,0x10,0x08,0x00,//C 35
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   591  	0x08,0xF8,0x08,0x08,0x08,0x10,0xE0,0x00,0x20,0x3F,0x20,0x20,0x20,0x10,0x0F,0x00,//D 36
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   592  	0x08,0xF8,0x88,0x88,0xE8,0x08,0x10,0x00,0x20,0x3F,0x20,0x20,0x23,0x20,0x18,0x00,//E 37
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   593  	0x08,0xF8,0x88,0x88,0xE8,0x08,0x10,0x00,0x20,0x3F,0x20,0x00,0x03,0x00,0x00,0x00,//F 38
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   594  	0xC0,0x30,0x08,0x08,0x08,0x38,0x00,0x00,0x07,0x18,0x20,0x20,0x22,0x1E,0x02,0x00,//G 39
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   595  	0x08,0xF8,0x08,0x00,0x00,0x08,0xF8,0x08,0x20,0x3F,0x21,0x01,0x01,0x21,0x3F,0x20,//H 40
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   596  	0x00,0x08,0x08,0xF8,0x08,0x08,0x00,0x00,0x00,0x20,0x20,0x3F,0x20,0x20,0x00,0x00,//I 41
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   597  	0x00,0x00,0x08,0x08,0xF8,0x08,0x08,0x00,0xC0,0x80,0x80,0x80,0x7F,0x00,0x00,0x00,//J 42
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   598  	0x08,0xF8,0x88,0xC0,0x28,0x18,0x08,0x00,0x20,0x3F,0x20,0x01,0x26,0x38,0x20,0x00,//K 43
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   599  	0x08,0xF8,0x08,0x00,0x00,0x00,0x00,0x00,0x20,0x3F,0x20,0x20,0x20,0x20,0x30,0x00,//L 44
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   600  	0x08,0xF8,0xF8,0x00,0xF8,0xF8,0x08,0x00,0x20,0x3F,0x00,0x3F,0x00,0x3F,0x20,0x00,//M 45
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   601  	0x08,0xF8,0x30,0xC0,0x00,0x08,0xF8,0x08,0x20,0x3F,0x20,0x00,0x07,0x18,0x3F,0x00,//N 46
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   602  	0xE0,0x10,0x08,0x08,0x08,0x10,0xE0,0x00,0x0F,0x10,0x20,0x20,0x20,0x10,0x0F,0x00,//O 47
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   603  	0x08,0xF8,0x08,0x08,0x08,0x08,0xF0,0x00,0x20,0x3F,0x21,0x01,0x01,0x01,0x00,0x00,//P 48
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   604  	0xE0,0x10,0x08,0x08,0x08,0x10,0xE0,0x00,0x0F,0x18,0x24,0x24,0x38,0x50,0x4F,0x00,//Q 49
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   605  	0x08,0xF8,0x88,0x88,0x88,0x88,0x70,0x00,0x20,0x3F,0x20,0x00,0x03,0x0C,0x30,0x20,//R 50
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   606  	0x00,0x70,0x88,0x08,0x08,0x08,0x38,0x00,0x00,0x38,0x20,0x21,0x21,0x22,0x1C,0x00,//S 51
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   607  	0x18,0x08,0x08,0xF8,0x08,0x08,0x18,0x00,0x00,0x00,0x20,0x3F,0x20,0x00,0x00,0x00,//T 52
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   608  	0x08,0xF8,0x08,0x00,0x00,0x08,0xF8,0x08,0x00,0x1F,0x20,0x20,0x20,0x20,0x1F,0x00,//U 53
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   609  	0x08,0x78,0x88,0x00,0x00,0xC8,0x38,0x08,0x00,0x00,0x07,0x38,0x0E,0x01,0x00,0x00,//V 54
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   610  	0xF8,0x08,0x00,0xF8,0x00,0x08,0xF8,0x00,0x03,0x3C,0x07,0x00,0x07,0x3C,0x03,0x00,//W 55
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   611  	0x08,0x18,0x68,0x80,0x80,0x68,0x18,0x08,0x20,0x30,0x2C,0x03,0x03,0x2C,0x30,0x20,//X 56
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   612  	0x08,0x38,0xC8,0x00,0xC8,0x38,0x08,0x00,0x00,0x00,0x20,0x3F,0x20,0x00,0x00,0x00,//Y 57
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   613  	0x10,0x08,0x08,0x08,0xC8,0x38,0x08,0x00,0x20,0x38,0x26,0x21,0x20,0x20,0x18,0x00,//Z 58
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   614  	0x00,0x00,0x00,0xFE,0x02,0x02,0x02,0x00,0x00,0x00,0x00,0x7F,0x40,0x40,0x40,0x00,//[ 59
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   615  	0x00,0x0C,0x30,0xC0,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x01,0x06,0x38,0xC0,0x00,//\ 60
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   616  	0x00,0x02,0x02,0x02,0xFE,0x00,0x00,0x00,0x00,0x40,0x40,0x40,0x7F,0x00,0x00,0x00,//] 61
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   617  	0x00,0x00,0x04,0x02,0x02,0x02,0x04,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,//^ 62
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   618  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x80,0x80,0x80,0x80,0x80,0x80,0x80,0x80,//_ 63
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   619  	0x00,0x02,0x02,0x04,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,//` 64
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   620  	0x00,0x00,0x80,0x80,0x80,0x80,0x00,0x00,0x00,0x19,0x24,0x22,0x22,0x22,0x3F,0x20,//a 65
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   621  	0x08,0xF8,0x00,0x80,0x80,0x00,0x00,0x00,0x00,0x3F,0x11,0x20,0x20,0x11,0x0E,0x00,//b 66
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   622  	0x00,0x00,0x00,0x80,0x80,0x80,0x00,0x00,0x00,0x0E,0x11,0x20,0x20,0x20,0x11,0x00,//c 67
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   623  	0x00,0x00,0x00,0x80,0x80,0x88,0xF8,0x00,0x00,0x0E,0x11,0x20,0x20,0x10,0x3F,0x20,//d 68
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   624  	0x00,0x00,0x80,0x80,0x80,0x80,0x00,0x00,0x00,0x1F,0x22,0x22,0x22,0x22,0x13,0x00,//e 69
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   625  	0x00,0x80,0x80,0xF0,0x88,0x88,0x88,0x18,0x00,0x20,0x20,0x3F,0x20,0x20,0x00,0x00,//f 70
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   626  	0x00,0x00,0x80,0x80,0x80,0x80,0x80,0x00,0x00,0x6B,0x94,0x94,0x94,0x93,0x60,0x00,//g 71
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   627  	0x08,0xF8,0x00,0x80,0x80,0x80,0x00,0x00,0x20,0x3F,0x21,0x00,0x00,0x20,0x3F,0x20,//h 72
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   628  	0x00,0x80,0x98,0x98,0x00,0x00,0x00,0x00,0x00,0x20,0x20,0x3F,0x20,0x20,0x00,0x00,//i 73
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   629  	0x00,0x00,0x00,0x80,0x98,0x98,0x00,0x00,0x00,0xC0,0x80,0x80,0x80,0x7F,0x00,0x00,//j 74
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   630  	0x08,0xF8,0x00,0x00,0x80,0x80,0x80,0x00,0x20,0x3F,0x24,0x02,0x2D,0x30,0x20,0x00,//k 75
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   631  	0x00,0x08,0x08,0xF8,0x00,0x00,0x00,0x00,0x00,0x20,0x20,0x3F,0x20,0x20,0x00,0x00,//l 76
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   632  	0x80,0x80,0x80,0x80,0x80,0x80,0x80,0x00,0x20,0x3F,0x20,0x00,0x3F,0x20,0x00,0x3F,//m 77
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   633  	0x80,0x80,0x00,0x80,0x80,0x80,0x00,0x00,0x20,0x3F,0x21,0x00,0x00,0x20,0x3F,0x20,//n 78
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   634  	0x00,0x00,0x80,0x80,0x80,0x80,0x00,0x00,0x00,0x1F,0x20,0x20,0x20,0x20,0x1F,0x00,//o 79
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   635  	0x80,0x80,0x00,0x80,0x80,0x00,0x00,0x00,0x80,0xFF,0xA1,0x20,0x20,0x11,0x0E,0x00,//p 80
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   636  	0x00,0x00,0x00,0x80,0x80,0x80,0x80,0x00,0x00,0x0E,0x11,0x20,0x20,0xA0,0xFF,0x80,//q 81
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   637  	0x80,0x80,0x80,0x00,0x80,0x80,0x80,0x00,0x20,0x20,0x3F,0x21,0x20,0x00,0x01,0x00,//r 82
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   638  	0x00,0x00,0x80,0x80,0x80,0x80,0x80,0x00,0x00,0x33,0x24,0x24,0x24,0x24,0x19,0x00,//s 83
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   639  	0x00,0x80,0x80,0xE0,0x80,0x80,0x00,0x00,0x00,0x00,0x00,0x1F,0x20,0x20,0x00,0x00,//t 84
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   640  	0x80,0x80,0x00,0x00,0x00,0x80,0x80,0x00,0x00,0x1F,0x20,0x20,0x20,0x10,0x3F,0x20,//u 85
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   641  	0x80,0x80,0x80,0x00,0x00,0x80,0x80,0x80,0x00,0x01,0x0E,0x30,0x08,0x06,0x01,0x00,//v 86
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   642  	0x80,0x80,0x00,0x80,0x00,0x80,0x80,0x80,0x0F,0x30,0x0C,0x03,0x0C,0x30,0x0F,0x00,//w 87
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   643  	0x00,0x80,0x80,0x00,0x80,0x80,0x80,0x00,0x00,0x20,0x31,0x2E,0x0E,0x31,0x20,0x00,//x 88
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   644  	0x80,0x80,0x80,0x00,0x00,0x80,0x80,0x80,0x80,0x81,0x8E,0x70,0x18,0x06,0x01,0x00,//y 89
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   645  	0x00,0x80,0x80,0x80,0x80,0x80,0x80,0x00,0x00,0x21,0x30,0x2C,0x22,0x21,0x30,0x00,//z 90
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   646  	0x00,0x00,0x00,0x00,0x80,0x7C,0x02,0x02,0x00,0x00,0x00,0x00,0x00,0x3F,0x40,0x40,//{ 91
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   647  	0x00,0x00,0x00,0x00,0xFF,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xFF,0x00,0x00,0x00,//| 92
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   648  	0x00,0x02,0x02,0x7C,0x80,0x00,0x00,0x00,0x00,0x40,0x40,0x3F,0x00,0x00,0x00,0x00,//} 93
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   649  	0x00,0x06,0x01,0x01,0x02,0x02,0x04,0x04,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,//~ 94
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   650    
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   651  };
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   652  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   653  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   654  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   655  //  使用PCtoLCD2002软件取模		
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   656  //  阴码、列行式、逆向   16*16
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   657  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   658  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   659  const uint8 oled_16x16_chinese[][16]=
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   660  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   661      {0x40,0x40,0x42,0xCC,0x00,0x20,0x22,0x92,0x4A,0x36,0xE2,0x42,0xA2,0x12,0x00,0x00},
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   662      {0x00,0x40,0x20,0x1F,0x20,0x49,0x49,0x44,0x52,0x61,0x5F,0x40,0x41,0x46,0x40,0x00},/*"逐",0*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   663      {0x02,0x02,0x02,0x02,0x02,0x02,0x02,0x02,0x02,0xFE,0x40,0xA0,0x10,0x08,0x00,0x00},
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   664      {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x03,0x0C,0x10,0x21,0x42,0xF0,0x00},/*"飞",1*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   665      {0x24,0x24,0xA4,0xFE,0xA3,0x22,0x00,0x22,0xCC,0x00,0x00,0xFF,0x00,0x00,0x00,0x00},
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   666      {0x08,0x06,0x01,0xFF,0x00,0x01,0x04,0x04,0x04,0x04,0x04,0xFF,0x02,0x02,0x02,0x00},/*"科",2*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   667      {0x10,0x10,0x10,0xFF,0x10,0x90,0x08,0x88,0x88,0x88,0xFF,0x88,0x88,0x88,0x08,0x00},
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   668      {0x04,0x44,0x82,0x7F,0x01,0x80,0x80,0x40,0x43,0x2C,0x10,0x28,0x46,0x81,0x80,0x00},/*"技",3*/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   669  };
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   670  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   671  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_FONT.c	   672  
+
+	; Module end

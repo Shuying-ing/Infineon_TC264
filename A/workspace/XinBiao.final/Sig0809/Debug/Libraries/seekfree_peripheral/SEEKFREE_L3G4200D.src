@@ -1,0 +1,948 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\seekfree_peripheral\\.SEEKFREE_L3G4200D.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.src ..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.SEEKFREE_L3G4200D.l3g4200d_self_check',code,cluster('l3g4200d_self_check')
+	.sect	'.text.SEEKFREE_L3G4200D.l3g4200d_self_check'
+	.align	2
+	
+	.global	l3g4200d_self_check
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	     1  /*********************************************************************************************************************
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	     2   * COPYRIGHT NOTICE
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	     3   * Copyright (c) 2020,逐飞科技
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	     4   * All rights reserved.
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	     5   * 技术讨论QQ群：三群：824575535
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	     6   *
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	     7   * 以下所有内容版权均属逐飞科技所有，未经允许不得用于商业用途，
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	     8   * 欢迎各位使用并传播本程序，修改内容时必须保留逐飞科技的版权声明。
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	     9   *
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    10   * @file       		L3G4200D
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    11   * @company	   		成都逐飞科技有限公司
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    12   * @author     		逐飞科技(QQ3184284598)
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    13   * @version    		查看doc内version文件 版本说明
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    14   * @Software 		tasking v6.3r1
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    15   * @Target core		TC264D
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    16   * @Taobao   		https://seekfree.taobao.com/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    17   * @date       		2020-3-23
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    18   * @note		
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    19  					接线定义：
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    20  					------------------------------------ 
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    21  						SCL                 查看SEEKFREE_SIMIIC文件内的SEEKFREE_SCL宏定义
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    22  						SDA                 查看SEEKFREE_SIMIIC文件内的SEEKFREE_SDA宏定义
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    23  					------------------------------------ 
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    24   ********************************************************************************************************************/
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    25  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    26  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    27  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    28  #include "zf_stm_systick.h"
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    29  #include "SEEKFREE_IIC.h"
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    30  #include "SEEKFREE_L3G4200D.h"
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    31  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    32  int16 gyro_x = 0, gyro_y = 0, gyro_z = 0;
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    33  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    34  uint8 temperature = 0;
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    35  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    36  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    37  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    38  //  @brief      L3G4200D自检函数
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    39  //  @param      NULL
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    40  //  @return     void					
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    41  //  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    42  //  Sample usage:				调用该函数前，请先调用模拟IIC的初始化
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    43  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    44  void l3g4200d_self_check(void)
+; Function l3g4200d_self_check
+.L6:
+l3g4200d_self_check:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    45  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    46      simiic_write_reg(L3G4200_DEV_ADD, CTRL_REG1_4200, 0x4f);
+	mov	d4,#105
+.L112:
+	mov	d5,#32
+.L113:
+	mov	d6,#79
+	call	simiic_write_reg
+.L114:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    47      while(0x4f != simiic_read_reg(L3G4200_DEV_ADD, CTRL_REG1_4200,SIMIIC))
+	j	.L2
+.L3:
+.L2:
+	mov	d4,#105
+.L115:
+	mov	d5,#32
+.L116:
+	mov	d6,#0
+	call	simiic_read_reg
+.L117:
+	mov	d15,#79
+.L118:
+	jne	d15,d2,.L3
+.L119:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    48      {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    49          //卡在这里原因有以下几点
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    50          //1 模块坏了，如果是新的这样的概率极低
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    51          //2 接线错误或者没有接好
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    52          //3 可能你需要外接上拉电阻，上拉到3.3V
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    53  		//4 可能没有调用模拟IIC的初始化函数
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    54      }
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    55  }
+	ret
+.L44:
+	
+__l3g4200d_self_check_function_end:
+	.size	l3g4200d_self_check,__l3g4200d_self_check_function_end-l3g4200d_self_check
+.L29:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_L3G4200D.l3g4200d_init',code,cluster('l3g4200d_init')
+	.sect	'.text.SEEKFREE_L3G4200D.l3g4200d_init'
+	.align	2
+	
+	.global	l3g4200d_init
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    56  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    57  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    58  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    59  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    60  //  @brief      初始化L3G4200D陀螺仪
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    61  //  @param      NULL
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    62  //  @return     void						
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    63  //  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    64  //  Sample usage:				调用该函数前，请先调用模拟SIMIIC的初始化
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    65  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    66  void l3g4200d_init(void)
+; Function l3g4200d_init
+.L8:
+l3g4200d_init:	.type	func
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    67  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    68  	simiic_init();
+	call	simiic_init
+.L57:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    69      systick_delay_ms(STM0, 50);
+	mov	d4,#0
+	mov.u	d5,#61568
+	addih	d5,d5,#762
+	call	systick_delay
+.L58:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    70      
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    71      l3g4200d_self_check();
+	call	l3g4200d_self_check
+.L59:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    72      simiic_write_reg(L3G4200_DEV_ADD, CTRL_REG1_4200, 0x4f);   //
+	mov	d4,#105
+.L60:
+	mov	d5,#32
+.L61:
+	mov	d6,#79
+	call	simiic_write_reg
+.L62:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    73      simiic_write_reg(L3G4200_DEV_ADD, CTRL_REG2_4200, 0x00);   //00
+	mov	d4,#105
+.L63:
+	mov	d5,#33
+.L64:
+	mov	d6,#0
+	call	simiic_write_reg
+.L65:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    74      simiic_write_reg(L3G4200_DEV_ADD, CTRL_REG3_4200, 0x08);   //
+	mov	d4,#105
+.L66:
+	mov	d5,#34
+.L67:
+	mov	d6,#8
+	call	simiic_write_reg
+.L68:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    75      simiic_write_reg(L3G4200_DEV_ADD, CTRL_REG4_4200, 0xB0);   //+-2000dps
+	mov	d4,#105
+.L69:
+	mov	d5,#35
+.L70:
+	mov	d6,#176
+	call	simiic_write_reg
+.L71:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    76      simiic_write_reg(L3G4200_DEV_ADD, CTRL_REG5_4200, 0x00);
+	mov	d4,#105
+.L72:
+	mov	d5,#36
+.L73:
+	mov	d6,#0
+	call	simiic_write_reg
+.L74:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    77      temperature = simiic_read_reg(L3G4200_DEV_ADD, OUT_TEMP_4200, SIMIIC);
+	movh.a	a15,#@his(temperature)
+	lea	a15,[a15]@los(temperature)
+.L75:
+	mov	d4,#105
+.L76:
+	mov	d5,#38
+.L77:
+	mov	d6,#0
+	call	simiic_read_reg
+.L78:
+	st.b	[a15],d2
+.L79:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    78  }
+	ret
+.L38:
+	
+__l3g4200d_init_function_end:
+	.size	l3g4200d_init,__l3g4200d_init_function_end-l3g4200d_init
+.L19:
+	; End of function
+	
+	.sdecl	'.text.SEEKFREE_L3G4200D.get_l3g4200d',code,cluster('get_l3g4200d')
+	.sect	'.text.SEEKFREE_L3G4200D.get_l3g4200d'
+	.align	2
+	
+	.global	get_l3g4200d
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    79  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    80  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    81  //  @brief      获取L3G4200D陀螺仪数据
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    82  //  @param      NULL
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    83  //  @return     void						
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    84  //  @since      v1.0
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    85  //  Sample usage:				执行该函数后，直接查看对应的变量即可
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    86  //-------------------------------------------------------------------------------------------------------------------
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    87  void get_l3g4200d(void)
+; Function get_l3g4200d
+.L10:
+get_l3g4200d:	.type	func
+	sub.a	a10,#8
+.L46:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    88  {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    89      uint8 dat[6];
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    90      uint8 status;
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    91      status = simiic_read_reg(L3G4200_DEV_ADD, STATUS_REG_4200, SIMIIC);
+	mov	d4,#105
+.L84:
+	mov	d5,#39
+.L85:
+	mov	d6,#0
+	call	simiic_read_reg
+.L47:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    92  
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    93      if( status&0x80 )//查看数据是否准备好了。如果没有准备好，读取则可能读取到错误数据。读取频率最好是高于数据输出频率
+	jz.t	d2:7,.L4
+.L86:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    94      {
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    95          simiic_read_regs(L3G4200_DEV_ADD, OUT_X_L_4200|0X80, dat, 6, SIMIIC);  //或上0x80是因为需要多字节读取数据
+	mov	d4,#105
+.L87:
+	mov	d5,#168
+.L88:
+	lea	a4,[a10]0
+.L89:
+	mov	d6,#6
+.L90:
+	mov	d7,#0
+	call	simiic_read_regs
+.L48:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    96          gyro_x = (int16)((uint16)dat[1]<<8 | dat[0]);                   
+	movh.a	a15,#@his(gyro_x)
+	lea	a15,[a15]@los(gyro_x)
+.L91:
+	ld.bu	d15,[a10]1
+.L92:
+	sha	d15,d15,#8
+.L93:
+	ld.bu	d0,[a10]
+.L94:
+	or	d15,d0
+.L95:
+	st.h	[a15],d15
+.L96:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    97          gyro_y = (int16)((uint16)dat[3]<<8 | dat[2]);
+	movh.a	a15,#@his(gyro_y)
+	lea	a15,[a15]@los(gyro_y)
+.L97:
+	ld.bu	d15,[a10]3
+.L98:
+	sha	d0,d15,#8
+.L99:
+	ld.bu	d15,[a10]2
+.L100:
+	or	d0,d15
+.L101:
+	st.h	[a15],d0
+.L102:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    98          gyro_z = (int16)((uint16)dat[5]<<8 | dat[4]);
+	movh.a	a15,#@his(gyro_z)
+	lea	a15,[a15]@los(gyro_z)
+.L103:
+	ld.bu	d15,[a10]5
+.L104:
+	sha	d0,d15,#8
+.L105:
+	ld.bu	d15,[a10]4
+.L106:
+	or	d0,d15
+.L107:
+	st.h	[a15],d0
+.L4:
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	    99      }
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	   100  }
+	ret
+.L39:
+	
+__get_l3g4200d_function_end:
+	.size	get_l3g4200d,__get_l3g4200d_function_end-get_l3g4200d
+.L24:
+	; End of function
+	
+	.sdecl	'.data.SEEKFREE_L3G4200D.gyro_x',data,cluster('gyro_x')
+	.sect	'.data.SEEKFREE_L3G4200D.gyro_x'
+	.global	gyro_x
+	.align	2
+gyro_x:	.type	object
+	.size	gyro_x,2
+	.space	2
+	.sdecl	'.data.SEEKFREE_L3G4200D.gyro_y',data,cluster('gyro_y')
+	.sect	'.data.SEEKFREE_L3G4200D.gyro_y'
+	.global	gyro_y
+	.align	2
+gyro_y:	.type	object
+	.size	gyro_y,2
+	.space	2
+	.sdecl	'.data.SEEKFREE_L3G4200D.gyro_z',data,cluster('gyro_z')
+	.sect	'.data.SEEKFREE_L3G4200D.gyro_z'
+	.global	gyro_z
+	.align	2
+gyro_z:	.type	object
+	.size	gyro_z,2
+	.space	2
+	.sdecl	'.data.SEEKFREE_L3G4200D.temperature',data,cluster('temperature')
+	.sect	'.data.SEEKFREE_L3G4200D.temperature'
+	.global	temperature
+temperature:	.type	object
+	.size	temperature,1
+	.space	1
+	.calls	'l3g4200d_self_check','simiic_write_reg'
+	.calls	'l3g4200d_self_check','simiic_read_reg'
+	.calls	'l3g4200d_init','simiic_init'
+	.calls	'l3g4200d_init','systick_delay'
+	.calls	'l3g4200d_init','l3g4200d_self_check'
+	.calls	'l3g4200d_init','simiic_write_reg'
+	.calls	'l3g4200d_init','simiic_read_reg'
+	.calls	'get_l3g4200d','simiic_read_reg'
+	.calls	'get_l3g4200d','simiic_read_regs'
+	.calls	'l3g4200d_self_check','',0
+	.calls	'l3g4200d_init','',0
+	.extern	systick_delay
+	.extern	simiic_write_reg
+	.extern	simiic_read_reg
+	.extern	simiic_read_regs
+	.extern	simiic_init
+	.calls	'get_l3g4200d','',8
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L12:
+	.word	973
+	.half	3
+	.word	.L13
+	.byte	4
+.L11:
+	.byte	1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L14
+	.byte	2
+	.byte	'int',0,4,5,3
+	.word	162
+	.byte	4
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,5
+	.word	169
+	.byte	0,2
+	.byte	'unsigned int',0,4,7,6
+	.word	211
+	.byte	7
+	.word	211
+	.byte	8
+	.byte	'__cmpswapw',0
+	.word	227
+	.byte	1,1,1,1,9
+	.byte	'p',0
+	.word	232
+	.byte	9
+	.byte	'value',0
+	.word	211
+	.byte	9
+	.byte	'compare',0
+	.word	211
+	.byte	0,10,1,27,9,1,11
+	.byte	'STM0',0,0,11
+	.byte	'STM1',0,1,0,2
+	.byte	'unsigned long int',0,4,7,12
+	.byte	'systick_delay',0,1,34,6,1,1,1,1,13
+	.byte	'stmn',0,1,34,30
+	.word	289
+	.byte	13
+	.byte	'time',0,1,34,43
+	.word	309
+	.byte	0
+.L42:
+	.byte	2
+	.byte	'unsigned char',0,1,8,12
+	.byte	'simiic_write_reg',0,2,61,7,1,1,1,1,13
+	.byte	'dev_add',0,2,61,30
+	.word	379
+	.byte	13
+	.byte	'reg',0,2,61,45
+	.word	379
+	.byte	13
+	.byte	'dat',0,2,61,56
+	.word	379
+	.byte	0,14
+	.byte	'IIC',0,2,47,14,1,11
+	.byte	'SIMIIC',0,0,11
+	.byte	'SCCB',0,1,0,15
+	.byte	'simiic_read_reg',0,2,62,7
+	.word	379
+	.byte	1,1,1,1,13
+	.byte	'dev_add',0,2,62,29
+	.word	379
+	.byte	13
+	.byte	'reg',0,2,62,44
+	.word	379
+	.byte	13
+	.byte	'type',0,2,62,58
+	.word	462
+	.byte	0,7
+	.word	379
+	.byte	12
+	.byte	'simiic_read_regs',0,2,63,7,1,1,1,1,13
+	.byte	'dev_add',0,2,63,30
+	.word	379
+	.byte	13
+	.byte	'reg',0,2,63,45
+	.word	379
+	.byte	13
+	.byte	'dat_add',0,2,63,57
+	.word	558
+	.byte	13
+	.byte	'num',0,2,63,72
+	.word	379
+	.byte	13
+	.byte	'type',0,2,63,86
+	.word	462
+	.byte	0,16
+	.byte	'simiic_init',0,2,64,7,1,1,1,1
+.L40:
+	.byte	17,6
+	.word	379
+	.byte	18,5,0,19
+	.byte	'__size_t',0,3,1,1
+	.word	211
+	.byte	20,1,7
+	.word	704
+	.byte	19
+	.byte	'__codeptr',0,3,1,1
+	.word	706
+	.byte	19
+	.byte	'uint8',0,4,105,29
+	.word	379
+	.byte	2
+	.byte	'unsigned short int',0,2,7,19
+	.byte	'uint16',0,4,109,29
+	.word	743
+	.byte	19
+	.byte	'uint32',0,4,113,29
+	.word	309
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,19
+	.byte	'uint64',0,4,118,29
+	.word	795
+	.byte	2
+	.byte	'char',0,1,6,19
+	.byte	'int8',0,5,33,29
+	.word	836
+.L45:
+	.byte	2
+	.byte	'short int',0,2,5,19
+	.byte	'int16',0,5,34,29
+	.word	857
+	.byte	2
+	.byte	'long int',0,4,5,19
+	.byte	'int32',0,5,35,29
+	.word	884
+	.byte	2
+	.byte	'long long int',0,8,5,19
+	.byte	'int64',0,5,36,29
+	.word	910
+	.byte	19
+	.byte	'STMN_enum',0,1,31,2
+	.word	289
+	.byte	19
+	.byte	'IIC_type',0,2,51,3
+	.word	462
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L13:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,46,1,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,5,5,0,73,19,0,0,6,53,0,73,19,0,0,7,15,0,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12
+	.byte	63,12,60,12,0,0,9,5,0,3,8,73,19,0,0,10,4,1,58,15,59,15,57,15,11,15,0,0,11,40,0,3,8,28,13,0,0,12,46,1,3
+	.byte	8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,13,5,0,3,8,58,15,59,15,57,15,73,19,0,0,14,4,1,3,8,58,15
+	.byte	59,15,57,15,11,15,0,0,15,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,16,46,0,3,8,58,15
+	.byte	59,15,57,15,54,15,39,12,63,12,60,12,0,0,17,1,1,11,15,73,19,0,0,18,33,0,47,15,0,0,19,22,0,3,8,58,15,59
+	.byte	15,57,15,73,19,0,0,20,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L14:
+	.word	.L50-.L49
+.L49:
+	.half	3
+	.word	.L52-.L51
+.L51:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common',0,0
+	.byte	'zf_stm_systick.h',0,1,0,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_IIC.h',0,0,0,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c',0,0,0,0
+	.byte	'PLATFORM_TYPES.H',0,2,0,0
+	.byte	'common.h',0,3,0,0,0
+.L52:
+.L50:
+	.sdecl	'.debug_info',debug,cluster('l3g4200d_init')
+	.sect	'.debug_info'
+.L15:
+	.word	211
+	.half	3
+	.word	.L16
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L18,.L17
+	.byte	2
+	.word	.L11
+	.byte	3
+	.byte	'l3g4200d_init',0,1,66,6,1,1,1
+	.word	.L8,.L38,.L7
+	.byte	4
+	.word	.L8,.L38
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('l3g4200d_init')
+	.sect	'.debug_abbrev'
+.L16:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('l3g4200d_init')
+	.sect	'.debug_line'
+.L17:
+	.word	.L54-.L53
+.L53:
+	.half	3
+	.word	.L56-.L55
+.L55:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c',0,0,0,0,0
+.L56:
+	.byte	5,13,7,0,5,2
+	.word	.L8
+	.byte	3,195,0,1,5,5,9
+	.half	.L57-.L8
+	.byte	3,1,1,5,24,9
+	.half	.L58-.L57
+	.byte	3,2,1,5,22,9
+	.half	.L59-.L58
+	.byte	3,1,1,5,39,9
+	.half	.L60-.L59
+	.byte	1,5,55,9
+	.half	.L61-.L60
+	.byte	1,5,22,9
+	.half	.L62-.L61
+	.byte	3,1,1,5,39,9
+	.half	.L63-.L62
+	.byte	1,5,55,9
+	.half	.L64-.L63
+	.byte	1,5,22,9
+	.half	.L65-.L64
+	.byte	3,1,1,5,39,9
+	.half	.L66-.L65
+	.byte	1,5,55,9
+	.half	.L67-.L66
+	.byte	1,5,22,9
+	.half	.L68-.L67
+	.byte	3,1,1,5,39,9
+	.half	.L69-.L68
+	.byte	1,5,55,9
+	.half	.L70-.L69
+	.byte	1,5,22,9
+	.half	.L71-.L70
+	.byte	3,1,1,5,39,9
+	.half	.L72-.L71
+	.byte	1,5,55,9
+	.half	.L73-.L72
+	.byte	1,5,5,9
+	.half	.L74-.L73
+	.byte	3,1,1,5,35,9
+	.half	.L75-.L74
+	.byte	1,5,52,9
+	.half	.L76-.L75
+	.byte	1,5,67,9
+	.half	.L77-.L76
+	.byte	1,5,17,9
+	.half	.L78-.L77
+	.byte	1,5,1,9
+	.half	.L79-.L78
+	.byte	3,1,1,7,9
+	.half	.L19-.L79
+	.byte	0,1,1
+.L54:
+	.sdecl	'.debug_ranges',debug,cluster('l3g4200d_init')
+	.sect	'.debug_ranges'
+.L18:
+	.word	-1,.L8,0,.L19-.L8,0,0
+	.sdecl	'.debug_info',debug,cluster('get_l3g4200d')
+	.sect	'.debug_info'
+.L20:
+	.word	246
+	.half	3
+	.word	.L21
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L23,.L22
+	.byte	2
+	.word	.L11
+	.byte	3
+	.byte	'get_l3g4200d',0,1,87,6,1,1,1
+	.word	.L10,.L39,.L9
+	.byte	4
+	.word	.L10,.L39
+	.byte	5
+	.byte	'dat',0,1,89,11
+	.word	.L40,.L41
+	.byte	5
+	.byte	'status',0,1,90,11
+	.word	.L42,.L43
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('get_l3g4200d')
+	.sect	'.debug_abbrev'
+.L21:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('get_l3g4200d')
+	.sect	'.debug_line'
+.L22:
+	.word	.L81-.L80
+.L80:
+	.half	3
+	.word	.L83-.L82
+.L82:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c',0,0,0,0,0
+.L83:
+	.byte	5,6,7,0,5,2
+	.word	.L10
+	.byte	3,214,0,1,5,30,9
+	.half	.L46-.L10
+	.byte	3,4,1,5,47,9
+	.half	.L84-.L46
+	.byte	1,5,64,9
+	.half	.L85-.L84
+	.byte	1,5,5,9
+	.half	.L47-.L85
+	.byte	3,2,1,5,26,7,9
+	.half	.L86-.L47
+	.byte	3,2,1,5,55,9
+	.half	.L87-.L86
+	.byte	1,5,62,9
+	.half	.L88-.L87
+	.byte	1,5,67,9
+	.half	.L89-.L88
+	.byte	1,5,70,9
+	.half	.L90-.L89
+	.byte	1,5,9,9
+	.half	.L48-.L90
+	.byte	3,1,1,5,37,9
+	.half	.L91-.L48
+	.byte	1,5,40,9
+	.half	.L92-.L91
+	.byte	1,5,49,9
+	.half	.L93-.L92
+	.byte	1,5,44,9
+	.half	.L94-.L93
+	.byte	1,5,16,9
+	.half	.L95-.L94
+	.byte	1,5,9,9
+	.half	.L96-.L95
+	.byte	3,1,1,5,37,9
+	.half	.L97-.L96
+	.byte	1,5,40,9
+	.half	.L98-.L97
+	.byte	1,5,49,9
+	.half	.L99-.L98
+	.byte	1,5,44,9
+	.half	.L100-.L99
+	.byte	1,5,16,9
+	.half	.L101-.L100
+	.byte	1,5,9,9
+	.half	.L102-.L101
+	.byte	3,1,1,5,37,9
+	.half	.L103-.L102
+	.byte	1,5,40,9
+	.half	.L104-.L103
+	.byte	1,5,49,9
+	.half	.L105-.L104
+	.byte	1,5,44,9
+	.half	.L106-.L105
+	.byte	1,5,16,9
+	.half	.L107-.L106
+	.byte	1,5,1,9
+	.half	.L4-.L107
+	.byte	3,2,1,7,9
+	.half	.L24-.L4
+	.byte	0,1,1
+.L81:
+	.sdecl	'.debug_ranges',debug,cluster('get_l3g4200d')
+	.sect	'.debug_ranges'
+.L23:
+	.word	-1,.L10,0,.L24-.L10,0,0
+	.sdecl	'.debug_info',debug,cluster('l3g4200d_self_check')
+	.sect	'.debug_info'
+.L25:
+	.word	217
+	.half	3
+	.word	.L26
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L28,.L27
+	.byte	2
+	.word	.L11
+	.byte	3
+	.byte	'l3g4200d_self_check',0,1,44,6,1,1,1
+	.word	.L6,.L44,.L5
+	.byte	4
+	.word	.L6,.L44
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('l3g4200d_self_check')
+	.sect	'.debug_abbrev'
+.L26:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('l3g4200d_self_check')
+	.sect	'.debug_line'
+.L27:
+	.word	.L109-.L108
+.L108:
+	.half	3
+	.word	.L111-.L110
+.L110:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c',0,0,0,0,0
+.L111:
+	.byte	5,22,7,0,5,2
+	.word	.L6
+	.byte	3,45,1,5,39,9
+	.half	.L112-.L6
+	.byte	1,5,55,9
+	.half	.L113-.L112
+	.byte	1,5,74,9
+	.half	.L114-.L113
+	.byte	3,1,1,5,35,9
+	.half	.L2-.L114
+	.byte	1,5,52,9
+	.half	.L115-.L2
+	.byte	1,5,67,9
+	.half	.L116-.L115
+	.byte	1,5,11,9
+	.half	.L117-.L116
+	.byte	1,5,74,9
+	.half	.L118-.L117
+	.byte	1,5,1,7,9
+	.half	.L119-.L118
+	.byte	3,8,1,7,9
+	.half	.L29-.L119
+	.byte	0,1,1
+.L109:
+	.sdecl	'.debug_ranges',debug,cluster('l3g4200d_self_check')
+	.sect	'.debug_ranges'
+.L28:
+	.word	-1,.L6,0,.L29-.L6,0,0
+	.sdecl	'.debug_info',debug,cluster('gyro_x')
+	.sect	'.debug_info'
+.L30:
+	.word	182
+	.half	3
+	.word	.L31
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L11
+	.byte	3
+	.byte	'gyro_x',0,3,32,7
+	.word	.L45
+	.byte	1,5,3
+	.word	gyro_x
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('gyro_x')
+	.sect	'.debug_abbrev'
+.L31:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('gyro_y')
+	.sect	'.debug_info'
+.L32:
+	.word	182
+	.half	3
+	.word	.L33
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L11
+	.byte	3
+	.byte	'gyro_y',0,3,32,19
+	.word	.L45
+	.byte	1,5,3
+	.word	gyro_y
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('gyro_y')
+	.sect	'.debug_abbrev'
+.L33:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('gyro_z')
+	.sect	'.debug_info'
+.L34:
+	.word	182
+	.half	3
+	.word	.L35
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L11
+	.byte	3
+	.byte	'gyro_z',0,3,32,31
+	.word	.L45
+	.byte	1,5,3
+	.word	gyro_z
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('gyro_z')
+	.sect	'.debug_abbrev'
+.L35:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('temperature')
+	.sect	'.debug_info'
+.L36:
+	.word	187
+	.half	3
+	.word	.L37
+	.byte	4,1
+	.byte	'..\\Libraries\\seekfree_peripheral\\SEEKFREE_L3G4200D.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1,2
+	.word	.L11
+	.byte	3
+	.byte	'temperature',0,3,34,7
+	.word	.L42
+	.byte	1,5,3
+	.word	temperature
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('temperature')
+	.sect	'.debug_abbrev'
+.L37:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('get_l3g4200d')
+	.sect	'.debug_loc'
+.L41:
+	.word	-1,.L10,0,.L39-.L10
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L9:
+	.word	-1,.L10,0,.L46-.L10
+	.half	2
+	.byte	138,0
+	.word	.L46-.L10,.L39-.L10
+	.half	2
+	.byte	138,8
+	.word	.L39-.L10,.L39-.L10
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L43:
+	.word	-1,.L10,.L47-.L10,.L48-.L10
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('l3g4200d_init')
+	.sect	'.debug_loc'
+.L7:
+	.word	-1,.L8,0,.L38-.L8
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('l3g4200d_self_check')
+	.sect	'.debug_loc'
+.L5:
+	.word	-1,.L6,0,.L44-.L6
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L120:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('l3g4200d_self_check')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L120,.L6,.L44-.L6
+	.sdecl	'.debug_frame',debug,cluster('l3g4200d_init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L120,.L8,.L38-.L8
+	.sdecl	'.debug_frame',debug,cluster('get_l3g4200d')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L120,.L10,.L39-.L10
+	.byte	4
+	.word	(.L46-.L10)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L39-.L46)/2
+	.byte	19,0,8,26,0,0
+
+; ..\Libraries\seekfree_peripheral\SEEKFREE_L3G4200D.c	   101  
+
+	; Module end

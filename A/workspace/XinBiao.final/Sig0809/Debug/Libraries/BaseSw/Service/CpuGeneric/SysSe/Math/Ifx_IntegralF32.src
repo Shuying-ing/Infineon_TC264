@@ -1,0 +1,1141 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 19041558 SN 99277908"
+	.compiler_invocation	"ctc --dep-file=Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\.Ifx_IntegralF32.o.d --fp-model=c,f,l,n,r,S,T,z -D__CPU__=tc26x -D__CPU_TC26X__ --core=tc1.6.x --iso=99 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\CODE -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Build -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Impl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\DataHandling -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_Lib\\InternalMux -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\_PinMap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Asc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Lin -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Spi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Asclin\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Icu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmBc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TimerWithTrigger -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Ccu6\\TPwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Cam -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cif\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\CStart -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Irq -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Trap -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Dma -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dma\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Dsadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Rdc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dsadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Dts -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Dts\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Emem\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Eray -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eray\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Phy_Pef7071 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Eth\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Crc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fce\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Fft -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Fft\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Flash\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\IncrEnc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gpt12\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Atom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tim\\In -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Pwm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\PwmHl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Tom\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Gtm\\Trig -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Hssl -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Hssl\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\I2c -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\I2c\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Driver -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Iom\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Msc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Msc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Mtu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Can -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Multican\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Io -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Port\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Psi5 -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Psi5s -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Psi5s\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiMaster -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\SpiSlave -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Qspi\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Scu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Sent -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Sent\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Smu\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Src\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Stm\\Timer -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Adc -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Vadc\\Std -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Platform\\Tricore\\Compilers -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Infra\\Sfr\\TC26B\\_Reg -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\Service\\CpuGeneric -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_libraries\\common -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\seekfree_peripheral -IG:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\USER -g2 -wW557 --make-target=Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.o -t0 --language=-gcc,-volatile,+strings,-kanji --default-near-size=0 -O0 --default-a1-size=0 --default-a0-size=0 --source --align=0 --switch=auto --error-limit=42 -o Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.src ..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c"
+	.compiler_name		"ctc"
+	;source	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_IntegralF32.Ifx_IntegralF32_reset',code,cluster('Ifx_IntegralF32_reset')
+	.sect	'.text.Ifx_IntegralF32.Ifx_IntegralF32_reset'
+	.align	2
+	
+	.global	Ifx_IntegralF32_reset
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	     1  /**
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	     2   * \file Ifx_IntegralF32.c
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	     3   * \brief Discrete integral approximation
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	     4   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	     5   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	     6   * \version disabled
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	     8   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	     9   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    10   *                                 IMPORTANT NOTICE
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    11   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    12   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    13   * Use of this file is subject to the terms of use agreed between (i) you or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    14   * the company in which ordinary course of business you are acting and (ii) 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    15   * Infineon Technologies AG or its licensees. If and as long as no such 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    16   * terms of use are agreed, use of this file is subject to following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    17  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    18  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    19   * Boost Software License - Version 1.0 - August 17th, 2003
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    20  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    21   * Permission is hereby granted, free of charge, to any person or 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    22   * organization obtaining a copy of the software and accompanying 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    23   * documentation covered by this license (the "Software") to use, reproduce,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    24   * display, distribute, execute, and transmit the Software, and to prepare
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    25   * derivative works of the Software, and to permit third-parties to whom the 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    26   * Software is furnished to do so, all subject to the following:
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    27  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    28   * The copyright notices in the Software and this entire statement, including
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    29   * the above license grant, this restriction and the following disclaimer, must
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    30   * be included in all copies of the Software, in whole or in part, and all
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    31   * derivative works of the Software, unless such copies or derivative works are
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    32   * solely in the form of machine-executable object code generated by a source
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    33   * language processor.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    34  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    35   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    36   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    37   * FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    38   * SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE 
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    39   * FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    40   * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    41   * DEALINGS IN THE SOFTWARE.
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    42  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    43   *
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    44   */
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    45  #include "Ifx_IntegralF32.h"
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    46  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    47  void Ifx_IntegralF32_reset(Ifx_IntegralF32 *ci)
+; Function Ifx_IntegralF32_reset
+.L5:
+Ifx_IntegralF32_reset:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    48  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    49      ci->uk = 0;
+	mov	d15,#0
+.L105:
+	st.w	[a4],d15
+.L106:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    50      ci->ik = 0;
+	mov	d15,#0
+.L107:
+	st.w	[a4]4,d15
+.L108:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    51  }
+	ret
+.L59:
+	
+__Ifx_IntegralF32_reset_function_end:
+	.size	Ifx_IntegralF32_reset,__Ifx_IntegralF32_reset_function_end-Ifx_IntegralF32_reset
+.L34:
+	; End of function
+	
+	.sdecl	'.text.Ifx_IntegralF32.Ifx_IntegralF32_init',code,cluster('Ifx_IntegralF32_init')
+	.sect	'.text.Ifx_IntegralF32.Ifx_IntegralF32_init'
+	.align	2
+	
+	.global	Ifx_IntegralF32_init
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    52  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    53  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    54  void Ifx_IntegralF32_init(Ifx_IntegralF32 *ci, float32 gain, float32 Ts)
+; Function Ifx_IntegralF32_init
+.L7:
+Ifx_IntegralF32_init:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    55  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    56      ci->delta = gain * Ts / 2;
+	mul.f	d15,d4,d5
+.L85:
+	movh	d0,#16384
+.L86:
+	div.f	d15,d15,d0
+.L87:
+	st.w	[a4]8,d15
+.L88:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    57  }
+	ret
+.L50:
+	
+__Ifx_IntegralF32_init_function_end:
+	.size	Ifx_IntegralF32_init,__Ifx_IntegralF32_init_function_end-Ifx_IntegralF32_init
+.L24:
+	; End of function
+	
+	.sdecl	'.text.Ifx_IntegralF32.Ifx_IntegralF32_step',code,cluster('Ifx_IntegralF32_step')
+	.sect	'.text.Ifx_IntegralF32.Ifx_IntegralF32_step'
+	.align	2
+	
+	.global	Ifx_IntegralF32_step
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    58  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    59  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    60  float32 Ifx_IntegralF32_step(Ifx_IntegralF32 *ci, float32 ik)
+; Function Ifx_IntegralF32_step
+.L9:
+Ifx_IntegralF32_step:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    61  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    62      ci->uk = ci->uk + (ik + ci->ik) * ci->delta;
+	ld.w	d15,[a4]4
+.L93:
+	add.f	d0,d4,d15
+.L94:
+	ld.w	d15,[a4]8
+.L95:
+	ld.w	d1,[a4]
+.L96:
+	madd.f	d15,d1,d0,d15
+.L97:
+	st.w	[a4],d15
+.L98:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    63      ci->ik = ik;
+	st.w	[a4]4,d4
+.L99:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    64  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    65      return ci->uk;
+	ld.w	d2,[a4]
+.L100:
+	j	.L2
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    66  }
+.L2:
+	ret
+.L56:
+	
+__Ifx_IntegralF32_step_function_end:
+	.size	Ifx_IntegralF32_step,__Ifx_IntegralF32_step_function_end-Ifx_IntegralF32_step
+.L29:
+	; End of function
+	
+	.sdecl	'.text.Ifx_IntegralF32.Ifx_ClpxFloat32_Integral_reset',code,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.text.Ifx_IntegralF32.Ifx_ClpxFloat32_Integral_reset'
+	.align	2
+	
+	.global	Ifx_ClpxFloat32_Integral_reset
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    67  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    68  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    69  void Ifx_ClpxFloat32_Integral_reset(Ifx_ClpxFloat32_Integral *ci)
+; Function Ifx_ClpxFloat32_Integral_reset
+.L11:
+Ifx_ClpxFloat32_Integral_reset:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    70  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    71      ci->uk.real = 0;
+	mov	d15,#0
+.L138:
+	st.w	[a4],d15
+.L139:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    72      ci->uk.imag = 0;
+	mov	d15,#0
+.L140:
+	st.w	[a4]4,d15
+.L141:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    73      ci->ik.real = 0;
+	mov	d15,#0
+.L142:
+	st.w	[a4]8,d15
+.L143:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    74      ci->ik.imag = 0;
+	mov	d15,#0
+.L144:
+	st.w	[a4]12,d15
+.L145:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    75  }
+	ret
+.L70:
+	
+__Ifx_ClpxFloat32_Integral_reset_function_end:
+	.size	Ifx_ClpxFloat32_Integral_reset,__Ifx_ClpxFloat32_Integral_reset_function_end-Ifx_ClpxFloat32_Integral_reset
+.L49:
+	; End of function
+	
+	.sdecl	'.text.Ifx_IntegralF32.Ifx_ClpxFloat32_Integral_init',code,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.text.Ifx_IntegralF32.Ifx_ClpxFloat32_Integral_init'
+	.align	2
+	
+	.global	Ifx_ClpxFloat32_Integral_init
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    76  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    77  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    78  void Ifx_ClpxFloat32_Integral_init(Ifx_ClpxFloat32_Integral *ci, float32 gain, float32 Ts)
+; Function Ifx_ClpxFloat32_Integral_init
+.L13:
+Ifx_ClpxFloat32_Integral_init:	.type	func
+	mov.aa	a15,a4
+.L73:
+	mov	d15,d4
+.L74:
+	mov	d8,d5
+.L76:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    79  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    80      Ifx_ClpxFloat32_Integral_reset(ci);
+	mov.aa	a4,a15
+	call	Ifx_ClpxFloat32_Integral_reset
+.L72:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    81      ci->delta = gain * Ts / 2;
+	mul.f	d15,d15,d8
+.L75:
+	movh	d0,#16384
+.L113:
+	div.f	d15,d15,d0
+.L114:
+	st.w	[a15]16,d15
+.L115:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    82  }
+	ret
+.L61:
+	
+__Ifx_ClpxFloat32_Integral_init_function_end:
+	.size	Ifx_ClpxFloat32_Integral_init,__Ifx_ClpxFloat32_Integral_init_function_end-Ifx_ClpxFloat32_Integral_init
+.L39:
+	; End of function
+	
+	.sdecl	'.text.Ifx_IntegralF32.Ifx_ClpxFloat32_Integral_step',code,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.text.Ifx_IntegralF32.Ifx_ClpxFloat32_Integral_step'
+	.align	2
+	
+	.global	Ifx_ClpxFloat32_Integral_step
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    83  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    84  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    85  cfloat32 Ifx_ClpxFloat32_Integral_step(Ifx_ClpxFloat32_Integral *ci, cfloat32 ik)
+; Function Ifx_ClpxFloat32_Integral_step
+.L15:
+Ifx_ClpxFloat32_Integral_step:	.type	func
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    86  {
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    87      ci->uk.real = ci->uk.real + (ik.real + ci->ik.real) * ci->delta;
+	ld.w	d15,[a4]8
+.L120:
+	add.f	d0,d4,d15
+.L121:
+	ld.w	d15,[a4]16
+.L122:
+	ld.w	d1,[a4]
+.L123:
+	madd.f	d15,d1,d0,d15
+.L124:
+	st.w	[a4],d15
+.L125:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    88      ci->uk.imag = ci->uk.imag + (ik.imag + ci->ik.imag) * ci->delta;
+	ld.w	d15,[a4]12
+.L126:
+	add.f	d0,d5,d15
+.L127:
+	ld.w	d15,[a4]16
+.L128:
+	ld.w	d1,[a4]4
+.L129:
+	madd.f	d15,d1,d0,d15
+.L130:
+	st.w	[a4]4,d15
+.L131:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    89      ci->ik      = ik;
+	st.d	[a4]8,e4
+.L132:
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    90  
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    91      return ci->uk;
+	ld.d	e2,[a4]0
+.L133:
+	j	.L3
+
+; ..\Libraries\BaseSw\Service\CpuGeneric\SysSe\Math\Ifx_IntegralF32.c	    92  }
+.L3:
+	ret
+.L67:
+	
+__Ifx_ClpxFloat32_Integral_step_function_end:
+	.size	Ifx_ClpxFloat32_Integral_step,__Ifx_ClpxFloat32_Integral_step_function_end-Ifx_ClpxFloat32_Integral_step
+.L44:
+	; End of function
+	
+	.calls	'Ifx_ClpxFloat32_Integral_init','Ifx_ClpxFloat32_Integral_reset'
+	.calls	'Ifx_IntegralF32_reset','',0
+	.calls	'Ifx_IntegralF32_init','',0
+	.calls	'Ifx_IntegralF32_step','',0
+	.calls	'Ifx_ClpxFloat32_Integral_reset','',0
+	.calls	'Ifx_ClpxFloat32_Integral_init','',0
+	.calls	'Ifx_ClpxFloat32_Integral_step','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L17:
+	.word	1341
+	.half	3
+	.word	.L18
+	.byte	4
+.L16:
+	.byte	1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L19
+	.byte	2,1,1,3
+	.word	177
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	180
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1
+.L53:
+	.byte	7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	225
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	237
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	317
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	291
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	323
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	323
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	291
+	.byte	6,0
+.L66:
+	.byte	10,4,61,9,8,11
+	.byte	'real',0
+	.word	237
+	.byte	4,2,35,0,11
+	.byte	'imag',0
+	.word	237
+	.byte	4,2,35,4,0,12
+	.word	409
+	.byte	3
+	.word	443
+	.byte	8
+	.byte	'IFX_Cf32_dot',0,3,3,85,20
+	.word	237
+	.byte	1,1,5
+	.byte	'b',0,3,85,49
+	.word	448
+	.byte	6,0,8
+	.byte	'IFX_Cf32_mag',0,3,3,91,20
+	.word	237
+	.byte	1,1,5
+	.byte	'c',0,3,91,49
+	.word	448
+	.byte	13,6,0,0,3
+	.word	409
+	.byte	4
+	.byte	'IFX_Cf32_set',0,3,3,125,17,1,1,5
+	.byte	'a',0,3,125,40
+	.word	527
+	.byte	5
+	.byte	're',0,3,125,51
+	.word	237
+	.byte	5
+	.byte	'im',0,3,125,63
+	.word	237
+	.byte	6,0,7
+	.byte	'int',0,4,5,12
+	.word	586
+	.byte	14
+	.byte	'__c11_atomic_thread_fence',0,1,1,1,1,15
+	.word	593
+	.byte	0,7
+	.byte	'unsigned int',0,4,7,16
+	.word	635
+	.byte	3
+	.word	635
+	.byte	17
+	.byte	'__cmpswapw',0
+	.word	651
+	.byte	1,1,1,1,18
+	.byte	'p',0
+	.word	656
+	.byte	18
+	.byte	'value',0
+	.word	635
+	.byte	18
+	.byte	'compare',0
+	.word	635
+	.byte	0,19
+	.word	185
+	.byte	20
+	.word	211
+	.byte	6,0,19
+	.word	246
+	.byte	20
+	.word	278
+	.byte	6,0,19
+	.word	328
+	.byte	20
+	.word	347
+	.byte	6,0,19
+	.word	363
+	.byte	20
+	.word	378
+	.byte	20
+	.word	392
+	.byte	6,0,19
+	.word	453
+	.byte	20
+	.word	477
+	.byte	6,0,19
+	.word	489
+	.byte	20
+	.word	513
+	.byte	13,21
+	.word	453
+	.byte	20
+	.word	477
+	.byte	22
+	.word	487
+	.byte	0,6,0,0,19
+	.word	532
+	.byte	20
+	.word	552
+	.byte	20
+	.word	562
+	.byte	20
+	.word	573
+	.byte	6,0,10,5,57,9,12,11
+	.byte	'uk',0
+	.word	237
+	.byte	4,2,35,0,11
+	.byte	'ik',0
+	.word	237
+	.byte	4,2,35,4,11
+	.byte	'delta',0
+	.word	237
+	.byte	4,2,35,8,0
+.L51:
+	.byte	3
+	.word	830
+	.byte	10,5,65,9,20,11
+	.byte	'uk',0
+	.word	409
+	.byte	8,2,35,0,11
+	.byte	'ik',0
+	.word	409
+	.byte	8,2,35,8,11
+	.byte	'delta',0
+	.word	237
+	.byte	4,2,35,16,0
+.L62:
+	.byte	3
+	.word	880
+	.byte	7
+	.byte	'short int',0,2,5,23
+	.byte	'__wchar_t',0,6,1,1
+	.word	930
+	.byte	23
+	.byte	'__size_t',0,6,1,1
+	.word	635
+	.byte	23
+	.byte	'__ptrdiff_t',0,6,1,1
+	.word	586
+	.byte	24,1,3
+	.word	998
+	.byte	23
+	.byte	'__codeptr',0,6,1,1
+	.word	1000
+	.byte	7
+	.byte	'unsigned char',0,1,8,23
+	.byte	'uint8',0,7,105,29
+	.word	1023
+	.byte	7
+	.byte	'unsigned short int',0,2,7,23
+	.byte	'uint16',0,7,109,29
+	.word	1054
+	.byte	7
+	.byte	'unsigned long int',0,4,7,23
+	.byte	'uint32',0,7,113,29
+	.word	1091
+	.byte	23
+	.byte	'uint64',0,7,118,29
+	.word	291
+	.byte	23
+	.byte	'sint16',0,7,126,29
+	.word	930
+	.byte	7
+	.byte	'long int',0,4,5,23
+	.byte	'sint32',0,7,131,1,29
+	.word	1157
+	.byte	7
+	.byte	'long long int',0,8,5,23
+	.byte	'sint64',0,7,138,1,29
+	.word	1185
+	.byte	23
+	.byte	'float32',0,7,167,1,29
+	.word	237
+	.byte	23
+	.byte	'pvoid',0,4,57,28
+	.word	323
+	.byte	23
+	.byte	'cfloat32',0,4,65,3
+	.word	409
+	.byte	23
+	.byte	'Ifx_TickTime',0,4,79,28
+	.word	1185
+	.byte	23
+	.byte	'Ifx_IntegralF32',0,5,62,3
+	.word	830
+	.byte	23
+	.byte	'Ifx_ClpxFloat32_Integral',0,5,70,3
+	.word	880
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L18:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,58,15,59,15,57
+	.byte	15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,38,0,73,19,0,0,13,11,1,0,0,14,46,1,3,8,54,15,39,12,63
+	.byte	12,60,12,0,0,15,5,0,73,19,0,0,16,53,0,73,19,0,0,17,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,18,5,0,3
+	.byte	8,73,19,0,0,19,46,1,49,19,0,0,20,5,0,49,19,0,0,21,29,1,49,19,0,0,22,11,0,49,19,0,0,23,22,0,3,8,58,15,59
+	.byte	15,57,15,73,19,0,0,24,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L19:
+	.word	.L78-.L77
+.L77:
+	.half	3
+	.word	.L80-.L79
+.L79:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Libraries\\BaseSw\\iLLD\\TC26B\\Tricore\\Cpu\\Std',0,0
+	.byte	'IfxCpu_IntrinsicsTasking.h',0,1,0,0
+	.byte	'IfxCpu_Intrinsics.h',0,1,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0
+	.byte	'Ifx_Types.h',0,1,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.h',0,0,0,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0,0,0,0
+	.byte	'Platform_Types.h',0,1,0,0,0
+.L80:
+.L78:
+	.sdecl	'.debug_info',debug,cluster('Ifx_IntegralF32_init')
+	.sect	'.debug_info'
+.L20:
+	.word	280
+	.half	3
+	.word	.L21
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L23,.L22
+	.byte	2
+	.word	.L16
+	.byte	3
+	.byte	'Ifx_IntegralF32_init',0,1,54,6,1,1,1
+	.word	.L7,.L50,.L6
+	.byte	4
+	.byte	'ci',0,1,54,44
+	.word	.L51,.L52
+	.byte	4
+	.byte	'gain',0,1,54,56
+	.word	.L53,.L54
+	.byte	4
+	.byte	'Ts',0,1,54,70
+	.word	.L53,.L55
+	.byte	5
+	.word	.L7,.L50
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_IntegralF32_init')
+	.sect	'.debug_abbrev'
+.L21:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_IntegralF32_init')
+	.sect	'.debug_line'
+.L22:
+	.word	.L82-.L81
+.L81:
+	.half	3
+	.word	.L84-.L83
+.L83:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0,0,0,0,0
+.L84:
+	.byte	5,22,7,0,5,2
+	.word	.L7
+	.byte	3,55,1,5,29,9
+	.half	.L85-.L7
+	.byte	1,5,27,9
+	.half	.L86-.L85
+	.byte	1,5,15,9
+	.half	.L87-.L86
+	.byte	1,5,1,9
+	.half	.L88-.L87
+	.byte	3,1,1,7,9
+	.half	.L24-.L88
+	.byte	0,1,1
+.L82:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_IntegralF32_init')
+	.sect	'.debug_ranges'
+.L23:
+	.word	-1,.L7,0,.L24-.L7,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_IntegralF32_step')
+	.sect	'.debug_info'
+.L25:
+	.word	267
+	.half	3
+	.word	.L26
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L28,.L27
+	.byte	2
+	.word	.L16
+	.byte	3
+	.byte	'Ifx_IntegralF32_step',0,1,60,9
+	.word	.L53
+	.byte	1,1,1
+	.word	.L9,.L56,.L8
+	.byte	4
+	.byte	'ci',0,1,60,47
+	.word	.L51,.L57
+	.byte	4
+	.byte	'ik',0,1,60,59
+	.word	.L53,.L58
+	.byte	5
+	.word	.L9,.L56
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_IntegralF32_step')
+	.sect	'.debug_abbrev'
+.L26:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_IntegralF32_step')
+	.sect	'.debug_line'
+.L27:
+	.word	.L90-.L89
+.L89:
+	.half	3
+	.word	.L92-.L91
+.L91:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0,0,0,0,0
+.L92:
+	.byte	5,31,7,0,5,2
+	.word	.L9
+	.byte	3,61,1,5,27,9
+	.half	.L93-.L9
+	.byte	1,5,41,9
+	.half	.L94-.L93
+	.byte	1,5,16,9
+	.half	.L95-.L94
+	.byte	1,5,21,9
+	.half	.L96-.L95
+	.byte	1,5,12,9
+	.half	.L97-.L96
+	.byte	1,9
+	.half	.L98-.L97
+	.byte	3,1,1,5,14,9
+	.half	.L99-.L98
+	.byte	3,2,1,5,5,9
+	.half	.L100-.L99
+	.byte	1,5,1,9
+	.half	.L2-.L100
+	.byte	3,1,1,7,9
+	.half	.L29-.L2
+	.byte	0,1,1
+.L90:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_IntegralF32_step')
+	.sect	'.debug_ranges'
+.L28:
+	.word	-1,.L9,0,.L29-.L9,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_IntegralF32_reset')
+	.sect	'.debug_info'
+.L30:
+	.word	249
+	.half	3
+	.word	.L31
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L33,.L32
+	.byte	2
+	.word	.L16
+	.byte	3
+	.byte	'Ifx_IntegralF32_reset',0,1,47,6,1,1,1
+	.word	.L5,.L59,.L4
+	.byte	4
+	.byte	'ci',0,1,47,45
+	.word	.L51,.L60
+	.byte	5
+	.word	.L5,.L59
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_IntegralF32_reset')
+	.sect	'.debug_abbrev'
+.L31:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_IntegralF32_reset')
+	.sect	'.debug_line'
+.L32:
+	.word	.L102-.L101
+.L101:
+	.half	3
+	.word	.L104-.L103
+.L103:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0,0,0,0,0
+.L104:
+	.byte	5,14,7,0,5,2
+	.word	.L5
+	.byte	3,48,1,5,12,9
+	.half	.L105-.L5
+	.byte	1,5,14,9
+	.half	.L106-.L105
+	.byte	3,1,1,5,12,9
+	.half	.L107-.L106
+	.byte	1,5,1,9
+	.half	.L108-.L107
+	.byte	3,1,1,7,9
+	.half	.L34-.L108
+	.byte	0,1,1
+.L102:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_IntegralF32_reset')
+	.sect	'.debug_ranges'
+.L33:
+	.word	-1,.L5,0,.L34-.L5,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.debug_info'
+.L35:
+	.word	289
+	.half	3
+	.word	.L36
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L38,.L37
+	.byte	2
+	.word	.L16
+	.byte	3
+	.byte	'Ifx_ClpxFloat32_Integral_init',0,1,78,6,1,1,1
+	.word	.L13,.L61,.L12
+	.byte	4
+	.byte	'ci',0,1,78,62
+	.word	.L62,.L63
+	.byte	4
+	.byte	'gain',0,1,78,74
+	.word	.L53,.L64
+	.byte	4
+	.byte	'Ts',0,1,78,88
+	.word	.L53,.L65
+	.byte	5
+	.word	.L13,.L61
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.debug_abbrev'
+.L36:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.debug_line'
+.L37:
+	.word	.L110-.L109
+.L109:
+	.half	3
+	.word	.L112-.L111
+.L111:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0,0,0,0,0
+.L112:
+	.byte	5,6,7,0,5,2
+	.word	.L13
+	.byte	3,205,0,1,5,36,9
+	.half	.L76-.L13
+	.byte	3,2,1,5,22,9
+	.half	.L72-.L76
+	.byte	3,1,1,5,29,9
+	.half	.L75-.L72
+	.byte	1,5,27,9
+	.half	.L113-.L75
+	.byte	1,5,15,9
+	.half	.L114-.L113
+	.byte	1,5,1,9
+	.half	.L115-.L114
+	.byte	3,1,1,7,9
+	.half	.L39-.L115
+	.byte	0,1,1
+.L110:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.debug_ranges'
+.L38:
+	.word	-1,.L13,0,.L39-.L13,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.debug_info'
+.L40:
+	.word	276
+	.half	3
+	.word	.L41
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L43,.L42
+	.byte	2
+	.word	.L16
+	.byte	3
+	.byte	'Ifx_ClpxFloat32_Integral_step',0,1,85,10
+	.word	.L66
+	.byte	1,1,1
+	.word	.L15,.L67,.L14
+	.byte	4
+	.byte	'ci',0,1,85,66
+	.word	.L62,.L68
+	.byte	4
+	.byte	'ik',0,1,85,79
+	.word	.L66,.L69
+	.byte	5
+	.word	.L15,.L67
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.debug_abbrev'
+.L41:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.debug_line'
+.L42:
+	.word	.L117-.L116
+.L116:
+	.half	3
+	.word	.L119-.L118
+.L118:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0,0,0,0,0
+.L119:
+	.byte	5,50,7,0,5,2
+	.word	.L15
+	.byte	3,214,0,1,5,42,9
+	.half	.L120-.L15
+	.byte	1,5,61,9
+	.half	.L121-.L120
+	.byte	1,5,25,9
+	.half	.L122-.L121
+	.byte	1,5,31,9
+	.half	.L123-.L122
+	.byte	1,5,17,9
+	.half	.L124-.L123
+	.byte	1,5,50,9
+	.half	.L125-.L124
+	.byte	3,1,1,5,42,9
+	.half	.L126-.L125
+	.byte	1,5,61,9
+	.half	.L127-.L126
+	.byte	1,5,25,9
+	.half	.L128-.L127
+	.byte	1,5,31,9
+	.half	.L129-.L128
+	.byte	1,5,17,9
+	.half	.L130-.L129
+	.byte	1,9
+	.half	.L131-.L130
+	.byte	3,1,1,5,14,9
+	.half	.L132-.L131
+	.byte	3,2,1,5,5,9
+	.half	.L133-.L132
+	.byte	1,5,1,9
+	.half	.L3-.L133
+	.byte	3,1,1,7,9
+	.half	.L44-.L3
+	.byte	0,1,1
+.L117:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.debug_ranges'
+.L43:
+	.word	-1,.L15,0,.L44-.L15,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.debug_info'
+.L45:
+	.word	258
+	.half	3
+	.word	.L46
+	.byte	4,1
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'G:\\Hello_world\\TC264\\A\\workspace\\Sig0809\\Debug\\',0,12,1
+	.word	.L48,.L47
+	.byte	2
+	.word	.L16
+	.byte	3
+	.byte	'Ifx_ClpxFloat32_Integral_reset',0,1,69,6,1,1,1
+	.word	.L11,.L70,.L10
+	.byte	4
+	.byte	'ci',0,1,69,63
+	.word	.L62,.L71
+	.byte	5
+	.word	.L11,.L70
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.debug_abbrev'
+.L46:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.debug_line'
+.L47:
+	.word	.L135-.L134
+.L134:
+	.half	3
+	.word	.L137-.L136
+.L136:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\BaseSw\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.c',0,0,0,0,0
+.L137:
+	.byte	5,19,7,0,5,2
+	.word	.L11
+	.byte	3,198,0,1,5,17,9
+	.half	.L138-.L11
+	.byte	1,5,19,9
+	.half	.L139-.L138
+	.byte	3,1,1,5,17,9
+	.half	.L140-.L139
+	.byte	1,5,19,9
+	.half	.L141-.L140
+	.byte	3,1,1,5,17,9
+	.half	.L142-.L141
+	.byte	1,5,19,9
+	.half	.L143-.L142
+	.byte	3,1,1,5,17,9
+	.half	.L144-.L143
+	.byte	1,5,1,9
+	.half	.L145-.L144
+	.byte	3,1,1,7,9
+	.half	.L49-.L145
+	.byte	0,1,1
+.L135:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.debug_ranges'
+.L48:
+	.word	-1,.L11,0,.L49-.L11,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.debug_loc'
+.L12:
+	.word	-1,.L13,0,.L61-.L13
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L65:
+	.word	-1,.L13,0,.L72-.L13
+	.half	1
+	.byte	85
+	.word	.L76-.L13,.L61-.L13
+	.half	1
+	.byte	88
+	.word	0,0
+.L63:
+	.word	-1,.L13,0,.L72-.L13
+	.half	1
+	.byte	100
+	.word	.L73-.L13,.L61-.L13
+	.half	1
+	.byte	111
+	.word	0,0
+.L64:
+	.word	-1,.L13,0,.L72-.L13
+	.half	1
+	.byte	84
+	.word	.L74-.L13,.L75-.L13
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.debug_loc'
+.L10:
+	.word	-1,.L11,0,.L70-.L11
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L71:
+	.word	-1,.L11,0,.L70-.L11
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.debug_loc'
+.L14:
+	.word	-1,.L15,0,.L67-.L15
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L68:
+	.word	-1,.L15,0,.L67-.L15
+	.half	1
+	.byte	100
+	.word	0,0
+.L69:
+	.word	-1,.L15,0,.L67-.L15
+	.half	2
+	.byte	144,34
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_IntegralF32_init')
+	.sect	'.debug_loc'
+.L6:
+	.word	-1,.L7,0,.L50-.L7
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L55:
+	.word	-1,.L7,0,.L50-.L7
+	.half	1
+	.byte	85
+	.word	0,0
+.L52:
+	.word	-1,.L7,0,.L50-.L7
+	.half	1
+	.byte	100
+	.word	0,0
+.L54:
+	.word	-1,.L7,0,.L50-.L7
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_IntegralF32_reset')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L59-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L60:
+	.word	-1,.L5,0,.L59-.L5
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_IntegralF32_step')
+	.sect	'.debug_loc'
+.L8:
+	.word	-1,.L9,0,.L56-.L9
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L57:
+	.word	-1,.L9,0,.L56-.L9
+	.half	1
+	.byte	100
+	.word	0,0
+.L58:
+	.word	-1,.L9,0,.L56-.L9
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L146:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_IntegralF32_reset')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L146,.L5,.L59-.L5
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_IntegralF32_init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L146,.L7,.L50-.L7
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_IntegralF32_step')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L146,.L9,.L56-.L9
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L146,.L11,.L70-.L11
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L146,.L13,.L61-.L13
+	.sdecl	'.debug_frame',debug,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L146,.L15,.L67-.L15
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+
+
+	; Module end
